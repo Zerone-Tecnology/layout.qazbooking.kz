@@ -1,0 +1,1 @@
+# layout.qazbooking.kz
