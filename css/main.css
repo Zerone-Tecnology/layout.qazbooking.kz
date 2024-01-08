@@ -1313,7 +1313,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: roboto-example, sans-serif;
+  font-family: inter, sans-serif;
   overflow-x: hidden;
 }
 
@@ -1328,15 +1328,73 @@ body {
 }
 
 ::-moz-selection {
-  background-color: orange;
+  background-color: #03306B;
   color: #fff;
 }
 
 ::selection {
-  background-color: orange;
+  background-color: #03306B;
   color: #fff;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav.mainMenu ul {
+  display: flex;
+}
+nav.mainMenu ul li {
+  flex: auto;
+}
+nav.mainMenu ul li a {
+  display: block;
+  padding: 15px;
+}
+
+.btn {
+  background-color: #03306B;
+  display: block;
+  padding: 10px 25px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.header {
+  padding: 15px 0;
+}
+.header-wrap {
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
+}
+.header .information-wrap {
+  display: flex;
+}
+.header .information-wrap ul li {
+  display: inline-block;
+}
+.header .information-wrap ul li a {
+  padding: 0 10px;
+}
+.header .btn-login {
+  float: right;
+}
+
+.main {
+  margin-top: 55px;
+}
+.main .search-wrap {
+  background-image: url("../img/bg-search.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+  color: #fff;
+  padding: 45px 45px 75px;
+  border-radius: 15px;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
