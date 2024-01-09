@@ -1465,6 +1465,9 @@ nav.mainMenu ul li a {
   border: none;
   width: 20%;
 }
+.main .section {
+  margin: 20px 0;
+}
 .main .section-title {
   font-size: 32px;
   font-weight: 400;
@@ -1472,6 +1475,8 @@ nav.mainMenu ul li a {
 .main .section .title {
   font-size: 20px;
   font-weight: 700;
+  margin: 10px 0;
+  float: left;
 }
 .main .section.category {
   margin: 50px 0;
@@ -1527,6 +1532,9 @@ nav.mainMenu ul li a {
 }
 .main .section.category .block-category .block .color.purple {
   background-color: #B6C1FF;
+}
+.main .section .link-more {
+  float: right;
 }
 .main .section .block-wraps {
   display: flex;
