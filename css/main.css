@@ -102,6 +102,8 @@ figure {
 }
 
 hr {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -148,6 +150,8 @@ input {
 }
 
 input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -158,6 +162,8 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 
 input[type=search] {
   -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -194,10 +200,14 @@ td, th {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -259,6 +269,8 @@ img {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   display: inline-block;
   max-width: 100%;
@@ -1073,6 +1085,10 @@ hr {
 .affix {
   position: fixed;
 }
+
+@-ms-viewport {
+  width: device-width;
+}
 .visible-xs, .visible-sm, .visible-md, .visible-lg {
   display: none !important;
 }
@@ -1268,9 +1284,13 @@ hr {
   }
 }
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1313,7 +1333,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: inter, sans-serif;
+  font-family: "Inter", sans-serif;
   overflow-x: hidden;
 }
 
@@ -1327,11 +1347,6 @@ body {
   text-align: center;
 }
 
-::-moz-selection {
-  background-color: #03306B;
-  color: #fff;
-}
-
 ::selection {
   background-color: #03306B;
   color: #fff;
@@ -1343,6 +1358,10 @@ ul {
   margin: 0;
 }
 
+a {
+  color: #1E1E1E;
+}
+
 nav.mainMenu ul {
   display: flex;
 }
@@ -1352,6 +1371,7 @@ nav.mainMenu ul li {
 nav.mainMenu ul li a {
   display: block;
   padding: 15px;
+  color: #1E1E1E;
 }
 
 .btn {
@@ -1360,6 +1380,16 @@ nav.mainMenu ul li a {
   padding: 10px 25px;
   color: #fff;
   border-radius: 4px;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #012657;
+}
+.btn:active {
+  background-color: #3347B4;
+}
+.btn:focus {
+  background-color: #0A3062;
 }
 
 .header {
@@ -1370,21 +1400,36 @@ nav.mainMenu ul li a {
   border-radius: 15px;
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
 }
+.header .location-wrap .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
 .header .information-wrap {
   display: flex;
+  justify-content: flex-end;
 }
 .header .information-wrap ul li {
   display: inline-block;
 }
-.header .information-wrap ul li a {
-  padding: 0 10px;
+.header .information-wrap .link {
+  margin-right: 15px;
+}
+.header .information-wrap .social {
+  margin-left: 25px;
+}
+.header .information-wrap .social li {
+  margin: 0 10px;
 }
 .header .btn-login {
   float: right;
 }
+.header .btn-login .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
 
 .main {
-  margin-top: 55px;
+  margin-top: 30px;
 }
 .main .search-wrap {
   background-image: url("../img/bg-search.jpg");
@@ -1395,6 +1440,132 @@ nav.mainMenu ul li a {
   padding: 45px 45px 75px;
   border-radius: 15px;
 }
+.main .search-wrap h2 {
+  font-size: 48px;
+  margin: 0;
+  line-height: 1.2;
+}
+.main .search-wrap p {
+  font-size: 24px;
+}
+.main .search-wrap .search-form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}
+.main .search-wrap .search-form .search-text {
+  width: 77%;
+  margin: 0 10px;
+  padding: 5px;
+  border: none;
+  background-color: #F7F7FD;
+}
+.main .search-wrap .search-form .btn-search {
+  display: inline-block;
+  border: none;
+  width: 20%;
+}
+.main .section-title {
+  font-size: 32px;
+  font-weight: 400;
+}
+.main .section .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.main .section.category {
+  margin: 50px 0;
+}
+.main .section.category .section-title {
+  text-align: center;
+}
+.main .section.category .block-category {
+  display: flex;
+}
+.main .section.category .block-category .block {
+  width: calc(100% - 7px);
+  text-align: center;
+}
+.main .section.category .block-category .block:last-child {
+  margin-right: 0;
+}
+.main .section.category .block-category .block:first-child {
+  margin-left: 0;
+}
+.main .section.category .block-category .block .color {
+  padding: 15px;
+  border-radius: 20px;
+  margin: 0 5px;
+  text-align: center;
+  height: 140px;
+}
+.main .section.category .block-category .block .color a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main .section.category .block-category .block .color img {
+  margin-top: 25px;
+}
+.main .section.category .block-category .block .color.blue {
+  background-color: #E0EDFF;
+}
+.main .section.category .block-category .block .color.green {
+  background-color: #E6FFD0;
+}
+.main .section.category .block-category .block .color.orange {
+  background-color: #FFE9C8;
+}
+.main .section.category .block-category .block .color.ping {
+  background-color: #FED7FF;
+}
+.main .section.category .block-category .block .color.yellow {
+  background-color: #FFF7DC;
+}
+.main .section.category .block-category .block .color.red {
+  background-color: #FFECEC;
+}
+.main .section.category .block-category .block .color.purple {
+  background-color: #B6C1FF;
+}
+.main .section .block-wraps {
+  display: flex;
+}
+.main .section .block-wraps .block {
+  flex: auto;
+  border-radius: 16px;
+  border: 1px solid #D4D4D4;
+  overflow: hidden;
+  margin: 0 5px;
+}
+.main .section .block-wraps .block .content {
+  padding: 15px;
+}
+.main .section .block-wraps .block a {
+  font-size: 18px;
+  font-weight: 500;
+}
+.main .section .block-wraps .block .location {
+  color: #A1A1A1;
+  margin: 0 0 15px;
+}
+.main .section .block-wraps .block .price {
+  font-size: 20px;
+  font-weight: 700;
+  float: left;
+}
+.main .section .block-wraps .block .raiting {
+  float: right;
+}
+.main .section .block-wraps .block .img {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.main .section .block-wraps .block .img img {
+  width: 100%;
+  height: auto;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
