@@ -1536,42 +1536,180 @@ nav.mainMenu ul li a {
 .main .section .link-more {
   float: right;
 }
-.main .section .block-wraps {
+.main .section .blocks-wrap {
   display: flex;
 }
-.main .section .block-wraps .block {
+.main .section .blocks-wrap .block {
   flex: auto;
   border-radius: 16px;
   border: 1px solid #D4D4D4;
   overflow: hidden;
   margin: 0 5px;
 }
-.main .section .block-wraps .block .content {
+.main .section .blocks-wrap .block .content {
   padding: 15px;
 }
-.main .section .block-wraps .block a {
+.main .section .blocks-wrap .block a {
   font-size: 18px;
   font-weight: 500;
 }
-.main .section .block-wraps .block .location {
+.main .section .blocks-wrap .block .location {
   color: #A1A1A1;
   margin: 0 0 15px;
 }
-.main .section .block-wraps .block .price {
+.main .section .blocks-wrap .block .price {
   font-size: 20px;
   font-weight: 700;
   float: left;
 }
-.main .section .block-wraps .block .raiting {
+.main .section .blocks-wrap .block .raiting {
   float: right;
 }
-.main .section .block-wraps .block .img {
+.main .section .blocks-wrap .block .img {
   border-radius: 16px;
   overflow: hidden;
 }
-.main .section .block-wraps .block .img img {
+.main .section .blocks-wrap .block .img img {
   width: 100%;
   height: auto;
+}
+.main .section.reviews {
+  margin-top: 55px;
+}
+.main .section.reviews .block {
+  padding: 15px;
+}
+.main .section.reviews .block .name {
+  font-size: 20px;
+  font-weight: 500;
+}
+.main .section.reviews .block .raiting {
+  background: #F4F4F4;
+  border-radius: 8px;
+  float: none;
+  margin: 23px 0;
+  padding: 5px;
+  display: inline-block;
+}
+.main .section.reviews .block .desc {
+  margin-bottom: 23px;
+}
+.main .section.reviews .block .user {
+  float: left;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+.main .section.reviews .block .date {
+  float: right;
+  font-size: 14px;
+  color: #A1A1A1;
+}
+.main .section.seo {
+  text-align: center;
+  margin-top: 45px;
+}
+.main .section.seo .title-s {
+  color: #A1A1A1;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.main .section.seo .title-m {
+  font-size: 32px;
+  margin-top: 0;
+}
+.main .section.seo .text {
+  text-align: left;
+  margin-bottom: 50px;
+}
+.main .section.seo .blocks-wrap {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.main .section.seo .blocks-wrap .block {
+  flex: calc(50% - 20px);
+  padding: 15px;
+  margin: 0 0 15px;
+  border: none;
+}
+.main .section.seo .blocks-wrap .block .title {
+  float: none;
+}
+.main .section.seo .blocks-wrap .block .text {
+  display: block;
+}
+.main .section.seo .blocks-wrap .block:nth-child(odd) {
+  margin-right: 10px;
+}
+.main .section.seo .blocks-wrap .block:nth-child(even) {
+  margin-left: 10px;
+}
+.main .section.seo .blocks-wrap .block.c-1 {
+  background-color: #FFE2E2;
+}
+.main .section.seo .blocks-wrap .block.c-2 {
+  background-color: #FBFFDF;
+}
+.main .section.seo .blocks-wrap .block.c-3 {
+  background-color: #DBE3FF;
+}
+.main .section.seo .blocks-wrap .block.c-4 {
+  background-color: #CEFFB7;
+}
+.main .section.blog {
+  margin: 55px 0;
+}
+.main .section.blog .blocks-wrap .block .img-wrap {
+  height: 200px;
+  overflow: hidden;
+}
+.main .section.blog .blocks-wrap .block .date {
+  padding: 15px 0 15px 15px;
+}
+.main .section.blog .blocks-wrap .title {
+  float: none;
+  padding: 0 15px 15px;
+  line-height: 1.2;
+}
+.main .section.about .blocks-wrap {
+  background: linear-gradient(266deg, #D6DDF5 -1.62%, #D8CCFA 105.07%);
+  border-radius: 15px;
+  padding: 45px;
+}
+.main .section.about .title {
+  float: none;
+  font-size: 32px;
+  margin-top: 0;
+}
+.main .section.about .img-wrap {
+  text-align: right;
+  margin-left: 55px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+.footer .footer-wrap {
+  background-color: #464646;
+  color: #fff;
+  padding: 15px;
+  border-radius: 15px;
+}
+.footer .footer-wrap .logo-wrap {
+  padding: 25px 0;
+}
+.footer .social-wrap .title {
+  float: none;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.footer .social li {
+  display: inline-block;
+}
+.footer a {
+  color: #fff;
+}
+.footer .zerone {
+  margin-top: 55px;
 }
 
 /*==========  Desktop First  ==========*/

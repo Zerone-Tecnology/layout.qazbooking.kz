@@ -203,7 +203,7 @@ nav
 								background-color: #B6C1FF
 		.link-more
 			float: right
-		.block-wraps
+		.blocks-wrap
 			display: flex
 			.block
 				flex: auto
@@ -217,7 +217,7 @@ nav
 					font-size: 18px
 					font-weight: 500
 				.location
-					color: #A1A1A1
+					color: $gray
 					margin: 0 0 15px
 				.price
 					font-size: 20px
@@ -231,6 +231,114 @@ nav
 					img
 						width: 100%
 						height: auto
+		&.reviews
+			margin-top: 55px
+			.block
+				padding: 15px
+				.name
+					font-size: 20px
+					font-weight: 500
+				.raiting
+					background: #F4F4F4
+					border-radius: 8px
+					float: none
+					margin: 23px 0
+					padding: 5px
+					display: inline-block
+				.desc
+					margin-bottom: 23px
+				.user
+					float: left
+					font-size: 14px
+					color: $gray
+				.date
+					float: right
+					font-size: 14px
+					color: $gray
+		&.seo
+			text-align: center
+			margin-top: 45px
+			.title-s
+				color: $gray
+				font-size: 20px
+				margin-bottom: 0
+			.title-m
+				font-size: 32px
+				margin-top: 0
+			.text
+				text-align: left
+				margin-bottom: 50px
+			.blocks-wrap
+				flex-direction: row
+				flex-wrap: wrap
+				.block
+					flex: calc(50% - 20px)
+					padding: 15px
+					margin: 0 0 15px
+					border: none
+					.title
+						float: none
+					.text
+						display: block
+					&:nth-child(odd)
+						margin-right: 10px
+					&:nth-child(even)
+						margin-left: 10px						
+					&.c-1
+						background-color: #FFE2E2
+					&.c-2
+						background-color: #FBFFDF
+					&.c-3
+						background-color: #DBE3FF
+					&.c-4
+						background-color: #CEFFB7
+		&.blog
+			margin: 55px 0
+			.blocks-wrap
+				.block
+					.img-wrap
+						height: 200px
+						overflow: hidden
+					.date
+						padding: 15px 0 15px 15px
+				.title
+					float: none
+					padding: 0 15px 15px
+					line-height: 1.2
+		&.about
+			.blocks-wrap
+				background: linear-gradient(266deg, #D6DDF5 -1.62%, #D8CCFA 105.07%)
+				border-radius: 15px
+				padding: 45px
+			.title
+				float: none
+				font-size: 32px
+				margin-top: 0
+			.img-wrap
+				text-align: right
+				margin-left: 55px
+.footer
+	margin-top: 100px
+	.footer-wrap
+		background-color: #464646
+		color: #fff
+		padding: 15px
+		border-radius: 15px
+		.logo-wrap
+			padding: 25px 0
+	.social-wrap
+		.title
+			float: none
+			font-size: 24px
+			margin-bottom: 15px
+	.social
+		li
+			display: inline-block
+	a
+		color: #fff
+	.zerone
+		margin-top: 55px
 
+		
 // Всегда в конце
 @import media
