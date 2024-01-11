@@ -223,6 +223,8 @@ nav
 					font-size: 20px
 					font-weight: 700
 					float: left
+				.icon
+					display: inline-block
 				.raiting
 					float: right
 				.img
@@ -278,6 +280,7 @@ nav
 					border: none
 					.title
 						float: none
+						line-height: 1.2
 					.text
 						display: block
 					&:nth-child(odd)
@@ -286,21 +289,40 @@ nav
 						margin-left: 10px						
 					&.c-1
 						background-color: #FFE2E2
+						.title
+							color: #CE5353
 					&.c-2
 						background-color: #FBFFDF
+						.title
+							color: #CE5353
 					&.c-3
 						background-color: #DBE3FF
+						.title
+							color: #CE5353
 					&.c-4
 						background-color: #CEFFB7
 		&.blog
 			margin: 55px 0
 			.blocks-wrap
 				.block
+					position: relative
 					.img-wrap
 						height: 200px
 						overflow: hidden
+						img
+							width: 100%
 					.date
 						padding: 15px 0 15px 15px
+					.link-more
+						background-color: #fff
+						width: 35px
+						height: 35px
+						border-radius: 50%
+						display: block
+						position: absolute
+						right: 15px
+						top: 40%
+						text-align: center
 				.title
 					float: none
 					padding: 0 15px 15px
@@ -323,7 +345,8 @@ nav
 		background-color: #464646
 		color: #fff
 		padding: 15px
-		border-radius: 15px
+		border-top-right-radius: 15px
+		border-top-left-radius: 15px
 		.logo-wrap
 			padding: 25px 0
 	.social-wrap
