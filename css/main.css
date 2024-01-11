@@ -1362,6 +1362,10 @@ a {
   color: #1E1E1E;
 }
 
+nav.mainMenu {
+  border-top: 1px solid #D4D4D4;
+  margin-top: 20px;
+}
 nav.mainMenu ul {
   display: flex;
 }
@@ -1372,6 +1376,7 @@ nav.mainMenu ul li a {
   display: block;
   padding: 15px;
   color: #1E1E1E;
+  font-size: 18px;
 }
 
 .btn {
@@ -1380,6 +1385,7 @@ nav.mainMenu ul li a {
   padding: 10px 25px;
   color: #fff;
   border-radius: 4px;
+  font-family: "Nunito Sans", sans-serif;
 }
 .btn:hover {
   color: #fff;
@@ -1480,9 +1486,6 @@ nav.mainMenu ul li a {
 }
 .main .section.category {
   margin: 50px 0;
-}
-.main .section.category .section-title {
-  text-align: center;
 }
 .main .section.category .block-category {
   display: flex;
