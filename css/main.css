@@ -1401,18 +1401,35 @@ nav.mainMenu ul li a {
 .header {
   padding: 15px 0;
 }
+.header .h-row {
+  display: flex;
+}
+.header .h-row div[class^=col-] {
+  display: flex;
+}
 .header-wrap {
   padding: 15px;
   border-radius: 15px;
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
 }
+.header .location-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
 .header .location-wrap .icon {
   display: inline-block;
   margin-right: 10px;
+  height: 15px;
+}
+.header .location-wrap .icon svg {
+  height: 100%;
 }
 .header .information-wrap {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: wrap;
+  align-content: center;
 }
 .header .information-wrap ul li {
   display: inline-block;
@@ -1426,8 +1443,15 @@ nav.mainMenu ul li a {
 .header .information-wrap .social li {
   margin: 0 10px;
 }
+.header .auth-wrap {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-end;
+}
 .header .btn-login {
-  float: right;
+  display: block;
 }
 .header .btn-login .icon {
   display: inline-block;
@@ -1482,7 +1506,6 @@ nav.mainMenu ul li a {
   font-size: 20px;
   font-weight: 700;
   margin: 10px 0;
-  float: left;
 }
 .main .section.category {
   margin: 50px 0;
@@ -1560,16 +1583,26 @@ nav.mainMenu ul li a {
   color: #A1A1A1;
   margin: 0 0 15px;
 }
+.main .section .blocks-wrap .block .location .icon {
+  width: 15px;
+}
 .main .section .blocks-wrap .block .price {
   font-size: 20px;
   font-weight: 700;
   float: left;
+}
+.main .section .blocks-wrap .block .price .icon {
+  width: 15px;
 }
 .main .section .blocks-wrap .block .icon {
   display: inline-block;
 }
 .main .section .blocks-wrap .block .raiting {
   float: right;
+  display: flex;
+}
+.main .section .blocks-wrap .block .raiting .icon {
+  margin-left: 5px;
 }
 .main .section .blocks-wrap .block .img {
   border-radius: 16px;
@@ -1595,7 +1628,10 @@ nav.mainMenu ul li a {
   float: none;
   margin: 23px 0;
   padding: 5px;
-  display: inline-block;
+  display: flex;
+}
+.main .section.reviews .block .raiting .icon {
+  margin-left: 5px;
 }
 .main .section.reviews .block .desc {
   margin-bottom: 23px;
@@ -1604,6 +1640,9 @@ nav.mainMenu ul li a {
   float: left;
   font-size: 14px;
   color: #A1A1A1;
+}
+.main .section.reviews .block .user .icon {
+  width: 15px;
 }
 .main .section.reviews .block .date {
   float: right;
@@ -1716,6 +1755,49 @@ nav.mainMenu ul li a {
 .main .section.about .img-wrap {
   text-align: right;
   margin-left: 55px;
+}
+
+.category .search-wrap {
+  background: none;
+  padding: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.category .search-wrap .search-filter .search-text {
+  background-color: #F7F7FD;
+}
+.category .filter-wrap {
+  border-radius: 16px;
+  padding: 15px;
+  border: 1px solid #D4D4D4;
+}
+.category .top-line {
+  display: flex;
+}
+.category .top-line .sort-wrap {
+  border-radius: 8px;
+  border: 1px solid var(--Grey-50, #D4D4D4);
+}
+.category .items-list .i-row {
+  display: flex;
+}
+.category .items-list .item {
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+}
+.category .items-list .item .img-wrap img {
+  width: 100%;
+}
+.category .items-list .item .name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.category .items-list .item .price span {
+  font-size: 24px;
+  font-weight: 700;
+}
+.category .items-list .item .region, .category .items-list .item .map-link {
+  color: #A1A1A1;
 }
 
 .footer {

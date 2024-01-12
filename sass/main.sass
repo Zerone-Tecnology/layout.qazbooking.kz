@@ -98,17 +98,29 @@ nav
 
 .header
 	padding: 15px 0
+	.h-row
+		display: flex
+		div[class^="col-"]
+			display: flex
 	&-wrap
 		padding: 15px
 		border-radius: 15px
 		box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15)
 	.location-wrap
+		display: flex
+		flex-wrap: wrap
+		align-content: center
 		.icon
 			display: inline-block
 			margin-right: 10px
+			height: 15px
+			svg
+				height: 100%
 	.information-wrap
 		display: flex
 		justify-content: flex-end
+		flex-wrap: wrap
+		align-content: center
 		ul
 			li
 				display: inline-block
@@ -118,9 +130,14 @@ nav
 			margin-left: 25px
 			li
 				margin: 0 10px
-	
+	.auth-wrap
+		display: flex
+		align-content: center
+		flex-wrap: wrap
+		width: 100%
+		justify-content: flex-end
 	.btn-login
-		float: right
+		display: block
 		.icon
 			display: inline-block
 			margin-right: 10px
@@ -164,7 +181,7 @@ nav
 			font-size: 20px
 			font-weight: 700
 			margin: 10px 0
-			float: left
+			// float: left
 		&.category
 			margin: 50px 0
 			.block
@@ -221,14 +238,21 @@ nav
 				.location
 					color: $gray
 					margin: 0 0 15px
+					.icon
+						width: 15px
 				.price
 					font-size: 20px
 					font-weight: 700
 					float: left
+					.icon
+						width: 15px
 				.icon
 					display: inline-block
 				.raiting
 					float: right
+					display: flex
+					.icon
+						margin-left: 5px
 				.img
 					border-radius: 16px
 					overflow: hidden
@@ -248,13 +272,17 @@ nav
 					float: none
 					margin: 23px 0
 					padding: 5px
-					display: inline-block
+					display: flex
+					.icon
+						margin-left: 5px
 				.desc
 					margin-bottom: 23px
 				.user
 					float: left
 					font-size: 14px
 					color: $gray
+					.icon
+						width: 15px
 				.date
 					float: right
 					font-size: 14px
@@ -341,6 +369,46 @@ nav
 			.img-wrap
 				text-align: right
 				margin-left: 55px
+// slider
+.reviews-slider
+
+.category
+	.search-wrap
+		background: none
+		padding: 5px
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15)
+		.search-filter
+			.search-text
+				background-color: #F7F7FD
+	.filter-wrap
+		border-radius: 16px
+		padding: 15px
+		border: 1px solid #D4D4D4
+	.top-line
+		display: flex
+		.sort-wrap
+			border-radius: 8px
+			border: 1px solid var(--Grey-50, #D4D4D4)
+	.items-list
+		.i-row
+			display: flex
+		.item
+			padding: 15px
+			border-radius: 16px
+			box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15)
+			.img-wrap
+				img
+					width: 100%
+			.name
+				font-size: 24px
+				font-weight: 700
+			.price
+				span
+					font-size: 24px
+					font-weight: 700
+			.region, .map-link
+				color: $gray
+
 .footer
 	margin-top: 100px
 	.footer-wrap

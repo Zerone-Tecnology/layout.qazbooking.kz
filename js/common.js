@@ -2,14 +2,13 @@ $(function() {
 
 	$('.slider').owlCarousel({
 		items: 4,
-		loop: true,
-		dots: false
+		dots: false,
+		nav: true,
 	});
 
 	$('.reviews-slider').owlCarousel({
 		items: 3,
-		loop: true,
-		dots: false
+		nav: true,
 	});
 
 });
