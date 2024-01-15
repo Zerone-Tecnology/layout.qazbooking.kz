@@ -380,10 +380,6 @@ nav
 		.search-filter
 			.search-text
 				background-color: #F7F7FD
-	.filter-wrap
-		border-radius: 16px
-		padding: 15px
-		border: 1px solid #D4D4D4
 	.top-line
 		display: flex
 		.sort-wrap
@@ -422,8 +418,9 @@ nav
 					position: absolute
 					top: 10px
 					right: 15px
-				.type
-					// margin-right: 10px
+				.content-wrap
+					a.name:hover
+						text-decoration: none
 				.raiting
 					background-color: #F4F4F4
 					border-radius: 4px
@@ -447,14 +444,13 @@ nav
 						position: relative
 						padding-left: 15px
 						display: inline-block
+						color: #A1A1A1
+						font-size: 16px
 						&::before
 							content: '●'
 							position: absolute
 							left: 0
 							color: $gray
-						a 
-							color: #A1A1A1
-							font-size: 16px
 				.right-wrap
 					border-left: 1px solid #E3E3E3
 					padding-left: 55px
@@ -487,8 +483,140 @@ nav
 					background-color: $gray
 					text-decoration: none
 					color: #000
-				
-				
+.filter-wrap
+	border-radius: 16px
+	padding: 15px
+	border: 1px solid #D4D4D4
+	.filter-block
+		margin-top: 25px
+		padding-bottom: 25px
+		border-bottom: 1px solid #E3E3E3
+		.name
+			margin-bottom: 20px
+			font-size: 18px
+		.control
+			margin-top: 10px
+			position: relative
+			padding-left: 30px
+			&:hover
+				input ~ .label
+					background-color: darken($gray, 20)
+			.label
+				position: absolute
+				top: 2px
+				left: 0
+				height: 20px
+				width: 20px
+				background: $gray
+				&::after
+					content: ''
+					position: absolute
+					display: none
+			input
+				position: absolute
+				opacity: 0
+				z-index: -1
+				&:checked ~ .label
+					background-color: $accent
+					&::after
+						display: block
+				&:not([disabled]):checked ~ &
+					background-color: $accent
+		.check .label
+			border-radius: 8px
+			&::after				
+				left: 8px
+				top: 4px
+				width: 5px
+				height: 8px
+				border: solid #fff
+				border-width: 0 1px 1px 0
+				transform: rotate(45deg)
+		.radio .label
+			border-radius: 50%
+			&::after
+				left: 7px
+				top: 7px
+				height: 6px
+				width: 6px
+				border-radius: 50%
+				background: #fff
+		label
+			font-size: 14px
+
+.breadcrumbs
+	margin-bottom: 15px
+	li
+		display: inline-block
+		padding-right: 15px
+		font-size: 14px
+		color: $gray
+		a
+			color: $accent
+.detail
+	ul.block
+		display: flex
+		li
+			flex: auto
+	.name-title
+		font-size: 32px
+		line-height: 1.2em
+		margin: 25px 0
+	.type-wrap
+		.name
+			font-weight: 700
+			font-size: 20px
+		.location
+			color: $gray
+			font-size: 16px
+	.reviews-wrap
+		text-align: right
+		.block-r
+			display: inline-block
+		.reviews
+			font-weight: 700
+		.addcomment
+			font-size: 14px
+		.raiting
+			background-color: $accent
+			color: #fff
+			display: inline-block
+			padding: 5px 10px
+			border-radius: 8px
+			vertical-align: top
+			margin-top: 5px
+
+	.gallery-wrap
+		margin: 30px 0
+		.items
+			display: grid
+			grid-template-columns: auto 20% 20% 
+			grid-template-rows: auto
+			grid-gap: 30px 30px
+			.item
+				border-radius: 16px
+				min-height: 100px
+				overflow: hidden
+				background-color: $gray
+				img
+					width: 100%
+					height: auto
+				&:nth-child(1)
+					grid-column: 1/span 1
+					grid-row: 1/span 6
+				&:nth-child(2)
+					grid-row: 1/span 3
+				&:nth-child(3)
+					grid-row: 4/span 3
+				&:nth-child(4)
+					grid-column: 3
+					grid-row: 1/span 3
+				&:nth-child(5)
+					grid-column: 3  
+					grid-row: 4/span 3
+				&:nth-child(6)
+					grid-column: 3
+					grid-row: 5/span 2
 
 .footer
 	margin-top: 100px
