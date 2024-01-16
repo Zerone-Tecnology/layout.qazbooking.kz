@@ -554,10 +554,11 @@ nav
 		a
 			color: $accent
 .detail
-	ul.block
-		display: flex
-		li
-			flex: auto
+	.middle-line
+		ul.block
+			display: flex
+			li
+				flex: auto
 	.name-title
 		font-size: 32px
 		line-height: 1.2em
@@ -585,7 +586,9 @@ nav
 			border-radius: 8px
 			vertical-align: top
 			margin-top: 5px
-
+	.block
+		.title
+			font-size: 32px
 	.gallery-wrap
 		margin: 30px 0
 		.items
@@ -617,7 +620,60 @@ nav
 				&:nth-child(6)
 					grid-column: 3
 					grid-row: 5/span 2
-
+	.info-wrap
+		.blocks
+			display: flex
+			.block
+				background-color: #EEEEEE
+				width: 50%
+				margin: 10px
+				padding: 15px
+				border-radius: 16px
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+	.rooms-wrap
+		.room
+			display: flex
+			.content-wrap
+				padding: 0 15px 15px
+				.name
+					font-size: 24px
+				.list
+					li
+						display: inline-block
+				.bottom-line
+					display: flex
+					margin-top: 15px
+					border-top: 1px solid #ccc
+					margin-top: 25px
+					padding-top: 25px
+					p
+						margin: 0
+					.name
+						font-size: 18px
+						font-weight: 700
+					.block-r,.block-l
+						width: 50%
+					.block-r
+						text-align: right
+						.btn
+							display: inline-block
+							margin-top: 15px
+	.right-wrap
+		.block
+			background-color: #F0F0F0
+			padding: 15px
+			border-radius: 16px
+			margin: 15px 0
+			.title
+				font-size: 24px
+				line-height: 1.2em
+			&.info
+				.btn
+					display: inline-block
+					margin-top: 15px
 .footer
 	margin-top: 100px
 	.footer-wrap
