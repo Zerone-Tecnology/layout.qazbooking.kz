@@ -1387,6 +1387,7 @@ nav.mainMenu ul li a {
   color: #fff;
   border-radius: 4px;
   font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
 }
 .btn:hover {
   color: #fff;
@@ -1539,29 +1540,31 @@ nav.mainMenu ul li a {
 .main .section.category .block-category .block .color img {
   margin-top: 25px;
 }
-.main .section.category .block-category .block .color.blue {
+.main .section.category .block-category .block .color.blue, .main .section.category .block-category .block .color.color-1 {
   background-color: #E0EDFF;
 }
-.main .section.category .block-category .block .color.green {
+.main .section.category .block-category .block .color.green, .main .section.category .block-category .block .color.color-2 {
   background-color: #E6FFD0;
 }
-.main .section.category .block-category .block .color.orange {
+.main .section.category .block-category .block .color.orange, .main .section.category .block-category .block .color.color-3 {
   background-color: #FFE9C8;
 }
-.main .section.category .block-category .block .color.ping {
+.main .section.category .block-category .block .color.ping, .main .section.category .block-category .block .color.color-4 {
   background-color: #FED7FF;
 }
-.main .section.category .block-category .block .color.yellow {
+.main .section.category .block-category .block .color.yellow, .main .section.category .block-category .block .color.color-5 {
   background-color: #FFF7DC;
 }
-.main .section.category .block-category .block .color.red {
+.main .section.category .block-category .block .color.red, .main .section.category .block-category .block .color.color-6 {
   background-color: #FFECEC;
 }
-.main .section.category .block-category .block .color.purple {
+.main .section.category .block-category .block .color.purple, .main .section.category .block-category .block .color.color-7 {
   background-color: #B6C1FF;
 }
 .main .section .link-more {
-  float: right;
+  position: absolute;
+  right: 15px;
+  bottom: 25px;
 }
 .main .section .blocks-wrap {
   display: flex;
@@ -1619,6 +1622,9 @@ nav.mainMenu ul li a {
 .main .section.reviews .block {
   padding: 15px;
 }
+.main .section.reviews .block .link-more-dots {
+  float: right;
+}
 .main .section.reviews .block .name {
   font-size: 20px;
   font-weight: 500;
@@ -1629,7 +1635,7 @@ nav.mainMenu ul li a {
   float: none;
   margin: 23px 0;
   padding: 5px;
-  display: flex;
+  display: inline-flex;
 }
 .main .section.reviews .block .raiting .icon {
   margin-left: 5px;
@@ -1662,6 +1668,7 @@ nav.mainMenu ul li a {
 .main .section.seo .title-m {
   font-size: 32px;
   margin-top: 0;
+  margin-bottom: 45px;
 }
 .main .section.seo .text {
   text-align: left;
@@ -1716,10 +1723,12 @@ nav.mainMenu ul li a {
 }
 .main .section.blog .blocks-wrap .block {
   position: relative;
+  width: 33%;
 }
 .main .section.blog .blocks-wrap .block .img-wrap {
   height: 200px;
   overflow: hidden;
+  background-color: #ccc;
 }
 .main .section.blog .blocks-wrap .block .img-wrap img {
   width: 100%;
@@ -1735,7 +1744,7 @@ nav.mainMenu ul li a {
   display: block;
   position: absolute;
   right: 15px;
-  top: 40%;
+  top: 35%;
   text-align: center;
 }
 .main .section.blog .blocks-wrap .title {
@@ -1801,6 +1810,7 @@ nav.mainMenu ul li a {
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
   position: relative;
   margin-bottom: 15px;
+  padding: 0;
 }
 .category .category-wrap .blocks-wrap .block .img-wrap {
   margin-left: -15px;
@@ -1811,11 +1821,15 @@ nav.mainMenu ul li a {
 .category .category-wrap .blocks-wrap .block .name {
   font-size: 24px;
   font-weight: 700;
+  line-height: 1em;
 }
 .category .category-wrap .blocks-wrap .block .favourite {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+.category .category-wrap .blocks-wrap .block .content-wrap {
+  padding: 15px 0;
 }
 .category .category-wrap .blocks-wrap .block .content-wrap a.name:hover {
   text-decoration: none;
@@ -2089,6 +2103,14 @@ nav.mainMenu ul li a {
 }
 .detail .rooms-wrap .room {
   display: flex;
+  border-radius: 16px;
+  border: 1px solid #D4D4D4;
+  margin: 0 0 15px;
+  padding: 15px 0;
+}
+.detail .rooms-wrap .room .img-wrap {
+  overflow: hidden;
+  border-radius: 16px;
 }
 .detail .rooms-wrap .room .content-wrap {
   padding: 0 15px 15px;
