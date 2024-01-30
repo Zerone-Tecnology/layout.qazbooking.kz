@@ -53,7 +53,8 @@ body
 	padding: 0
 	.row
 		display: flex
-		margin: 0
+		margin-right: 0
+		margin-left: 0
 	.h-row
 		align-items: center
 
@@ -79,6 +80,9 @@ a
 h1, h2, h3, h4, h5, h6, p
 	margin: 0
 
+h1
+	font-size: 32px
+	font-weight: 600
 h5
 	font-size: 24px
 	font-weight: 500
@@ -92,32 +96,10 @@ p
 .btn	
 	cursor: pointer
 
-.button
-	display: flex
-	align-items: center
-	justify-content: center
-	gap: 8px
-	width: fit-content
-	height: 48px
-	padding: 14px 32px
-	border-radius: 4px
-	background-color: $accent
-	&-text
-		font-family: 'Nunito Sans', sans-serif
-		color: $white
-	&:hover
-		background-color: #012657
-	&:active
-		background-color: #3347B4
-	&:focus
-		background-color: #0A3062
-
-.header,
-.footer
-	&-wrap .row
-		&:after,
-		&:before
-			display: none
+.row
+	&:after,
+	&:before
+		display: none
 
 .header
 	position: fixed
@@ -193,6 +175,39 @@ p
 				.zerone
 					gap: 25px
 					margin-top: 80px
+
+.button
+	display: flex
+	align-items: center
+	justify-content: center
+	gap: 8px
+	width: fit-content
+	height: 48px
+	padding: 14px 32px
+	border-radius: 4px
+	background-color: $accent
+	&-text
+		font-family: 'Nunito Sans', sans-serif
+		color: $white
+	&:hover
+		background-color: #012657
+	&:active
+		background-color: #3347B4
+	&:focus
+		background-color: #0A3062
+
+.breadcrumbs
+	gap: 10px
+	margin: 60px 0 32px
+	&-item
+		gap: 10px
+		.text
+			font-family: 'Nunito Sans', sans-serif
+			font-size: 14px
+			font-weight: 400
+			color: $breadcrumbs
+		&:last-child .text
+			color: $accent
 
 .modal
 	display: none
@@ -690,15 +705,6 @@ p
 		label
 			font-size: 14px
 
-.breadcrumbs
-	margin-bottom: 15px
-	li
-		display: inline-block
-		padding-right: 15px
-		font-size: 14px
-		color: $gray
-		a
-			color: $accent
 .detail
 	.middle-line
 		ul.block

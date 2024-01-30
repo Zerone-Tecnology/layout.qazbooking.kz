@@ -1324,7 +1324,8 @@ body {
 }
 .container .row {
   display: flex;
-  margin: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 .container .h-row {
   align-items: center;
@@ -1364,6 +1365,11 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
 h5 {
   font-size: 24px;
   font-weight: 500;
@@ -1383,35 +1389,7 @@ p {
   cursor: pointer;
 }
 
-.button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 48px;
-  padding: 14px 32px;
-  border-radius: 4px;
-  background-color: #03306B;
-}
-.button-text {
-  font-family: "Nunito Sans", sans-serif;
-  color: #FFF;
-}
-.button:hover {
-  background-color: #012657;
-}
-.button:active {
-  background-color: #3347B4;
-}
-.button:focus {
-  background-color: #0A3062;
-}
-
-.header-wrap .row:after, .header-wrap .row:before,
-.footer-wrap .row:after,
-.footer-wrap .row:before {
+.row:after, .row:before {
   display: none;
 }
 
@@ -1507,6 +1485,49 @@ p {
 .footer-wrap .row .right .zerone {
   gap: 25px;
   margin-top: 80px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 48px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  background-color: #03306B;
+}
+.button-text {
+  font-family: "Nunito Sans", sans-serif;
+  color: #FFF;
+}
+.button:hover {
+  background-color: #012657;
+}
+.button:active {
+  background-color: #3347B4;
+}
+.button:focus {
+  background-color: #0A3062;
+}
+
+.breadcrumbs {
+  gap: 10px;
+  margin: 60px 0 32px;
+}
+.breadcrumbs-item {
+  gap: 10px;
+}
+.breadcrumbs-item .text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8A8894;
+}
+.breadcrumbs-item:last-child .text {
+  color: #03306B;
 }
 
 .modal {
@@ -2140,19 +2161,6 @@ p {
 }
 .filter-wrap .filter-block label {
   font-size: 14px;
-}
-
-.breadcrumbs {
-  margin-bottom: 15px;
-}
-.breadcrumbs li {
-  display: inline-block;
-  padding-right: 15px;
-  font-size: 14px;
-  color: #A1A1A1;
-}
-.breadcrumbs li a {
-  color: #03306B;
 }
 
 .detail .middle-line ul.block {
