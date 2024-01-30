@@ -1,0 +1,44 @@
+<svg
+	width="56"
+	height="56"
+	viewBox="0 0 56 56"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="streamline:travel-places-beach-island-waves-outdoor-recreation-tree-beach-palm-wave-water">
+		<g id="Group">
+			<path
+				id="Vector"
+				d="M41.92 47.8344C39.8599 45.3298 37.2706 43.3125 34.3382 41.9276C31.4058 40.5426 28.203 39.8243 24.96 39.8243C21.717 39.8243 18.5142 40.5426 15.5818 41.9276C12.6494 43.3125 10.0601 45.3298 8 47.8344"
+				stroke="#ECB600"
+				stroke-width="4"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+			<path
+				id="Vector_2"
+				d="M27.92 40.0345C28.16 30.9945 30.92 22.7545 36.92 19.7945M24.96 12.1945C27.5529 11.6839 30.2429 12.1875 32.4755 13.6015C34.7081 15.0155 36.3132 17.2321 36.96 19.7945"
+				stroke="#ECB600"
+				stroke-width="4"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+			<path
+				id="Vector_3"
+				d="M51.5599 21.2744C49.7189 19.2865 47.2154 18.0392 44.5197 17.7667C41.824 17.4942 39.1216 18.2152 36.9199 19.7944"
+				stroke="#ECB600"
+				stroke-width="4"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+			<path
+				id="Vector_4"
+				d="M22.2402 24.0745C23.8076 21.7653 26.1309 20.0747 28.8102 19.2935C31.4896 18.5123 34.3574 18.6895 36.9202 19.7945C39.4909 20.4232 41.7166 22.0264 43.1272 24.2655C44.5378 26.5046 45.023 29.2043 44.4802 31.7945"
+				stroke="#ECB600"
+				stroke-width="4"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
+		</g>
+	</g>
+</svg>

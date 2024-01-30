@@ -78,144 +78,169 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="home main">
 		<div class="container">
-			<div class="search-wrap">
-				<div class="row">
-					<div class="col-md-6">
-						<h2>Лучшие места для вашего отдыха</h2>
-						<p>Поиск предложений на отели, дома и многое другое…</p>
-					</div>
-					<div class="col-md-12">
-						<div class="search-form">
-							<form action="">
-								<input
-									type="text"
-									class="search-text"
-									placeholder="Ключевое слово"
-								/>
-								<button class="btn btn-search">Поиск</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+			<section class="hero">
+				<img src="assets/images/hero.jpg" alt="Hero image" class="hero-image" />
 
-		<section class="section category">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h3 class="section-title">Категории</h3>
+				<div class="hero-content">
+					<div class="box">
+						<h1 class="title">Лучшие места для вашего отдыха</h2>
+						<h5 class="text">Поиск предложений на отели, дома и многое другое…</h5>
 					</div>
-				</div>
-				<div class="block-category">
-					<div class="block">
-						<div class="color blue">
-							<a href="">
-								<img
-									src="img/categories/hostels.svg"
-									alt="Хостелы"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Хостелы</p>
-					</div>
-					<div class="block">
-						<div class="color green">
-							<a href="">
-								<img
-									src="img/categories/homes.svg"
-									alt="Базы отдыха"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Базы отдыха</p>
-					</div>
-					<div class="block">
-						<div class="color orange">
-							<a href="">
-								<img
-									src="img/categories/bike.svg"
-									alt="Активный отдых"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Активный отдых</p>
-					</div>
-					<div class="block">
-						<div class="color ping">
-							<a href="">
-								<img
-									src="img/categories/child.svg"
-									alt="Детские лагеря"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Детские лагеря</p>
-					</div>
-					<div class="block">
-						<div class="color yellow">
-							<a href="">
-								<img
-									src="img/categories/travel.svg"
-									alt="Туры"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Туры</p>
-					</div>
-					<div class="block">
-						<div class="color red">
-							<a href="">
-								<img
-									src="img/categories/heart.svg"
-									alt="Оздоровительный отдых"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Оздоровительный отдых</p>
-					</div>
-					<div class="block">
-						<div class="color purple">
-							<a href="">
-								<img
-									src="img/categories/airplane.svg"
-									alt="Транспорт"
-									class="icon"
-								/>
-							</a>
-						</div>
-						<p>Транспорт</p>
-					</div>
-				</div>
-			</div>
-		</section>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h3 class="section-title">Популярные места</h3>
+					<div class="search row h-row">
+						<img src="assets/icons/search.svg" alt="search" class="search-icon" />
+						<input
+							type="text"
+							placeholder="Ключевое слово"
+							class="search-text"
+						/>
+						<div class="button">
+							<p class="button-text">Поиск</p>
+						</div>
+					</div>
 				</div>
-			</div>
-		</div>
-		
-		<section class="section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h4 class="title">Хостелы</h4>
-						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next" />
+			</section>
+
+			<section class="category">
+				<h3 class="section-title">Категории</h3>
+				<div class="category-blocks row">
+					<div class="block">
+						<a href="filter.html" class="block-item blue">
+							<img src="assets/icons/categories/hotel.svg" alt="Хостелы" />
+						</a>
+						<p class="block-text">Хостелы</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item green">
+							<img src="assets/icons/categories/house.svg" alt="Базы отдыха" />
+						</a>
+						<p class="block-text">Базы отдыха</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item orange">
+							<img src="assets/icons/categories/motorbike.svg" alt="Активный отдых" />
+						</a>
+						<p class="block-text">Активный отдых</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item red">
+							<img src="assets/icons/categories/child.svg" alt="Детские лагеря" />
+						</a>
+						<p class="block-text">Детские лагеря</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item yellow">
+							<img src="assets/icons/categories/beach.svg" alt="Туры" />
+						</a>
+						<p class="block-text">Туры</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item ping">
+							<img src="assets/icons/categories/activity-heart.svg" alt="Оздоровительный отдых" />
+						</a>
+						<p class="block-text">Оздоровительный отдых</p>
+					</div>
+					<div class="block">
+						<a href="filter.html" class="block-item purple">
+							<img src="assets/icons/categories/airplane.svg" alt="Транспорт" />
+						</a>
+						<p class="block-text">Транспорт</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="popular">
+				<h3 class="section-title">Популярные места</h3>
+
+				<div class="places">
+					<div class="places-header row h-row">
+						<h4>Хостелы</h4>
+						<a href="filter.html">
+							<img
+								src="assets/icons/chevron.svg"
+								alt="right arrow"
+								class="icon"
+							/>
 						</a>
 					</div>
+
+					<div class="places-list">
+						<div class="block">
+							<div class="img">
+								<img
+									src="img/hostel-1.jpg"
+									width="276px"
+									alt="Hostel"
+								/>
+							</div>
+							<div class="content">
+								<a href="#">Grand hostel</a>
+								<div class="location">
+									<img
+										src="img/location.svg"
+										alt="location"
+										class="icon"
+									/>
+									Алматинская обл.
+								</div>
+								<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+								<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
+							</div>
+						</div>
+					</div>
 				</div>
+
+				<div class="places">
+					<div class="places-header row h-row">
+						<h4>Туры</h4>
+						<a href="filter.html">
+							<img
+								src="assets/icons/chevron.svg"
+								alt="right arrow"
+								class="icon"
+							/>
+						</a>
+					</div>
+
+					<div class="places-list"></div>
+				</div>
+
+				<div class="places">
+					<div class="places-header row h-row">
+						<h4>Базы отдыха</h4>
+						<a href="filter.html">
+							<img
+								src="assets/icons/chevron.svg"
+								alt="right arrow"
+								class="icon"
+							/>
+						</a>
+					</div>
+
+					<div class="places-list"></div>
+				</div>
+
+				<div class="places">
+					<div class="places-header row h-row">
+						<h4>Досуг/Развлечения</h4>
+						<a href="filter.html">
+							<img
+								src="assets/icons/chevron.svg"
+								alt="right arrow"
+								class="icon"
+							/>
+						</a>
+					</div>
+
+					<div class="places-list"></div>
+				</div>
+			</section>
+		</div>
+
+		<section class="section">
+			<div class="container">
 				<div class="blocks-wrap slider owl-carousel">
 					<div class="block">
 						<div class="img">
@@ -645,24 +670,24 @@
 
 			<div class="galery">
 				<img
-					src="assets/images/xxxl2.png"
+					src="assets/images/arleon2.png"
 					alt="Hostel 2"
 					class="galery-image"
 				/>
 				<img
-					src="assets/images/xxxl3.png"
+					src="assets/images/arleon3.png"
 					alt="Hostel 3"
 					class="galery-image"
 				/>
 				<img
-					src="assets/images/xxxl4.png"
+					src="assets/images/arleon4.png"
 					alt="Hostel 4"
 					class="galery-image"
 				/>
 			</div>
 
 			<a href="hostels.html" class="more">
-				<h5 class="more-text">Посмотреть место</h5>
+				<h6 class="more-text">Посмотреть место</h6>
 				<img src="assets/icons/chevron.svg" alt="chevron" />
 			</a>
 

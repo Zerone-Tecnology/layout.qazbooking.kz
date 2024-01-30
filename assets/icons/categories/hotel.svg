@@ -1,0 +1,58 @@
+<svg
+	width="46"
+	height="46"
+	viewBox="0 0 46 46"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="elements">
+		<path
+			id="Vector 6581"
+			d="M4.09961 6.20001V39.8C4.09961 41.7799 4.09961 42.7699 4.71469 43.3849C5.32976 44 6.31971 44 8.29961 44H37.6996C39.6795 44 40.6695 44 41.2845 43.3849C41.8996 42.7699 41.8996 41.7799 41.8996 39.8V6.20001"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6589"
+			d="M19.8496 14.6V17.75M19.8496 20.9V17.75M26.1496 14.6V17.75M26.1496 20.9V17.75M19.8496 17.75H26.1496"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6585"
+			d="M27.1998 44.0001L27.1998 35.6C27.1998 33.2804 25.3194 31.4 22.9998 31.4C20.6802 31.4 18.7998 33.2804 18.7998 35.6V44.0001"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector"
+			d="M2 6.2H14.6C15.9438 3.73726 19.1984 2 23 2C26.8016 2 30.0562 3.73726 31.4 6.2H44"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector_2"
+			d="M10.4004 14.6H12.5004M10.4004 23H12.5004M10.4004 31.4H12.5004"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector_3"
+			d="M33.5 14.6H35.6M33.5 23H35.6M33.5 31.4H35.6"
+			stroke="#165DBD"
+			stroke-width="4"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>
