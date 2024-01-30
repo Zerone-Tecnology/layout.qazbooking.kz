@@ -364,13 +364,17 @@ p
 							width: 20.7%
 							&-text
 								font-size: 20px
+			.category,
 			.popular,
-			.category
+			.reviews,
+			.seo
 				&-content
 					margin-top: 40px
-			.popular-content__body
+			.popular-content__body,
+			.reviews-content
 				gap: 1.5625vw
 			.popular-content__header
+			.reviews-header
 				justify-content: space-between
 			.category
 				.section-title
@@ -458,6 +462,89 @@ p
 							padding: 4px .20833vw
 							.text
 								color: #656565
+			.reviews
+				&-header__icons
+					gap: .41667vw
+					.icon
+						display: flex
+						align-items: center
+						justify-content: center
+						width: 3.28125vw
+						height: 43px
+						border-radius: 8px
+						background-color: #ECECEC
+						&:first-child
+							transform: rotate(180deg)
+				&-content
+					.review
+						display: grid
+						grid-gap: 23px
+						width: 20.10467vw
+						padding: 15px .78125vw
+						border: 1px solid $grey
+						border-radius: 8px
+						&-title
+							font-weight: 500
+						&-rating
+							width: max-content
+							gap: .3125vw
+							padding: 4px .20833vw
+							border-radius: 8px
+							background-color: $grey-bg
+							&__text
+								color: #656565
+						&-text
+							font-size: 18px
+							line-height: 21.6px
+						&-footer
+							justify-content: space-between
+							&__author,
+							&__time
+								gap: .41667vw
+							&__author,
+							&__time
+								.text
+									color: $grey
+							&__time .dot
+								font-weight: 300
+								color: $grey-secondary
+			.seo
+				&-subtitle,
+				&-title
+					text-align: center
+				&-subtitle
+					margin-bottom: 12px
+					color: $grey
+				&-content:last-child
+					display: grid
+					grid-gap: 28px 1.40625vw
+					grid-template-columns: repeat(2, 1fr)
+					.box
+						display: flex
+						flex-direction: column
+						gap: 15px
+						min-height: 234px
+						padding: 24px 1.66667vw 17px 1.5625vw
+						border-radius: 16px
+						.title,
+						.text
+							text-align: center
+						&.red
+							background-color: #FFE2E2
+							.title
+								color: #CE5353
+						&.yellow
+							background-color: #FBFFDF
+							.title
+								color: #F90
+						&.blue
+							background-color: #DBE3FF
+							.title
+								color: #3561FD
+						&.green
+							background-color: #CEFFB7
+							.title
+								color: #319900
 	&.hostels
 		.image
 			width: 100%
@@ -506,81 +593,6 @@ p
 
 .main
 	.section
-		&.reviews
-			margin-top: 55px
-			.block
-				padding: 15px
-				.link-more-dots
-					float: right
-				.name
-					font-size: 20px
-					font-weight: 500
-				.raiting
-					background: $grey-bg
-					border-radius: 8px
-					float: none
-					margin: 23px 0
-					padding: 5px
-					display: inline-flex
-					.icon
-						margin-left: 5px
-				.desc
-					margin-bottom: 23px
-				.user
-					float: left
-					font-size: 14px
-					color: $grey
-					.icon
-						width: 15px
-				.date
-					float: right
-					font-size: 14px
-					color: $grey
-		&.seo
-			text-align: center
-			margin-top: 45px
-			.title-s
-				color: $grey
-				font-size: 20px
-				margin-bottom: 0
-			.title-m
-				font-size: 32px
-				margin-top: 0
-				margin-bottom: 45px
-			.text
-				text-align: left
-				margin-bottom: 50px
-			.blocks-wrap
-				flex-direction: row
-				flex-wrap: wrap
-				.block
-					flex: calc(50% - 20px)
-					padding: 15px
-					margin: 0 0 15px
-					border: none
-					.title
-						float: none
-						line-height: 1.2
-					.text
-						display: block
-					&:nth-child(odd)
-						margin-right: 10px
-					&:nth-child(even)
-						margin-left: 10px						
-					&.c-1
-						background-color: #FFE2E2
-						.title
-							color: #CE5353
-					&.c-2
-						background-color: #FBFFDF
-						.title
-							color: #CE5353
-					&.c-3
-						background-color: #DBE3FF
-						.title
-							color: #CE5353
-					&.c-4
-						background-color: #CEFFB7
 		&.blog
 			margin: 55px 0
 			.blocks-wrap
