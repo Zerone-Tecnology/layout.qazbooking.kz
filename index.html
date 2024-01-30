@@ -33,89 +33,70 @@
 		<div class="container">
 			<div class="header-wrap">
 				<div class="row h-row">
-					<div class="col-md-4">
-						<div class="logo-wrap">
-							<img
-								src="assets/images/logo.png"
-								alt="QazBooking"
-								class="logo"
-							/>
-						</div>
+					<div class="logo">
+						<img
+							src="assets/images/logo.png"
+							alt="QazBooking"
+							class="icon"
+						/>
 					</div>
-					<div class="col-md-2">
-						<div class="location-wrap">
-							<a href="#">
-								<div class="icon">
-									<img src="assets/icons/location.svg" alt="location" />
-								</div>
-								Алматы
+
+					<div class="location">
+						<div class="icon">
+							<img src="assets/icons/location.svg" alt="location" />
+						</div>
+						<p class="text">Алматы</p>
+					</div>
+
+					<div class="information">
+						<a href="#" class="text">Интересное</a>
+						<div class="social">
+							<a href="#" class="icon">
+								<img src="assets/icons/facebook.svg" alt="facebook" />
+							</a>
+							<a href="#" class="icon">
+								<img src="assets/icons/instagram.svg" alt="instagram" />
 							</a>
 						</div>
 					</div>
 
-					<div class="col-md-4">
-						<div class="information-wrap">
-							<a href="#" class="link">Интересное</a>
-							<ul class="social">
-								<li><a href="#">
-									<div class="icon in">
-										<img src="assets/icons/facebook.svg" alt="facebook" />
-									</div>
-								</a></li>
-								<li><a href="#">
-									<div class="icon fb">
-										<img src="assets/icons/instagram.svg" alt="instagram" />
-									</div>
-								</a></li>
-							</ul>
+					<div class="auth btn">
+						<div class="icon">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<circle
+									cx="8.00016"
+									cy="8"
+									r="6.66667"
+									stroke="white"
+								/>
+								<path
+									d="M10.6668 8L5.3335 7.99999M10.6668 8C10.6668 8.46681 9.3373 9.33898 9.00016 9.66666M10.6668 8C10.6668 7.53318 9.3373 6.66101 9.00016 6.33333"
+									stroke="white"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
 						</div>
-					</div>
-
-					<div class="col-md-2">
-						<div class="auth-wrap">
-							<a href="#" class="btn btn-login">
-								<div class="icon">
-									<svg
-										xmlns="http://www.w3.org/2000/svg"
-										width="16"
-										height="16"
-										viewBox="0 0 16 16"
-										fill="none"
-									>
-										<circle
-											cx="8.00016"
-											cy="8"
-											r="6.66667"
-											stroke="white"
-										/>
-										<path
-											d="M10.6668 8L5.3335 7.99999M10.6668 8C10.6668 8.46681 9.3373 9.33898 9.00016 9.66666M10.6668 8C10.6668 7.53318 9.3373 6.66101 9.00016 6.33333"
-											stroke="white"
-											stroke-linecap="round"
-											stroke-linejoin="round"
-										/>
-									</svg>
-								</div>
-								Войти
-							</a>
-						</div>
+						<p class="btn-text">Войти</p>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-md-12">
-						<nav class="mainMenu">
-							<ul>
-								<li><a href="filter.html">Хостелы</a></li>
-								<li><a href="filter.html">Базы отдыха</a></li>
-								<li><a href="filter.html">Активный отдых</a></li>
-								<li><a href="filter.html">Туры</a></li>
-								<li><a href="filter.html">Оздоровительный отдых</a></li>
-								<li><a href="filter.html">Детские лагеря</a></li>
-								<li><a href="filter.html">Транспорт</a></li>
-							</ul>
-						</nav>
-					</div>
+					<ul class="menu">
+						<li><a href="/hostels" class="text">Хостелы</a></li>
+						<li><a href="/recreation_centers" class="text">Базы отдыха</a></li>
+						<li><a href="/leisure" class="text">Активный отдых</a></li>
+						<li><a href="/tours" class="text">Туры</a></li>
+						<li><a href="/wellness_holiday" class="text">Оздоровительный отдых</a></li>
+						<li><a href="/childrens_camp" class="text">Детские лагеря</a></li>
+						<li><a href="/transport" class="text">Транспорт</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -132,7 +113,11 @@
 					<div class="col-md-12">
 						<div class="search-form">
 							<form action="">
-								<input type="text" class="search-text" placeholder="Ключевое слово">
+								<input
+									type="text"
+									class="search-text"
+									placeholder="Ключевое слово"
+								/>
 								<button class="btn btn-search">Поиск</button>
 							</form>
 						</div>
@@ -151,43 +136,85 @@
 				<div class="block-category">
 					<div class="block">
 						<div class="color blue">
-							<a href=""><img src="img/categories/hostels.svg" alt="Хостелы" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/hostels.svg"
+									alt="Хостелы"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Хостелы</p>
 					</div>
 					<div class="block">
 						<div class="color green">
-							<a href=""><img src="img/categories/homes.svg" alt="Базы отдыха" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/homes.svg"
+									alt="Базы отдыха"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Базы отдыха</p>
 					</div>
 					<div class="block">
 						<div class="color orange">
-							<a href=""><img src="img/categories/bike.svg" alt="Активный отдых" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/bike.svg"
+									alt="Активный отдых"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Активный отдых</p>
 					</div>
 					<div class="block">
 						<div class="color ping">
-							<a href=""><img src="img/categories/child.svg" alt="Детские лагеря" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/child.svg"
+									alt="Детские лагеря"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Детские лагеря</p>
 					</div>
 					<div class="block">
 						<div class="color yellow">
-							<a href=""><img src="img/categories/travel.svg" alt="Туры" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/travel.svg"
+									alt="Туры"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Туры</p>
 					</div>
 					<div class="block">
 						<div class="color red">
-							<a href=""><img src="img/categories/heart.svg" alt="Оздоровительный отдых" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/heart.svg"
+									alt="Оздоровительный отдых"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Оздоровительный отдых</p>
 					</div>
 					<div class="block">
 						<div class="color purple">
-							<a href=""><img src="img/categories/airplane.svg" alt="Транспорт" class="icon"></a>
+							<a href="">
+								<img
+									src="img/categories/airplane.svg"
+									alt="Транспорт"
+									class="icon"
+								/>
+							</a>
 						</div>
 						<p>Транспорт</p>
 					</div>
@@ -209,53 +236,97 @@
 					<div class="col-md-12">
 						<h4 class="title">Хостелы</h4>
 						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next">
+							<img src="img/arr.svg" alt="Next" />
 						</a>
 					</div>
 				</div>
 				<div class="blocks-wrap slider owl-carousel">
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+							/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+							/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+							/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+							/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						</div>
 					</div>
 				</div>
@@ -268,53 +339,97 @@
 					<div class="col-md-12">
 						<h4 class="title">Туры</h4>
 						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next">
+							<img src="img/arr.svg" alt="Next" />
 						</a>
 					</div>
 				</div>
 				<div class="blocks-wrap slider owl-carousel">
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+								/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting"></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting" /></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+								/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting"></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting" /></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+								/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting"></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting" /></div>
 						</div>
 					</div>
 					<div class="block">
 						<div class="img">
-							<img src="img/hostel-1.jpg" width="276px" alt="Hostel">
+							<img
+								src="img/hostel-1.jpg"
+								width="276px"
+								alt="Hostel"
+								/>
 						</div>
 						<div class="content">
 							<a href="#">Grand hostel</a>
-							<div class="location"><img src="img/location.svg" alt="location" class="icon"> Алматинская обл.</div>
-							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon"></div>
-							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting"></div>
+							<div class="location">
+								<img
+									src="img/location.svg"
+									alt="location"
+									class="icon"
+								/>
+								Алматинская обл.
+							</div>
+							<div class="price">от <span class="icon-tg">2500</span> <img src="img/tenge.svg" alt="tenge" class="icon" /></div>
+							<div class="raiting">9.6 <img src="img/smile-5.svg" class="icon" alt="Raiting" /></div>
 						</div>
 					</div>
 				</div>
@@ -335,9 +450,16 @@
 							<img src="img/hdots.svg" alt="More" onclick="openModal()" />
 						</div>
 						<div class="name">Хостел Арлеон</div>
-						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						<div class="desc">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</div>
-						<div class="user"><img src="img/profile.svg" alt="user" class="icon"> Емиль Газизов</div>
+						<div class="user">
+							<img
+								src="img/profile.svg"
+								alt="user"
+								class="icon"
+							/>
+							Емиль Газизов
+						</div>
 						<div class="date">14:56 • 10.11.2023</div>
 					</div>
 					<div class="block">
@@ -345,9 +467,16 @@
 							<img src="img/hdots.svg" alt="More" onclick="openModal()" />
 						</div>
 						<div class="name">Хостел Арлеон</div>
-						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						<div class="desc">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</div>
-						<div class="user"><img src="img/profile.svg" alt="user" class="icon"> Емиль Газизов</div>
+						<div class="user">
+							<img
+								src="img/profile.svg"
+								alt="user"
+								class="icon"
+							/>
+							Емиль Газизов
+						</div>
 						<div class="date">14:56 • 10.11.2023</div>
 					</div>
 					<div class="block">
@@ -355,9 +484,16 @@
 							<img src="img/hdots.svg" alt="More" onclick="openModal()" />
 						</div>
 						<div class="name">Хостел Арлеон</div>
-						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting"></div></div>
+						<div class="raiting">9.8 <div class="icon"><img src="img/smile-5.svg" alt="Raiting" /></div></div>
 						<div class="desc">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</div>
-						<div class="user"><img src="img/profile.svg" alt="user" class="icon"> Емиль Газизов</div>
+						<div class="user">
+							<img
+								src="img/profile.svg"
+								alt="user"
+								class="icon"
+							/>
+							Емиль Газизов
+						</div>
 						<div class="date">14:56 • 10.11.2023</div>
 					</div>
 				</div>
@@ -399,36 +535,39 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h3 class="section-title">Интересное</h3>
-						<a href="#" class="link-more">Читать все <img src="img/arr.svg" alt="Next"></a>
+						<a href="#" class="link-more">
+							Читать все
+							<img src="img/arr.svg" alt="Next" />
+						</a>
 					</div>
 				</div>
 				<div class="blocks-wrap">
 					<div class="block">
 						<div class="img-wrap">
-							<img src="img/bg-blog.jpeg" alt="Blog">
+							<img src="img/bg-blog.jpeg" alt="Blog" />
 						</div>
 						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next">
+							<img src="img/arr.svg" alt="Next" />
 						</a>
 						<div class="date">12.05.2023</div>
 						<div class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</div>
 					</div>
 					<div class="block">
 						<div class="img-wrap">
-							<img src="img/bg-blog.jpeg" alt="Blog">
+							<img src="img/bg-blog.jpeg" alt="Blog" />
 						</div>
 						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next">
+							<img src="img/arr.svg" alt="Next" />
 						</a>
 						<div class="date">12.05.2023</div>
 						<div class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</div>
 					</div>
 					<div class="block">
 						<div class="img-wrap">
-							<img src="img/bg-blog.jpeg" alt="Blog">
+							<img src="img/bg-blog.jpeg" alt="Blog" />
 						</div>
 						<a href="#" class="link-more">
-							<img src="img/arr.svg" alt="Next">
+							<img src="img/arr.svg" alt="Next" />
 						</a>
 						<div class="date">12.05.2023</div>
 						<div class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</div>
@@ -448,7 +587,7 @@
 								<p>На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан</p>
 							</div>
 							<div class="img-wrap">
-								<img src="img/bg-about.jpg" alt="About QazBooking">
+								<img src="img/bg-about.jpg" alt="About QazBooking" />
 							</div>
 						</div>
 					</div>
@@ -541,7 +680,16 @@
 								</a></li>
 							</ul>
 						</div>
-<p class="zerone">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank">Zerone Technology</a> <img src="https://zeronetech.kz/zerone-min-logo.svg" width="20" alt="Zerone Technology"></p>
+
+						<p class="zerone">
+							Разработка сайта — 
+							<a href="https://zeronetech.kz" tabindex="_blank">Zerone Technology</a>
+							<img
+								src="https://zeronetech.kz/zerone-min-logo.svg"
+								width="20"
+								alt="Zerone Technology"
+							/>
+						</p>
 					</div>
 				</div>
 			</div>
