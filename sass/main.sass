@@ -52,7 +52,11 @@ body
 	width: 1218px
 	padding: 0
 	.row
-		margin: 0
+		display: flex
+		margin-right: 0
+		margin-left: 0
+	.h-row
+		align-items: center
 
 .img-responsive
 	display: block
@@ -66,39 +70,39 @@ body
 	background-color: $accent
 	color: $white
 
+img
+	background-repeat: no-repeat
+	object-fit: cover
 ul
 	list-style-type: none
 	padding: 0
 	margin: 0
 a
 	color: $dark
-
 h1, h2, h3, h4, h5, h6, p
 	margin: 0
+	color: $dark
+h1
+	font-size: 32px
+	font-weight: 600
+	color: $dark
+h5
+	font-size: 24px
+	font-weight: 500
+h6
+	font-size: 20px
+	font-weight: 400
+p
+	font-size: 16px
+	font-weight: 400
 
-.btn
-	display: flex
-	align-items: center
-	justify-content: center
-	gap: 8px
-	width: fit-content
-	height: 48px
-	padding: 14px 32px
-	border-radius: 4px
-	background-color: $accent
-	&-text
-		font-family: 'Nunito Sans', sans-serif
-		font-size: 16px
-		font-weight: 400
-		color: $white
-		margin: 0
-	&:hover
-		color: $white
-		background-color: #012657
-	&:active
-		background-color: #3347B4
-	&:focus
-		background-color: #0A3062
+.btn	
+	cursor: pointer
+
+.row
+	&:after,
+	&:before
+		display: none
 
 .header
 	position: fixed
@@ -111,19 +115,13 @@ h1, h2, h3, h4, h5, h6, p
 		background-color: $white
 		border-radius: 16px
 		box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, .15)
-		.h-row
-			display: flex
-			align-items: center
 		.text
 			font-size: 20px
 			font-weight: 400
 			color: $dark
-			margin: 0
 		.logo
 			margin-right: 90px
 		.location
-			display: flex
-			align-content: center
 			gap: 8px
 			margin-right: 250px
 			padding-bottom: 5px
@@ -131,21 +129,17 @@ h1, h2, h3, h4, h5, h6, p
 				height: 24px
 				padding: 1px 2px
 		.information
-			display: flex
-			align-content: center
 			gap: 55px
 			.social
-				display: flex
 				gap: 24px
 				.icon
 					height: 32px
-		.auth
+		.button
 			margin-left: 55px
 			.icon
 				width: 16px
 				height: 16px
 		.menu
-			display: flex
 			gap: 16px
 			border-top: 1px solid #D4D4D4
 			margin-top: 19.5px
@@ -156,8 +150,202 @@ h1, h2, h3, h4, h5, h6, p
 				font-weight: 500
 				line-height: 24px
 
+.footer
+	&-wrap
+		display: grid
+		grid-gap: 36px
+		padding: 49px 106px 54px 104px
+		border-radius: 16px 16px 0px 0px
+		background-color: #464646
+		.row
+			gap: 52.5px
+			.text
+				color: $white
+			.menu
+				display: grid
+				grid-gap: 8px
+				width: 259px
+				.text
+					font-size: 20px
+					font-weight: 400
+					line-height: 24px
+			.right
+				.text
+					font-family: 'Montserrat', sans-serif
+				.social
+					gap: 24px
+					margin-top: 16px
+				.zerone
+					gap: 25px
+					margin-top: 80px
+
+.button
+	display: flex
+	align-items: center
+	justify-content: center
+	gap: 8px
+	width: auto
+	height: 48px
+	padding: 14px 32px
+	border-radius: 4px
+	background-color: $accent
+	cursor: pointer
+	&-text
+		font-family: 'Nunito Sans', sans-serif
+		color: $white
+	&:hover
+		background-color: #012657
+	&:active
+		background-color: #3347B4
+	&:focus
+		background-color: #0A3062
+
+.breadcrumbs
+	gap: 10px
+	margin: 60px 0 32px
+	&-item
+		gap: 10px
+		.text
+			font-family: 'Nunito Sans', sans-serif
+			font-size: 14px
+			font-weight: 400
+			color: $breadcrumbs
+		&:last-child .text
+			color: $accent
+
+.modal
+	display: none
+	&.show
+		display: block
+	&-background,
+	&-content
+		position: fixed
+	&-background 
+		z-index: 3
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, .3)
+	&-content
+		z-index: 4
+		top: 50%
+		left: 50%
+		display: flex
+		flex-direction: column
+		gap: 29px
+		width: 754px
+		transform: translate(-50%, -50%)
+		padding: 35px 40px 35.51px
+		border-radius: 16px
+		background-color: $white
+		.btn
+			position: absolute
+			top: 10.5px
+			right: 10.5px
+		.text
+			color: $dark
+		.name
+			line-height: 36px
+			text-overflow: ellipsis
+		.galery,
+		.more,
+		.rating
+			display: flex
+		.galery
+			justify-content: space-between
+			height: 125.5px
+			&-image
+				width: 212px
+				height: 100%
+				border-radius: 10.141px
+		.more
+			gap: 8px
+			.text
+				font-weight: 400
+				line-height: 36px
+		.info
+			display: flex
+			flex-direction: column
+			gap: 23px
+			.rating
+				align-items: center
+				gap: 6px
+				width: max-content
+				height: 32px
+				padding: 4px
+				border-radius: 8px
+				background-color: #F4F4F4
+				&-text
+					line-height: 24px
+					color: #656565
+			.description
+				font-size: 18px
+				line-height: 22px
+			.bottom
+				display: flex
+				justify-content: space-between
+				.user,
+				.date
+					display: flex
+					align-items: center
+					gap: 8px
+				.text
+					line-height: 19px
+					color: #A1A1A1
+				.date-dot
+					font-weight: 300
+					color: #D4D4D4
+
 .main
-	margin-top: 30px
+	margin-top: 183px
+	&.hostels
+		.image
+			width: 100%
+			height: 426px
+			border-radius: 16px
+			margin: 46px 0 32px
+		.galery
+			gap: 16px
+			margin-bottom: 40px
+			&-image
+				width: 88px
+				height: 72px
+				border-radius: 16px
+		.content
+			gap: 33px
+			margin-bottom: 176px
+			.left
+				border-top: 1px solid #D4D4D4
+				padding-top: 39px
+				.title
+					gap: 15px
+				.includes
+					gap: 22px
+					margin: 24px 0 40px
+					&-item
+						gap: 8px
+				.text
+					font-size: 18px
+				.special
+					list-style-type: disc
+					margin-left: 16px
+			.right
+				min-width: 175px
+				.price
+					gap: 5px
+					justify-content: end
+					&-text
+						font-weight: 700
+						line-height: 29px
+				.text
+					color: $grey
+					text-align: right
+					line-height: 19px
+				.button
+					margin-top: 26px
+
+.main
 	.search-wrap
 		background-image: url('../img/bg-search.jpg')
 		background-repeat: no-repeat
@@ -252,7 +440,7 @@ h1, h2, h3, h4, h5, h6, p
 					font-size: 18px
 					font-weight: 500
 				.location
-					color: $gray
+					color: $grey
 					margin: 0 0 15px
 					.icon
 						width: 15px
@@ -298,18 +486,18 @@ h1, h2, h3, h4, h5, h6, p
 				.user
 					float: left
 					font-size: 14px
-					color: $gray
+					color: $grey
 					.icon
 						width: 15px
 				.date
 					float: right
 					font-size: 14px
-					color: $gray
+					color: $grey
 		&.seo
 			text-align: center
 			margin-top: 45px
 			.title-s
-				color: $gray
+				color: $grey
 				font-size: 20px
 				margin-bottom: 0
 			.title-m
@@ -457,10 +645,10 @@ h1, h2, h3, h4, h5, h6, p
 						font-size: 24px
 						font-weight: 700
 				.region
-					color: $gray
+					color: $grey
 					font-style: 16px
 				.map-link
-					color: $gray
+					color: $grey
 					font-size: 16px
 					margin-left: 10px
 				.props-list
@@ -474,7 +662,7 @@ h1, h2, h3, h4, h5, h6, p
 							content: '●'
 							position: absolute
 							left: 0
-							color: $gray
+							color: $grey
 				.right-wrap
 					border-left: 1px solid #E3E3E3
 					padding-left: 55px
@@ -504,7 +692,7 @@ h1, h2, h3, h4, h5, h6, p
 					background-color: $accent
 					color: $white
 				&:hover
-					background-color: $gray
+					background-color: $grey
 					text-decoration: none
 					color: $black
 .filter-wrap
@@ -524,14 +712,14 @@ h1, h2, h3, h4, h5, h6, p
 			padding-left: 30px
 			&:hover
 				input ~ .label
-					background-color: darken($gray, 20)
+					background-color: darken($grey, 20)
 			.label
 				position: absolute
 				top: 2px
 				left: 0
 				height: 20px
 				width: 20px
-				background: $gray
+				background: $grey
 				&::after
 					content: ''
 					position: absolute
@@ -568,15 +756,6 @@ h1, h2, h3, h4, h5, h6, p
 		label
 			font-size: 14px
 
-.breadcrumbs
-	margin-bottom: 15px
-	li
-		display: inline-block
-		padding-right: 15px
-		font-size: 14px
-		color: $gray
-		a
-			color: $accent
 .detail
 	.middle-line
 		ul.block
@@ -592,7 +771,7 @@ h1, h2, h3, h4, h5, h6, p
 			font-weight: 700
 			font-size: 20px
 		.location
-			color: $gray
+			color: $grey
 			font-size: 16px
 	.reviews-wrap
 		text-align: right
@@ -624,7 +803,7 @@ h1, h2, h3, h4, h5, h6, p
 				border-radius: 16px
 				min-height: 100px
 				overflow: hidden
-				background-color: $gray
+				background-color: $grey
 				img
 					width: 100%
 					height: auto
@@ -717,125 +896,6 @@ h1, h2, h3, h4, h5, h6, p
 				.btn
 					display: inline-block
 					margin-top: 15px
-
-.footer
-	margin-top: 100px
-	.footer-wrap
-		background-color: #464646
-		color: $white
-		padding: 15px
-		border-top-right-radius: 15px
-		border-top-left-radius: 15px
-		.logo-wrap
-			padding: 25px 0
-	.social-wrap
-		.title
-			float: none
-			font-size: 24px
-			margin-bottom: 15px
-	.social
-		li
-			display: inline-block
-	a
-		color: $white
-	.zerone
-		margin-top: 55px
-
-.modal
-	display: none
-	&-background,
-	&-content
-		position: fixed
-	&-background 
-		z-index: 3
-		top: 0
-		left: 0
-		width: 100%
-		height: 100%
-		background-color: rgba(0, 0, 0, .3)
-	&-content
-		z-index: 4
-		top: 50%
-		left: 50%
-		display: flex
-		flex-direction: column
-		gap: 29px
-		width: 754px
-		transform: translate(-50%, -50%)
-		padding: 35px 40px 35.51px
-		border-radius: 16px
-		background-color: $white
-		.button
-			position: absolute
-			top: 10.5px
-			right: 10.5px
-			cursor: pointer
-		.text
-			color: $dark
-		.name
-			font-size: 24px
-			font-weight: 500
-			line-height: 36px
-			text-overflow: ellipsis
-		.galery,
-		.more,
-		.rating
-			display: flex
-		.galery
-			justify-content: space-between
-			height: 125.5px
-			&-image
-				width: 212px
-				height: 100%
-				border-radius: 10.141px
-		.more
-			gap: 8px
-			.text
-				font-size: 24px
-				font-weight: 400
-				line-height: 36px
-		.info
-			display: flex
-			flex-direction: column
-			gap: 23px
-			.rating
-				align-items: center
-				gap: 6px
-				width: max-content
-				height: 32px
-				padding: 4px
-				border-radius: 8px
-				background-color: #F4F4F4
-				&-text
-					font-size: 16px
-					font-weight: 400
-					line-height: 24px
-					color: #656565
-			.description
-				font-size: 18px
-				font-weight: 400
-				line-height: 22px
-			.bottom
-				display: flex
-				justify-content: space-between
-				.text
-					font-size: 16px
-					font-weight: 400
-					line-height: 19px
-					color: #A1A1A1
-				.user
-					display: flex
-					align-items: center
-					gap: 8px
-				.date
-					display: flex
-					align-items: center
-					gap: 8px
-					.dot
-						font-weight: 300
-						color: #D4D4D4
-	&.show
-		display: block
 
 // Всегда в конце
 @import media

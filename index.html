@@ -14,6 +14,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
@@ -33,24 +34,22 @@
 		<div class="container">
 			<div class="header-wrap">
 				<div class="row h-row">
-					<div class="logo">
-						<img
-							src="assets/images/logo.png"
-							alt="QazBooking"
-							class="icon"
-						/>
-					</div>
+					<img
+						src="assets/images/logo.png"
+						alt="QazBooking"
+						class="logo"
+					/>
 
-					<div class="location">
+					<div class="location row h-row">
 						<div class="icon">
 							<img src="assets/icons/location.svg" alt="location" />
 						</div>
 						<p class="text">Алматы</p>
 					</div>
 
-					<div class="information">
+					<div class="information row h-row">
 						<a href="#" class="text">Интересное</a>
-						<div class="social">
+						<div class="social row">
 							<a href="#" class="icon">
 								<img src="assets/icons/facebook.svg" alt="facebook" />
 							</a>
@@ -60,43 +59,20 @@
 						</div>
 					</div>
 
-					<div class="auth btn">
-						<div class="icon">
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								viewBox="0 0 16 16"
-								fill="none"
-							>
-								<circle
-									cx="8.00016"
-									cy="8"
-									r="6.66667"
-									stroke="white"
-								/>
-								<path
-									d="M10.6668 8L5.3335 7.99999M10.6668 8C10.6668 8.46681 9.3373 9.33898 9.00016 9.66666M10.6668 8C10.6668 7.53318 9.3373 6.66101 9.00016 6.33333"
-									stroke="white"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-						</div>
-						<p class="btn-text">Войти</p>
+					<div class="button">
+						<img src="assets/icons/auth.svg" alt="auth" class="icon" />
+						<p class="button-text">Войти</p>
 					</div>
 				</div>
 
-				<div class="row">
-					<ul class="menu">
-						<li><a href="/hostels" class="text">Хостелы</a></li>
-						<li><a href="/recreation_centers" class="text">Базы отдыха</a></li>
-						<li><a href="/leisure" class="text">Активный отдых</a></li>
-						<li><a href="/tours" class="text">Туры</a></li>
-						<li><a href="/wellness_holiday" class="text">Оздоровительный отдых</a></li>
-						<li><a href="/childrens_camp" class="text">Детские лагеря</a></li>
-						<li><a href="/transport" class="text">Транспорт</a></li>
-					</ul>
+				<div class="menu row">
+					<a href="hostels.html" class="text">Хостелы</a>
+					<a href="recreation_centers.html" class="text">Базы отдыха</a>
+					<a href="leisure.html" class="text">Активный отдых</a>
+					<a href="tours.html" class="text">Туры</a>
+					<a href="wellness_holiday.html" class="text">Оздоровительный отдых</a>
+					<a href="childrens_camp.html" class="text">Детские лагеря</a>
+					<a href="transport.html" class="text">Транспорт</a>
 				</div>
 			</div>
 		</div>
@@ -601,95 +577,53 @@
 		<div class="container">
 			<div class="footer-wrap">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<div class="logo-wrap">
-							<img
-								src="assets/images/logo-white.png"
-								alt="QazBooking"
-								class="logo"
-							/>
-						</div>
-					</div>
+					<img src="assets/images/logo-white.png" alt="QazBooking" />
 				</div>
 
 				<div class="row">
-					<div class="col-md-3 col-md-offset-1">
-						<nav class="footer-nav">
-							<ul>
-								<li><a href="#">Хостелы</a></li>
-								<li><a href="#">Базы отдыха</a></li>
-								<li><a href="#">Активный отдых</a></li>
-								<li><a href="#">Туры</a></li>
-								<li><a href="#">Оздоровительный отдых</a></li>
-								<li><a href="#">Детские лагеря</a></li>
-								<li><a href="#">Транспорт</a></li>
-							</ul>
-						</nav>
-					</div>
+					<nav class="menu">
+						<a href="hostels.html" class="text">Хостелы</a>
+						<a href="recreation_centers.html" class="text">Базы отдыха</a>
+						<a href="leisure.html" class="text">Активный отдых</a>
+						<a href="tours.html" class="text">Туры</a>
+						<a href="wellness_holiday.html" class="text">Оздоровительный отдых</a>
+						<a href="childrens_camp.html" class="text">Детские лагеря</a>
+						<a href="transport.html" class="text">Транспорт</a>
+					</nav>
 
-					<div class="col-md-4">
-						<nav class="footer-nav">
-							<ul>
-								<li><a href="#">О нас</a></li>
-								<li><a href="#">Интересное</a></li>
-								<li><a href="#">Контакты</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Наши партнеры</a></li>
-								<li><a href="#">Служба поддержки</a></li>
-								<li><a href="#">Договор оферты</a></li>
-								<li><a href="#">Политика конфиденциальности</a></li>
-							</ul>
-						</nav>
-					</div>
+					<nav class="menu">
+						<a href="about.html" class="text">О нас</a>
+						<a href="interesting.html" class="text">Интересное</a>
+						<a href="contacts.html" class="text">Контакты</a>
+						<a href="faq.html" class="text">FAQ</a>
+						<a href="partners.html" class="text">Наши партнеры</a>
+						<a href="support.html" class="text">Служба поддержки</a>
+						<a href="contract.html" class="text">Договор оферты</a>
+						<a href="privacy.html" class="text">Политика конфиденциальности</a>
+					</nav>
 
-					<div class="col-md-4">
-						<div class="social-wrap">
-							<div class="title">Мы в социальных сетях</div>
-							<ul class="social">
-								<li><a href="#">
-									<div class="icon in">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="32"
-											height="32"
-											viewBox="0 0 32 32"
-											fill="none"
-										>
-											<path
-												d="M16 2C8.28133 2 2 8.28133 2 16C2 23.7187 8.28133 30 16 30C23.7187 30 30 23.7187 30 16C30 8.28133 23.7187 2 16 2ZM16 4.33333C22.4575 4.33333 27.6667 9.5425 27.6667 16C27.6695 18.793 26.668 21.4938 24.8449 23.6097C23.0218 25.7256 20.4987 27.1154 17.736 27.5255V19.402H21.0587L21.5802 16.0268H17.736V14.1835C17.736 12.7835 18.1968 11.5387 19.507 11.5387H21.6128V8.594C21.243 8.54383 20.4602 8.43533 18.9808 8.43533C15.8915 8.43533 14.0808 10.0663 14.0808 13.7833V16.0268H10.9052V19.402H14.0808V27.4963C11.3564 27.0479 8.88011 25.6454 7.09447 23.5394C5.30884 21.4334 4.33017 18.7611 4.33333 16C4.33333 9.5425 9.5425 4.33333 16 4.33333Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-								</a></li>
-								<li><a href="#">
-									<div class="icon fb">
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											width="32"
-											height="32"
-											viewBox="0 0 32 32"
-											fill="none"
-										>
-											<path
-												d="M10.4003 2.6665H21.6003C25.867 2.6665 29.3337 6.13317 29.3337 10.3998V21.5998C29.3337 23.6508 28.5189 25.6178 27.0686 27.0681C25.6183 28.5184 23.6513 29.3332 21.6003 29.3332H10.4003C6.13366 29.3332 2.66699 25.8665 2.66699 21.5998V10.3998C2.66699 8.34883 3.48175 6.38183 4.93203 4.93154C6.38231 3.48126 8.34932 2.6665 10.4003 2.6665ZM10.1337 5.33317C8.86062 5.33317 7.63972 5.83888 6.73955 6.73906C5.83937 7.63923 5.33366 8.86013 5.33366 10.1332V21.8665C5.33366 24.5198 7.48033 26.6665 10.1337 26.6665H21.867C23.14 26.6665 24.3609 26.1608 25.2611 25.2606C26.1613 24.3604 26.667 23.1395 26.667 21.8665V10.1332C26.667 7.47984 24.5203 5.33317 21.867 5.33317H10.1337ZM23.0003 7.33317C23.4424 7.33317 23.8663 7.50877 24.1788 7.82133C24.4914 8.13389 24.667 8.55781 24.667 8.99984C24.667 9.44186 24.4914 9.86579 24.1788 10.1783C23.8663 10.4909 23.4424 10.6665 23.0003 10.6665C22.5583 10.6665 22.1344 10.4909 21.8218 10.1783C21.5093 9.86579 21.3337 9.44186 21.3337 8.99984C21.3337 8.55781 21.5093 8.13389 21.8218 7.82133C22.1344 7.50877 22.5583 7.33317 23.0003 7.33317ZM16.0003 9.33317C17.7684 9.33317 19.4641 10.0355 20.7144 11.2858C21.9646 12.536 22.667 14.2317 22.667 15.9998C22.667 17.7679 21.9646 19.4636 20.7144 20.7139C19.4641 21.9641 17.7684 22.6665 16.0003 22.6665C14.2322 22.6665 12.5365 21.9641 11.2863 20.7139C10.036 19.4636 9.33366 17.7679 9.33366 15.9998C9.33366 14.2317 10.036 12.536 11.2863 11.2858C12.5365 10.0355 14.2322 9.33317 16.0003 9.33317ZM16.0003 11.9998C14.9395 11.9998 13.922 12.4213 13.1719 13.1714C12.4218 13.9216 12.0003 14.939 12.0003 15.9998C12.0003 17.0607 12.4218 18.0781 13.1719 18.8283C13.922 19.5784 14.9395 19.9998 16.0003 19.9998C17.0612 19.9998 18.0786 19.5784 18.8288 18.8283C19.5789 18.0781 20.0003 17.0607 20.0003 15.9998C20.0003 14.939 19.5789 13.9216 18.8288 13.1714C18.0786 12.4213 17.0612 11.9998 16.0003 11.9998Z"
-												fill="white"
-											/>
-										</svg>
-									</div>
-								</a></li>
-							</ul>
+					<div class="right">
+						<div>
+							<h5 class="text">Мы в социальных сетях</h5>
+							<div class="social row">
+								<a href="#">
+									<img src="assets/icons/facebook-white.svg" alt="facebook" />
+								</a>
+								<a href="#">
+									<img src="assets/icons/instagram-white.svg" alt="instagram" />
+								</a>
+							</div>
 						</div>
 
-						<p class="zerone">
-							Разработка сайта — 
-							<a href="https://zeronetech.kz" tabindex="_blank">Zerone Technology</a>
+						<div class="zerone row h-row">
+							<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
 							<img
 								src="https://zeronetech.kz/zerone-min-logo.svg"
-								width="20"
+								width="36"
+								height="38"
 								alt="Zerone Technology"
 							/>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -703,11 +637,11 @@
 			<img
 				src="assets/icons/close.svg"
 				alt="close"
-				class="button"
+				class="btn"
 				onclick="closeModal()"
 			/>
 
-			<h4 class="name text">Хостел Арлеон</h5>
+			<h5 class="name text">Хостел Арлеон</h5>
 
 			<div class="galery">
 				<img
@@ -747,7 +681,7 @@
 					</div>
 					<div class="date">
 						<p class="text">14:56</p>
-						<p class="dot text">•</p>
+						<p class="date-dot text">•</p>
 						<p class="text">10.11.2023</p>
 					</div>
 				</div>
