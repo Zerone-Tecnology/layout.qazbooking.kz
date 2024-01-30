@@ -104,17 +104,20 @@ p
 	background-color: $accent
 	&-text
 		font-family: 'Nunito Sans', sans-serif
-		font-size: 16px
-		font-weight: 400
 		color: $white
-		margin: 0
 	&:hover
-		color: $white
 		background-color: #012657
 	&:active
 		background-color: #3347B4
 	&:focus
 		background-color: #0A3062
+
+.header,
+.footer
+	&-wrap .row
+		&:after,
+		&:before
+			display: none
 
 .header
 	position: fixed
@@ -131,12 +134,9 @@ p
 			font-size: 20px
 			font-weight: 400
 			color: $dark
-			margin: 0
 		.logo
 			margin-right: 90px
 		.location
-			display: flex
-			align-content: center
 			gap: 8px
 			margin-right: 250px
 			padding-bottom: 5px
@@ -144,21 +144,17 @@ p
 				height: 24px
 				padding: 1px 2px
 		.information
-			display: flex
-			align-content: center
 			gap: 55px
 			.social
-				display: flex
 				gap: 24px
 				.icon
 					height: 32px
-		.auth
+		.button
 			margin-left: 55px
 			.icon
 				width: 16px
 				height: 16px
 		.menu
-			display: flex
 			gap: 16px
 			border-top: 1px solid #D4D4D4
 			margin-top: 19.5px
@@ -178,9 +174,6 @@ p
 		background-color: #464646
 		.row
 			gap: 52.5px
-			&:after,
-			&:before
-				display: none
 			.text
 				color: $white
 			.menu

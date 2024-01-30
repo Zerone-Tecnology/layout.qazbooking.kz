@@ -1397,13 +1397,9 @@ p {
 }
 .button-text {
   font-family: "Nunito Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
   color: #FFF;
-  margin: 0;
 }
 .button:hover {
-  color: #FFF;
   background-color: #012657;
 }
 .button:active {
@@ -1411,6 +1407,12 @@ p {
 }
 .button:focus {
   background-color: #0A3062;
+}
+
+.header-wrap .row:after, .header-wrap .row:before,
+.footer-wrap .row:after,
+.footer-wrap .row:before {
+  display: none;
 }
 
 .header {
@@ -1430,14 +1432,11 @@ p {
   font-size: 20px;
   font-weight: 400;
   color: #1E1E1E;
-  margin: 0;
 }
 .header-wrap .logo {
   margin-right: 90px;
 }
 .header-wrap .location {
-  display: flex;
-  align-content: center;
   gap: 8px;
   margin-right: 250px;
   padding-bottom: 5px;
@@ -1447,26 +1446,22 @@ p {
   padding: 1px 2px;
 }
 .header-wrap .information {
-  display: flex;
-  align-content: center;
   gap: 55px;
 }
 .header-wrap .information .social {
-  display: flex;
   gap: 24px;
 }
 .header-wrap .information .social .icon {
   height: 32px;
 }
-.header-wrap .auth {
+.header-wrap .button {
   margin-left: 55px;
 }
-.header-wrap .auth .icon {
+.header-wrap .button .icon {
   width: 16px;
   height: 16px;
 }
 .header-wrap .menu {
-  display: flex;
   gap: 16px;
   border-top: 1px solid #D4D4D4;
   margin-top: 19.5px;
@@ -1488,9 +1483,6 @@ p {
 }
 .footer-wrap .row {
   gap: 52.5px;
-}
-.footer-wrap .row:after, .footer-wrap .row:before {
-  display: none;
 }
 .footer-wrap .row .text {
   color: #FFF;
