@@ -1364,6 +1364,7 @@ ul {
 }
 
 a {
+  text-decoration: none !important;
   color: #1E1E1E;
 }
 
@@ -1573,9 +1574,6 @@ p {
   top: 10.5px;
   right: 10.5px;
 }
-.modal-content .text {
-  color: #1E1E1E;
-}
 .modal-content .name {
   line-height: 36px;
   text-overflow: ellipsis;
@@ -1595,9 +1593,10 @@ p {
   border-radius: 10.141px;
 }
 .modal-content .more {
+  align-items: center;
   gap: 8px;
 }
-.modal-content .more .text {
+.modal-content .more-text {
   font-weight: 400;
   line-height: 36px;
 }
