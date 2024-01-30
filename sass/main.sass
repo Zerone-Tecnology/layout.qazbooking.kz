@@ -67,6 +67,9 @@ ul
 a
 	color: $dark
 
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+
 nav
 	&.mainMenu
 		border-top: 1px solid #D4D4D4
@@ -103,14 +106,14 @@ nav
 		padding: 15px
 		border-radius: 15px
 		background-color: $white
-		box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, .15)
+				box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, .15)
 		.h-row
 			display: flex
 			div[class^="col-"]
 				display: flex
 		.location-wrap
 			display: flex
-flex-wrap: wrap
+			flex-wrap: wrap
 			align-content: center
 						.icon
 				display: inline-block
@@ -118,7 +121,7 @@ flex-wrap: wrap
 				height: 15px
 		.information-wrap
 			display: flex
-justify-content: flex-end
+			justify-content: flex-end
 			flex-wrap: wrap
 			align-content: center
 			li
@@ -128,7 +131,7 @@ justify-content: flex-end
 				margin-right: 15px
 			.social
 				margin-left: 25px
-		.auth-wrap
+			.auth-wrap
 			display: flex
 			align-content: center
 			flex-wrap: wrap
@@ -689,6 +692,7 @@ justify-content: flex-end
 				.btn
 					display: inline-block
 					margin-top: 15px
+
 .footer
 	margin-top: 100px
 	.footer-wrap
@@ -712,6 +716,117 @@ justify-content: flex-end
 	.zerone
 		margin-top: 55px
 
-		
+.modal
+	display: none
+	&-background,
+	&-content
+		position: fixed
+	&-background 
+		z-index: 3
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, .3)
+	&-content
+		z-index: 4
+		top: 50%
+		left: 50%
+		display: flex
+		flex-direction: column
+		gap: 29px
+		width: 754px
+		transform: translate(-50%, -50%)
+		padding: 35px 40px 35.51px
+		border-radius: 16px
+		background-color: $white
+		.button
+			position: absolute
+			top: 10.5px
+			right: 10.5px
+			cursor: pointer
+		.text
+			color: $dark
+		.name
+			font-size: 24px
+			font-weight: 500
+			line-height: 36px
+			text-overflow: ellipsis
+		.galery,
+		.more,
+		.rating
+			display: flex
+		.galery
+			justify-content: space-between
+			height: 125.5px
+			&-image
+				width: 212px
+				height: 100%
+				border-radius: 10.141px
+		.more
+			gap: 8px
+			.text
+				font-size: 24px
+				font-weight: 400
+				line-height: 36px
+		.info
+			display: flex
+			flex-direction: column
+			gap: 23px
+			.rating
+				align-items: center
+				gap: 6px
+				width: max-content
+				height: 32px
+				padding: 4px
+				border-radius: 8px
+				background-color: #F4F4F4
+				&-text
+					font-size: 16px
+					font-weight: 400
+					line-height: 24px
+					color: #656565
+			.description
+				font-size: 18px
+				font-weight: 400
+				line-height: 22px
+			.bottom
+				display: flex
+				justify-content: space-between
+				.text
+					font-size: 16px
+					font-weight: 400
+					line-height: 19px
+					color: #A1A1A1
+				.user
+					display: flex
+					align-items: center
+					gap: 8px
+				.date
+					display: flex
+					align-items: center
+					gap: 8px
+					.dot
+						font-weight: 300
+						color: #D4D4D4
+	&.show
+		display: flex
+		-webkit-animation: fadeIn 1s
+		animation: fadeIn 1s
+	@-webkit-keyframes fadeIn {
+		from {
+			opacity: 0
+		} to {
+			opacity: 1
+		}
+	}
+	@keyframes fadeIn {
+		from {
+			opacity: 0
+		} to {
+			opacity: 1
+		}
+	}
+
 // Всегда в конце
 @import media
