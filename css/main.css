@@ -1319,7 +1319,7 @@ body {
 }
 
 .container {
-  width: 1218px;
+  width: 63.4375vw;
   padding: 0;
 }
 .container .row {
@@ -1432,7 +1432,7 @@ p {
   transform: translateX(-50%);
 }
 .header-wrap {
-  padding: 13px 33px 21px;
+  padding: 13px 1.71875vw 21px;
   background-color: #FFF;
   border-radius: 16px;
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
@@ -1443,11 +1443,12 @@ p {
   color: #1E1E1E;
 }
 .header-wrap .logo {
-  margin-right: 90px;
+  width: 13.17708vw;
+  margin-right: 4.6875vw;
 }
 .header-wrap .location {
-  gap: 8px;
-  margin-right: 250px;
+  gap: 0.41667vw;
+  margin-right: 13.02083vw;
   padding-bottom: 5px;
 }
 .header-wrap .location .icon {
@@ -1455,30 +1456,30 @@ p {
   padding: 1px 2px;
 }
 .header-wrap .information {
-  gap: 55px;
+  gap: 2.86458vw;
 }
 .header-wrap .information .social {
-  gap: 24px;
+  gap: 1.25vw;
 }
 .header-wrap .information .social .icon {
   height: 32px;
 }
 .header-wrap .button {
-  margin-left: 55px;
+  margin-left: 2.86458vw;
 }
 .header-wrap .button .icon {
   width: 16px;
   height: 16px;
 }
 .header-wrap .menu {
-  gap: 16px;
+  gap: 0.83333vw;
   border-top: 1px solid #D4D4D4;
   margin-top: 19.5px;
   padding-top: 11.5px;
 }
 .header-wrap .menu .text {
   display: block;
-  padding: 10px 8px;
+  padding: 10px 0.41667vw;
   font-weight: 500;
   line-height: 24px;
 }
@@ -1486,12 +1487,12 @@ p {
 .footer-wrap {
   display: grid;
   grid-gap: 36px;
-  padding: 49px 106px 54px 104px;
+  padding: 49px 5.52083vw 54px 5.41667vw;
   border-radius: 16px 16px 0px 0px;
   background-color: #464646;
 }
 .footer-wrap .row {
-  gap: 52.5px;
+  gap: 2.734375vw;
 }
 .footer-wrap .row .text {
   color: #FFF;
@@ -1510,11 +1511,11 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 .footer-wrap .row .right .social {
-  gap: 24px;
+  gap: 1.25vw;
   margin-top: 16px;
 }
 .footer-wrap .row .right .zerone {
-  gap: 25px;
+  gap: 1.30208vw;
   margin-top: 80px;
 }
 
@@ -1522,10 +1523,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 0.41667vw;
   width: auto;
   height: 48px;
-  padding: 14px 32px;
+  padding: 14px 1.66667vw;
   border-radius: 4px;
   background-color: #03306B;
   cursor: pointer;
@@ -1545,8 +1546,8 @@ p {
 }
 
 .breadcrumbs {
-  gap: 10px;
-  margin: 60px 0 32px;
+  gap: 0.52083vw;
+  margin-bottom: 32px;
 }
 .breadcrumbs-item {
   gap: 10px;
@@ -1585,16 +1586,16 @@ p {
   display: flex;
   flex-direction: column;
   gap: 29px;
-  width: 754px;
+  width: 39.27083vw;
   transform: translate(-50%, -50%);
-  padding: 35px 40px 35.51px;
+  padding: 35px 2.08333vw 35.51px;
   border-radius: 16px;
   background-color: #FFF;
 }
 .modal-content .btn {
   position: absolute;
   top: 10.5px;
-  right: 10.5px;
+  right: 0.546875vw;
 }
 .modal-content .name {
   line-height: 36px;
@@ -1610,13 +1611,13 @@ p {
   height: 125.5px;
 }
 .modal-content .galery-image {
-  width: 212px;
+  width: 11.04167vw;
   height: 100%;
   border-radius: 10.141px;
 }
 .modal-content .more {
   align-items: center;
-  gap: 8px;
+  gap: 0.41667vw;
 }
 .modal-content .more-text {
   line-height: 36px;
@@ -1628,11 +1629,11 @@ p {
 }
 .modal-content .info .rating {
   align-items: center;
-  gap: 6px;
+  gap: 0.3125vw;
   width: -moz-max-content;
   width: max-content;
   height: 32px;
-  padding: 4px;
+  padding: 4px 0.20833vw;
   border-radius: 8px;
   background-color: #F4F4F4;
 }
@@ -1652,7 +1653,7 @@ p {
 .modal-content .info .bottom .date {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.41667vw;
 }
 .modal-content .info .bottom .text {
   line-height: 19px;
