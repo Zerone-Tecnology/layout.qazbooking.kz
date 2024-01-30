@@ -52,7 +52,10 @@ body
 	width: 1218px
 	padding: 0
 	.row
+		display: flex
 		margin: 0
+	.h-row
+		align-items: center
 
 .img-responsive
 	display: block
@@ -124,9 +127,6 @@ p
 		background-color: $white
 		border-radius: 16px
 		box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, .15)
-		.h-row
-			display: flex
-			align-items: center
 		.text
 			font-size: 20px
 			font-weight: 400
@@ -177,7 +177,6 @@ p
 		border-radius: 16px 16px 0px 0px
 		background-color: #464646
 		.row
-			display: flex
 			gap: 52.5px
 			&:after,
 			&:before
@@ -196,12 +195,9 @@ p
 				.text
 					font-family: 'Montserrat', sans-serif
 				.social
-					display: flex
 					gap: 24px
 					margin-top: 16px
 				.zerone
-					display: flex
-					align-items: center
 					gap: 25px
 					margin-top: 80px
 
@@ -238,8 +234,6 @@ p
 		.text
 			color: $dark
 		.name
-			font-size: 24px
-			font-weight: 500
 			line-height: 36px
 			text-overflow: ellipsis
 		.galery,
@@ -256,7 +250,6 @@ p
 		.more
 			gap: 8px
 			.text
-				font-size: 24px
 				font-weight: 400
 				line-height: 36px
 		.info
@@ -272,33 +265,25 @@ p
 				border-radius: 8px
 				background-color: #F4F4F4
 				&-text
-					font-size: 16px
-					font-weight: 400
 					line-height: 24px
 					color: #656565
 			.description
 				font-size: 18px
-				font-weight: 400
 				line-height: 22px
 			.bottom
 				display: flex
 				justify-content: space-between
-				.text
-					font-size: 16px
-					font-weight: 400
-					line-height: 19px
-					color: #A1A1A1
-				.user
-					display: flex
-					align-items: center
-					gap: 8px
+				.user,
 				.date
 					display: flex
 					align-items: center
 					gap: 8px
-					&-dot
-						font-weight: 300
-						color: #D4D4D4
+				.text
+					line-height: 19px
+					color: #A1A1A1
+				.date-dot
+					font-weight: 300
+					color: #D4D4D4
 
 .main
 	margin-top: 30px

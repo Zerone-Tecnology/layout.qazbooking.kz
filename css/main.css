@@ -1323,7 +1323,11 @@ body {
   padding: 0;
 }
 .container .row {
+  display: flex;
   margin: 0;
+}
+.container .h-row {
+  align-items: center;
 }
 
 .img-responsive {
@@ -1422,10 +1426,6 @@ p {
   border-radius: 16px;
   box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, 0.15);
 }
-.header-wrap .h-row {
-  display: flex;
-  align-items: center;
-}
 .header-wrap .text {
   font-size: 20px;
   font-weight: 400;
@@ -1487,7 +1487,6 @@ p {
   background-color: #464646;
 }
 .footer-wrap .row {
-  display: flex;
   gap: 52.5px;
 }
 .footer-wrap .row:after, .footer-wrap .row:before {
@@ -1510,13 +1509,10 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 .footer-wrap .row .right .social {
-  display: flex;
   gap: 24px;
   margin-top: 16px;
 }
 .footer-wrap .row .right .zerone {
-  display: flex;
-  align-items: center;
   gap: 25px;
   margin-top: 80px;
 }
@@ -1560,8 +1556,6 @@ p {
   color: #1E1E1E;
 }
 .modal-content .name {
-  font-size: 24px;
-  font-weight: 500;
   line-height: 36px;
   text-overflow: ellipsis;
 }
@@ -1583,7 +1577,6 @@ p {
   gap: 8px;
 }
 .modal-content .more .text {
-  font-size: 24px;
   font-weight: 400;
   line-height: 36px;
 }
@@ -1603,35 +1596,26 @@ p {
   background-color: #F4F4F4;
 }
 .modal-content .info .rating-text {
-  font-size: 16px;
-  font-weight: 400;
   line-height: 24px;
   color: #656565;
 }
 .modal-content .info .description {
   font-size: 18px;
-  font-weight: 400;
   line-height: 22px;
 }
 .modal-content .info .bottom {
   display: flex;
   justify-content: space-between;
 }
-.modal-content .info .bottom .text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  color: #A1A1A1;
-}
-.modal-content .info .bottom .user {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+.modal-content .info .bottom .user,
 .modal-content .info .bottom .date {
   display: flex;
   align-items: center;
   gap: 8px;
+}
+.modal-content .info .bottom .text {
+  line-height: 19px;
+  color: #A1A1A1;
 }
 .modal-content .info .bottom .date-dot {
   font-weight: 300;
