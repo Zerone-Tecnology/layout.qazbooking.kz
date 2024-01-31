@@ -1,0 +1,51 @@
+<svg
+	width="20"
+	height="22"
+	viewBox="0 0 20 22"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="elements">
+		<path
+			id="Vector"
+			d="M16 4.5L17 3.5M3 3.5L4 4.5"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<circle
+			id="Ellipse 1545"
+			cx="10"
+			cy="12"
+			r="9"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+		/>
+		<path
+			id="Path"
+			d="M10 8.5V12.5L12 14.5"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector_2"
+			d="M10 2.5V1"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector_3"
+			d="M8 1H12"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

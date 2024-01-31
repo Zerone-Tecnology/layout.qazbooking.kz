@@ -213,7 +213,7 @@ p
 				&-image
 					width: 100%
 					height: 100%
-					object-position: 100% 64%
+					object-position: 100% 44%
 				&-content
 					position: absolute
 					top: 0
@@ -237,39 +237,35 @@ p
 				&-content
 					margin-top: 40px
 			.popular-content__header,
-			.blogs-header
+			.blogs-header,
+			.category-content
 				justify-content: space-between
-			.category
-				.section-title
+			.category-content .block
+				width: 7.29167vw
+				&-item
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 100%
+					height: 7.29167vw
+					border-radius: 20px
+					&.blue
+						background-color: #E0EDFF
+					&.green
+						background-color: #E6FFD0
+					&.orange
+						background-color: #FFE9C8
+					&.ping
+						background-color: #FED7FF
+					&.yellow
+						background-color: #FFF7DC
+					&.red
+						background-color: #FFECEC
+					&.purple
+						background-color: #B6C1FF
+				&-text
 					text-align: center
-				&-content
-					justify-content: space-between
-					.block
-						width: 7.29167vw
-						&-item
-							display: flex
-							align-items: center
-							justify-content: center
-							width: 100%
-							height: 7.29167vw
-							border-radius: 20px
-							&.blue
-								background-color: #E0EDFF
-							&.green
-								background-color: #E6FFD0
-							&.orange
-								background-color: #FFE9C8
-							&.ping
-								background-color: #FED7FF
-							&.yellow
-								background-color: #FFF7DC
-							&.red
-								background-color: #FFECEC
-							&.purple
-								background-color: #B6C1FF
-						&-text
-							text-align: center
-							margin-top: 20px
+					margin-top: 20px
 			.seo
 				&-subtitle,
 				&-title
@@ -583,8 +579,21 @@ p
 							background-color: $accent
 							.text
 								color: $white					
+		.info
+			display: grid
+			grid-gap: 32px
+			margin-top: 112px
+			&-title
+				font-size: 39px
+				color: $dark
+			&-text
+				font-size: 24px
+			&-list
+				list-style: disc
+				margin-top: -32px
+				padding-left: .75vw
 	&.detail
-		margin: 60px 0 259px
+		margin: 60px 0 150px
 		.head
 			display: grid
 			grid-gap: 24px
@@ -644,6 +653,7 @@ p
 					width: 100%
 					height: 100%
 		.info
+			justify-content: space-between
 			margin-top: 65px
 			&-left
 				display: grid
@@ -718,9 +728,76 @@ p
 										text-decoration: underline
 								&-right .button
 									margin-top: 26px
-		.reviews,
-		.popular
-			margin-top: 80px
+			&-right
+				display: flex
+				flex-direction: column
+				gap: 48px
+				width: 14.6875vw
+				.title
+					line-height: 24px
+				.text
+					line-height: 19px
+				.advantages,
+				.contacts
+					background-color: #F0F0F0
+					border-radius: 16px
+				.advantages
+					padding: 20px 1.04167vw 19px
+					.col
+						display: grid
+						grid-gap: 8px
+						.big
+							gap: .104167vw
+							margin-top: 16px
+						.small
+							gap: .41667vw
+					.button
+						margin-top: 20px
+				.locations
+					position: relative
+					display: grid
+					grid-gap: 17px
+					&-map
+						width: 100%
+						height: 387px
+					&-popup
+						position: absolute
+						bottom: 20%
+						left: 10.33%
+						width: 7.70833vw
+						height: 74px
+						background-color: $white
+						border-radius: 10px
+						box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
+						padding: 8px .52083vw
+						.name
+							font-weight: 600
+							margin-bottom: 11px
+						.row
+							justify-content: space-between
+							.rating
+								width: 1.71875vw
+								height: 28px
+								background-color: $accent
+								padding: 2px .3125vw
+								&-text
+									color: $white
+							.review
+								font-size: 14px
+								gap: 0.104167vw
+								span
+									font-weight: 600
+				.contacts
+					display: grid
+					grid-gap: 16px
+					padding: 20px 1.04167vw 46px
+					.title
+						font-weight: 500
+					.text span
+						font-weight: 700
+			.reviews,
+			.popular
+				margin-top: 80px
 		.popular-content__body
 			margin-top: 24px
 

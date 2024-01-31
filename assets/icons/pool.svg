@@ -1,0 +1,42 @@
+<svg
+	width="22"
+	height="20"
+	viewBox="0 0 22 20"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="elements">
+		<path
+			id="Vector"
+			d="M21 19H20C18.5486 19 17.278 18.1411 17 17C16.722 18.1411 15.4514 19 14 19C12.5486 19 11.278 18.1411 11 17C10.722 18.1411 9.45137 19 8 19C6.54863 19 5.27796 18.1411 5 17C4.72204 18.1411 3.45137 19 2 19H1"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 5449"
+			d="M18 1L17.7351 1.0883C16.4151 1.52832 15.755 1.74832 15.3775 2.2721C15 2.79587 15 3.49159 15 4.88304L15 15"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 5450"
+			d="M10 1L9.73509 1.0883C8.41505 1.52832 7.75503 1.74832 7.37752 2.2721C7 2.79587 7 3.49159 7 4.88304L7 15"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector_2"
+			d="M7 5H15M7 9H15M7 13H15"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

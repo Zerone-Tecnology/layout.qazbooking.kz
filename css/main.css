@@ -1542,8 +1542,8 @@ p {
 .main.home .container .hero-image {
   width: 100%;
   height: 100%;
-  -o-object-position: 100% 64%;
-     object-position: 100% 64%;
+  -o-object-position: 100% 44%;
+     object-position: 100% 44%;
 }
 .main.home .container .hero-content {
   position: absolute;
@@ -1572,12 +1572,7 @@ p {
   margin-top: 40px;
 }
 .main.home .container .popular-content__header,
-.main.home .container .blogs-header {
-  justify-content: space-between;
-}
-.main.home .container .category .section-title {
-  text-align: center;
-}
+.main.home .container .blogs-header,
 .main.home .container .category-content {
   justify-content: space-between;
 }
@@ -2018,8 +2013,25 @@ p {
 .main.filter .content-right__pagination .pagination-element.active .text {
   color: #FFF;
 }
+.main.filter .info {
+  display: grid;
+  grid-gap: 32px;
+  margin-top: 112px;
+}
+.main.filter .info-title {
+  font-size: 39px;
+  color: #1E1E1E;
+}
+.main.filter .info-text {
+  font-size: 24px;
+}
+.main.filter .info-list {
+  list-style: disc;
+  margin-top: -32px;
+  padding-left: 0.75vw;
+}
 .main.detail {
-  margin: 60px 0 259px;
+  margin: 60px 0 150px;
 }
 .main.detail .head {
   display: grid;
@@ -2097,6 +2109,7 @@ p {
   height: 100%;
 }
 .main.detail .info {
+  justify-content: space-between;
   margin-top: 65px;
 }
 .main.detail .info-left {
@@ -2192,8 +2205,96 @@ p {
 .main.detail .info-left .variant-content .card-content .bottom-right .button {
   margin-top: 26px;
 }
-.main.detail .reviews,
-.main.detail .popular {
+.main.detail .info-right {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 14.6875vw;
+}
+.main.detail .info-right .title {
+  line-height: 24px;
+}
+.main.detail .info-right .text {
+  line-height: 19px;
+}
+.main.detail .info-right .advantages,
+.main.detail .info-right .contacts {
+  background-color: #F0F0F0;
+  border-radius: 16px;
+}
+.main.detail .info-right .advantages {
+  padding: 20px 1.04167vw 19px;
+}
+.main.detail .info-right .advantages .col {
+  display: grid;
+  grid-gap: 8px;
+}
+.main.detail .info-right .advantages .col .big {
+  gap: 0.104167vw;
+  margin-top: 16px;
+}
+.main.detail .info-right .advantages .col .small {
+  gap: 0.41667vw;
+}
+.main.detail .info-right .advantages .button {
+  margin-top: 20px;
+}
+.main.detail .info-right .locations {
+  position: relative;
+  display: grid;
+  grid-gap: 17px;
+}
+.main.detail .info-right .locations-map {
+  width: 100%;
+  height: 387px;
+}
+.main.detail .info-right .locations-popup {
+  position: absolute;
+  bottom: 20%;
+  left: 10.33%;
+  width: 7.70833vw;
+  height: 74px;
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.25);
+  padding: 8px 0.52083vw;
+}
+.main.detail .info-right .locations-popup .name {
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+.main.detail .info-right .locations-popup .row {
+  justify-content: space-between;
+}
+.main.detail .info-right .locations-popup .row .rating {
+  width: 1.71875vw;
+  height: 28px;
+  background-color: #03306B;
+  padding: 2px 0.3125vw;
+}
+.main.detail .info-right .locations-popup .row .rating-text {
+  color: #FFF;
+}
+.main.detail .info-right .locations-popup .row .review {
+  font-size: 14px;
+  gap: 0.104167vw;
+}
+.main.detail .info-right .locations-popup .row .review span {
+  font-weight: 600;
+}
+.main.detail .info-right .contacts {
+  display: grid;
+  grid-gap: 16px;
+  padding: 20px 1.04167vw 46px;
+}
+.main.detail .info-right .contacts .title {
+  font-weight: 500;
+}
+.main.detail .info-right .contacts .text span {
+  font-weight: 700;
+}
+.main.detail .info .reviews,
+.main.detail .info .popular {
   margin-top: 80px;
 }
 .main.detail .popular-content__body {
