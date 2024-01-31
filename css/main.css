@@ -2179,6 +2179,7 @@ p {
 }
 .main.detail .info-left .variant-content .card-content .title {
   font-weight: 600;
+  margin-bottom: 20px;
 }
 .main.detail .info-left .variant-content .card-content .list {
   gap: 1.14583vw;
@@ -2188,6 +2189,22 @@ p {
   border-top: 1px solid #D4D4D4;
   margin-top: 39.5px;
   padding-top: 39.5px;
+}
+.main.detail .info-left .variant-content .card-content .bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.main.detail .info-left .variant-content .card-content .bottom-left .text {
+  font-size: 18px;
+  font-weight: 600;
+}
+.main.detail .info-left .variant-content .card-content .bottom-left .btn {
+  color: #03306B;
+  text-decoration: underline;
+}
+.main.detail .info-left .variant-content .card-content .bottom-right .button {
+  margin-top: 26px;
 }
 
 .breadcrumbs {

@@ -718,6 +718,7 @@ p
 							width: 29.27083vw
 							.title
 								font-weight: 600
+								margin-bottom: 20px
 							.list
 								gap: 1.14583vw
 							.bottom
@@ -725,6 +726,18 @@ p
 								border-top: 1px solid $grey-secondary
 								margin-top: 39.5px
 								padding-top: 39.5px
+								&-left
+									display: flex
+									flex-direction: column
+									gap: 8px
+									.text
+										font-size: 18px
+										font-weight: 600
+									.btn
+										color: $accent
+										text-decoration: underline
+								&-right .button
+									margin-top: 26px
 
 .breadcrumbs
 	gap: .52083vw
