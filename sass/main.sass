@@ -49,7 +49,7 @@ body
 	overflow-x: hidden
 
 .container
-	width: 1218px
+	width: 63.4375vw
 	padding: 0
 	.row
 		display: flex
@@ -57,6 +57,12 @@ body
 		margin-left: 0
 	.h-row
 		align-items: center
+
+.row,
+.container
+	&:after,
+	&:before
+		display: none
 
 .img-responsive
 	display: block
@@ -73,19 +79,32 @@ body
 img
 	background-repeat: no-repeat
 	object-fit: cover
+input
+	border: none
+	outline: none
 ul
 	list-style-type: none
 	padding: 0
 	margin: 0
 a
+	text-decoration: none !important
 	color: $dark
 h1, h2, h3, h4, h5, h6, p
 	margin: 0
 	color: $dark
 h1
+	font-size: 48px
+	font-weight: 600
+	color: $white
+h2
 	font-size: 32px
 	font-weight: 600
-	color: $dark
+h3
+	font-size: 32px
+	font-weight: 400
+h4
+	font-size: 20px
+	font-weight: 700
 h5
 	font-size: 24px
 	font-weight: 500
@@ -99,11 +118,6 @@ p
 .btn	
 	cursor: pointer
 
-.row
-	&:after,
-	&:before
-		display: none
-
 .header
 	position: fixed
 	z-index: 2
@@ -111,7 +125,7 @@ p
 	left: 50%
 	transform: translateX(-50%)
 	&-wrap
-		padding: 13px 33px 21px
+		padding: 13px 1.71875vw 21px
 		background-color: $white
 		border-radius: 16px
 		box-shadow: 0px 4px 19px 0px rgba(0, 0, 0, .15)
@@ -120,33 +134,34 @@ p
 			font-weight: 400
 			color: $dark
 		.logo
-			margin-right: 90px
+			width: 13.17708vw
+			margin-right: 4.6875vw
 		.location
-			gap: 8px
-			margin-right: 250px
+			gap: .41667vw
+			margin-right: 13.02083vw
 			padding-bottom: 5px
 			.icon
 				height: 24px
 				padding: 1px 2px
 		.information
-			gap: 55px
+			gap: 2.86458vw
 			.social
-				gap: 24px
+				gap: 1.25vw
 				.icon
 					height: 32px
 		.button
-			margin-left: 55px
+			margin-left: 2.86458vw
 			.icon
 				width: 16px
 				height: 16px
 		.menu
-			gap: 16px
-			border-top: 1px solid #D4D4D4
+			gap: .83333vw
+			border-top: 1px solid $grey-secondary
 			margin-top: 19.5px
 			padding-top: 11.5px
 			.text
 				display: block
-				padding: 10px 8px
+				padding: 10px .41667vw
 				font-weight: 500
 				line-height: 24px
 
@@ -154,11 +169,11 @@ p
 	&-wrap
 		display: grid
 		grid-gap: 36px
-		padding: 49px 106px 54px 104px
+		padding: 49px 5.52083vw 54px 5.41667vw
 		border-radius: 16px 16px 0px 0px
 		background-color: #464646
 		.row
-			gap: 52.5px
+			gap: 2.734375vw
 			.text
 				color: $white
 			.menu
@@ -173,20 +188,578 @@ p
 				.text
 					font-family: 'Montserrat', sans-serif
 				.social
-					gap: 24px
+					gap: 1.25vw
 					margin-top: 16px
 				.zerone
-					gap: 25px
+					gap: 1.30208vw
 					margin-top: 80px
+
+.main
+	padding-top: 183px
+	&.home
+		margin: 55px 0 143px
+		.container
+			display: flex
+			flex-direction: column
+			gap: 100px
+			.hero,
+			.about
+				border-radius: 16px
+			.hero
+				position: relative
+				height: 475px
+				overflow: hidden
+				&-image
+					width: 100%
+					height: 100%
+					object-position: 100% 64%
+				&-content
+					position: absolute
+					top: 0
+					width: -webkit-fill-available
+					height: -webkit-fill-available
+					padding: 47px 75px 89px
+					.box
+						width: 46.161%
+						margin-bottom: 63px
+						.title
+							line-height: 58px
+							margin-bottom: 30px
+						.text
+							font-weight: 400
+							line-height: 29px
+							color: $white
+			.category,
+			.popular,
+			.reviews,
+			.seo,
+			.blogs
+				&-content
+					margin-top: 40px
+			.popular-content__body,
+			.reviews-content,
+			.blogs-content
+				gap: 1.5625vw
+			.popular-content__header
+			.reviews-header
+			.blogs-header
+				justify-content: space-between
+			.category
+				.section-title
+					text-align: center
+				&-content
+					justify-content: space-between
+					.block
+						width: 7.29167vw
+						&-item
+							display: flex
+							align-items: center
+							justify-content: center
+							width: 100%
+							height: 7.29167vw
+							border-radius: 20px
+							&.blue
+								background-color: #E0EDFF
+							&.green
+								background-color: #E6FFD0
+							&.orange
+								background-color: #FFE9C8
+							&.ping
+								background-color: #FED7FF
+							&.yellow
+								background-color: #FFF7DC
+							&.red
+								background-color: #FFECEC
+							&.purple
+								background-color: #B6C1FF
+						&-text
+							text-align: center
+							margin-top: 20px
+			.popular-content
+				display: grid
+				grid-gap: 50px
+				&__header
+					margin-bottom: 12px
+					.icon
+						padding: 15px 22.5px
+				.card
+					width: 14.6875vw
+					height: 286px
+					border: 1px solid $grey-secondary
+					border-radius: 16px
+					&-image
+						width: 100%
+						height: 158px
+						border-radius: 16px
+						overflow: hidden
+						img
+							width: 100%
+							height: 100%
+					&-content
+						position: relative
+						height: 110px
+						margin-top: 16px
+						margin-left: .36458vw
+						&__title
+							white-space: nowrap
+							overflow: hidden
+							text-overflow: ellipsis
+							font-size: 18px
+							font-weight: 500
+							margin-bottom: 8px
+						&__location,
+						&__price,
+						&__rating
+							display: flex
+							align-items: center
+						&__location
+							gap: .36458vw
+							.text
+								color: $grey
+						&__price,
+						&__rating
+							position: absolute
+						&__price
+							bottom: 8.1819%
+							left: 0
+							gap: .26042vw
+						&__rating
+							bottom: 5.4547%
+							right: 2.56441%
+							gap: .3125vw
+							padding: 4px .20833vw
+							.text
+								color: #656565
+			.reviews
+				&-header__icons
+					gap: .41667vw
+					.icon
+						display: flex
+						align-items: center
+						justify-content: center
+						width: 3.28125vw
+						height: 43px
+						border-radius: 8px
+						background-color: #ECECEC
+						&:first-child
+							transform: rotate(180deg)
+				&-content
+					.review
+						position: relative
+						display: grid
+						grid-gap: 23px
+						width: 20.10467vw
+						padding: 15px .78125vw
+						border: 1px solid $grey
+						border-radius: 8px
+						&-button
+							position: absolute
+							top: 16px
+							right: .83333vw
+						&-title
+							font-weight: 500
+						&-text
+							font-size: 18px
+							line-height: 21.6px
+						&-footer
+							justify-content: space-between
+							&__author,
+							&__time
+								gap: .41667vw
+							&__author,
+							&__time
+								.text
+									color: $grey
+							&__time .dot
+								font-weight: 300
+								color: $grey-secondary
+			.seo
+				&-subtitle,
+				&-title
+					text-align: center
+				&-subtitle
+					margin-bottom: 12px
+					color: $grey
+				&-content:last-child
+					display: grid
+					grid-gap: 28px 1.40625vw
+					grid-template-columns: repeat(2, 1fr)
+					.box
+						display: flex
+						flex-direction: column
+						gap: 15px
+						min-height: 234px
+						padding: 24px 1.66667vw 17px 1.5625vw
+						border-radius: 16px
+						.title,
+						.text
+							text-align: center
+						&.red
+							background-color: #FFE2E2
+							.title
+								color: #CE5353
+						&.yellow
+							background-color: #FBFFDF
+							.title
+								color: #F90
+						&.blue
+							background-color: #DBE3FF
+							.title
+								color: #3561FD
+						&.green
+							background-color: #CEFFB7
+							.title
+								color: #319900
+			.blogs
+				.btn
+					gap: .41667vw
+				&-content
+					overflow: scroll
+					.blog
+						position: relative
+						min-width: 20.10417vw
+						max-width: 20.10417vw
+						&-image
+							width: 100%
+							height: 197px
+							border-radius: 16px 16px 0px 0px
+							overflow: hidden
+							img
+								width: 100%
+								height: 100%
+						&-content
+							display: grid
+							grid-gap: 12px
+							max-height: 143px
+							min-height: 143px
+							border-right: 1px solid $grey-secondary
+							border-bottom: 1px solid $grey-secondary
+							border-left: 1px solid $grey-secondary
+							border-radius: 0px 0px 16px 16px
+							padding: 20px .78125vw 19px
+							&__date
+								color: $grey
+								font-weight: 500
+								line-height: 19px
+							&__title
+								font-weight: 600
+								line-height: 24px
+								overflow:hidden
+								white-space:nowrap
+								text-overflow: ellipsis
+						&-button
+							position: absolute
+							top: 40.93618%
+							right: 5.4423%
+							display: flex
+							align-items: center
+							justify-content: center
+							width: 35px
+							height: 35px
+							border-radius: 50%
+							background-color: $white
+			.about
+				justify-content: space-between
+				height: 493px
+				background: linear-gradient(266deg, #D6DDF5 -1.62%, #D8CCFA 105.07%)
+				padding: 55px 2.8125vw
+				&-content
+					display: grid
+					grid-gap: 35px
+					&__title
+						font-weight: 700
+						margin-bottom: 1px
+					&__text
+						width: 28.69792vw
+						&:last-child
+							width: 23.80208vw
+				&-image
+					width: 19.94792vw
+					border-radius: 16px
+	&.hostels
+		margin: 60px 0 176px
+		.image
+			width: 100%
+			height: 426px
+			border-radius: 16px
+			margin: 46px 0 32px
+		.galery
+			gap: 16px
+			margin-bottom: 40px
+			&-image
+				width: 88px
+				height: 72px
+				border-radius: 16px
+		.content
+			gap: 33px
+			.left
+				border-top: 1px solid $grey-secondary
+				padding-top: 39px
+				.title
+					gap: 15px
+				.includes
+					gap: 22px
+					margin: 24px 0 40px
+					&-item
+						gap: 8px
+				.text
+					font-size: 18px
+				.special
+					list-style-type: disc
+					margin-left: 16px
+			.right
+				min-width: 175px
+				.price-description
+					text-align: right
+				.button
+					margin-top: 26px
+	&.filter
+		margin: 38px 0 94px
+		.content
+			justify-content: space-between
+			margin-top: 33px
+			&-left
+				width: 14.6875vw
+			&-right
+				width: 47.1875vw
+				&__header
+					justify-content: space-between
+					margin-bottom: 32px
+					.search_result
+						gap: 0.26042vw
+					.sorting
+						gap: .41667vw
+						height: 44px
+						border-radius: 8px
+						border: 1px solid $grey-secondary
+						padding: 4px .52083vw
+				&__body
+					display: flex
+					flex-direction: column
+					gap: 18px
+					.card
+						gap: 1.25vw
+						height: 225px
+						border-radius: 16px
+						background: $white
+						box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .15)
+						&-image
+							width: 11.71875vw
+							border-radius: 16px
+						&-info,
+						&-action
+							margin: 12.5px 0
+						&-info
+							display: flex
+							flex-direction: column
+							gap: 16px
+							width: 21.7709vw
+							&__header
+								justify-content: space-between
+								.name
+									font-weight: 600
+							&__locations
+								gap: .83333vw
+								.text
+									color: $grey
+								.btn
+									text-decoration: underline
+							&__reviews
+								gap: .41667vw
+								.text
+									font-size: 18px
+								.text2
+									font-weight: 600
+							&__features
+								flex-wrap: wrap
+								gap: 4px .41667vw
+								.text
+									color: $grey
+						&-action
+							display: flex
+							flex-direction: column
+							justify-content: space-between
+							width: 10.3646vw
+							padding-left: 3.38542vw
+							margin-right: .83333vw
+							border-left: 1px solid #E3E3E3
+				&__pagination
+					gap: 0.8333vw
+					margin-top: 46px
+					height: 24px
+					.icon,
+					.pagination
+						height: 100%
+					.icon,
+					.pagination-element
+						width: 24px
+					.pagination-element
+						display: flex
+						align-items: center
+						justify-content: center
+						height: 100%
+						border-radius: 4px
+						&.active
+							background-color: $accent
+							.text
+								color: $white					
+	&.detail
+		margin: 60px 0 259px
+		.head
+			display: grid
+			grid-gap: 24px
+			margin: 32px 0
+			&-top
+				gap: 55px
+				.title
+					line-height: 39px
+				.block
+					gap: 35px
+					height: 24px
+					&-icon
+						gap: 12px
+			&-bottom
+				justify-content: space-between
+				.type-name
+					font-size: 20px
+					font-weight: 600
+					color: $accent
+					margin-bottom: 4px
+				.reviews
+					&-title
+						font-weight: 600
+					&-text
+						font-size: 14px
+					&-rating
+						display: flex
+						align-items: center
+						justify-content: center
+						width: 36px
+						height: 32px
+						border-radius: 8px
+						background-color: $accent
+						margin-left: .625vw
+						&__text
+							color: $white
+		.galery
+			gap: 1.5625vw
+			height: 426px
+			&-main,
+			&-secondary
+				height: 100%
+			&-main
+				width: 30.9375vw
+			&-secondary
+				width: 14.6875vw
+				display: grid
+				grid-gap: 30px
+				.frame
+					width: 100%
+					height: 100%
+			&-main,
+			.frame
+				border-radius: 16px
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+		.info
+			margin-top: 65px
+			&-left
+				display: grid
+				grid-gap: 80px
+				width: 47.1875vw
+				.description,
+				.variant
+					&-title
+						margin-bottom: 24px
+				.useful
+					&-title
+						margin-bottom: 40px
+					&-content
+						justify-content: space-between
+						.block
+							display: grid
+							grid-gap: 20px
+							width: 23.64584vw
+							border-radius: 16px
+							background: #EEE
+							padding: 24px 1.25vw
+							&:last-child
+								width: 21.97917vw
+				.variant-content
+					display: grid
+					grid-gap: 24px
+					.card
+						gap: 1.5625vw
+						height: 318px
+						border: 1px solid $grey-bg
+						border-radius: 16px
+						padding: 16px .83333vw
+						&-carousel
+							display: flex
+							flex-direction: column
+							justify-content: space-between
+							width: 14.6875vw
+							.image
+								border-radius: 16px
+							.main_image,
+							.mini_images
+								width: 100%
+							.main_image
+								height: 198px
+							.mini_images
+								gap: 9px
+								overflow: scroll
+								.image
+									width: 88px
+									height: 72px
+						&-content
+							width: 29.27083vw
+							.title
+								font-weight: 600
+								margin-bottom: 20px
+							.list
+								gap: 1.14583vw
+							.bottom
+								justify-content: space-between
+								border-top: 1px solid $grey-secondary
+								margin-top: 39.5px
+								padding-top: 39.5px
+								&-left
+									display: flex
+									flex-direction: column
+									gap: 8px
+									.text
+										font-size: 18px
+										font-weight: 600
+									.btn
+										color: $accent
+										text-decoration: underline
+								&-right .button
+									margin-top: 26px
+
+.breadcrumbs
+	gap: .52083vw
+	margin-bottom: 32px
+	&-item
+		gap: 10px
+		.text
+			font-family: 'Nunito Sans', sans-serif
+			font-size: 14px
+			font-weight: 400
+			color: $breadcrumbs
+		&:last-child .text
+			color: $accent
 
 .button
 	display: flex
 	align-items: center
 	justify-content: center
-	gap: 8px
+	gap: .41667vw
 	width: auto
 	height: 48px
-	padding: 14px 32px
+	padding: 14px 1.66667vw
 	border-radius: 4px
 	background-color: $accent
 	cursor: pointer
@@ -200,18 +773,52 @@ p
 	&:focus
 		background-color: #0A3062
 
-.breadcrumbs
-	gap: 10px
-	margin: 60px 0 32px
-	&-item
-		gap: 10px
-		.text
-			font-family: 'Nunito Sans', sans-serif
-			font-size: 14px
-			font-weight: 400
-			color: $breadcrumbs
-		&:last-child .text
-			color: $accent
+.search
+	position: relative
+	gap: 8px
+	height: 72px
+	background-color: $white
+	border-radius: 8px
+	padding: 8px
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15)
+	&-icon
+		position: absolute
+		left: 28px
+	&-text
+		width: 77%
+		padding: 15px 20px 15px 54px
+		background-color: #F7F7FD
+		border-radius: 4px
+		&::placeholder
+			color: $grey
+	.button
+		width: 20.7%
+		&-text
+			font-size: 20px
+
+.rating
+	width: max-content
+	gap: .3125vw
+	padding: 4px .20833vw
+	border-radius: 8px
+	background-color: $grey-bg
+	&-text
+		color: #656565
+
+.price
+	gap: 5px
+	justify-content: end
+	&-text
+		font-weight: 700
+		line-height: 29px
+	&-description
+		color: $grey
+		line-height: 19px
+
+.location
+	gap: .36453vw
+	&-text
+		color: $grey
 
 .modal
 	display: none
@@ -234,17 +841,15 @@ p
 		display: flex
 		flex-direction: column
 		gap: 29px
-		width: 754px
+		width: 39.27083vw
 		transform: translate(-50%, -50%)
-		padding: 35px 40px 35.51px
+		padding: 35px 2.08333vw 35.51px
 		border-radius: 16px
 		background-color: $white
 		.btn
 			position: absolute
 			top: 10.5px
-			right: 10.5px
-		.text
-			color: $dark
+			right: .546875vw
 		.name
 			line-height: 36px
 			text-overflow: ellipsis
@@ -256,13 +861,13 @@ p
 			justify-content: space-between
 			height: 125.5px
 			&-image
-				width: 212px
+				width: 11.04167vw
 				height: 100%
 				border-radius: 10.141px
 		.more
-			gap: 8px
-			.text
-				font-weight: 400
+			align-items: center
+			gap: .41667vw
+			&-text
 				line-height: 36px
 		.info
 			display: flex
@@ -270,12 +875,12 @@ p
 			gap: 23px
 			.rating
 				align-items: center
-				gap: 6px
+				gap: .3125vw
 				width: max-content
 				height: 32px
-				padding: 4px
+				padding: 4px .20833vw
 				border-radius: 8px
-				background-color: #F4F4F4
+				background-color: $grey-bg
 				&-text
 					line-height: 24px
 					color: #656565
@@ -289,412 +894,14 @@ p
 				.date
 					display: flex
 					align-items: center
-					gap: 8px
+					gap: .41667vw
 				.text
 					line-height: 19px
-					color: #A1A1A1
+					color: $grey
 				.date-dot
 					font-weight: 300
-					color: #D4D4D4
+					color: $grey-secondary
 
-.main
-	margin-top: 183px
-	&.hostels
-		.image
-			width: 100%
-			height: 426px
-			border-radius: 16px
-			margin: 46px 0 32px
-		.galery
-			gap: 16px
-			margin-bottom: 40px
-			&-image
-				width: 88px
-				height: 72px
-				border-radius: 16px
-		.content
-			gap: 33px
-			margin-bottom: 176px
-			.left
-				border-top: 1px solid #D4D4D4
-				padding-top: 39px
-				.title
-					gap: 15px
-				.includes
-					gap: 22px
-					margin: 24px 0 40px
-					&-item
-						gap: 8px
-				.text
-					font-size: 18px
-				.special
-					list-style-type: disc
-					margin-left: 16px
-			.right
-				min-width: 175px
-				.price
-					gap: 5px
-					justify-content: end
-					&-text
-						font-weight: 700
-						line-height: 29px
-				.text
-					color: $grey
-					text-align: right
-					line-height: 19px
-				.button
-					margin-top: 26px
-
-.main
-	.search-wrap
-		background-image: url('../img/bg-search.jpg')
-		background-repeat: no-repeat
-		background-size: cover
-		background-position: 0 50%
-		color: $white
-		padding: 45px 45px 75px
-		border-radius: 15px
-		h2
-			font-size: 48px
-			margin: 0
-			line-height: 1.2
-		p
-			font-size: 24px
-		.search-form
-			background-color: $white
-			border-radius: 8px
-			padding: 8px
-			.search-text
-				width: 77%
-				margin: 0 10px
-				padding: 5px
-				border: none
-				background-color: #F7F7FD
-			.btn-search
-				display: inline-block
-				border: none
-				width: 20%
-	.section
-		margin: 20px 0
-		&-title
-			font-size: 32px
-			font-weight: 400
-		.title
-			font-size: 20px
-			font-weight: 700
-			margin: 10px 0
-			// float: left
-		&.category
-			margin: 50px 0
-			.block
-				&-category
-					display: flex
-					.block
-						width: calc( 100% - 7px )
-						text-align: center
-						&:last-child
-							margin-right: 0
-						&:first-child
-							margin-left: 0
-						.color
-							padding: 15px
-							border-radius: 20px
-							margin: 0 5px
-							text-align: center
-							height: 140px
-							a
-								display: block
-								width: 100%
-								height: 100%
-							img
-								margin-top: 25px
-							&.blue,&.color-1
-								background-color: #E0EDFF
-							&.green,&.color-2
-								background-color: #E6FFD0
-							&.orange,&.color-3
-								background-color: #FFE9C8
-							&.ping,&.color-4
-								background-color: #FED7FF
-							&.yellow,&.color-5
-								background-color: #FFF7DC
-							&.red,&.color-6
-								background-color: #FFECEC
-							&.purple,&.color-7
-								background-color: #B6C1FF
-		.link-more
-			position: absolute
-			right: 15px
-			bottom: 25px
-		.blocks-wrap
-			display: flex
-			.block
-				flex: auto
-				border-radius: 16px
-				border: 1px solid #D4D4D4
-				overflow: hidden
-				margin: 0 5px
-				.content
-					padding: 15px
-				a
-					font-size: 18px
-					font-weight: 500
-				.location
-					color: $grey
-					margin: 0 0 15px
-					.icon
-						width: 15px
-				.price
-					font-size: 20px
-					font-weight: 700
-					float: left
-					.icon
-						width: 15px
-				.icon
-					display: inline-block
-				.raiting
-					float: right
-					display: flex
-					.icon
-						margin-left: 5px
-				.img
-					border-radius: 16px
-					overflow: hidden
-					img
-						width: 100%
-						height: auto
-		&.reviews
-			margin-top: 55px
-			.block
-				padding: 15px
-				.link-more-dots
-					float: right
-				.name
-					font-size: 20px
-					font-weight: 500
-				.raiting
-					background: #F4F4F4
-					border-radius: 8px
-					float: none
-					margin: 23px 0
-					padding: 5px
-					display: inline-flex
-					.icon
-						margin-left: 5px
-				.desc
-					margin-bottom: 23px
-				.user
-					float: left
-					font-size: 14px
-					color: $grey
-					.icon
-						width: 15px
-				.date
-					float: right
-					font-size: 14px
-					color: $grey
-		&.seo
-			text-align: center
-			margin-top: 45px
-			.title-s
-				color: $grey
-				font-size: 20px
-				margin-bottom: 0
-			.title-m
-				font-size: 32px
-				margin-top: 0
-				margin-bottom: 45px
-			.text
-				text-align: left
-				margin-bottom: 50px
-			.blocks-wrap
-				flex-direction: row
-				flex-wrap: wrap
-				.block
-					flex: calc(50% - 20px)
-					padding: 15px
-					margin: 0 0 15px
-					border: none
-					.title
-						float: none
-						line-height: 1.2
-					.text
-						display: block
-					&:nth-child(odd)
-						margin-right: 10px
-					&:nth-child(even)
-						margin-left: 10px						
-					&.c-1
-						background-color: #FFE2E2
-						.title
-							color: #CE5353
-					&.c-2
-						background-color: #FBFFDF
-						.title
-							color: #CE5353
-					&.c-3
-						background-color: #DBE3FF
-						.title
-							color: #CE5353
-					&.c-4
-						background-color: #CEFFB7
-		&.blog
-			margin: 55px 0
-			.blocks-wrap
-				.block
-					position: relative
-					width: 33%
-					.img-wrap
-						height: 200px
-						overflow: hidden
-						background-color: #ccc
-						img
-							width: 100%
-					.date
-						padding: 15px 0 15px 15px
-					.link-more
-						background-color: $white
-						width: 35px
-						height: 35px
-						border-radius: 50%
-						display: block
-						position: absolute
-						right: 15px
-						top: 35%
-						text-align: center
-				.title
-					float: none
-					padding: 0 15px 15px
-					line-height: 1.2
-		&.about
-			.blocks-wrap
-				background: linear-gradient(266deg, #D6DDF5 -1.62%, #D8CCFA 105.07%)
-				border-radius: 15px
-				padding: 45px
-			.title
-				float: none
-				font-size: 32px
-				margin-top: 0
-			.img-wrap
-				text-align: right
-				margin-left: 55px
-// slider
-.reviews-slider
-
-.category
-	.search-wrap
-		background: none
-		padding: 5px
-		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15)
-		.search-filter
-			.search-text
-				background-color: #F7F7FD
-	.top-line
-		display: flex
-		.sort-wrap
-			border-radius: 8px
-			border: 1px solid var(--Grey-50, #D4D4D4)
-	.category-wrap
-		margin-bottom: 100px
-		.top-line
-			justify-content: space-between
-			.search-result
-				span
-					font-weight: 700
-			.sort-wrap
-				justify-content: flex-end
-				padding: 5px 15px 5px 0
-				.icon
-					margin: 0 10px
-		.blocks-wrap
-			margin: 30px 0
-			.i-row
-				display: flex
-				margin: 10px 0
-			.block
-				border-radius: 16px
-				box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .15)
-				position: relative
-				margin-bottom: 15px
-				padding: 0
-				.img-wrap
-					margin-left: -15px
-					img
-						width: 100%
-				.name
-					font-size: 24px
-					font-weight: 700
-					line-height: 1em
-				.favourite
-					position: absolute
-					top: 10px
-					right: 15px
-				.content-wrap
-					padding: 15px 0
-					a.name:hover
-						text-decoration: none
-				.raiting
-					background-color: #F4F4F4
-					border-radius: 4px
-					margin: 0 15px
-					padding: 3px 10px
-				.reviews
-					font-weight: 700
-				.price
-					span
-						font-size: 24px
-						font-weight: 700
-				.region
-					color: $grey
-					font-style: 16px
-				.map-link
-					color: $grey
-					font-size: 16px
-					margin-left: 10px
-				.props-list
-					li
-						position: relative
-						padding-left: 15px
-						display: inline-block
-						color: #A1A1A1
-						font-size: 16px
-						&::before
-							content: '●'
-							position: absolute
-							left: 0
-							color: $grey
-				.right-wrap
-					border-left: 1px solid #E3E3E3
-					padding-left: 55px
-					margin: 15px 0
-					.price
-						display: block
-						float: none
-					.desc
-						display: block
-						color: #A1A1A1
-						margin-bottom: 15px
-					.btn
-						display: inline-block
-		.navigation-wrap
-			display: flex
-			justify-content: center
-			align-items: center
-			margin-top: 15px
-			.prev
-				margin-right: 15px
-			.next
-				margin-left: 15px
-			a
-				padding: 5px 10px
-				border-radius: 4px
-				&.active
-					background-color: $accent
-					color: $white
-				&:hover
-					background-color: $grey
-					text-decoration: none
-					color: $black
 .filter-wrap
 	border-radius: 16px
 	padding: 15px
@@ -897,5 +1104,4 @@ p
 					display: inline-block
 					margin-top: 15px
 
-// Всегда в конце
 @import media
