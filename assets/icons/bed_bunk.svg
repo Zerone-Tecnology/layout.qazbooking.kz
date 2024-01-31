@@ -1,0 +1,96 @@
+<svg
+	width="22"
+	height="20"
+	viewBox="0 0 22 20"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="elements">
+		<path
+			id="Vector 6199"
+			d="M1 8H16"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6212"
+			d="M1 5H21"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Ellipse 1759"
+			d="M5.5 2C4.8956 2 4.32433 2.1287 3.81768 2.35753C3.48573 2.50746 3.31975 2.58242 3.15988 2.83005C3 3.07769 3 3.32443 3 3.8179V5H8V3.8179C8 3.32443 8 3.07769 7.84013 2.83005C7.68025 2.58242 7.51427 2.50746 7.18232 2.35753C6.67567 2.1287 6.1044 2 5.5 2Z"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+		/>
+		<path
+			id="Ellipse 1760"
+			d="M5.5 11C4.79893 11 4.14245 11.1732 3.57968 11.4749C3.47363 11.5317 3.4206 11.5602 3.33052 11.6414C3.20736 11.7524 3.06861 11.9842 3.02898 12.1452C3 12.2629 3 12.3595 3 12.5525C3 12.9692 3 13.1776 3.06113 13.3443C3.16232 13.6202 3.37978 13.8377 3.65572 13.9389C3.82243 14 4.03079 14 4.44751 14H6.55249C6.96921 14 7.17757 14 7.34428 13.9389C7.62022 13.8377 7.83768 13.6202 7.93887 13.3443C8 13.1776 8 12.9692 8 12.5525C8 12.3595 8 12.2629 7.97102 12.1452C7.93139 11.9842 7.79263 11.7524 7.66948 11.6414C7.5794 11.5602 7.52637 11.5317 7.42032 11.4749C6.85755 11.1732 6.20107 11 5.5 11Z"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+		/>
+		<path
+			id="Vector 6210"
+			d="M1 14H16"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6213"
+			d="M1 17H21"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6207"
+			d="M16 9L21 9"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6214"
+			d="M16 12L21 12"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6204"
+			d="M21 1L21 19"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6205"
+			d="M16 1L16 19"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 6211"
+			d="M1 1L0.999999 19"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>

@@ -1,0 +1,40 @@
+<svg
+	width="16"
+	height="22"
+	viewBox="0 0 16 22"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
+	<g id="elements">
+		<path
+			id="Vector"
+			d="M2.63244 17.2626L1.03072 5.09986C0.910634 4.188 1.11589 4 2.12552 4H12.8745C13.8841 4 14.0894 4.188 13.9693 5.09986L12.3676 17.2626C12.1495 18.9182 12.0405 19.746 11.4139 20.2437C10.1165 21.2744 4.827 21.2295 3.58606 20.2437C2.95948 19.746 2.85047 18.9182 2.63244 17.2626Z"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+		<path
+			id="Vector 5685"
+			d="M9.5 18L9.94599 1.94128C9.97709 1.41272 10.4148 1 10.9443 1H15.0014"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+		/>
+		<path
+			id="Vector 5686"
+			d="M2 9C2.18182 8.66667 2.78182 8 4.09091 8C5.72727 8 5.29545 9 6.38636 9C7.47727 9 9.11364 8 10.75 8C12.3864 8 13.5 9 13.5 9"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+		/>
+		<path
+			id="Vector_2"
+			d="M6.00894 15H6"
+			stroke="#141B34"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+		/>
+	</g>
+</svg>
