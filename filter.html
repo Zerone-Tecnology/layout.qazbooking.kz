@@ -95,7 +95,229 @@
 			</div>
 
 			<div class="content row">
-				<div class="content-left"></div>
+				<div class="content-left">
+					<div class="filter">
+						<h4 class="filter-title">Все фильтры</h4>
+
+						<div class="filter-content">
+							<h6 class="title">Диапазон цен</h6>
+							<p class="subtitle">Цена за 10 ночей</p>
+							<div class="price">
+								<div class="price-field">
+									<input
+										type="range"
+										min="0"
+										max="160000"
+										value="10000"
+										id="lower"
+									/>
+									<input
+										type="range"
+										min="0"
+										max="160000"
+										value="130000"
+										id="upper"
+									/>
+								</div>
+
+								<div class="price-range row">
+									<div class="price-range__input">
+										<input
+											type="text"
+											min="0"
+											max="130000"
+											value="10000"
+										/>
+										<p>от</p>
+									</div>
+
+									<div class="price-range__input">
+										<input
+											type="text"
+											min="0"
+											max="130000"
+											value="130000"
+										/>
+										<p>до</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-content non">
+							<h6 class="title">Популярные фильтры</h6>
+							<div class="filter_ch">
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Хостелы</p>
+									</div>
+									<p>234</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Зона отдыха</p>
+									</div>
+									<p>54</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Гостевые дома</p>
+									</div>
+									<p>12</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">5 звёзд</p>
+									</div>
+									<p>5</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Завтрак включён</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-content">
+							<h6 class="title">Тип размещения</h6>
+							<div class="filter_ch">
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Хостел</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Санаторий</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Тур база</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Зона отдыха</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Кемпинг</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Авторские туры</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-content">
+							<h6 class="title">Питание</h6>
+							<div class="filter_ch">
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">Завтрак включён</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="checkbox" class="input" />
+										<p class="text">С собственной кухней</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-content">
+							<h6 class="title">Рейтинг</h6>
+							<div class="filter_ch">
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="radio" class="input" />
+										<p class="text">4.5 и выше</p>
+									</div>
+									<p>109</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="radio" class="input" />
+										<p class="text">4 и выше</p>
+									</div>
+									<p>34</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="radio" class="input" />
+										<p class="text">3 и выше</p>
+									</div>
+									<p>12</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="filter-content">
+							<h6 class="title">Политика отмены</h6>
+							<div class="filter_ch">
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="radio" class="input" />
+										<p class="text">Бесплатная отмена</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="filter_ch-item row h-row">
+									<div class="filter_ch-item__field row h-row">
+										<input type="radio" class="input" />
+										<p class="text">Без предоплаты</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="button disabled">
+							<p class="button-text">Сбросить фильтры</p>
+						</div>
+					</div>
+				</div>
 				
 				<div class="content-right">
 					<div class="content-right__header row h-row">
@@ -342,6 +564,136 @@
 									</div>
 
 									<p class="text2">65 отзывов</p>
+								</div>
+
+								<div class="card-info__features row">
+									<p class="text">Wi-Fi</p>
+									<p class="text">•</p>
+									<p class="text">Бассейн</p>
+									<p class="text">•</p>
+									<p class="text">Парковка</p>
+									<p class="text">•</p>
+									<p class="text">Кондиционер в номере</p>
+								</div>
+							</div>
+
+							<div class="card-action">
+								<div>
+									<div class="price row h-row">
+										<h5 class="price-text">143 500</h5>
+										<img src="assets/icons/currency.svg" alt="currency" />
+									</div>
+									<p class="price-description">цена за 10 ночей</p>
+									<p class="price-description">за 1 кровать</p>
+								</div>
+								<a href="detail.html">
+									<div class="button">
+										<p class="button-text">Выбрать</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="card row">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel 1"
+								class="card-image"
+							/>
+
+							<div class="card-info">
+								<div class="card-info__header row h-row">
+									<h5 class="name">Grand hostel</h5>
+
+									<img
+										src="assets/icons/favourite.svg"
+										alt="favourite"
+										class="btn"
+									/>
+								</div>
+
+								<div class="card-info__locations row h-row">
+									<div class="location row h-row">
+										<img src="assets/icons/location2.svg" alt="location" />
+										<p class="location-text">Алматинская обл.</p>
+									</div>
+									<p class="btn text">Показать на карте</p>
+								</div>
+
+								<div class="card-info__reviews row h-row">
+									<h5 class="text">Хостел</h5>
+
+									<div class="rating row h-row">
+										<p class="rating-text">7.3</p>
+										<img src="assets/icons/rating-4.svg" alt="Rating" />
+									</div>
+
+									<p class="text2">1233 отзывов</p>
+								</div>
+
+								<div class="card-info__features row">
+									<p class="text">Wi-Fi</p>
+									<p class="text">•</p>
+									<p class="text">Бассейн</p>
+									<p class="text">•</p>
+									<p class="text">Парковка</p>
+									<p class="text">•</p>
+									<p class="text">Кондиционер в номере</p>
+								</div>
+							</div>
+
+							<div class="card-action">
+								<div>
+									<div class="price row h-row">
+										<h5 class="price-text">143 500</h5>
+										<img src="assets/icons/currency.svg" alt="currency" />
+									</div>
+									<p class="price-description">цена за 10 ночей</p>
+									<p class="price-description">за 1 кровать</p>
+								</div>
+								<a href="detail.html">
+									<div class="button">
+										<p class="button-text">Выбрать</p>
+									</div>
+								</a>
+							</div>
+						</div>
+
+						<div class="card row">
+							<img
+								src="assets/images/hostel2.jpeg"
+								alt="Hostel 2"
+								class="card-image"
+							/>
+
+							<div class="card-info">
+								<div class="card-info__header row h-row">
+									<h5 class="name">HiLoft Hostel</h5>
+
+									<img
+										src="assets/icons/favourite.svg"
+										alt="favourite"
+										class="btn"
+									/>
+								</div>
+
+								<div class="card-info__locations row h-row">
+									<div class="location row h-row">
+										<img src="assets/icons/location2.svg" alt="location" />
+										<p class="location-text">Алматинская обл.</p>
+									</div>
+									<p class="btn text">Показать на карте</p>
+								</div>
+
+								<div class="card-info__reviews row h-row">
+									<h5 class="text">Хостел</h5>
+
+									<div class="rating row h-row">
+										<p class="rating-text">7.3</p>
+										<img src="assets/icons/rating-4.svg" alt="Rating" />
+									</div>
+
+									<p class="text2">453 отзывов</p>
 								</div>
 
 								<div class="card-info__features row">

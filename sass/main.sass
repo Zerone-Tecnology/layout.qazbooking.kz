@@ -82,6 +82,7 @@ img
 input
 	border: none
 	outline: none
+	color: $dark
 ul
 	list-style-type: none
 	padding: 0
@@ -231,17 +232,11 @@ p
 							color: $white
 			.category,
 			.popular,
-			.reviews,
 			.seo,
 			.blogs
 				&-content
 					margin-top: 40px
-			.popular-content__body,
-			.reviews-content,
-			.blogs-content
-				gap: 1.5625vw
-			.popular-content__header
-			.reviews-header
+			.popular-content__header,
 			.blogs-header
 				justify-content: space-between
 			.category
@@ -275,104 +270,6 @@ p
 						&-text
 							text-align: center
 							margin-top: 20px
-			.popular-content
-				display: grid
-				grid-gap: 50px
-				&__header
-					margin-bottom: 12px
-					.icon
-						padding: 15px 22.5px
-				.card
-					width: 14.6875vw
-					height: 286px
-					border: 1px solid $grey-secondary
-					border-radius: 16px
-					&-image
-						width: 100%
-						height: 158px
-						border-radius: 16px
-						overflow: hidden
-						img
-							width: 100%
-							height: 100%
-					&-content
-						position: relative
-						height: 110px
-						margin-top: 16px
-						margin-left: .36458vw
-						&__title
-							white-space: nowrap
-							overflow: hidden
-							text-overflow: ellipsis
-							font-size: 18px
-							font-weight: 500
-							margin-bottom: 8px
-						&__location,
-						&__price,
-						&__rating
-							display: flex
-							align-items: center
-						&__location
-							gap: .36458vw
-							.text
-								color: $grey
-						&__price,
-						&__rating
-							position: absolute
-						&__price
-							bottom: 8.1819%
-							left: 0
-							gap: .26042vw
-						&__rating
-							bottom: 5.4547%
-							right: 2.56441%
-							gap: .3125vw
-							padding: 4px .20833vw
-							.text
-								color: #656565
-			.reviews
-				&-header__icons
-					gap: .41667vw
-					.icon
-						display: flex
-						align-items: center
-						justify-content: center
-						width: 3.28125vw
-						height: 43px
-						border-radius: 8px
-						background-color: #ECECEC
-						&:first-child
-							transform: rotate(180deg)
-				&-content
-					.review
-						position: relative
-						display: grid
-						grid-gap: 23px
-						width: 20.10467vw
-						padding: 15px .78125vw
-						border: 1px solid $grey
-						border-radius: 8px
-						&-button
-							position: absolute
-							top: 16px
-							right: .83333vw
-						&-title
-							font-weight: 500
-						&-text
-							font-size: 18px
-							line-height: 21.6px
-						&-footer
-							justify-content: space-between
-							&__author,
-							&__time
-								gap: .41667vw
-							&__author,
-							&__time
-								.text
-									color: $grey
-							&__time .dot
-								font-weight: 300
-								color: $grey-secondary
 			.seo
 				&-subtitle,
 				&-title
@@ -414,6 +311,7 @@ p
 				.btn
 					gap: .41667vw
 				&-content
+					gap: 1.5625vw
 					overflow: scroll
 					.blog
 						position: relative
@@ -444,8 +342,8 @@ p
 							&__title
 								font-weight: 600
 								line-height: 24px
-								overflow:hidden
-								white-space:nowrap
+								overflow: hidden
+								white-space: nowrap
 								text-overflow: ellipsis
 						&-button
 							position: absolute
@@ -520,6 +418,88 @@ p
 			margin-top: 33px
 			&-left
 				width: 14.6875vw
+				.filter
+					border: 1px solid $grey-secondary
+					border-radius: 16px
+					padding: 16px .83333vw
+					&-title
+						font-weight: 600
+						line-height: 36px
+					&-content
+						margin-top: 23.5px
+						padding-top: 23.5px
+						border-top: 1px solid $grey
+						.title
+							font-size: 18px
+							line-height: 22px
+						.subtitle
+							line-height: 19.2px
+							color: $grey
+							margin-top: 8px
+						&.non
+							border-top: none
+							margin-top: 32px
+							padding-top: 0
+						.price
+							position: relative
+							box-sizing: border-box
+							width: 100%
+							&-field
+								padding: 46px 0 30px
+							&-range
+								gap: .52083vw
+								&__input
+									position: relative
+									width: 6.25vw
+									input,
+									p
+										font-size: 18px
+									input
+										width: 100%
+										border-radius: 8px
+										border: 1px solid $grey
+										padding: 8px .52083vw 8px 1.875vw
+									p
+										position: absolute
+										top: 50%
+										left: .52083vw
+										transform: translate(0%, -50%)
+										color: #BFBEBC
+							input[type=range]
+								position: absolute
+								width: 100%
+								height: 2px
+								border: 1px solid #EDEDED
+								outline: 0
+								box-sizing: border-box
+								border-radius: 5px
+								-webkit-appearance: none
+								&::-webkit-slider-thumb
+									position: relative
+									width: 16px
+									height: 16px
+									-webkit-appearance: none
+									border-radius: 50%
+									background-color: $accent
+									cursor: pointer
+									z-index: 3
+						.filter_ch
+							display: grid
+							grid-gap: 12px
+							margin-top: 20px
+							&-item
+								justify-content: space-between
+								&__field
+									gap: 0.625vw
+									.input
+										width: 24px
+										height: 24px
+										accent-color: $accent
+									.text
+										font-size: 15px
+										font-weight: 500
+					.button
+						margin-top: 32px
 			&-right
 				width: 47.1875vw
 				&__header
@@ -738,6 +718,11 @@ p
 										text-decoration: underline
 								&-right .button
 									margin-top: 26px
+		.reviews,
+		.popular
+			margin-top: 80px
+		.popular-content__body
+			margin-top: 24px
 
 .breadcrumbs
 	gap: .52083vw
@@ -770,6 +755,10 @@ p
 		background-color: #012657
 	&:active
 		background-color: #3347B4
+	&.disabled
+		background-color: #F1F0ED
+		.button-text
+			color: #BFBEBC
 	&:focus
 		background-color: #0A3062
 
@@ -819,6 +808,112 @@ p
 	gap: .36453vw
 	&-text
 		color: $grey
+
+.reviews
+	&-header
+		justify-content: space-between
+		&__icons
+			gap: .41667vw
+			.icon
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 3.28125vw
+				height: 43px
+				border-radius: 8px
+				background-color: #ECECEC
+				&:first-child
+					transform: rotate(180deg)
+	&-content
+		gap: 1.5625vw
+		margin-top: 40px
+		.review
+			position: relative
+			display: grid
+			grid-gap: 23px
+			width: 20.10467vw
+			padding: 15px .78125vw
+			border: 1px solid $grey
+			border-radius: 8px
+			&-button
+				position: absolute
+				top: 16px
+				right: .83333vw
+			&-title
+				font-weight: 500
+			&-text
+				font-size: 18px
+				line-height: 21.6px
+			&-footer
+				justify-content: space-between
+				&__author,
+				&__time
+					gap: .41667vw
+				&__author,
+				&__time
+					.text
+						color: $grey
+				&__time .dot
+					font-weight: 300
+					color: $grey-secondary
+
+.popular-content
+	display: grid
+	grid-gap: 50px
+	&__header
+		margin-bottom: 12px
+		.icon
+			padding: 15px 22.5px
+	&__body
+		gap: 1.5625vw
+		.card
+			width: 14.6875vw
+			height: 286px
+			border: 1px solid $grey-secondary
+			border-radius: 16px
+			&-image
+				width: 100%
+				height: 158px
+				border-radius: 16px
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+			&-content
+				position: relative
+				height: 110px
+				margin-top: 16px
+				margin-left: .36458vw
+				&__title
+					white-space: nowrap
+					overflow: hidden
+					text-overflow: ellipsis
+					font-size: 18px
+					font-weight: 500
+					margin-bottom: 8px
+				&__location,
+				&__price,
+				&__rating
+					display: flex
+					align-items: center
+				&__location
+					gap: .36458vw
+					.text
+						color: $grey
+				&__price,
+				&__rating
+					position: absolute
+				&__price
+					bottom: 8.1819%
+					left: 0
+					gap: .26042vw
+				&__rating
+					bottom: 5.4547%
+					right: 2.56441%
+					gap: .3125vw
+					padding: 4px .20833vw
+					.text
+						color: #656565
 
 .modal
 	display: none
@@ -901,207 +996,5 @@ p
 				.date-dot
 					font-weight: 300
 					color: $grey-secondary
-
-.filter-wrap
-	border-radius: 16px
-	padding: 15px
-	border: 1px solid #D4D4D4
-	.filter-block
-		margin-top: 25px
-		padding-bottom: 25px
-		border-bottom: 1px solid #E3E3E3
-		.name
-			margin-bottom: 20px
-			font-size: 18px
-		.control
-			margin-top: 10px
-			position: relative
-			padding-left: 30px
-			&:hover
-				input ~ .label
-					background-color: darken($grey, 20)
-			.label
-				position: absolute
-				top: 2px
-				left: 0
-				height: 20px
-				width: 20px
-				background: $grey
-				&::after
-					content: ''
-					position: absolute
-					display: none
-			input
-				position: absolute
-				opacity: 0
-				z-index: -1
-				&:checked ~ .label
-					background-color: $accent
-					&::after
-						display: block
-				&:not([disabled]):checked ~ &
-					background-color: $accent
-		.check .label
-			border-radius: 8px
-			&::after				
-				left: 8px
-				top: 4px
-				width: 5px
-				height: 8px
-				border: solid $white
-				border-width: 0 1px 1px 0
-				transform: rotate(45deg)
-		.radio .label
-			border-radius: 50%
-			&::after
-				left: 7px
-				top: 7px
-				height: 6px
-				width: 6px
-				border-radius: 50%
-				background: $white
-		label
-			font-size: 14px
-
-.detail
-	.middle-line
-		ul.block
-			display: flex
-			li
-				flex: auto
-	.name-title
-		font-size: 32px
-		line-height: 1.2em
-		margin: 25px 0
-	.type-wrap
-		.name
-			font-weight: 700
-			font-size: 20px
-		.location
-			color: $grey
-			font-size: 16px
-	.reviews-wrap
-		text-align: right
-		.block-r
-			display: inline-block
-		.reviews
-			font-weight: 700
-		.addcomment
-			font-size: 14px
-		.raiting
-			background-color: $accent
-			color: $white
-			display: inline-block
-			padding: 5px 10px
-			border-radius: 8px
-			vertical-align: top
-			margin-top: 5px
-	.block
-		.title
-			font-size: 32px
-	.gallery-wrap
-		margin: 30px 0
-		.items
-			display: grid
-			grid-template-columns: auto 20% 20% 
-			grid-template-rows: auto
-			grid-gap: 30px 30px
-			.item
-				border-radius: 16px
-				min-height: 100px
-				overflow: hidden
-				background-color: $grey
-				img
-					width: 100%
-					height: auto
-				&:nth-child(1)
-					grid-column: 1/span 1
-					grid-row: 1/span 6
-				&:nth-child(2)
-					grid-row: 1/span 3
-				&:nth-child(3)
-					grid-row: 4/span 3
-				&:nth-child(4)
-					grid-column: 3
-					grid-row: 1/span 3
-				&:nth-child(5)
-					grid-column: 3  
-					grid-row: 4/span 3
-				&:nth-child(6)
-					grid-column: 3
-					grid-row: 5/span 2
-	.info-wrap
-		.blocks
-			display: flex
-			.block
-				background-color: #EEE
-				width: 50%
-				margin: 10px
-				padding: 15px
-				border-radius: 16px
-			&:first-child
-				margin-left: 0
-			&:last-child
-				margin-right: 0
-	.rooms-wrap
-		.room
-			display: flex
-			border-radius: 16px
-			border: 1px solid #D4D4D4
-			margin: 0 0 15px
-			padding: 15px 0
-			.img-wrap
-				overflow: hidden
-				border-radius: 16px
-			// 
-			.galery
-				display: flex
-				gap: 9px
-				height: 72px
-				margin-top: 16px
-				overflow: scroll
-				&-image
-					width: 88px
-					height: 100%
-					border-radius: 10.141px
-			// 
-			.content-wrap
-				padding: 0 15px 15px
-				.name
-					font-size: 24px
-				.list
-					li
-						display: inline-block
-				.bottom-line
-					display: flex
-					margin-top: 15px
-					border-top: 1px solid #CCC
-					margin-top: 25px
-					padding-top: 25px
-					p
-						margin: 0
-					.name
-						font-size: 18px
-						font-weight: 700
-					.block-r,.block-l
-						width: 50%
-					.block-r
-						text-align: right
-						.btn
-							display: inline-block
-							margin-top: 15px
-	.right-wrap
-		.block
-			background-color: #F0F0F0
-			padding: 15px
-			border-radius: 16px
-			margin: 15px 0
-			.title
-				font-size: 24px
-				line-height: 1.2em
-			&.info
-				.btn
-					display: inline-block
-					margin-top: 15px
 
 @import media
