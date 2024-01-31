@@ -1978,9 +1978,6 @@ p {
 .main.filter .content-right__body .card-info__locations .text {
   color: #A1A1A1;
 }
-.main.filter .content-right__body .card-info__locations .location {
-  gap: 0.36453vw;
-}
 .main.filter .content-right__body .card-info__locations .btn {
   text-decoration: underline;
 }
@@ -2034,6 +2031,163 @@ p {
 }
 .main.filter .content-right__pagination .pagination-element.active .text {
   color: #FFF;
+}
+.main.detail {
+  margin: 60px 0 259px;
+}
+.main.detail .head {
+  display: grid;
+  grid-gap: 24px;
+  margin: 32px 0;
+}
+.main.detail .head-top {
+  gap: 55px;
+}
+.main.detail .head-top .title {
+  line-height: 39px;
+}
+.main.detail .head-top .block {
+  gap: 35px;
+  height: 24px;
+}
+.main.detail .head-top .block-icon {
+  gap: 12px;
+}
+.main.detail .head-bottom {
+  justify-content: space-between;
+}
+.main.detail .head-bottom .type-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #03306B;
+  margin-bottom: 4px;
+}
+.main.detail .head-bottom .reviews-title {
+  font-weight: 600;
+}
+.main.detail .head-bottom .reviews-text {
+  font-size: 14px;
+}
+.main.detail .head-bottom .reviews-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: #03306B;
+  margin-left: 0.625vw;
+}
+.main.detail .head-bottom .reviews-rating__text {
+  color: #FFF;
+}
+.main.detail .galery {
+  gap: 1.5625vw;
+  height: 426px;
+}
+.main.detail .galery-main, .main.detail .galery-secondary {
+  height: 100%;
+}
+.main.detail .galery-main {
+  width: 30.9375vw;
+}
+.main.detail .galery-secondary {
+  width: 14.6875vw;
+  display: grid;
+  grid-gap: 30px;
+}
+.main.detail .galery-secondary .frame {
+  width: 100%;
+  height: 100%;
+}
+.main.detail .galery-main,
+.main.detail .galery .frame {
+  border-radius: 16px;
+  overflow: hidden;
+}
+.main.detail .galery-main img,
+.main.detail .galery .frame img {
+  width: 100%;
+  height: 100%;
+}
+.main.detail .info {
+  margin-top: 65px;
+}
+.main.detail .info-left {
+  display: grid;
+  grid-gap: 80px;
+  width: 47.1875vw;
+}
+.main.detail .info-left .description-title,
+.main.detail .info-left .variant-title {
+  margin-bottom: 24px;
+}
+.main.detail .info-left .useful-title {
+  margin-bottom: 40px;
+}
+.main.detail .info-left .useful-content {
+  justify-content: space-between;
+}
+.main.detail .info-left .useful-content .block {
+  display: grid;
+  grid-gap: 20px;
+  width: 23.64584vw;
+  border-radius: 16px;
+  background: #EEE;
+  padding: 24px 1.25vw;
+}
+.main.detail .info-left .useful-content .block:last-child {
+  width: 21.97917vw;
+}
+.main.detail .info-left .variant-content {
+  display: grid;
+  grid-gap: 24px;
+}
+.main.detail .info-left .variant-content .card {
+  gap: 1.5625vw;
+  height: 318px;
+  border: 1px solid #F4F4F4;
+  border-radius: 16px;
+  padding: 16px 0.83333vw;
+}
+.main.detail .info-left .variant-content .card-carousel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 14.6875vw;
+}
+.main.detail .info-left .variant-content .card-carousel .image {
+  border-radius: 16px;
+}
+.main.detail .info-left .variant-content .card-carousel .main_image,
+.main.detail .info-left .variant-content .card-carousel .mini_images {
+  width: 100%;
+}
+.main.detail .info-left .variant-content .card-carousel .main_image {
+  height: 198px;
+}
+.main.detail .info-left .variant-content .card-carousel .mini_images {
+  gap: 9px;
+  overflow: scroll;
+}
+.main.detail .info-left .variant-content .card-carousel .mini_images .image {
+  width: 88px;
+  height: 72px;
+}
+.main.detail .info-left .variant-content .card-content {
+  width: 29.27083vw;
+}
+.main.detail .info-left .variant-content .card-content .title {
+  font-weight: 600;
+}
+.main.detail .info-left .variant-content .card-content .list {
+  gap: 1.14583vw;
+}
+.main.detail .info-left .variant-content .card-content .bottom {
+  justify-content: space-between;
+  border-top: 1px solid #D4D4D4;
+  margin-top: 39.5px;
+  padding-top: 39.5px;
 }
 
 .breadcrumbs {
@@ -2119,7 +2273,7 @@ p {
   border-radius: 8px;
   background-color: #F4F4F4;
 }
-.rating__text {
+.rating-text {
   color: #656565;
 }
 
@@ -2134,6 +2288,13 @@ p {
 .price-description {
   color: #A1A1A1;
   line-height: 19px;
+}
+
+.location {
+  gap: 0.36453vw;
+}
+.location-text {
+  color: #A1A1A1;
 }
 
 .modal {
