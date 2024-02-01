@@ -2362,6 +2362,8 @@ p {
 .search-icon {
   position: absolute;
   left: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .search-text {
   width: 77%;
@@ -2652,16 +2654,17 @@ p {
   flex-wrap: wrap;
   gap: 32px 1.5625vw;
 }
-.main.interestings .content .blog {
+
+.blog {
   position: relative;
   width: 20.104167vw;
 }
-.main.interestings .content .blog-image {
+.blog-image {
   width: 100%;
   height: 197px;
   border-radius: 16px 16px 0 0;
 }
-.main.interestings .content .blog-info {
+.blog-info {
   height: 143px;
   border-right: 1px solid #D4D4D4;
   border-bottom: 1px solid #D4D4D4;
@@ -2669,13 +2672,13 @@ p {
   border-radius: 0px 0px 16px 16px;
   padding: 20px 0.78125vw 19px;
 }
-.main.interestings .content .blog-info__date {
+.blog-info__date {
   color: #A1A1A1;
   font-weight: 500;
   line-height: 19px;
   margin-bottom: 12px;
 }
-.main.interestings .content .blog-info__text {
+.blog-info__text {
   font-weight: 600;
   line-height: 24px;
   overflow: hidden;
@@ -2683,6 +2686,15 @@ p {
   white-space: nowrap;
   max-height: 3em;
 }
-.main.interestings .content .blog-info-button {
+.blog-info-button {
   position: absolute;
+  top: 40.93618%;
+  right: 5.4423%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FFF;
 }/*# sourceMappingURL=main.css.map */

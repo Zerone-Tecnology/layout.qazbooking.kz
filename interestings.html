@@ -103,10 +103,19 @@
 							alt="blog 1"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">12.05.2023</p>
 							<h4 class="blog-info__text">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
 						</div>
+
+						<a
+							v-if="button"
+							class="blog-button btn"
+							@click="redirectToBlog(info.id)"
+						>
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 
 					<div class="blog">
@@ -115,10 +124,19 @@
 							alt="blog 2"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">23.12.2023</p>
 							<h4 class="blog-info__text">Канада: бесплатные обзорные экскурсии</h4>
 						</div>
+
+						<a
+							v-if="button"
+							class="blog-button btn"
+							@click="redirectToBlog(info.id)"
+						>
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 
 					<div class="blog">
@@ -127,10 +145,15 @@
 							alt="blog 3"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">12.05.2023</p>
 							<h4 class="blog-info__text">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</>
 						</div>
+
+						<a href="interesting.html" class="blog-button btn">
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 
 					<div class="blog">
@@ -139,10 +162,15 @@
 							alt="blog 4"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">12.05.2023</p>
 							<h4 class="blog-info__text">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
 						</div>
+
+						<a href="interesting.html" class="blog-button btn">
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 
 					<div class="blog">
@@ -151,10 +179,15 @@
 							alt="blog 5"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">23.12.2023</p>
 							<h4 class="blog-info__text">Канада: бесплатные обзорные экскурсии</h4>
 						</div>
+
+						<a href="interesting.html" class="blog-button btn">
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 
 					<div class="blog">
@@ -163,10 +196,15 @@
 							alt="blog 6"
 							class="blog-image"
 						/>
+
 						<div class="blog-info">
 							<p class="blog-info__date">12.05.2023</p>
 							<h4 class="blog-info__text">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h4>
 						</div>
+
+						<a href="interesting.html" class="blog-button btn">
+							<img src="assets/icons/chevron.svg" alt="right arrow" />
+						</a>
 					</div>
 				</div>
 			</section>
