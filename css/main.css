@@ -2362,6 +2362,8 @@ p {
 .search-icon {
   position: absolute;
   left: 28px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .search-text {
   width: 77%;
@@ -2644,45 +2646,55 @@ p {
   color: #D4D4D4;
 }
 
-/*==========  Desktop First  ==========*/
-/* Large Devices, Wide Screens */
-@media only screen and (max-width: 1200px) {
-  /**/
+.main.interestings {
+  margin: 60px 0 188px;
 }
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-  /**/
+.main.interestings .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 1.5625vw;
 }
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-  /**/
+
+.blog {
+  position: relative;
+  width: 20.104167vw;
 }
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  /**/
+.blog-image {
+  width: 100%;
+  height: 197px;
+  border-radius: 16px 16px 0 0;
 }
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
+.blog-info {
+  height: 143px;
+  border-right: 1px solid #D4D4D4;
+  border-bottom: 1px solid #D4D4D4;
+  border-left: 1px solid #D4D4D4;
+  border-radius: 0px 0px 16px 16px;
+  padding: 20px 0.78125vw 19px;
 }
-/*==========  Mobile First  ==========*/
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-  /**/
+.blog-info__date {
+  color: #A1A1A1;
+  font-weight: 500;
+  line-height: 19px;
+  margin-bottom: 12px;
 }
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-  /**/
+.blog-info__text {
+  font-weight: 600;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-height: 3em;
 }
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {
-  /**/
-}
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
-  /**/
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
-  /**/
+.blog-info-button {
+  position: absolute;
+  top: 40.93618%;
+  right: 5.4423%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FFF;
 }/*# sourceMappingURL=main.css.map */
