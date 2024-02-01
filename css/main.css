@@ -1321,10 +1321,8 @@ body {
   width: 63.4375vw;
   padding: 0;
 }
-.container .row {
+.container .rows {
   display: flex;
-  margin-right: 0;
-  margin-left: 0;
 }
 .container .h-row {
   align-items: center;
@@ -1491,30 +1489,30 @@ p {
   border-radius: 16px 16px 0px 0px;
   background-color: #464646;
 }
-.footer-wrap .row {
+.footer-wrap .rows {
   gap: 2.734375vw;
 }
-.footer-wrap .row .text {
+.footer-wrap .rows .text {
   color: #FFF;
 }
-.footer-wrap .row .menu {
+.footer-wrap .rows .menu {
   display: grid;
   grid-gap: 8px;
   width: 259px;
 }
-.footer-wrap .row .menu .text {
+.footer-wrap .rows .menu .text {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
-.footer-wrap .row .right .text {
+.footer-wrap .rows .right .text {
   font-family: "Montserrat", sans-serif;
 }
-.footer-wrap .row .right .social {
+.footer-wrap .rows .right .social {
   gap: 1.25vw;
   margin-top: 16px;
 }
-.footer-wrap .row .right .zerone {
+.footer-wrap .rows .right .zerone {
   gap: 1.30208vw;
   margin-top: 80px;
 }
