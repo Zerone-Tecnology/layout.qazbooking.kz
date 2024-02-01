@@ -2,7 +2,6 @@
 @use 'sass:color'
 
 @import fonts
-@import libs
 @import vars
 	
 *
@@ -50,7 +49,7 @@ body
 
 .container
 	width: 63.4375vw
-	padding: 0
+	margin: auto
 	.rows
 		display: flex
 	.h-row
@@ -643,7 +642,7 @@ p
 			&-secondary
 				display: flex
 				flex-wrap: wrap
-				grid-gap: 30px
+				grid-gap: 30px 1.5625vw
 				.frame
 					width: 14.6875vw
 					height: 198px
@@ -976,7 +975,7 @@ p
 					overflow: hidden
 					text-overflow: ellipsis
 					display: -webkit-box
-					-webkit-line-clamp: 2
+					-webkit-line-clamp: 1
 					-webkit-box-orient: vertical
 					font-size: 18px
 					font-weight: 500
