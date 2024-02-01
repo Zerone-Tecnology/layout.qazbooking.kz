@@ -77,9 +77,11 @@ body
 img
 	background-repeat: no-repeat
 	object-fit: cover
-input
+input,
+button
 	border: none
 	outline: none
+input
 	color: $dark
 ul
 	list-style-type: none
@@ -531,6 +533,9 @@ p
 							&__header
 								justify-content: space-between
 								.name
+									overflow: hidden
+									white-space: nowrap
+									text-overflow: ellipsis
 									font-weight: 600
 							&__locations
 								gap: .83333vw
