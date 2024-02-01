@@ -2463,6 +2463,12 @@ p {
 .reviews-content .review-text {
   font-size: 18px;
   line-height: 21.6px;
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .reviews-content .review-footer {
   justify-content: space-between;
@@ -2514,9 +2520,12 @@ p {
   margin-left: 0.36458vw;
 }
 .popular-content__body .card-content__title {
-  white-space: nowrap;
+  white-space: pre-line;
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 8px;
