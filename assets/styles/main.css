@@ -2086,22 +2086,21 @@ p {
 }
 .main.detail .galery {
   gap: 1.5625vw;
-  height: 426px;
 }
 .main.detail .galery-main, .main.detail .galery-secondary {
-  height: 100%;
-}
-.main.detail .galery-main {
   width: 30.9375vw;
 }
+.main.detail .galery-main {
+  height: 426px;
+}
 .main.detail .galery-secondary {
-  width: 14.6875vw;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 30px;
 }
 .main.detail .galery-secondary .frame {
-  width: 100%;
-  height: 100%;
+  width: 14.6875vw;
+  height: 198px;
 }
 .main.detail .galery-main,
 .main.detail .galery .frame {
