@@ -1360,9 +1360,13 @@ img {
      object-fit: cover;
 }
 
-input {
+input,
+button {
   border: none;
   outline: none;
+}
+
+input {
   color: #1E1E1E;
 }
 
@@ -1949,6 +1953,9 @@ p {
   justify-content: space-between;
 }
 .main.filter .content-right__body .card-info__header .name {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-weight: 600;
 }
 .main.filter .content-right__body .card-info__locations {
