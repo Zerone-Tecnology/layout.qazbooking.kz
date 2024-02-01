@@ -635,19 +635,18 @@ p
 							color: $white
 		.galery
 			gap: 1.5625vw
-			height: 426px
 			&-main,
 			&-secondary
-				height: 100%
-			&-main
 				width: 30.9375vw
+			&-main
+				height: 426px
 			&-secondary
-				width: 14.6875vw
-				display: grid
+				display: flex
+				flex-wrap: wrap
 				grid-gap: 30px
 				.frame
-					width: 100%
-					height: 100%
+					width: 14.6875vw
+					height: 198px
 			&-main,
 			.frame
 				border-radius: 16px
