@@ -926,6 +926,12 @@ p
 			&-text
 				font-size: 18px
 				line-height: 21.6px
+				white-space: pre-line
+				overflow: hidden
+				text-overflow: ellipsis
+				display: -webkit-box
+				-webkit-line-clamp: 2
+				-webkit-box-orient: vertical
 			&-footer
 				justify-content: space-between
 				&__author,
@@ -967,9 +973,12 @@ p
 				margin-top: 16px
 				margin-left: .36458vw
 				&__title
-					white-space: nowrap
+					white-space: pre-line
 					overflow: hidden
 					text-overflow: ellipsis
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
 					font-size: 18px
 					font-weight: 500
 					margin-bottom: 8px
