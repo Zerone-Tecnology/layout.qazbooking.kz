@@ -62,21 +62,15 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+.box {
   width: 63.4375vw;
   margin: auto;
 }
-.container .rows {
+.box .horizontal {
   display: flex;
 }
-.container .h-row {
+.box .horizontal-center {
   align-items: center;
-}
-
-.row:after, .row:before,
-.container:after,
-.container:before {
-  display: none;
 }
 
 .img-responsive {
@@ -134,7 +128,6 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size: 48px;
   font-weight: 600;
-  color: #FFF;
 }
 
 h2 {
@@ -148,18 +141,18 @@ h3 {
 }
 
 h4 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h5 {
   font-size: 20px;
   font-weight: 700;
 }
 
-h5 {
-  font-size: 24px;
-  font-weight: 500;
-}
-
 h6 {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 p {
@@ -238,30 +231,30 @@ p {
   border-radius: 16px 16px 0px 0px;
   background-color: #464646;
 }
-.footer-wrap .rows {
+.footer-wrap .horizontal {
   gap: 2.734375vw;
 }
-.footer-wrap .rows .text {
+.footer-wrap .horizontal .text {
   color: #FFF;
 }
-.footer-wrap .rows .menu {
+.footer-wrap .horizontal .menu {
   display: grid;
   grid-gap: 8px;
   width: 259px;
 }
-.footer-wrap .rows .menu .text {
+.footer-wrap .horizontal .menu .text {
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
 }
-.footer-wrap .rows .right .text {
+.footer-wrap .horizontal .right .text {
   font-family: "Montserrat", sans-serif;
 }
-.footer-wrap .rows .right .social {
+.footer-wrap .horizontal .right .social {
   gap: 1.25vw;
   margin-top: 16px;
 }
-.footer-wrap .rows .right .zerone {
+.footer-wrap .horizontal .right .zerone {
   gap: 1.30208vw;
   margin-top: 80px;
 }
@@ -1012,23 +1005,23 @@ p {
   font-weight: 600;
   margin-bottom: 11px;
 }
-.main.detail .info-right .locations-popup .row {
+.main.detail .info-right .locations-popup .horizontal {
   justify-content: space-between;
 }
-.main.detail .info-right .locations-popup .row .rating {
+.main.detail .info-right .locations-popup .horizontal .rating {
   width: 1.71875vw;
   height: 28px;
   background-color: #03306B;
   padding: 2px 0.3125vw;
 }
-.main.detail .info-right .locations-popup .row .rating-text {
+.main.detail .info-right .locations-popup .horizontal .rating-text {
   color: #FFF;
 }
-.main.detail .info-right .locations-popup .row .review {
+.main.detail .info-right .locations-popup .horizontal .review {
   font-size: 14px;
   gap: 0.104167vw;
 }
-.main.detail .info-right .locations-popup .row .review span {
+.main.detail .info-right .locations-popup .horizontal .review span {
   font-weight: 600;
 }
 .main.detail .info-right .contacts {
