@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6, p
 h1
 	font-size: 48px
 	font-weight: 600
-color: $white
+	color: $white
 h2
 	font-size: 32px
 	font-weight: 600
@@ -127,72 +127,74 @@ p
 			font-size: 20px
 			font-weight: 400
 			color: $dark
-		.logo
-			width: 13.17708vw
-			margin-right: 4.6875vw
-		.location
-			gap: .41667vw
-			margin-right: 13.02083vw
-			padding-bottom: 5px
+	&-logo
+		width: 13.1771vw
+		margin-right: 4.6875vw
+	&-location
+		width: 5.6771vw
+		gap: .4166667vw
+		margin-right: 13.02083vw
+		padding-bottom: 5px
+		.icon
+			height: 24px
+			padding: 1px 2px
+	&-links
+		justify-content: space-between
+		width: 13.59375vw
+		&__social
+			gap: 1.25vw
 			.icon
-				height: 24px
-				padding: 1px 2px
-		.information
-			gap: 2.86458vw
-			.social
-				gap: 1.25vw
-				.icon
-					height: 32px
-		.button
-			margin-left: 2.86458vw
-			.icon
-				width: 16px
-				height: 16px
-		.menu
-			gap: .83333vw
-			border-top: 1px solid $grey-secondary
-			margin-top: 19.5px
-			padding-top: 11.5px
-			.text
-				display: block
-				padding: 10px .41667vw
-				font-weight: 500
-				line-height: 24px
+				height: 32px
+	.button
+		margin-left: 2.864583vw
+		.icon
+			width: 16px
+			height: 16px
+	&-menu
+		gap: .833333vw
+		border-top: 1px solid $grey-secondary
+		margin-top: 19.5px
+		padding-top: 11.5px
+		.text
+			display: block
+			padding: 10px .4166667vw
+			font-weight: 500
+			line-height: 24px
 
 .footer
 	&-wrap
 		display: grid
 		grid-gap: 36px
-		padding: 49px 5.52083vw 54px 5.41667vw
+		padding: 49px 5.52083vw 54px 5.4166667vw
 		border-radius: 16px 16px 0px 0px
 		background-color: #464646
 		.horizontal
 			gap: 2.734375vw
 			.text
 				color: $white
-			.menu
-				display: grid
-				grid-gap: 8px
-				width: 259px
-				.text
-					font-size: 20px
-					font-weight: 400
-					line-height: 24px
-			.right
-				.text
-					font-family: 'Montserrat', sans-serif
-				.social
-					gap: 1.25vw
-					margin-top: 16px
-				.zerone
-					gap: 1.30208vw
-					margin-top: 80px
+	&-menu
+		display: grid
+		grid-gap: 8px
+		width: 13.489583vw
+		.text
+			font-size: 20px
+			font-weight: 400
+			line-height: 24px
+	&-links
+		.text
+			font-family: 'Montserrat', sans-serif
+		.social
+			gap: 1.25vw
+			margin-top: 16px
+		.zerone
+			gap: 1.30208vw
+			margin-top: 80px
 
 .main
 	padding-top: 183px
 	&.home
 		margin: 55px 0 143px
-		.container
+		.box
 			display: flex
 			flex-direction: column
 			gap: 100px
@@ -213,7 +215,7 @@ p
 					width: -webkit-fill-available
 					height: -webkit-fill-available
 					padding: 47px 75px 89px
-					.box
+					.boxx
 						width: 46.161%
 						margin-bottom: 63px
 						.title
@@ -270,7 +272,7 @@ p
 					display: grid
 					grid-gap: 28px 1.40625vw
 					grid-template-columns: repeat(2, 1fr)
-					.box
+					.boxx
 						display: flex
 						flex-direction: column
 						gap: 15px
@@ -298,7 +300,7 @@ p
 								color: #319900
 			.blogs
 				.btn
-					gap: .41667vw
+					gap: .4166667vw
 				&-content
 					gap: 1.5625vw
 					overflow: scroll
@@ -497,7 +499,7 @@ p
 					.search_result
 						gap: 0.26042vw
 					.sorting
-						gap: .41667vw
+						gap: .4166667vw
 						height: 44px
 						border-radius: 8px
 						border: 1px solid $grey-secondary
@@ -537,14 +539,14 @@ p
 								.btn
 									text-decoration: underline
 							&__reviews
-								gap: .41667vw
+								gap: .4166667vw
 								.text
 									font-size: 18px
 								.text2
 									font-weight: 600
 							&__features
 								flex-wrap: wrap
-								gap: 4px .41667vw
+								gap: 4px .4166667vw
 								.text
 									color: $grey
 						&-action
@@ -745,7 +747,7 @@ p
 							gap: .104167vw
 							margin-top: 16px
 						.small
-							gap: .41667vw
+							gap: .4166667vw
 					.button
 						margin-top: 20px
 				.locations
@@ -813,10 +815,10 @@ p
 	display: flex
 	align-items: center
 	justify-content: center
-	gap: .41667vw
+	gap: .4166667vw
 	width: auto
 	height: 48px
-	padding: 14px 1.66667vw
+	padding: 14px 1.666667vw
 	border-radius: 4px
 	background-color: $accent
 	cursor: pointer
@@ -887,7 +889,7 @@ p
 	&-header
 		justify-content: space-between
 		&__icons
-			gap: .41667vw
+			gap: .4166667vw
 			.icon
 				display: flex
 				align-items: center
@@ -928,7 +930,7 @@ p
 				justify-content: space-between
 				&__author,
 				&__time
-					gap: .41667vw
+					gap: .4166667vw
 				&__author,
 				&__time
 					.text
@@ -1044,7 +1046,7 @@ p
 				border-radius: 10.141px
 		.more
 			align-items: center
-			gap: .41667vw
+			gap: .4166667vw
 			&-text
 				line-height: 36px
 		.info
@@ -1072,7 +1074,7 @@ p
 				.date
 					display: flex
 					align-items: center
-					gap: .41667vw
+					gap: .4166667vw
 				.text
 					line-height: 19px
 					color: $grey
@@ -1125,3 +1127,5 @@ p
 			height: 35px
 			border-radius: 50%
 			background-color: $white
+
+@import media
