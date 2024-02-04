@@ -308,18 +308,21 @@ p {
   height: -webkit-fill-available;
   padding: 47px 75px 89px;
 }
-.main.home .box .hero-content .boxx {
+.main.home .box .hero-content__description {
   width: 46.161%;
   margin-bottom: 63px;
 }
-.main.home .box .hero-content .boxx .title {
+.main.home .box .hero-content__description .title,
+.main.home .box .hero-content__description .text {
+  color: #FFF;
+}
+.main.home .box .hero-content__description .title {
   line-height: 58px;
   margin-bottom: 30px;
 }
-.main.home .box .hero-content .boxx .text {
-  font-weight: 400;
+.main.home .box .hero-content__description .text {
+  font-size: 24px;
   line-height: 29px;
-  color: #FFF;
 }
 .main.home .box .category-content,
 .main.home .box .popular-content,
@@ -366,10 +369,14 @@ p {
 }
 .main.home .box .category-content .block-text {
   text-align: center;
+  font-size: 20px;
   margin-top: 20px;
 }
 .main.home .box .seo-subtitle, .main.home .box .seo-title {
   text-align: center;
+}
+.main.home .box .seo-subtitle, .main.home .box .seo-text {
+  font-size: 20px;
 }
 .main.home .box .seo-subtitle {
   margin-bottom: 12px;
@@ -380,7 +387,7 @@ p {
   grid-gap: 28px 1.40625vw;
   grid-template-columns: repeat(2, 1fr);
 }
-.main.home .box .seo-content:last-child .boxx {
+.main.home .box .seo-content__box {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -388,36 +395,41 @@ p {
   padding: 24px 1.66667vw 17px 1.5625vw;
   border-radius: 16px;
 }
-.main.home .box .seo-content:last-child .boxx .title,
-.main.home .box .seo-content:last-child .boxx .text {
+.main.home .box .seo-content__box .title {
   text-align: center;
 }
-.main.home .box .seo-content:last-child .boxx.red {
+.main.home .box .seo-content__box .text {
+  font-size: 18px;
+}
+.main.home .box .seo-content__box.red {
   background-color: #FFE2E2;
 }
-.main.home .box .seo-content:last-child .boxx.red .title {
+.main.home .box .seo-content__box.red .title {
   color: #CE5353;
 }
-.main.home .box .seo-content:last-child .boxx.yellow {
+.main.home .box .seo-content__box.yellow {
   background-color: #FBFFDF;
 }
-.main.home .box .seo-content:last-child .boxx.yellow .title {
+.main.home .box .seo-content__box.yellow .title {
   color: #F90;
 }
-.main.home .box .seo-content:last-child .boxx.blue {
+.main.home .box .seo-content__box.blue {
   background-color: #DBE3FF;
 }
-.main.home .box .seo-content:last-child .boxx.blue .title {
+.main.home .box .seo-content__box.blue .title {
   color: #3561FD;
 }
-.main.home .box .seo-content:last-child .boxx.green {
+.main.home .box .seo-content__box.green {
   background-color: #CEFFB7;
 }
-.main.home .box .seo-content:last-child .boxx.green .title {
+.main.home .box .seo-content__box.green .title {
   color: #319900;
 }
 .main.home .box .blogs .btn {
   gap: 0.4166667vw;
+}
+.main.home .box .blogs .btn-text {
+  font-size: 20px;
 }
 .main.home .box .blogs-content {
   gap: 1.5625vw;
@@ -457,9 +469,12 @@ p {
 .main.home .box .blogs-content .blog-content__title {
   font-weight: 600;
   line-height: 24px;
+  white-space: pre-line;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 .main.home .box .blogs-content .blog-button {
   position: absolute;
@@ -480,7 +495,8 @@ p {
   padding: 55px 2.8125vw;
 }
 .main.home .box .about-content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-gap: 35px;
 }
 .main.home .box .about-content__title {
@@ -1110,22 +1126,20 @@ p {
 
 .search {
   position: relative;
-  display: flex;
-  align-items: start;
-  gap: 8px;
+  gap: 0.4166667vw;
   height: 72px;
   background-color: #FFF;
   border-radius: 8px;
-  padding: 8px;
+  padding: 8px 0.4166667vw;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 .search-icon {
   position: absolute;
-  left: 28px;
+  left: 1.458334vw;
 }
 .search-text {
   width: 77%;
-  padding: 15px 20px 15px 54px;
+  padding: 15px 1.041667vw 15px 2.8125vw;
   background-color: #F7F7FD;
   border-radius: 4px;
 }
@@ -1136,7 +1150,7 @@ p {
   color: #A1A1A1;
 }
 .search .button {
-  width: 20.7%;
+  width: 11.5105vw;
 }
 .search .button-text {
   font-size: 20px;
