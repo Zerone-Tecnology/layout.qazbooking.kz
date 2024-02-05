@@ -221,7 +221,7 @@ p {
 .header .button {
   margin-left: 2.864583vw;
 }
-.header .button .icon {
+.header .icon {
   width: 16px;
   height: 16px;
 }
@@ -242,7 +242,7 @@ p {
 .footer-wrap {
   display: grid;
   grid-gap: 36px;
-  padding: 49px 5.52083vw 54px 5.4166667vw;
+  padding: 49px 5.52083vw 54px 5.41667vw;
   border-radius: 16px 16px 0px 0px;
   background-color: #464646;
 }
@@ -262,9 +262,6 @@ p {
   font-weight: 400;
   line-height: 24px;
 }
-.footer-links .text {
-  font-family: "Montserrat", sans-serif;
-}
 .footer-links .social-icons {
   gap: 1.25vw;
   font-weight: 500;
@@ -278,6 +275,7 @@ p {
 .main {
   padding-top: 183px;
 }
+
 .main.hostels {
   margin: 60px 0 176px;
 }
