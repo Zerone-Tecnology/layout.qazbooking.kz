@@ -1,7 +1,5 @@
 @import vars
 
-/*==========  Desktop First  ==========*/
-
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
 	/**/
@@ -19,37 +17,110 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	h1
+		font-size: 32px
 
+	.box
+		width: 91.46667vw
+
+	.main
+		padding-top: 152px
+
+	.header,
+	.footer
+		width: 100vw
+		&-wrap
+			width: 100vw
+
+	.header
+		top: 0
+		&-wrap
+			padding: 14px 2.133333vw 10px
+			.text
+				font-size: 16px
+		&-logo
+			width: max-content
+			margin-right: 8.53333vw
+			&__desktop
+				display: none
+			&__mobile
+				display: block
+		&-location
+			width: 22.933333vw
+			gap: 2.133333vw
+			margin-right: 0
+			padding: 0
+			.icon
+				width: 16px
+				height: 16px
+				padding: 1.33px 2px
+			.text
+				line-height: 19px
+		&-links
+			display: none !important
+		.button
+			width: 21.33334vw
+			height: 44px
+			margin-left: auto
+			&-text
+				display: none
+		&-menu
+			gap: 2.133333vw
+			overflow: scroll
+			padding-top: 8.5px
+			&::-webkit-scrollbar
+				display: none
+			.text
+				padding: 10px 2.133333vw
+				line-height: 19px
+
+	.footer
+		&-wrap
+			grid-gap: 67px
+			padding: 19px 4.26667vw 86px
+			&__line
+				flex-direction: column
+				gap: 44px
+		&-menu
+			width: 100%
+		&-links
+			margin-top: 24px
+			.social
+				.text
+					font-size: 20px
+				&-icons
+					gap: 6.4vw
+			.zerone
+				gap: 6.66667vw
+				width: 72.53334vw
+				margin-top: 48px
+
+	.home
+		margin: 19px 0 83px
+		.hero
+			&-image
+				object-position: 100% 64.5%
+			&-content
+				&__description
+					width: 100%
+					.title
+						line-height: 39px
+
+	.search
+		gap: .4166667vw
+		background-color: $white
+		border-radius: 8px
+		padding: 8px .4166667vw
+		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15)
+		&-icon
+			position: absolute
+			left: 1.458334vw
+		&-text
+			width: 100%
+			padding: 15px 1.041667vw 15px 2.8125vw
+		.button
+			display: none
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
-

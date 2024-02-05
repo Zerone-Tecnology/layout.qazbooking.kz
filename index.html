@@ -31,65 +31,70 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
-			<div class="header-wrap">
-				<div class="rows h-row">
+		<div class="header-wrap box">
+			<div class="horizontal horizontal-center">
+				<div class="header-logo">
 					<img
-						src="assets/images/logo.png"
+						src="assets/icons/logo.svg"
 						alt="QazBooking"
-						class="logo"
+						class="header-logo__desktop"
 					/>
-
-					<div class="location rows h-row">
-						<div class="icon">
-							<img src="assets/icons/location.svg" alt="location" />
-						</div>
-						<p class="text">Алматы</p>
-					</div>
-
-					<div class="information rows h-row">
-						<a href="interestings.html" class="text">Интересное</a>
-						<div class="social rows">
-							<a href="#" class="icon">
-								<img src="assets/icons/facebook.svg" alt="facebook" />
-							</a>
-							<a href="#" class="icon">
-								<img src="assets/icons/instagram.svg" alt="instagram" />
-							</a>
-						</div>
-					</div>
-
-					<button class="button" type="submit">
-						<img src="assets/icons/auth.svg" alt="auth" class="icon" />
-						<p class="button-text">Войти</p>
-					</button>
+					<img
+						src="assets/icons/logo-mobile.svg"
+						alt="QazBooking"
+						class="header-logo__mobile"
+					/>
 				</div>
 
-				<div class="menu rows">
-					<a href="filter.html" class="text">Хостелы</a>
-					<a href="filter.html" class="text">Базы отдыха</a>
-					<a href="filter.html" class="text">Активный отдых</a>
-					<a href="filter.html" class="text">Туры</a>
-					<a href="filter.html" class="text">Оздоровительный отдых</a>
-					<a href="filter.html" class="text">Детские лагеря</a>
-					<a href="filter.html" class="text">Транспорт</a>
+				<div class="header-location horizontal horizontal-center">
+					<div class="icon">
+						<img src="assets/icons/location.svg" alt="Location" />
+					</div>
+					<p class="text">Алматы</p>
 				</div>
+
+				<div class="header-links horizontal horizontal-center">
+					<a href="interestings.html" class="text">Интересное</a>
+					<div class="header-links__social horizontal">
+						<a href="#" class="icon">
+							<img src="assets/icons/facebook.svg" alt="Facebook" />
+						</a>
+						<a href="#" class="icon">
+							<img src="assets/icons/instagram.svg" alt="Instagram" />
+						</a>
+					</div>
+				</div>
+
+				<button class="button" type="submit">
+					<img src="assets/icons/auth.svg" alt="Auth" class="icon" />
+					<p class="button-text">Войти</p>
+				</button>
+			</div>
+
+			<div class="header-menu horizontal">
+				<a href="filter.html" class="text">Хостелы</a>
+				<a href="filter.html" class="text">Базы отдыха</a>
+				<a href="filter.html" class="text">Активный отдых</a>
+				<a href="filter.html" class="text">Туры</a>
+				<a href="filter.html" class="text">Оздоровительный отдых</a>
+				<a href="filter.html" class="text">Детские лагеря</a>
+				<a href="filter.html" class="text">Транспорт</a>
 			</div>
 		</div>
 	</header>
 
 	<main class="home main">
-		<div class="container">
+		<div class="home-wrap box">
 			<section class="hero">
-				<img src="assets/images/hero.jpg" alt="Hero image" class="Hero image" />
+				<img src="assets/images/hero.jpg" alt="Hero image" class="hero-image" />
 
 				<div class="hero-content">
-					<div class="box">
+					<div class="hero-content__description">
 						<h1 class="title">Лучшие места для вашего отдыха</h2>
-						<h5 class="text">Поиск предложений на отели, дома и многое другое…</h5>
+						<p class="text">Поиск предложений на отели, дома и многое другое…</h>
 					</div>
 
-					<div class="search">
+					<div class="search horizontal horizontal-center">
 						<img src="assets/icons/search.svg" alt="Search" class="search-icon" />
 						<input
 							type="text"
@@ -106,7 +111,7 @@
 			<section class="category">
 				<h3 class="section-title">Категории</h3>
 
-				<div class="category-content rows">
+				<div class="category-content horizontal">
 					<div class="block">
 						<a href="filter.html" class="block-item blue">
 							<img src="assets/icons/categories/hotel.svg" alt="Hostels" />
@@ -163,8 +168,8 @@
 
 				<div class="popular-content">
 					<div>
-						<div class="popular-content__header rows h-row">
-							<h4>Хостелы</h4>
+						<div class="popular-content__header horizontal horizontal-center">
+							<h5>Хостелы</h5>
 							<a href="filter.html">
 								<img
 									src="assets/icons/chevron.svg"
@@ -174,7 +179,7 @@
 							</a>
 						</div>
 
-						<div class="popular-content__body rows">
+						<div class="popular-content__body horizontal">
 							<div class="card">
 								<div class="card-image">
 									<img src="assets/images/hostel1.jpeg" alt="Hostel" />
@@ -182,23 +187,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -210,23 +215,23 @@
 
 							<div class="card-content">
 								<a href="detail.html">
-									<p class="card-content__title">Grand hostel</p>
+									<h6 class="card-content__title">Grand hostel</h6>
 								</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -238,23 +243,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -266,23 +271,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -290,8 +295,8 @@
 					</div>
 
 					<div>
-						<div class="popular-content__header rows h-row">
-							<h4>Туры</h4>
+						<div class="popular-content__header horizontal horizontal-center">
+							<h5>Туры</h5>
 							<a href="filter.html">
 								<img
 									src="assets/icons/chevron.svg"
@@ -301,7 +306,7 @@
 							</a>
 						</div>
 
-						<div class="popular-content__body rows">
+						<div class="popular-content__body horizontal">
 							<div class="card">
 								<div class="card-image">
 									<img src="assets/images/tour1.jpeg" alt="Hostel" />
@@ -309,23 +314,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -337,23 +342,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -365,23 +370,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -393,23 +398,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -417,8 +422,8 @@
 					</div>
 
 					<div>
-						<div class="popular-content__header rows h-row">
-							<h4>Базы отдыха</h4>
+						<div class="popular-content__header horizontal horizontal-center">
+							<h5>Базы отдыха</h4>
 							<a href="filter.html">
 								<img
 									src="assets/icons/chevron.svg"
@@ -428,7 +433,7 @@
 							</a>
 						</div>
 
-						<div class="popular-content__body rows">
+						<div class="popular-content__body horizontal">
 							<div class="card">
 								<div class="card-image">
 									<img src="assets/images/recreation_center1.jpeg" alt="Hostel" />
@@ -436,23 +441,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -464,23 +469,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -492,23 +497,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -520,23 +525,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -544,8 +549,8 @@
 					</div>
 
 					<div>
-						<div class="popular-content__header rows h-row">
-							<h4>Досуг/Развлечения</h4>
+						<div class="popular-content__header horizontal horizontal-center">
+							<h5>Досуг/Развлечения</h4>
 							<a href="filter.html">
 								<img
 									src="assets/icons/chevron.svg"
@@ -555,7 +560,7 @@
 							</a>
 						</div>
 
-						<div class="popular-content__body rows">
+						<div class="popular-content__body horizontal">
 							<div class="card">
 								<div class="card-image">
 									<img src="assets/images/leisure_entertainment1.png" alt="Hostel" />
@@ -563,23 +568,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -591,23 +596,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -619,23 +624,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -647,23 +652,23 @@
 
 								<div class="card-content">
 									<a href="detail.html">
-										<p class="card-content__title">Grand hostel</p>
+										<h6 class="card-content__title">Grand hostel</h6>
 									</a>
 
-									<div class="card-content__location rows h-row">
+									<div class="card-content__location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="text">Алматинская обл.</p>
 									</div>
 
 									<div class="card-content__price">
 										<p class="text">от</p>
-										<h4>2500</h4>
+										<h5>2500</h5>
 										<img src="assets/icons/currency.svg" alt="tenge" />
 									</div>
 
 									<div class="card-content__rating">
 										<p class="text">9.6 </p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 								</div>
 							</div>
@@ -673,9 +678,9 @@
 			</section>
 
 			<section class="reviews">
-				<div class="reviews-header rows h-row">
+				<div class="reviews-header horizontal horizontal-center">
 					<h3>Отзывы гостей</h3>
-					<div class="reviews-header__icons rows">
+					<div class="reviews-header__icons horizontal">
 						<div class="icon btn">
 							<img src="assets/icons/chevron.svg" alt="back" />
 						</div>
@@ -684,7 +689,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews-content rows">
+				<div class="reviews-content horizontal">
 					<div class="review">
 						<img
 							src="assets/icons/hdots.svg"
@@ -692,22 +697,22 @@
 							class="review-button btn"
 							onclick="openModal()"
 						/>
-						<h6 class="review-title">Хостел Арлеон</h6>
+						<h5 class="review-title">Хостел Арлеон</h5>
 				
-						<div class="rating rows h-row">
+						<div class="rating horizontal horizontal-center">
 							<p class="rating-text">9.8</p>
-							<img src="assets/icons/rating-5.svg" alt="Rating" />
+							<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 						</div>
 				
 						<p class="review-text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
 				
-						<div class="review-footer rows h-row">
-							<div class="review-footer__author rows h-row">
+						<div class="review-footer horizontal horizontal-center">
+							<div class="review-footer__author horizontal horizontal-center">
 								<img src="assets/icons/user.svg" alt="user" class="icon" />
 								<p class="text">Емиль Газизов</p>
 							</div>
 							
-							<div class="review-footer__time rows h-row">
+							<div class="review-footer__time horizontal horizontal-center">
 								<p class="text">14:56</p>
 								<p class="dot">●</p>
 								<p class="text">10.11.2023</p>
@@ -722,22 +727,22 @@
 							class="review-button btn"
 							onclick="openModal()"
 						/>
-						<h6 class="review-title">Зона отдыха Оазис</h6>
+						<h5 class="review-title">Зона отдыха Оазис</h5>
 				
-						<div class="rating rows h-row">
+						<div class="rating horizontal horizontal-center">
 							<p class="rating-text">8.1</p>
-							<img src="assets/icons/rating-4.svg" alt="Rating" />
+							<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 						</div>
 				
 						<p class="review-text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
 				
-						<div class="review-footer rows h-row">
-							<div class="review-footer__author rows h-row">
+						<div class="review-footer horizontal horizontal-center">
+							<div class="review-footer__author horizontal horizontal-center">
 								<img src="assets/icons/user.svg" alt="user" class="icon" />
 								<p class="text">Матвей Радужнев</p>
 							</div>
 							
-							<div class="review-footer__time rows h-row">
+							<div class="review-footer__time horizontal horizontal-center">
 								<p class="text">14:56</p>
 								<p class="dot">●</p>
 								<p class="text">10.11.2023</p>
@@ -752,22 +757,22 @@
 							class="review-button btn"
 							onclick="openModal()"
 						/>
-						<h6 class="review-title">Хостел Арион</h6>
+						<h5 class="review-title">Хостел Арион</h5>
 				
-						<div class="rating rows h-row">
+						<div class="rating horizontal horizontal-center">
 							<p class="rating-text">9.8</p>
-							<img src="assets/icons/rating-5.svg" alt="Rating" />
+							<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 						</div>
 				
 						<p class="review-text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
 				
-						<div class="review-footer rows h-row">
-							<div class="review-footer__author rows h-row">
+						<div class="review-footer horizontal horizontal-center">
+							<div class="review-footer__author horizontal horizontal-center">
 								<img src="assets/icons/user.svg" alt="user" class="icon" />
 								<p class="text">Амир Ванев</p>
 							</div>
 							
-							<div class="review-footer__time rows h-row">
+							<div class="review-footer__time horizontal horizontal-center">
 								<p class="text">14:56</p>
 								<p class="dot">●</p>
 								<p class="text">10.11.2023</p>
@@ -778,27 +783,27 @@
 			</section>
 
 			<section class="seo">
-				<h6 class="seo-subtitle">Тур по Казахстану</h6>
+				<p class="seo-subtitle">Тур по Казахстану</p>
 				<h3 class="seo-title">Откройте Новые Грани Путешествий</h3>
-				<h6 class="seo-content">Погрузитесь в удивительный мир путешествий с турами по Казахстану от QazBooking! Наша компания предлагает вам уникальную возможность открыть для себя неизведанные уголки этой невероятной страны. Отдых в Казахстане с нами — это не только возможность отдохнуть, но и увидеть самые захватывающие места, окунуться в богатую культуру и насладиться гостеприимством этой удивительной страны.</h6>
+				<p class="seo-text seo-content">Погрузитесь в удивительный мир путешествий с турами по Казахстану от QazBooking! Наша компания предлагает вам уникальную возможность открыть для себя неизведанные уголки этой невероятной страны. Отдых в Казахстане с нами — это не только возможность отдохнуть, но и увидеть самые захватывающие места, окунуться в богатую культуру и насладиться гостеприимством этой удивительной страны.</p>
 
 				<div class="seo-content">
-					<div class="box red">
+					<div class="seo-content__box red">
 						<h4 class="title">Гибкая оплата</h4>
 						<p class="text">Удобная навигация, яркий дизайн и информативный контент: Интуитивно понятный интерфейс сайта или приложения,</p>
 					</div>
 
-					<div class="box yellow">
+					<div class="seo-content__box yellow">
 						<h4 class="title">Доступ к отзывам и рейтингам</h4>
 						<p class="text">Удобная навигация, яркий дизайн и информативный контент: Интуитивно понятный интерфейс сайта или приложения,</p>
 					</div>
 
-					<div class="box blue">
+					<div class="seo-content__box blue">
 						<h4 class="title">Персонализация</h4>
 						<p class="text">Удобная навигация, яркий дизайн и информативный контент: Интуитивно понятный интерфейс сайта или приложения,</p>
 					</div>
 
-					<div class="box green">
+					<div class="seo-content__box green">
 						<h4 class="title">Быстрый доступ к информации</h4>
 						<p class="text">Удобная навигация, яркий дизайн и информативный контент: Интуитивно понятный интерфейс сайта или приложения,</p>
 					</div>
@@ -806,15 +811,15 @@
 			</section>
 			
 			<section class="blogs">
-				<div class="blogs-header rows">
+				<div class="blogs-header horizontal">
 					<h3>Интересное</h3>
-					<a class="btn rows h-row">
-						<h6>Читать все</h6>
+					<a class="btn horizontal horizontal-center">
+						<p class="btn-text">Читать все</p>
 						<img src="assets/icons/chevron.svg" alt="right arrow" />
 					</a>
 				</div>
 
-				<div class="blogs-content rows">
+				<div class="blogs-content horizontal">
 					<div class="blog">
 						<div class="blog-image">
 							<img src="assets/images/blog1.jpeg" alt="Blog 1" />
@@ -822,7 +827,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">12.05.2023</p>
-							<h4 class="blog-content__title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
+							<h5 class="blog-content__title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h5>
 						</div>
 				
 						<a
@@ -841,7 +846,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">23.12.2023</p>
-							<h4 class="blog-content__title">Канада: бесплатные обзорные экскурсии</h4>
+							<h5 class="blog-content__title">Канада: бесплатные обзорные экскурсии</h5>
 						</div>
 				
 						<a
@@ -860,7 +865,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">12.05.2023</p>
-							<h4 class="blog-content__title">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h4>
+							<h5 class="blog-content__title">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h5>
 						</div>
 				
 						<a
@@ -879,7 +884,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">12.05.2023</p>
-							<h4 class="blog-content__title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
+							<h5 class="blog-content__title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h5>
 						</div>
 				
 						<a
@@ -898,7 +903,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">23.12.2023</p>
-							<h4 class="blog-content__title">Канада: бесплатные обзорные экскурсии</h4>
+							<h5 class="blog-content__title">Канада: бесплатные обзорные экскурсии</h5>
 						</div>
 				
 						<a
@@ -917,7 +922,7 @@
 						
 						<div class="blog-content">
 							<p class="blog-content__date">12.05.2023</p>
-							<h4 class="blog-content__title">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h4>
+							<h5 class="blog-content__title">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h5>
 						</div>
 				
 						<a
@@ -931,9 +936,9 @@
 				</div>
 			</section>
 
-			<section class='about rows'>
+			<section class='about horizontal'>
 				<div class='about-content'>
-					<h3 class='about-content__title'>Qazbooking.kz</h3>
+					<h2 class='about-content__title'>Qazbooking.kz</h2>
 					<p class='about-content__text'>Это сервис онлайн бронирования хостелов и баз отдыха. С его помощью можно легко и удобно запланировать своё путешествие в пару кликов. Не придётся много раз звонить, если линии заняты, или долго ожидать ответа в WhatsApp. Бронирование проходит в онлайн режиме.</p>
 					<p class='about-content__text'>На Qazbooking.kz собрано большое количество хостелов Алматы, Астаны, Актау, Караганды, Талгара, Уральска и других городов Казахстан</p>
 				</div>
@@ -948,56 +953,54 @@
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="container">
-			<div class="footer-wrap">
-				<div class="rows">
-					<img src="assets/images/logo-white.png" alt="QazBooking" />
-				</div>
+		<div class="footer-wrap box">
+			<div class="footer-wrap__line horizontal">
+				<img src="assets/icons/logo-white.svg" alt="QazBooking" />
+			</div>
 
-				<div class="rows">
-					<nav class="menu">
-						<a href="filter.html" class="text">Хостелы</a>
-						<a href="filter.html" class="text">Базы отдыха</a>
-						<a href="filter.html" class="text">Активный отдых</a>
-						<a href="filter.html" class="text">Туры</a>
-						<a href="filter.html" class="text">Оздоровительный отдых</a>
-						<a href="filter.html" class="text">Детские лагеря</a>
-						<a href="filter.html" class="text">Транспорт</a>
-					</nav>
+			<div class="footer-wrap__line horizontal">
+				<nav class="footer-menu">
+					<a href="filter.html" class="text">Хостелы</a>
+					<a href="filter.html" class="text">Базы отдыха</a>
+					<a href="filter.html" class="text">Активный отдых</a>
+					<a href="filter.html" class="text">Туры</a>
+					<a href="filter.html" class="text">Оздоровительный отдых</a>
+					<a href="filter.html" class="text">Детские лагеря</a>
+					<a href="filter.html" class="text">Транспорт</a>
+				</nav>
 
-					<nav class="menu">
-						<a href="#" class="text">О нас</a>
-						<a href="interestings.html" class="text">Интересное</a>
-						<a href="#" class="text">Контакты</a>
-						<a href="#" class="text">FAQ</a>
-						<a href="#" class="text">Наши партнеры</a>
-						<a href="#" class="text">Служба поддержки</a>
-						<a href="#" class="text">Договор оферты</a>
-						<a href="#" class="text">Политика конфиденциальности</a>
-					</nav>
+				<nav class="footer-menu">
+					<a href="#" class="text">О нас</a>
+					<a href="interestings.html" class="text">Интересное</a>
+					<a href="#" class="text">Контакты</a>
+					<a href="#" class="text">FAQ</a>
+					<a href="#" class="text">Наши партнеры</a>
+					<a href="#" class="text">Служба поддержки</a>
+					<a href="#" class="text">Договор оферты</a>
+					<a href="#" class="text">Политика конфиденциальности</a>
+				</nav>
 
-					<div class="right">
-						<div>
-							<h5 class="text">Мы в социальных сетях</h5>
-							<div class="social rows">
-								<a href="#">
-									<img src="assets/icons/facebook-white.svg" alt="facebook" />
-								</a>
-								<a href="#">
-									<img src="assets/icons/instagram-white.svg" alt="instagram" />
-								</a>
-							</div>
+				<div class="footer-links">
+					<div class="social">
+						<h4 class="text">Мы в социальных сетях</h4>
+						<div class="social-icons horizontal">
+							<a href="#">
+								<img src="assets/icons/facebook-white.svg" alt="Facebook" />
+							</a>
+							<a href="#">
+								<img src="assets/icons/instagram-white.svg" alt="Instagram" />
+							</a>
 						</div>
+					</div>
 
-						<div class="zerone rows h-row">
-							<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
-							<img
-								src="https://zeronetech.kz/zerone-min-logo.svg"
-								width="36"
-								height="38"
-								alt="Zerone Technology"
-							/>
-						</div>
+					<div class="zerone horizontal horizontal-center">
+						<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
+						<img
+							src="https://zeronetech.kz/zerone-min-logo.svg"
+							width="36"
+							height="38"
+							alt="Zerone Technology"
+						/>
 					</div>
 				</div>
 			</div>
@@ -1043,7 +1046,7 @@
 			<div class="info">
 				<div class="rating">
 					<p class="rating-text">9.6</p>
-					<img src="assets/icons/rating-5.svg" alt="rating" />
+					<img src="assets/icons/rating/fifth.svg" alt="rating" />
 				</div>
 				
 				<p class="description text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал за последнее время, персонал очень отзывчивый. По запросу предоставили дополнительный комплект полотенец и тапочек</p>

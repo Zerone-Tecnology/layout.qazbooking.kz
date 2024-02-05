@@ -31,58 +31,61 @@
 <body>
 	<!-- HEADER -->
 	<header class="header">
-		<div class="container">
-			<div class="header-wrap">
-				<div class="rows h-row">
-					<a href="index.html">
-						<img
-							src="assets/images/logo.png"
-							alt="QazBooking"
-							class="logo"
-						/>
-					</a>
+		<div class="header-wrap box">
+			<div class="horizontal horizontal-center">
+				<a href="index.html" class="header-logo">
+					<img
+						src="assets/icons/logo.svg"
+						alt="QazBooking"
+						class="header-logo__desktop"
+					/>
+					<img
+						src="assets/icons/logo-mobile.svg"
+						alt="QazBooking"
+						class="header-logo__mobile"
+					/>
+				</a>
 
-					<div class="location rows h-row">
-						<div class="icon">
-							<img src="assets/icons/location.svg" alt="location" />
-						</div>
-						<p class="text">Алматы</p>
+				<div class="header-location horizontal horizontal-center">
+					<div class="icon">
+						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
-
-					<div class="information rows h-row">
-						<a href="interestings.html" class="text">Интересное</a>
-						<div class="social rows">
-							<a href="#" class="icon">
-								<img src="assets/icons/facebook.svg" alt="facebook" />
-							</a>
-							<a href="#" class="icon">
-								<img src="assets/icons/instagram.svg" alt="instagram" />
-							</a>
-						</div>
-					</div>
-
-					<button class="button" type="submit">
-						<img src="assets/icons/auth.svg" alt="auth" class="icon" />
-						<p class="button-text">Войти</p>
-					</button>
+					<p class="text">Алматы</p>
 				</div>
 
-				<div class="menu rows">
-					<a href="filter.html" class="text">Хостелы</a>
-					<a href="filter.html" class="text">Базы отдыха</a>
-					<a href="filter.html" class="text">Активный отдых</a>
-					<a href="filter.html" class="text">Туры</a>
-					<a href="filter.html" class="text">Оздоровительный отдых</a>
-					<a href="filter.html" class="text">Детские лагеря</a>
-					<a href="filter.html" class="text">Транспорт</a>
+				<div class="header-links horizontal horizontal-center">
+					<a href="interestings.html" class="text">Интересное</a>
+					<div class="header-links__social horizontal">
+						<a href="#" class="icon">
+							<img src="assets/icons/facebook.svg" alt="Facebook" />
+						</a>
+						<a href="#" class="icon">
+							<img src="assets/icons/instagram.svg" alt="Instagram" />
+						</a>
+					</div>
 				</div>
+
+				<button class="button" type="submit">
+					<img src="assets/icons/auth.svg" alt="Auth" class="icon" />
+					<p class="button-text">Войти</p>
+				</button>
+			</div>
+
+			<div class="header-menu horizontal">
+				<a href="filter.html" class="text">Хостелы</a>
+				<a href="filter.html" class="text">Базы отдыха</a>
+				<a href="filter.html" class="text">Активный отдых</a>
+				<a href="filter.html" class="text">Туры</a>
+				<a href="filter.html" class="text">Оздоровительный отдых</a>
+				<a href="filter.html" class="text">Детские лагеря</a>
+				<a href="filter.html" class="text">Транспорт</a>
 			</div>
 		</div>
 	</header>
 
 	<main class="filter main">
-		<div class="container">
-			<div class="search rows h-row">
+		<div class="box">
+			<div class="search horizontal horizontal-center">
 				<img src="assets/icons/search.svg" alt="search" class="search-icon" />
 				<input
 					type="text"
@@ -94,7 +97,7 @@
 				</button>
 			</div>
 
-			<div class="content rows">
+			<div class="content horizontal">
 				<div class="content-left">
 					<div class="filter">
 						<h4 class="filter-title">Все фильтры</h4>
@@ -120,7 +123,7 @@
 									/>
 								</div>
 
-								<div class="price-range rows">
+								<div class="price-range horizontal">
 									<div class="price-range__input">
 										<input
 											type="text"
@@ -147,40 +150,40 @@
 						<div class="filter-content non">
 							<h6 class="info-text" class="title">Популярные фильтры</h6>
 							<div class="filter_ch">
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Хостелы</p>
 									</div>
 									<p>234</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Зона отдыха</p>
 									</div>
 									<p>54</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Гостевые дома</p>
 									</div>
 									<p>12</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">5 звёзд</p>
 									</div>
 									<p>5</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Завтрак включён</p>
 									</div>
@@ -192,48 +195,48 @@
 						<div class="filter-content">
 							<h6 class="title">Тип размещения</h6>
 							<div class="filter_ch">
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Хостел</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Санаторий</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Тур база</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Зона отдыха</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Кемпинг</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Авторские туры</p>
 									</div>
@@ -245,16 +248,16 @@
 						<div class="filter-content">
 							<h6 class="title">Питание</h6>
 							<div class="filter_ch">
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">Завтрак включён</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="checkbox" class="input" />
 										<p class="text">С собственной кухней</p>
 									</div>
@@ -266,24 +269,24 @@
 						<div class="filter-content">
 							<h6 class="title">Рейтинг</h6>
 							<div class="filter_ch">
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="radio" class="input" />
 										<p class="text">4.5 и выше</p>
 									</div>
 									<p>109</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="radio" class="input" />
 										<p class="text">4 и выше</p>
 									</div>
 									<p>34</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="radio" class="input" />
 										<p class="text">3 и выше</p>
 									</div>
@@ -295,16 +298,16 @@
 						<div class="filter-content">
 							<h6 class="title">Политика отмены</h6>
 							<div class="filter_ch">
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="radio" class="input" />
 										<p class="text">Бесплатная отмена</p>
 									</div>
 									<p>123</p>
 								</div>
 
-								<div class="filter_ch-item rows h-row">
-									<div class="filter_ch-item__field rows h-row">
+								<div class="filter_ch-item horizontal horizontal-center">
+									<div class="filter_ch-item__field horizontal horizontal-center">
 										<input type="radio" class="input" />
 										<p class="text">Без предоплаты</p>
 									</div>
@@ -320,13 +323,13 @@
 				</div>
 				
 				<div class="content-right">
-					<div class="content-right__header rows h-row">
-						<div class="search_result rows">
+					<div class="content-right__header horizontal horizontal-center">
+						<div class="search_result horizontal">
 							<h6>Алматы: найдено совпадений</h6>
 							<h4>234</h6>
 						</div>
 						
-						<div class="sorting rows h-row btn">
+						<div class="sorting horizontal horizontal-center btn">
 							<img src="assets/icons/arrow_up_down.svg" alt="sorting" />
 							<p>Сортировать:</p>
 							<p>Наши рекомендации</p>
@@ -334,7 +337,7 @@
 					</div>
 
 					<div class="content-right__body">
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel1.jpeg"
 								alt="Hostel 1"
@@ -342,36 +345,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">Grand hostel</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating-4.svg" alt="Rating" />
+										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">1233 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -384,7 +387,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -399,7 +402,7 @@
 							</div>
 						</div>
 
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel2.jpeg"
 								alt="Hostel 2"
@@ -407,36 +410,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">HiLoft Hostel</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating-4.svg" alt="Rating" />
+										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">453 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -449,7 +452,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -464,7 +467,7 @@
 							</div>
 						</div>
 
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel3.jpeg"
 								alt="Hostel 3"
@@ -472,36 +475,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">Тунде</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating-4.svg" alt="Rating" />
+										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">3214 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -514,7 +517,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -529,7 +532,7 @@
 							</div>
 						</div>
 
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel4.jpeg"
 								alt="Hostel 4"
@@ -537,36 +540,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">Барыс хостел</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">9.5</p>
-										<img src="assets/icons/rating-5.svg" alt="Rating" />
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">65 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -579,7 +582,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -594,7 +597,7 @@
 							</div>
 						</div>
 
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel1.jpeg"
 								alt="Hostel 1"
@@ -602,36 +605,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">Grand hostel</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating-4.svg" alt="Rating" />
+										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">1233 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -644,7 +647,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -659,7 +662,7 @@
 							</div>
 						</div>
 
-						<div class="card rows">
+						<div class="card horizontal">
 							<img
 								src="assets/images/hostel2.jpeg"
 								alt="Hostel 2"
@@ -667,36 +670,36 @@
 							/>
 
 							<div class="card-info">
-								<div class="card-info__header rows h-row">
+								<div class="card-info__header horizontal horizontal-center">
 									<h5 class="name">HiLoft Hostel</h5>
 
 									<img
-										src="assets/icons/favourite.svg"
-										alt="favourite"
+										src="assets/icons/favourite/default.svg"
+										alt="Favourite"
 										class="btn"
 									/>
 								</div>
 
-								<div class="card-info__locations rows h-row">
-									<div class="location rows h-row">
+								<div class="card-info__locations horizontal horizontal-center">
+									<div class="location horizontal horizontal-center">
 										<img src="assets/icons/location2.svg" alt="location" />
 										<p class="location-text">Алматинская обл.</p>
 									</div>
 									<p class="btn text">Показать на карте</p>
 								</div>
 
-								<div class="card-info__reviews rows h-row">
+								<div class="card-info__reviews horizontal horizontal-center">
 									<h5 class="text">Хостел</h5>
 
-									<div class="rating rows h-row">
+									<div class="rating horizontal horizontal-center">
 										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating-4.svg" alt="Rating" />
+										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 									</div>
 
 									<p class="text2">453 отзывов</p>
 								</div>
 
-								<div class="card-info__features rows">
+								<div class="card-info__features horizontal">
 									<p class="text">Wi-Fi</p>
 									<p class="text">•</p>
 									<p class="text">Бассейн</p>
@@ -709,7 +712,7 @@
 
 							<div class="card-action">
 								<div>
-									<div class="price rows h-row">
+									<div class="price horizontal horizontal-center">
 										<h5 class="price-text">143 500</h5>
 										<img src="assets/icons/currency.svg" alt="currency" />
 									</div>
@@ -725,12 +728,12 @@
 						</div>
 					</div>
 
-					<div class="content-right__pagination rows h-row">
+					<div class="content-right__pagination horizontal horizontal-center">
 						<a href="#" class="prev icon">
 							<img src="assets/icons/left.svg" alt="prev" />
 						</a>
 
-						<ul class="pagination rows">
+						<ul class="pagination horizontal">
 							<li class="pagination-element active">
 								<p class="text">1</p>
 							</li>
@@ -783,56 +786,54 @@
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="container">
-			<div class="footer-wrap">
-				<div class="rows">
-					<img src="assets/images/logo-white.png" alt="QazBooking" />
-				</div>
+		<div class="footer-wrap box">
+			<div class="footer-wrap__line horizontal">
+				<img src="assets/icons/logo-white.svg" alt="QazBooking" />
+			</div>
 
-				<div class="rows">
-					<nav class="menu">
-						<a href="filter.html" class="text">Хостелы</a>
-						<a href="filter.html" class="text">Базы отдыха</a>
-						<a href="filter.html" class="text">Активный отдых</a>
-						<a href="filter.html" class="text">Туры</a>
-						<a href="filter.html" class="text">Оздоровительный отдых</a>
-						<a href="filter.html" class="text">Детские лагеря</a>
-						<a href="filter.html" class="text">Транспорт</a>
-					</nav>
+			<div class="footer-wrap__line horizontal">
+				<nav class="footer-menu">
+					<a href="filter.html" class="text">Хостелы</a>
+					<a href="filter.html" class="text">Базы отдыха</a>
+					<a href="filter.html" class="text">Активный отдых</a>
+					<a href="filter.html" class="text">Туры</a>
+					<a href="filter.html" class="text">Оздоровительный отдых</a>
+					<a href="filter.html" class="text">Детские лагеря</a>
+					<a href="filter.html" class="text">Транспорт</a>
+				</nav>
 
-					<nav class="menu">
-						<a href="#" class="text">О нас</a>
-						<a href="interestings.html" class="text">Интересное</a>
-						<a href="#" class="text">Контакты</a>
-						<a href="#" class="text">FAQ</a>
-						<a href="#" class="text">Наши партнеры</a>
-						<a href="#" class="text">Служба поддержки</a>
-						<a href="#" class="text">Договор оферты</a>
-						<a href="#" class="text">Политика конфиденциальности</a>
-					</nav>
+				<nav class="footer-menu">
+					<a href="#" class="text">О нас</a>
+					<a href="interestings.html" class="text">Интересное</a>
+					<a href="#" class="text">Контакты</a>
+					<a href="#" class="text">FAQ</a>
+					<a href="#" class="text">Наши партнеры</a>
+					<a href="#" class="text">Служба поддержки</a>
+					<a href="#" class="text">Договор оферты</a>
+					<a href="#" class="text">Политика конфиденциальности</a>
+				</nav>
 
-					<div class="right">
-						<div>
-							<h5 class="text">Мы в социальных сетях</h5>
-							<div class="social rows">
-								<a href="#">
-									<img src="assets/icons/facebook-white.svg" alt="facebook" />
-								</a>
-								<a href="#">
-									<img src="assets/icons/instagram-white.svg" alt="instagram" />
-								</a>
-							</div>
+				<div class="footer-links">
+					<div class="social">
+						<h4 class="text">Мы в социальных сетях</h4>
+						<div class="social-icons horizontal">
+							<a href="#">
+								<img src="assets/icons/facebook-white.svg" alt="Facebook" />
+							</a>
+							<a href="#">
+								<img src="assets/icons/instagram-white.svg" alt="Instagram" />
+							</a>
 						</div>
+					</div>
 
-						<div class="zerone rows h-row">
-							<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
-							<img
-								src="https://zeronetech.kz/zerone-min-logo.svg"
-								width="36"
-								height="38"
-								alt="Zerone Technology"
-							/>
-						</div>
+					<div class="zerone horizontal horizontal-center">
+						<p class="text">Разработка сайта — <a href="https://zeronetech.kz" tabindex="_blank" class="text">Zerone Technology</a></p>
+						<img
+							src="https://zeronetech.kz/zerone-min-logo.svg"
+							width="36"
+							height="38"
+							alt="Zerone Technology"
+						/>
 					</div>
 				</div>
 			</div>
