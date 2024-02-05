@@ -83,7 +83,7 @@
 		</div>
 	</header>
 
-	<main class="interestings main">
+	<main class="interestingsdetail main">
 		<div class="box">
 			<div class="breadcrumbs horizontal">
 				<div class="breadcrumbs-item horizontal">
@@ -97,117 +97,147 @@
 			</div>
 
 			<section>
-				<h1 class="title">Интересное</h1>
+				<div class="interestingsdetail-header horizontal horizontal-center">
+					<h1 class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h1>
 
-				<div class="content">
-					<div class="blog">
-						<img
-							src="assets/images/interesting1.jpeg"
-							alt="blog 1"
-							class="blog-image"
-						/>
+					<ul class="action horizontal">
+						<li class="action-icon horizontal horizontal-center">
+							<img src="assets/icons/calendar.svg" alt="Chat" />
+							<p>12.12.23</p>
+						</li>
 
-						<div class="blog-info">
-							<p class="blog-info__date">12.05.2023</p>
-							<h4 class="blog-info__text">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
+						<li class="action-icon horizontal horizontal-center">
+							<img src="assets/icons/view.svg" alt="Share" />
+							<p>123</p>
+						</li>
+
+						<li class="action-icon horizontal horizontal-center">
+							<img src="assets/icons/share.svg" alt="Favourite" />
+							<p>Поделиться</p>
+						</li>
+					</ul>
+				</div>
+
+				<div class="interestingsdetail-content">
+					<img
+						src="assets/images/interesting1.jpeg"
+						alt="Blog 1"
+						class="interestingsdetail-content__image"
+					/>
+
+					<div class="interestingsdetail-content__description">
+						<p class="text">Хочется поехать на отдых прямо сейчас? Есть решение: тур в кредит с минимальной переплатой.</p>
+						<p class="text">У вас есть возможность увидеть вживую великие пирамиды Египта, понежиться в теплых лучах солнца в Гоа, отведать экзотических фруктов в Таиланде.</p>
+						<p class="text">Кредит можно оформлять на любое направление. Это намного дешевле чем если бы вы взяли денежный кредит на поездку!</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="popular">
+				<h3>Вас может заинтересовать</h3>
+				<div class="popular-content__body horizontal">
+					<div class="card">
+						<div class="card-image">
+							<img src="assets/images/hostel1.jpeg" alt="Hostel" />
 						</div>
 
-						<a
-							v-if="button"
-							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
-						>
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
+						<div class="card-content">
+							<a href="detail.html" class="card-content__title">Grand hostel</a>
+
+							<div class="card-content__location horizontal horizontal-center">
+								<img src="assets/icons/location2.svg" alt="location" />
+								<p class="text">Алматинская обл.</p>
+							</div>
+
+							<div class="card-content__price">
+								<p class="text">от</p>
+								<h4>2500</h4>
+								<img src="assets/icons/currency.svg" alt="tenge" />
+							</div>
+
+							<div class="card-content__rating">
+								<p class="text">9.6 </p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+						</div>
 					</div>
 
-					<div class="blog">
-						<img
-							src="assets/images/interesting2.jpeg"
-							alt="blog 2"
-							class="blog-image"
-						/>
-
-						<div class="blog-info">
-							<p class="blog-info__date">23.12.2023</p>
-							<h4 class="blog-info__text">Канада: бесплатные обзорные экскурсии</h4>
+					<div class="card">
+						<div class="card-image">
+							<img src="assets/images/hostel2.jpeg" alt="Hostel" />
 						</div>
 
-						<a
-							v-if="button"
-							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
-						>
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
+						<div class="card-content">
+							<a href="detail.html" class="card-content__title">Grand hostel</a>
+
+							<div class="card-content__location horizontal horizontal-center">
+								<img src="assets/icons/location2.svg" alt="location" />
+								<p class="text">Алматинская обл.</p>
+							</div>
+
+							<div class="card-content__price">
+								<p class="text">от</p>
+								<h4>2500</h4>
+								<img src="assets/icons/currency.svg" alt="tenge" />
+							</div>
+
+							<div class="card-content__rating">
+								<p class="text">9.6 </p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+						</div>
+					</div>
+					
+					<div class="card">
+						<div class="card-image">
+							<img src="assets/images/hostel3.jpeg" alt="Hostel" />
+						</div>
+
+						<div class="card-content">
+							<a href="detail.html" class="card-content__title">Grand hostel</a>
+
+							<div class="card-content__location horizontal horizontal-center">
+								<img src="assets/icons/location2.svg" alt="location" />
+								<p class="text">Алматинская обл.</p>
+							</div>
+
+							<div class="card-content__price">
+								<p class="text">от</p>
+								<h4>2500</h4>
+								<img src="assets/icons/currency.svg" alt="tenge" />
+							</div>
+
+							<div class="card-content__rating">
+								<p class="text">9.6 </p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+						</div>
 					</div>
 
-					<div class="blog">
-						<img
-							src="assets/images/interesting3.jpeg"
-							alt="blog 3"
-							class="blog-image"
-						/>
-
-						<div class="blog-info">
-							<p class="blog-info__date">12.05.2023</p>
-							<h4 class="blog-info__text">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</>
+					<div class="card">
+						<div class="card-image">
+							<img src="assets/images/hostel4.jpeg" alt="Hostel" />
 						</div>
 
-						<a href="interesting.html" class="blog-button btn">
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
-					</div>
+						<div class="card-content">
+							<a href="detail.html" class="card-content__title">Grand hostel</a>
 
-					<div class="blog">
-						<img
-							src="assets/images/interesting4.jpeg"
-							alt="blog 4"
-							class="blog-image"
-						/>
+							<div class="card-content__location horizontal horizontal-center">
+								<img src="assets/icons/location2.svg" alt="location" />
+								<p class="text">Алматинская обл.</p>
+							</div>
 
-						<div class="blog-info">
-							<p class="blog-info__date">12.05.2023</p>
-							<h4 class="blog-info__text">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h4>
+							<div class="card-content__price">
+								<p class="text">от</p>
+								<h4>2500</h4>
+								<img src="assets/icons/currency.svg" alt="tenge" />
+							</div>
+
+							<div class="card-content__rating">
+								<p class="text">9.6 </p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
 						</div>
-
-						<a href="interesting.html" class="blog-button btn">
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
-					</div>
-
-					<div class="blog">
-						<img
-							src="assets/images/interesting5.jpeg"
-							alt="blog 5"
-							class="blog-image"
-						/>
-
-						<div class="blog-info">
-							<p class="blog-info__date">23.12.2023</p>
-							<h4 class="blog-info__text">Канада: бесплатные обзорные экскурсии</h4>
-						</div>
-
-						<a href="interesting.html" class="blog-button btn">
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
-					</div>
-
-					<div class="blog">
-						<img
-							src="assets/images/interesting6.jpeg"
-							alt="blog 6"
-							class="blog-image"
-						/>
-
-						<div class="blog-info">
-							<p class="blog-info__date">12.05.2023</p>
-							<h4 class="blog-info__text">Иордания: романтический ужин в подарок от отеля Movenpick Resort&Spa</h4>
-						</div>
-
-						<a href="interesting.html" class="blog-button btn">
-							<img src="assets/icons/chevron.svg" alt="right arrow" />
-						</a>
 					</div>
 				</div>
 			</section>
