@@ -465,9 +465,12 @@ p
 		left: 1.458334vw
 	&-text
 		width: -webkit-fill-available
-		padding: 15px 1.041667vw 15px 2.8125vw
+		height: 100%
+		padding: 16px 1.041667vw 16px 2.8125vw
 		background-color: #F7F7FD
 		border-radius: 4px
+		font-size: 16px
+		font-weight: 400
 		&::placeholder
 			color: $grey
 	.button
@@ -972,10 +975,21 @@ p
 							.mini_images
 								width: 100%
 							.main_image
+								position: relative
 								height: 198px
+								.image
+									position: absolute
+									top: 0
+									width: inherit
+									height: inherit
+									opacity: 0
+									&.active
+										opacity: 1
 							.mini_images
-								gap: 9px
-								overflow: scroll
+								overflow: hidden
+								.carousel-list
+									gap: 9px
+									transition: all .3s
 								.image
 									width: 88px
 									height: 72px
