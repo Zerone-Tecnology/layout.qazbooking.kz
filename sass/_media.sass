@@ -19,6 +19,8 @@
 @media only screen and (max-width : 480px)
 	h1
 		font-size: 32px
+	h3
+		line-height: 39px
 
 	.box
 		width: 91.46667vw
@@ -96,10 +98,10 @@
 	.home
 		margin: 19px 0 83px
 		&-wrap
-			gap: 93px
+			gap: 90px
+			width: 100%
 			.hero
 				width: 100vw
-				margin: 0 -4.26667vw
 				&-content
 					padding: 47px 4.26667vw 89px
 					&__description
@@ -113,9 +115,10 @@
 					.search-text
 						width: 100%
 			.category,
-			.popular
-				&-wrap
-					margin-right: -4.26667vw
+			.popular,
+			.reviews,
+			.blogs
+				margin-left: 4.26667vw
 			.category
 				&-wrap
 					gap: 4.26667vw
@@ -123,6 +126,60 @@
 					min-width: 41.6vw
 					&__icon
 						height: 41.6vw
+			.popular
+				width: 95.734vw
+			.reviews,
+			.blogs
+				&-header
+					margin-right: 4.26667vw
+			.seo,
+			.about
+				margin: 4.26667vw
+			.seo
+				&-subtitle
+					font-size: 18px
+					line-height: 25px
+				&-title
+					line-height: 39px
+				&-text
+					font-size: 16px
+					line-height: 19px
+				&-text,
+				&-wrap
+					margin-top: 40px
+				&-wrap
+					gap: 27px
+				&-box
+					width: 100%
+					min-height: 234px
+					padding: 20px 14px 20px
+					.title
+						width: 100%
+						line-height: 24px
+						margin: 0 auto 20px
+			.blogs
+				.btn-text
+					display: none
+				&-wrap
+					gap: 16px
+			.about
+				height: max-content
+				&-wrap
+					flex-direction: column
+					gap: 40px
+					padding: 24px 16px 19px
+				&-info
+					grid-gap: 20px
+					&__title
+						line-height: 39px
+						margin-bottom: 1px
+					&__text
+						width: 100%
+						&:last-child
+							width: 100%
+				&-image
+					width: 100%
+
 	// COMPONENTS
 	.search
 		padding: 8px 2.133334vw
@@ -133,6 +190,58 @@
 			padding-left: 14.4vw
 		.button
 			display: none
+
+	.rating
+		gap: 6px
+		padding: 4px
+
+	.author,
+	.date
+		&-text
+			font-size: 14px
+			line-height: 17px
+
+	.author
+		gap: 8px
+
+	.date
+		gap: 6px
+		&-dot
+			font-size: 14px
+
+	.card
+		min-width: 282px
+		&_list
+			gap: 30px
+		&-content
+			padding: 17px 11px 2px 7px
+			&__bottom .price
+				gap: 5px
+
+	.review
+		min-width: 300px
+		padding: 15px
+		&-button
+			top: 15px
+			right: 15px
+		&-text
+			font-size: 16px
+
+	.blog
+		min-width: 318px
+		&-info
+			padding: 20px 16px 19px
+		&-button
+			top: 140px
+			right: 35px
+	
+	.reviews
+		&-header__buttons
+			gap: 8px
+			.btn
+				width: 63px
+		&-wrap
+			gap: 16px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
