@@ -208,7 +208,6 @@ p {
 .header-wrap .text {
   font-size: 20px;
   font-weight: 400;
-  color: #1E1E1E;
 }
 .header-logo {
   width: 13.1771vw;
@@ -258,10 +257,8 @@ p {
   padding-top: 11.5px;
 }
 .header-menu .text {
-  display: block;
   font-weight: 500;
   line-height: 24px;
-  white-space: nowrap;
   padding: 10px 0.4166667vw;
 }
 
@@ -278,9 +275,12 @@ p {
 .footer-wrap__line .text {
   color: #FFF;
 }
+.footer-logo {
+  width: -moz-max-content;
+  width: max-content;
+}
 .footer-menu {
-  display: grid;
-  grid-gap: 8px;
+  gap: 8px;
   width: 13.4896vw;
 }
 .footer-menu .text {
@@ -350,8 +350,6 @@ p {
   border-radius: 10.141px;
 }
 .modal-button {
-  display: flex;
-  align-items: center;
   gap: 0.4166667vw;
 }
 .modal-button__text {
@@ -466,8 +464,7 @@ p {
   justify-content: space-between;
 }
 .home-wrap .popular-wrap {
-  display: grid;
-  grid-gap: 50px;
+  gap: 50px;
   width: inherit;
 }
 .home-wrap .popular-wrap__line {
@@ -1523,7 +1520,7 @@ p {
     top: 0;
   }
   .header-wrap {
-    padding: 14px 2.133333vw 10px;
+    padding: 14px 8px 10px;
   }
   .header-wrap .text {
     font-size: 16px;
@@ -1531,7 +1528,7 @@ p {
   .header-logo {
     width: -moz-max-content;
     width: max-content;
-    margin-right: 8.53333vw;
+    margin-right: 32px;
   }
   .header-logo__desktop {
     display: none;
@@ -1540,8 +1537,8 @@ p {
     display: block;
   }
   .header-location {
-    width: 22.933333vw;
-    gap: 2.133333vw;
+    width: 86px;
+    gap: 8px;
     margin-right: 0;
     padding: 0;
   }
@@ -1557,7 +1554,7 @@ p {
     display: none !important;
   }
   .header .button {
-    width: 21.33334vw;
+    width: 80px;
     height: 44px;
     margin-left: auto;
   }
@@ -1565,16 +1562,16 @@ p {
     display: none;
   }
   .header-menu {
-    gap: 2.133333vw;
+    gap: 8px;
     padding-top: 8.5px;
   }
   .header-menu .text {
-    padding: 10px 2.133333vw;
+    padding: 10px 8px;
     line-height: 19px;
   }
   .footer-wrap {
     grid-gap: 67px;
-    padding: 19px 4.26667vw 86px;
+    padding: 19px 16px 86px;
   }
   .footer-wrap__line {
     flex-direction: column;
@@ -1590,11 +1587,11 @@ p {
     font-size: 20px;
   }
   .footer-links .social-icons {
-    gap: 6.4vw;
+    gap: 24px;
   }
   .footer-links .zerone {
-    gap: 6.66667vw;
-    width: 72.53334vw;
+    gap: 25px;
+    width: 2 72px;
     margin-top: 48px;
   }
   .main {
@@ -1784,8 +1781,4 @@ p {
   .reviews-wrap {
     gap: 16px;
   }
-}
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/
 }/*# sourceMappingURL=main.css.map */

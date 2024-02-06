@@ -144,7 +144,6 @@ p
 		.text
 			font-size: 20px
 			font-weight: 400
-			color: $dark
 	&-logo
 		width: 13.1771vw
 		margin-right: 4.6875vw
@@ -182,10 +181,8 @@ p
 		margin-top: 19.5px
 		padding-top: 11.5px
 		.text
-			display: block
 			font-weight: 500
 			line-height: 24px
-			white-space: nowrap
 			padding: 10px .4166667vw
 
 .footer
@@ -199,9 +196,10 @@ p
 			gap: 2.734375vw
 			.text
 				color: $white
+	&-logo
+		width: max-content
 	&-menu
-		display: grid
-		grid-gap: 8px
+		gap: 8px
 		width: 13.4896vw
 		.text
 			font-size: 20px
@@ -259,8 +257,6 @@ p
 			height: 100%
 			border-radius: 10.141px
 	&-button
-		display: flex
-		align-items: center
 		gap: .4166667vw
 		&__text
 			line-height: 24px
@@ -350,8 +346,7 @@ p
 				justify-content: space-between
 		.popular
 			&-wrap
-				display: grid
-				grid-gap: 50px
+				gap: 50px
 				width: inherit
 				&__line
 					width: inherit
