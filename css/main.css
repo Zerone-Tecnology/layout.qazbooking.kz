@@ -1015,61 +1015,61 @@ p {
   flex-direction: column;
   gap: 18px;
 }
-.main.filter .content-right__body .card {
+.main.filter .content-right__body .cardd {
   gap: 1.25vw;
   height: 225px;
   border-radius: 16px;
   background: #FFF;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
 }
-.main.filter .content-right__body .card-image {
+.main.filter .content-right__body .cardd-image {
   width: 11.71875vw;
   border-radius: 16px;
 }
-.main.filter .content-right__body .card-info, .main.filter .content-right__body .card-action {
+.main.filter .content-right__body .cardd-info, .main.filter .content-right__body .cardd-action {
   margin: 12.5px 0;
 }
-.main.filter .content-right__body .card-info {
+.main.filter .content-right__body .cardd-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 21.7709vw;
 }
-.main.filter .content-right__body .card-info__header {
+.main.filter .content-right__body .cardd-info__header {
   justify-content: space-between;
 }
-.main.filter .content-right__body .card-info__header .name {
+.main.filter .content-right__body .cardd-info__header .name {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   font-weight: 600;
 }
-.main.filter .content-right__body .card-info__locations {
+.main.filter .content-right__body .cardd-info__locations {
   gap: 0.83333vw;
 }
-.main.filter .content-right__body .card-info__locations .text {
+.main.filter .content-right__body .cardd-info__locations .text {
   color: #A1A1A1;
 }
-.main.filter .content-right__body .card-info__locations .btn {
+.main.filter .content-right__body .cardd-info__locations .btn {
   text-decoration: underline;
 }
-.main.filter .content-right__body .card-info__reviews {
+.main.filter .content-right__body .cardd-info__reviews {
   gap: 0.4166667vw;
 }
-.main.filter .content-right__body .card-info__reviews .text {
+.main.filter .content-right__body .cardd-info__reviews .text {
   font-size: 18px;
 }
-.main.filter .content-right__body .card-info__reviews .text2 {
+.main.filter .content-right__body .cardd-info__reviews .text2 {
   font-weight: 600;
 }
-.main.filter .content-right__body .card-info__features {
+.main.filter .content-right__body .cardd-info__features {
   flex-wrap: wrap;
   gap: 4px 0.4166667vw;
 }
-.main.filter .content-right__body .card-info__features .text {
+.main.filter .content-right__body .cardd-info__features .text {
   color: #A1A1A1;
 }
-.main.filter .content-right__body .card-action {
+.main.filter .content-right__body .cardd-action {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1232,67 +1232,67 @@ p {
   display: grid;
   grid-gap: 24px;
 }
-.main.detail .info-left .variant-content .card {
+.main.detail .info-left .variant-content .cardd {
   gap: 1.5625vw;
   height: 318px;
   border: 1px solid #F4F4F4;
   border-radius: 16px;
   padding: 16px 0.83333vw;
 }
-.main.detail .info-left .variant-content .card-carousel {
+.main.detail .info-left .variant-content .cardd-carousel {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 14.6875vw;
 }
-.main.detail .info-left .variant-content .card-carousel .image {
+.main.detail .info-left .variant-content .cardd-carousel .image {
   border-radius: 16px;
 }
-.main.detail .info-left .variant-content .card-carousel .main_image,
-.main.detail .info-left .variant-content .card-carousel .mini_images {
+.main.detail .info-left .variant-content .cardd-carousel .main_image,
+.main.detail .info-left .variant-content .cardd-carousel .mini_images {
   width: 100%;
 }
-.main.detail .info-left .variant-content .card-carousel .main_image {
+.main.detail .info-left .variant-content .cardd-carousel .main_image {
   height: 198px;
 }
-.main.detail .info-left .variant-content .card-carousel .mini_images {
+.main.detail .info-left .variant-content .cardd-carousel .mini_images {
   gap: 9px;
   overflow: scroll;
 }
-.main.detail .info-left .variant-content .card-carousel .mini_images .image {
+.main.detail .info-left .variant-content .cardd-carousel .mini_images .image {
   width: 88px;
   height: 72px;
 }
-.main.detail .info-left .variant-content .card-content {
+.main.detail .info-left .variant-content .cardd-content {
   width: 29.27083vw;
 }
-.main.detail .info-left .variant-content .card-content .title {
+.main.detail .info-left .variant-content .cardd-content .title {
   font-weight: 600;
   margin-bottom: 20px;
 }
-.main.detail .info-left .variant-content .card-content .list {
+.main.detail .info-left .variant-content .cardd-content .list {
   gap: 1.14583vw;
 }
-.main.detail .info-left .variant-content .card-content .bottom {
+.main.detail .info-left .variant-content .cardd-content .bottom {
   justify-content: space-between;
   border-top: 1px solid #D4D4D4;
   margin-top: 39.5px;
   padding-top: 39.5px;
 }
-.main.detail .info-left .variant-content .card-content .bottom-left {
+.main.detail .info-left .variant-content .cardd-content .bottom-left {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.main.detail .info-left .variant-content .card-content .bottom-left .text {
+.main.detail .info-left .variant-content .cardd-content .bottom-left .text {
   font-size: 18px;
   font-weight: 600;
 }
-.main.detail .info-left .variant-content .card-content .bottom-left .btn {
+.main.detail .info-left .variant-content .cardd-content .bottom-left .btn {
   color: #03306B;
   text-decoration: underline;
 }
-.main.detail .info-left .variant-content .card-content .bottom-right .button {
+.main.detail .info-left .variant-content .cardd-content .bottom-right .button {
   margin-top: 26px;
 }
 .main.detail .info-right {
@@ -1365,11 +1365,11 @@ p {
 .main.detail .info-right .locations-popup .horizontal .rating-text {
   color: #FFF;
 }
-.main.detail .info-right .locations-popup .horizontal .review {
+.main.detail .info-right .locations-popup .horizontal .revieww {
   font-size: 14px;
   gap: 0.104167vw;
 }
-.main.detail .info-right .locations-popup .horizontal .review span {
+.main.detail .info-right .locations-popup .horizontal .revieww span {
   font-weight: 600;
 }
 .main.detail .info-right .contacts {
