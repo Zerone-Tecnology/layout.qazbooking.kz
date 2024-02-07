@@ -1,75 +1,199 @@
 @import vars
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+@media only screen and (max-width : 1440px)
+	.box
+		width: 906px
 
+	// LAYOUT
+	.header
+		&-wrap
+			padding-right: 25px
+			padding-left: 25px
+		&-logo
+			width: 190px
+			margin-right: 45px
+		&-location
+			width: 156px
+			margin-right: 90px
+		&-links
+			width: 212px
+			&__social
+				gap: 18px
+		.button
+			width: 100px
+			margin-left: 19px
+
+	.footer
+		&-wrap
+			padding-right: 80px
+			padding-left: 78px
+			&__line
+				gap: 33px
+		&-menu
+			width: 194px
+		&-links
+			width: 294px
+
+	// PAGES
+	.home
+		&-wrap
+			.hero-content
+				padding-left: 56px
+				padding-right: 56px
+				.search-text
+					width: calc(100% - 174px)
+			.category-wrap
+				gap: 29px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					gap: 21px
+				&-box
+					width: calc(50% - 10.5px)
+					padding: 24px 24px 17px 22px
+			.blogs-wrap
+				gap: 22px
+			.about
+				&-wrap
+					padding: 41px
+				&-info
+					gap: 26px
+
+	// COMPONENTS
+	.search
+		&-text
+			padding: 12px 20px 12px 54px
+		.button
+			width: 166px
+
+	.card_list
+		gap: 22px
+
+	.reviews-wrap
+		gap: 22px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	h1
-		font-size: 32px
-
+@media only screen and (max-width : 992px)
 	.box
-		width: 91.46667vw
+		width: 629px
 
-	.main
-		padding-top: 152px
-
-	.header,
-	.footer
-		width: 100vw
-		&-wrap
-			width: 100vw
-
+	// LAYOUT
 	.header
 		top: 0
 		&-wrap
-			padding: 14px 2.133333vw 10px
+			padding-right: 16px
+			padding-left: 16px
 			.text
-				font-size: 16px
+				font-size: 18px
 		&-logo
 			width: max-content
-			margin-right: 8.53333vw
+			margin-right: 32px
 			&__desktop
 				display: none
 			&__mobile
 				display: block
 		&-location
-			width: 22.933333vw
-			gap: 2.133333vw
-			margin-right: 0
-			padding: 0
+			width: 108px
+			height: 19px
+			margin-right: 62px
 			.icon
 				width: 16px
 				height: 16px
 				padding: 1.33px 2px
-			.text
-				line-height: 19px
 		&-links
-			display: none !important
+			width: 206px
+			&__social
+				gap: 12px
 		.button
-			width: 21.33334vw
+			width: 80px
 			height: 44px
 			margin-left: auto
 			&-text
 				display: none
 		&-menu
-			gap: 2.133333vw
+			gap: 8px
 			padding-top: 8.5px
 			.text
-				padding: 10px 2.133333vw
 				line-height: 19px
+
+	.footer
+		&-wrap
+			padding-right: 55px
+			padding-left: 54px
+			&__line
+				flex-wrap: wrap
+				gap: 33px 8%
+		&-menu
+			width: 46%
+		&-links
+			width: 100%
+			margin-top: 24px
+			.social .text
+				font-size: 22px
+			.zerone
+				margin-top: 48px
+
+	// PAGES
+	.home
+		&-wrap
+			.hero-content
+				padding: 47px 56px 89px
+				.search-text
+					width: calc(100% - 174px)
+			.category-wrap
+				gap: 29px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					gap: 21px
+				&-box
+					width: calc(50% - 10.5px)
+					padding: 24px 24px 17px 22px
+			.blogs-wrap
+				gap: 22px
+			.about
+				&-wrap
+					padding: 41px
+				&-info
+					gap: 26px
+
+	// COMPONENTS
+	.search
+		&-text
+			padding: 12px 20px 12px 54px
+		.button
+			width: 166px
+
+	.card_list
+		gap: 22px
+
+	.reviews-wrap
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 768px)
+	h1
+		font-size: 32px
+	h3
+		line-height: 39px
+
+	.box
+		width: 100vw
+
+	// LAYOUT
+	.header
+		&-wrap
+			padding: 14px 8px 10px
+			.text
+				font-size: 16px
+		&-location
+			width: 86px
+			margin-right: 0
+			padding: 0
+		&-links
+			display: none !important
 
 	.footer
 		&-wrap
@@ -81,43 +205,158 @@
 		&-menu
 			width: 100%
 		&-links
-			margin-top: 24px
-			.social
-				.text
-					font-size: 20px
-				&-icons
-					gap: 6.4vw
+			.social .text
+				font-size: 20px
 			.zerone
-				gap: 6.66667vw
-				width: 72.53334vw
-				margin-top: 48px
+				width: 75%
 
+	.main
+		padding-top: 152px
+
+	// PAGES
 	.home
 		margin: 19px 0 83px
-		.hero
-			&-image
-				object-position: 100% 64.5%
-			&-content
-				&__description
+		&-wrap
+			gap: 90px
+			.hero
+				width: 100vw
+				&-content
+					padding: 47px 4.26667vw 89px
+					&__description
+						width: 100%
+						margin-bottom: 86px
+						.title
+							line-height: 39px
+							margin-bottom: 16px
+						.text
+							-webkit-line-clamp: 3
+					.search-text
+						width: 100%
+			.category,
+			.popular,
+			.reviews,
+			.blogs
+				margin-left: 4.26667vw
+			.category
+				&-wrap
+					gap: 4.26667vw
+				&-block
+					min-width: 41.6vw
+					&__icon
+						height: 41.6vw
+			.popular
+				width: 95.734vw
+			.reviews,
+			.blogs
+				&-header
+					margin-right: 4.26667vw
+			.seo,
+			.about
+				margin: 4.26667vw
+			.seo
+				&-subtitle
+					font-size: 18px
+					line-height: 25px
+				&-title
+					line-height: 39px
+				&-text
+					font-size: 16px
+					line-height: 19px
+				&-text,
+				&-wrap
+					margin-top: 40px
+				&-wrap
+					gap: 27px
+				&-box
 					width: 100%
+					min-height: 234px
+					padding: 20px 14px 20px
 					.title
+						width: 100%
+						line-height: 24px
+						margin: 0 auto 20px
+			.blogs
+				.btn-text
+					display: none
+				&-wrap
+					gap: 16px
+			.about
+				height: max-content
+				&-wrap
+					flex-direction: column
+					gap: 40px
+					padding: 24px 16px 19px
+				&-info
+					grid-gap: 20px
+					&__title
 						line-height: 39px
+						margin-bottom: 1px
+					&__text
+						width: 100%
+						&:last-child
+							width: 100%
+				&-image
+					width: 100%
 
+	// COMPONENTS
 	.search
-		gap: .4166667vw
-		background-color: $white
-		border-radius: 8px
-		padding: 8px .4166667vw
-		box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .15)
+		padding: 8px 2.133334vw
 		&-icon
-			position: absolute
-			left: 1.458334vw
+			left: 7.46667vw
 		&-text
-			width: 100%
-			padding: 15px 1.041667vw 15px 2.8125vw
+			padding-right: 9.6vw
+			padding-left: 14.4vw
 		.button
 			display: none
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+	.rating
+		gap: 6px
+		padding: 4px
+
+	.author,
+	.date
+		&-text
+			font-size: 14px
+			line-height: 17px
+
+	.author
+		gap: 8px
+
+	.date
+		gap: 6px
+		&-dot
+			font-size: 14px
+
+	.card
+		min-width: 282px
+		&_list
+			gap: 30px
+		&-content
+			padding: 17px 11px 2px 7px
+			&__bottom .price
+				gap: 5px
+
+	.review
+		min-width: 300px
+		padding: 15px
+		&-button
+			top: 15px
+			right: 15px
+		&-text
+			font-size: 16px
+
+	.blog
+		min-width: 318px
+		&-info
+			padding: 20px 16px 19px
+		&-button
+			top: 140px
+			right: 35px
+	
+	.reviews
+		&-header__buttons
+			gap: 8px
+			.btn
+				width: 63px
+		&-wrap
+			gap: 16px

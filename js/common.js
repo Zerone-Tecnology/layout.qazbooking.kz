@@ -23,3 +23,74 @@ function closeModal() {
   modal.classList.remove("show");
 	$('body').css("overflow", "auto");
 }
+
+const d = document;
+const $q = d.querySelectorAll.bind(d);
+const $g = d.querySelector.bind(d);
+
+function initializeCarousel(carouselId) {
+	const $list = $g(`#${carouselId} .carousel-list`);
+	let active = 1;
+
+	const getSlideIndex = ($slide) => {
+		return [...$q(`#${carouselId} .carousel-item`)].indexOf( $slide );
+	}
+
+	const prevSlide = () => {
+		const max = $q(`#${carouselId} .carousel-item`).length - 1;
+		const main = $q(`#${carouselId} .main_image .image`)
+		let newPosition;
+		main[active].style.opacity = '0';
+		if (1 < active) {
+			newPosition = (active - 2) * 97;
+			active -= 1;
+		}
+		else {
+			newPosition = (max - 2) * 97;
+			active = max - 1;
+		}
+		main[active].style.opacity = '1';
+		$list.style.transform = `translateX(-${newPosition}px)`;
+	}
+
+	const nextSlide = () => {
+		const max = $q(`#${carouselId} .carousel-item`).length - 1;
+		const main = $q(`#${carouselId} .main_image .image`)
+		let newPosition;
+		main[active].style.opacity = '0';
+		if (max - 1 > active) {
+			newPosition = active * 97;
+			active += 1;
+		}
+		else {
+			newPosition = 0;
+			active = 1;
+		}
+		main[active].style.opacity = '1';
+		$list.style.transform = `translateX(-${newPosition}px)`;
+	}
+
+	const chooseSlide = (e) => {
+		const $slide = e.target.closest(`.carousel-item`);
+		const index = getSlideIndex($slide);
+		console.log($slide);
+		if (index < active) {
+			prevSlide();
+		} else if (index > active) {
+			nextSlide();
+		}
+	}
+	
+	$list.addEventListener( "focusin", chooseSlide );
+}
+
+initializeCarousel('carousel1');
+initializeCarousel('carousel2');
+initializeCarousel('carousel3');
+initializeCarousel('carousel4');
+initializeCarousel('carousel5');
+initializeCarousel('carousel6');
+initializeCarousel('carousel7');
+initializeCarousel('carousel8');
+initializeCarousel('carousel9');
+initializeCarousel('carousel10');
