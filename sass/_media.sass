@@ -1,42 +1,92 @@
 @import vars
 
-/* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
-
-
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	h1
-		font-size: 32px
-	h3
-		line-height: 39px
-
+@media only screen and (max-width : 1440px)
 	.box
-		width: 91.46667vw
+		width: 906px
 
 	// LAYOUT
-	.header,
+	.header
+		&-wrap
+			padding-right: 25px
+			padding-left: 25px
+		&-logo
+			width: 190px
+			margin-right: 45px
+		&-location
+			width: 156px
+			margin-right: 90px
+		&-links
+			width: 212px
+			&__social
+				gap: 18px
+		.button
+			width: 100px
+			margin-left: 19px
+
 	.footer
 		&-wrap
-			width: 100vw
+			padding-right: 80px
+			padding-left: 78px
+			&__line
+				gap: 33px
+		&-menu
+			width: 194px
+		&-links
+			width: 294px
 
+	// PAGES
+	.home
+		&-wrap
+			.hero-content
+				padding-left: 56px
+				padding-right: 56px
+				.search-text
+					width: calc(100% - 174px)
+			.category-wrap
+				gap: 29px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					gap: 21px
+				&-box
+					width: calc(50% - 10.5px)
+					padding: 24px 24px 17px 22px
+			.blogs-wrap
+				gap: 22px
+			.about
+				&-wrap
+					padding: 41px
+				&-info
+					gap: 26px
+
+	// COMPONENTS
+	.search
+		&-text
+			padding: 12px 20px 12px 54px
+		.button
+			width: 166px
+
+	.card_list
+		gap: 22px
+
+	.reviews-wrap
+		gap: 22px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 992px)
+	.box
+		width: 629px
+
+	// LAYOUT
 	.header
 		top: 0
 		&-wrap
-			padding: 14px 8px 10px
+			padding-right: 16px
+			padding-left: 16px
 			.text
-				font-size: 16px
+				font-size: 18px
 		&-logo
 			width: max-content
 			margin-right: 32px
@@ -45,18 +95,17 @@
 			&__mobile
 				display: block
 		&-location
-			width: 86px
-			gap: 8px
-			margin-right: 0
-			padding: 0
+			width: 108px
+			height: 19px
+			margin-right: 62px
 			.icon
 				width: 16px
 				height: 16px
 				padding: 1.33px 2px
-			.text
-				line-height: 19px
 		&-links
-			display: none !important
+			width: 206px
+			&__social
+				gap: 12px
 		.button
 			width: 80px
 			height: 44px
@@ -67,29 +116,99 @@
 			gap: 8px
 			padding-top: 8.5px
 			.text
-				padding: 10px 8px
 				line-height: 19px
 
 	.footer
 		&-wrap
+			padding-right: 55px
+			padding-left: 54px
+			&__line
+				flex-wrap: wrap
+				gap: 33px 8%
+		&-menu
+			width: 46%
+		&-links
+			width: 100%
+			margin-top: 24px
+			.social .text
+				font-size: 22px
+			.zerone
+				margin-top: 48px
+
+	// PAGES
+	.home
+		&-wrap
+			.hero-content
+				padding: 47px 56px 89px
+				.search-text
+					width: calc(100% - 174px)
+			.category-wrap
+				gap: 29px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					gap: 21px
+				&-box
+					width: calc(50% - 10.5px)
+					padding: 24px 24px 17px 22px
+			.blogs-wrap
+				gap: 22px
+			.about
+				&-wrap
+					padding: 41px
+				&-info
+					gap: 26px
+
+	// COMPONENTS
+	.search
+		&-text
+			padding: 12px 20px 12px 54px
+		.button
+			width: 166px
+
+	.card_list
+		gap: 22px
+
+	.reviews-wrap
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 768px)
+	h1
+		font-size: 32px
+	h3
+		line-height: 39px
+
+	.box
+		width: 100vw
+
+	// LAYOUT
+	.header
+		&-wrap
+			padding: 14px 8px 10px
+			.text
+				font-size: 16px
+		&-location
+			width: 86px
+			margin-right: 0
+			padding: 0
+		&-links
+			display: none !important
+
+	.footer
+		&-wrap
 			grid-gap: 67px
-			padding: 19px 16px 86px
+			padding: 19px 4.26667vw 86px
 			&__line
 				flex-direction: column
 				gap: 44px
 		&-menu
 			width: 100%
 		&-links
-			margin-top: 24px
-			.social
-				.text
-					font-size: 20px
-				&-icons
-					gap: 24px
+			.social .text
+				font-size: 20px
 			.zerone
-				gap: 25px
-				width:2 72px
-				margin-top: 48px
+				width: 75%
 
 	.main
 		padding-top: 152px
@@ -99,7 +218,6 @@
 		margin: 19px 0 83px
 		&-wrap
 			gap: 90px
-			width: 100%
 			.hero
 				width: 100vw
 				&-content

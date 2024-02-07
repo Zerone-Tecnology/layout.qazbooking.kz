@@ -31,7 +31,7 @@
 	<!-- HEADER -->
 	<header class="header">
 		<div class="header-wrap box">
-			<div class="horizontal horizontal-inline">
+			<div class="header-wrap__line horizontal horizontal-inline">
 				<div class="header-logo">
 					<img
 						src="assets/icons/logo.svg"
@@ -792,8 +792,8 @@
 				
 						<div class="review-footer">
 							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" class="icon" />
-								<p class="author-text">Емиль Газизов</p>
+								<img src="assets/icons/user.svg" alt="user" />
+								<p class="author-text bigtext">Емиль Газизов</p>
 							</div>
 							
 							<div class="date">
@@ -822,8 +822,8 @@
 				
 						<div class="review-footer">
 							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" class="icon" />
-								<p class="author-text">Матвей Радужнев</p>
+								<img src="assets/icons/user.svg" alt="user" />
+								<p class="author-text bigtext">Матвей Радужнев</p>
 							</div>
 							
 							<div class="date">
@@ -852,8 +852,8 @@
 				
 						<div class="review-footer">
 							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" class="icon" />
-								<p class="author-text">Амир Ванев</p>
+								<img src="assets/icons/user.svg" alt="user" />
+								<p class="author-text bigtext">Амир Ванев</p>
 							</div>
 							
 							<div class="date">
@@ -882,8 +882,8 @@
 				
 						<div class="review-footer">
 							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" class="icon" />
-								<p class="author-text">Амир Ванев</p>
+								<img src="assets/icons/user.svg" alt="user" />
+								<p class="author-text bigtext">Амир Ванев</p>
 							</div>
 							
 							<div class="date">
@@ -927,7 +927,8 @@
 			<section class="blogs">
 				<div class="blogs-header horizontal">
 					<h3>Интересное</h3>
-					<a class="btn horizontal horizontal-inline">
+
+					<a href="interestings.html" class="btn horizontal horizontal-inline">
 						<p class="btn-text">Читать все</p>
 						<img src="assets/icons/chevron.svg" alt="Right arrow" />
 					</a>
@@ -946,8 +947,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -965,8 +966,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -984,8 +985,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -1003,8 +1004,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -1022,8 +1023,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -1041,8 +1042,8 @@
 				
 						<a
 							v-if="button"
+							href="#"
 							class="blog-button btn"
-							@click="redirectToBlog(info.id)"
 						>
 							<img src="assets/icons/chevron.svg" alt="Right arrow" />
 						</a>
@@ -1070,11 +1071,10 @@
 	<!-- FOOTER -->
 	<footer class="footer">
 		<div class="footer-wrap box">
-			<div class="footer-wrap__line horizontal">
+			<div class="footer-wrap__line">
 				<img
 					src="assets/icons/logo-white.svg"
 					alt="QazBooking"
-					class="footer-logo"
 				/>
 			</div>
 
@@ -1175,7 +1175,7 @@
 				<div class="modal-info__bottom horizontal">
 					<div class="author">
 						<img src="assets/icons/user.svg" alt="User" />
-						<p class="author-text">Емиль Газизов</p>
+						<p class="author-text bigtext">Емиль Газизов</p>
 					</div>
 					<div class="date">
 						<p class="date-text">14:56</p>
