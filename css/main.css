@@ -1562,9 +1562,6 @@ p {
   .home-wrap .about-info {
     gap: 26px;
   }
-  .search-text {
-    padding: 12px 20px 12px 54px;
-  }
   .search .button {
     width: 166px;
   }
@@ -1654,13 +1651,17 @@ p {
     margin-top: 48px;
   }
   .home-wrap .hero-content {
-    padding: 47px 56px 89px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+  .home-wrap .hero-content__description {
+    width: 100%;
   }
   .home-wrap .hero-content .search-text {
-    width: calc(100% - 174px);
+    width: calc(100% - 130px);
   }
   .home-wrap .category-wrap {
-    gap: 29px;
+    gap: 20px;
   }
   .home-wrap .popular-wrap {
     gap: 37px;
@@ -1681,11 +1682,8 @@ p {
   .home-wrap .about-info {
     gap: 26px;
   }
-  .search-text {
-    padding: 12px 20px 12px 54px;
-  }
   .search .button {
-    width: 166px;
+    width: 122px;
   }
   .card_list {
     gap: 22px;
@@ -1742,14 +1740,11 @@ p {
   .home-wrap {
     gap: 90px;
   }
-  .home-wrap .hero {
-    width: 100vw;
-  }
   .home-wrap .hero-content {
-    padding: 47px 4.26667vw 89px;
+    padding-right: 4.26667vw;
+    padding-left: 4.26667vw;
   }
   .home-wrap .hero-content__description {
-    width: 100%;
     margin-bottom: 86px;
   }
   .home-wrap .hero-content__description .title {
@@ -1769,16 +1764,13 @@ p {
     margin-left: 4.26667vw;
   }
   .home-wrap .category-wrap {
-    gap: 4.26667vw;
+    gap: 16px;
   }
   .home-wrap .category-block {
-    min-width: 41.6vw;
+    min-width: 156px;
   }
   .home-wrap .category-block__icon {
-    height: 41.6vw;
-  }
-  .home-wrap .popular {
-    width: 95.734vw;
+    height: 156px;
   }
   .home-wrap .reviews-header,
   .home-wrap .blogs-header {
@@ -1846,15 +1838,8 @@ p {
   .home-wrap .about-image {
     width: 100%;
   }
-  .search {
-    padding: 8px 2.133334vw;
-  }
-  .search-icon {
-    left: 7.46667vw;
-  }
   .search-text {
-    padding-right: 9.6vw;
-    padding-left: 14.4vw;
+    padding-right: 36px;
   }
   .search .button {
     display: none;

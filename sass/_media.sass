@@ -63,13 +63,12 @@
 
 	// COMPONENTS
 	.search
-		&-text
-			padding: 12px 20px 12px 54px
 		.button
 			width: 166px
 
-	.card_list
-		gap: 22px
+	.card
+		&_list
+			gap: 22px
 
 	.reviews-wrap
 		gap: 22px
@@ -139,11 +138,14 @@
 	.home
 		&-wrap
 			.hero-content
-				padding: 47px 56px 89px
+				padding-right: 24px
+				padding-left: 24px
+				&__description
+					width: 100%
 				.search-text
-					width: calc(100% - 174px)
+					width: calc(100% - 130px)
 			.category-wrap
-				gap: 29px
+				gap: 20px
 			.popular-wrap
 				gap: 37px
 			.seo
@@ -162,13 +164,12 @@
 
 	// COMPONENTS
 	.search
-		&-text
-			padding: 12px 20px 12px 54px
 		.button
-			width: 166px
+			width: 122px
 
-	.card_list
-		gap: 22px
+	.card
+		&_list
+			gap: 22px
 
 	.reviews-wrap
 
@@ -219,11 +220,10 @@
 		&-wrap
 			gap: 90px
 			.hero
-				width: 100vw
 				&-content
-					padding: 47px 4.26667vw 89px
+					padding-right: 4.26667vw
+					padding-left: 4.26667vw
 					&__description
-						width: 100%
 						margin-bottom: 86px
 						.title
 							line-height: 39px
@@ -239,13 +239,11 @@
 				margin-left: 4.26667vw
 			.category
 				&-wrap
-					gap: 4.26667vw
+					gap: 16px
 				&-block
-					min-width: 41.6vw
+					min-width: 156px
 					&__icon
-						height: 41.6vw
-			.popular
-				width: 95.734vw
+						height: 156px
 			.reviews,
 			.blogs
 				&-header
@@ -300,12 +298,8 @@
 
 	// COMPONENTS
 	.search
-		padding: 8px 2.133334vw
-		&-icon
-			left: 7.46667vw
 		&-text
-			padding-right: 9.6vw
-			padding-left: 14.4vw
+			padding-right: 36px
 		.button
 			display: none
 
