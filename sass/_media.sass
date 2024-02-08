@@ -3,7 +3,7 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1440px)
 	.box
-		width: 906px
+		width: 914px
 
 	// LAYOUT
 	.header
@@ -49,10 +49,12 @@
 				gap: 37px
 			.seo
 				&-wrap
+					flex-wrap: wrap
 					gap: 21px
 				&-box
 					width: calc(50% - 10.5px)
-					padding: 24px 24px 17px 22px
+					padding-right: 24px
+					padding-left: 22px
 			.blogs-wrap
 				gap: 22px
 			.about
@@ -60,6 +62,13 @@
 					padding: 41px
 				&-info
 					gap: 26px
+
+	.interestings
+		margin: 45px 0 141px
+		&-wrap
+			gap: 30px
+		.blogs-wrap
+			gap: 27px 25px
 
 	// COMPONENTS
 	.search
@@ -70,13 +79,18 @@
 		&_list
 			gap: 22px
 
-	.reviews-wrap
-		gap: 22px
+	.reviews
+		&-wrap
+			gap: 22px
+
+	.blog
+		min-width: 288px
+		max-width: 288px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 992px)
 	.box
-		width: 629px
+		width: 630px
 
 	// LAYOUT
 	.header
@@ -119,13 +133,12 @@
 
 	.footer
 		&-wrap
+			width: 46%
 			padding-right: 55px
 			padding-left: 54px
 			&__line
 				flex-wrap: wrap
 				gap: 33px 8%
-		&-menu
-			width: 46%
 		&-links
 			width: 100%
 			margin-top: 24px
@@ -150,17 +163,34 @@
 				gap: 37px
 			.seo
 				&-wrap
-					gap: 21px
+					gap: 14px
 				&-box
-					width: calc(50% - 10.5px)
-					padding: 24px 24px 17px 22px
+					width: calc(50% - 7px)
 			.blogs-wrap
-				gap: 22px
+				gap: 16px
 			.about
+				height: max-content
 				&-wrap
-					padding: 41px
+					flex-direction: column
+					gap: 40px
+					padding: 28px
 				&-info
-					gap: 26px
+					gap: 20px
+					&__title
+						line-height: 39px
+					&__text
+						width: 100%
+						&:last-child
+							width: 100%
+				&-image
+					margin: auto
+
+	.interestings
+		margin: 31px 0 97px
+		&-wrap
+			gap: 21px
+		.blogs-wrap
+			gap: 17px 16px
 
 	// COMPONENTS
 	.search
@@ -171,10 +201,61 @@
 		&_list
 			gap: 22px
 
-	.reviews-wrap
+	.reviews
+		&-wrap
+			gap: 16px
+	
+	.blog
+		min-width: 307px
+		max-width: 307px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 768px)
+	.box
+		width: 85.4167vw
+
+	// LAYOUT
+	.header
+		&-wrap
+			padding: 14px 8px 10px
+			.text
+				font-size: 16px
+		&-location
+			width: 86px
+			margin-right: 0
+			padding: 0
+		&-links
+			display: none !important
+
+	.footer
+		&-wrap
+			grid-gap: 67px
+			padding: 19px 4.26667vw 86px
+			&__line
+				flex-direction: column
+				gap: 44px
+		&-menu
+			width: 100%
+		&-links
+			.social .text
+				font-size: 20px
+			.zerone
+				width: 75%
+
+	// PAGES
+	.interestings
+		margin: 32px 0 218px
+		&-wrap
+			gap: 20px
+		.blogs-wrap
+			gap: 17px 2.08334vw
+
+	// COMPONENTS
+	.blog
+		min-width: 41.667vw
+		max-width: 41.667vw
+
+@media only screen and (max-width : 480px)
 	h1
 		font-size: 32px
 	h3
@@ -250,7 +331,7 @@
 					margin-right: 4.26667vw
 			.seo,
 			.about
-				margin: 4.26667vw
+				margin: 0 4.26667vw
 			.seo
 				&-subtitle
 					font-size: 18px
@@ -267,8 +348,7 @@
 					gap: 27px
 				&-box
 					width: 100%
-					min-height: 234px
-					padding: 20px 14px 20px
+					padding: 20px 14px
 					.title
 						width: 100%
 						line-height: 24px
@@ -276,25 +356,18 @@
 			.blogs
 				.btn-text
 					display: none
-				&-wrap
-					gap: 16px
 			.about
-				height: max-content
 				&-wrap
-					flex-direction: column
-					gap: 40px
 					padding: 24px 16px 19px
-				&-info
-					grid-gap: 20px
-					&__title
-						line-height: 39px
-						margin-bottom: 1px
-					&__text
-						width: 100%
-						&:last-child
-							width: 100%
 				&-image
 					width: 100%
+
+	.interestings
+		&-wrap
+			padding-right: 4.26667vw
+			padding-left: 4.26667vw
+		.blogs-wrap
+			gap: 16px
 
 	// COMPONENTS
 	.search
@@ -303,18 +376,11 @@
 		.button
 			display: none
 
-	.rating
-		gap: 6px
-		padding: 4px
-
 	.author,
 	.date
 		&-text
 			font-size: 14px
 			line-height: 17px
-
-	.author
-		gap: 8px
 
 	.date
 		gap: 6px
@@ -322,35 +388,18 @@
 			font-size: 14px
 
 	.card
-		min-width: 282px
 		&_list
 			gap: 30px
-		&-content
-			padding: 17px 11px 2px 7px
-			&__bottom .price
-				gap: 5px
 
 	.review
 		min-width: 300px
-		padding: 15px
-		&-button
-			top: 15px
-			right: 15px
+		max-width: 300px
 		&-text
 			font-size: 16px
 
 	.blog
-		min-width: 318px
-		&-info
-			padding: 20px 16px 19px
+		min-width: 100%
+		max-width: 100%
 		&-button
 			top: 140px
 			right: 35px
-	
-	.reviews
-		&-header__buttons
-			gap: 8px
-			.btn
-				width: 63px
-		&-wrap
-			gap: 16px

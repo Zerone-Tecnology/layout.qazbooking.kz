@@ -498,17 +498,14 @@ p {
 }
 .home-wrap .seo-wrap {
   display: flex;
-  flex-wrap: wrap;
-  gap: 28px;
+  gap: 27px;
 }
 .home-wrap .seo-box {
-  width: calc(50% - 14px);
-  min-height: 234px;
+  width: calc(25% - 20.25px);
   padding: 24px 32px 17px 30px;
   border-radius: 16px;
 }
 .home-wrap .seo-box .title {
-  width: 66.667%;
   text-align: center;
   line-height: 34px;
   margin: 0 auto 15px;
@@ -576,6 +573,18 @@ p {
 .home-wrap .about-image {
   width: 383px;
   border-radius: 16px;
+}
+
+.interestings {
+  margin: 60px 0 188px;
+}
+.interestings-wrap {
+  gap: 40px;
+}
+.interestings .blogs-wrap {
+  flex-wrap: wrap;
+  gap: 32px 30px;
+  margin-top: 32px;
 }
 
 .button {
@@ -646,6 +655,27 @@ p {
   font-size: 20px;
 }
 
+.breadcrumbs {
+  gap: 4px;
+}
+.breadcrumbs-link {
+  gap: 4px;
+}
+.breadcrumbs-link .dot {
+  padding: 0 6px;
+}
+.breadcrumbs-link .dot,
+.breadcrumbs-link .text {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8A8894;
+}
+.breadcrumbs-link:last-child .dot,
+.breadcrumbs-link:last-child .text {
+  color: #03306B;
+}
+
 .location {
   display: flex;
   align-items: center;
@@ -702,6 +732,7 @@ p {
 
 .card {
   min-width: 282px;
+  max-width: 282px;
   height: 286px;
   border: 1px solid #D4D4D4;
   border-radius: 16px;
@@ -748,6 +779,7 @@ p {
   display: grid;
   grid-gap: 23px;
   min-width: 386px;
+  max-width: 386px;
   border: 1px solid #A1A1A1;
   border-radius: 8px;
   padding: 15px;
@@ -776,6 +808,7 @@ p {
 .blog {
   position: relative;
   min-width: 386px;
+  max-width: 386px;
 }
 .blog-image {
   width: 100%;
@@ -795,13 +828,13 @@ p {
   border-radius: 0px 0px 16px 16px;
   padding: 20px 15px 19px;
 }
-.blog-info__date {
+.blog-info .date {
   color: #A1A1A1;
   font-weight: 500;
   line-height: 19px;
   margin-bottom: 12px;
 }
-.blog-info__title {
+.blog-info .title {
   font-weight: 600;
   line-height: 24px;
   -webkit-line-clamp: 3;
@@ -1423,23 +1456,6 @@ p {
   margin-top: 24px;
 }
 
-.breadcrumbs {
-  gap: 0.52083vw;
-  margin-bottom: 32px;
-}
-.breadcrumbs-item {
-  gap: 10px;
-}
-.breadcrumbs-item .text {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  color: #8A8894;
-}
-.breadcrumbs-item:last-child .text {
-  color: #03306B;
-}
-
 .price {
   gap: 5px;
   justify-content: end;
@@ -1451,16 +1467,6 @@ p {
 .price-description {
   color: #A1A1A1;
   line-height: 19px;
-}
-
-.interestings {
-  margin: 60px 0 188px;
-}
-.interestings .content {
-  margin-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px 1.5625vw;
 }
 
 .interestingsdetail {
@@ -1496,7 +1502,7 @@ p {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1440px) {
   .box {
-    width: 906px;
+    width: 914px;
   }
   .header-wrap {
     padding-right: 25px;
@@ -1547,11 +1553,13 @@ p {
     gap: 37px;
   }
   .home-wrap .seo-wrap {
+    flex-wrap: wrap;
     gap: 21px;
   }
   .home-wrap .seo-box {
     width: calc(50% - 10.5px);
-    padding: 24px 24px 17px 22px;
+    padding-right: 24px;
+    padding-left: 22px;
   }
   .home-wrap .blogs-wrap {
     gap: 22px;
@@ -1562,6 +1570,15 @@ p {
   .home-wrap .about-info {
     gap: 26px;
   }
+  .interestings {
+    margin: 45px 0 141px;
+  }
+  .interestings-wrap {
+    gap: 30px;
+  }
+  .interestings .blogs-wrap {
+    gap: 27px 25px;
+  }
   .search .button {
     width: 166px;
   }
@@ -1571,11 +1588,15 @@ p {
   .reviews-wrap {
     gap: 22px;
   }
+  .blog {
+    min-width: 288px;
+    max-width: 288px;
+  }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 992px) {
   .box {
-    width: 629px;
+    width: 630px;
   }
   .header {
     top: 0;
@@ -1630,15 +1651,13 @@ p {
     line-height: 19px;
   }
   .footer-wrap {
+    width: 46%;
     padding-right: 55px;
     padding-left: 54px;
   }
   .footer-wrap__line {
     flex-wrap: wrap;
     gap: 33px 8%;
-  }
-  .footer-menu {
-    width: 46%;
   }
   .footer-links {
     width: 100%;
@@ -1667,20 +1686,46 @@ p {
     gap: 37px;
   }
   .home-wrap .seo-wrap {
-    gap: 21px;
+    gap: 14px;
   }
   .home-wrap .seo-box {
-    width: calc(50% - 10.5px);
-    padding: 24px 24px 17px 22px;
+    width: calc(50% - 7px);
   }
   .home-wrap .blogs-wrap {
-    gap: 22px;
+    gap: 16px;
+  }
+  .home-wrap .about {
+    height: -moz-max-content;
+    height: max-content;
   }
   .home-wrap .about-wrap {
-    padding: 41px;
+    flex-direction: column;
+    gap: 40px;
+    padding: 28px;
   }
   .home-wrap .about-info {
-    gap: 26px;
+    gap: 20px;
+  }
+  .home-wrap .about-info__title {
+    line-height: 39px;
+  }
+  .home-wrap .about-info__text {
+    width: 100%;
+  }
+  .home-wrap .about-info__text:last-child {
+    width: 100%;
+  }
+  .home-wrap .about-image {
+    margin: auto;
+  }
+  .interestings {
+    margin: 31px 0 97px;
+  }
+  .interestings-wrap {
+    gap: 21px;
+  }
+  .interestings .blogs-wrap {
+    gap: 17px 16px;
   }
   .search .button {
     width: 122px;
@@ -1688,9 +1733,65 @@ p {
   .card_list {
     gap: 22px;
   }
+  .reviews-wrap {
+    gap: 16px;
+  }
+  .blog {
+    min-width: 307px;
+    max-width: 307px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 768px) {
+  .box {
+    width: 85.4167vw;
+  }
+  .header-wrap {
+    padding: 14px 8px 10px;
+  }
+  .header-wrap .text {
+    font-size: 16px;
+  }
+  .header-location {
+    width: 86px;
+    margin-right: 0;
+    padding: 0;
+  }
+  .header-links {
+    display: none !important;
+  }
+  .footer-wrap {
+    grid-gap: 67px;
+    padding: 19px 4.26667vw 86px;
+  }
+  .footer-wrap__line {
+    flex-direction: column;
+    gap: 44px;
+  }
+  .footer-menu {
+    width: 100%;
+  }
+  .footer-links .social .text {
+    font-size: 20px;
+  }
+  .footer-links .zerone {
+    width: 75%;
+  }
+  .interestings {
+    margin: 32px 0 218px;
+  }
+  .interestings-wrap {
+    gap: 20px;
+  }
+  .interestings .blogs-wrap {
+    gap: 17px 2.08334vw;
+  }
+  .blog {
+    min-width: 41.667vw;
+    max-width: 41.667vw;
+  }
+}
+@media only screen and (max-width: 480px) {
   h1 {
     font-size: 32px;
   }
@@ -1778,7 +1879,7 @@ p {
   }
   .home-wrap .seo,
   .home-wrap .about {
-    margin: 4.26667vw;
+    margin: 0 4.26667vw;
   }
   .home-wrap .seo-subtitle {
     font-size: 18px;
@@ -1799,8 +1900,7 @@ p {
   }
   .home-wrap .seo-box {
     width: 100%;
-    min-height: 234px;
-    padding: 20px 14px 20px;
+    padding: 20px 14px;
   }
   .home-wrap .seo-box .title {
     width: 100%;
@@ -1810,33 +1910,18 @@ p {
   .home-wrap .blogs .btn-text {
     display: none;
   }
-  .home-wrap .blogs-wrap {
-    gap: 16px;
-  }
-  .home-wrap .about {
-    height: -moz-max-content;
-    height: max-content;
-  }
   .home-wrap .about-wrap {
-    flex-direction: column;
-    gap: 40px;
     padding: 24px 16px 19px;
-  }
-  .home-wrap .about-info {
-    grid-gap: 20px;
-  }
-  .home-wrap .about-info__title {
-    line-height: 39px;
-    margin-bottom: 1px;
-  }
-  .home-wrap .about-info__text {
-    width: 100%;
-  }
-  .home-wrap .about-info__text:last-child {
-    width: 100%;
   }
   .home-wrap .about-image {
     width: 100%;
+  }
+  .interestings-wrap {
+    padding-right: 4.26667vw;
+    padding-left: 4.26667vw;
+  }
+  .interestings .blogs-wrap {
+    gap: 16px;
   }
   .search-text {
     padding-right: 36px;
@@ -1844,17 +1929,10 @@ p {
   .search .button {
     display: none;
   }
-  .rating {
-    gap: 6px;
-    padding: 4px;
-  }
   .author-text,
   .date-text {
     font-size: 14px;
     line-height: 17px;
-  }
-  .author {
-    gap: 8px;
   }
   .date {
     gap: 6px;
@@ -1862,46 +1940,22 @@ p {
   .date-dot {
     font-size: 14px;
   }
-  .card {
-    min-width: 282px;
-  }
   .card_list {
     gap: 30px;
   }
-  .card-content {
-    padding: 17px 11px 2px 7px;
-  }
-  .card-content__bottom .price {
-    gap: 5px;
-  }
   .review {
     min-width: 300px;
-    padding: 15px;
-  }
-  .review-button {
-    top: 15px;
-    right: 15px;
+    max-width: 300px;
   }
   .review-text {
     font-size: 16px;
   }
   .blog {
-    min-width: 318px;
-  }
-  .blog-info {
-    padding: 20px 16px 19px;
+    min-width: 100%;
+    max-width: 100%;
   }
   .blog-button {
     top: 140px;
     right: 35px;
-  }
-  .reviews-header__buttons {
-    gap: 8px;
-  }
-  .reviews-header__buttons .btn {
-    width: 63px;
-  }
-  .reviews-wrap {
-    gap: 16px;
   }
 }/*# sourceMappingURL=main.css.map */
