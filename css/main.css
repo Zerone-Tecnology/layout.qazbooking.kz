@@ -118,6 +118,8 @@ button {
 }
 
 input {
+  font-size: 16px;
+  font-weight: 400;
   color: #1E1E1E;
 }
 
@@ -587,6 +589,51 @@ p {
   margin-top: 32px;
 }
 
+.profile {
+  margin: 40px 0 233px;
+}
+.profile-wrap {
+  gap: 60px;
+}
+.profile-content {
+  gap: 30px;
+}
+.profile-content .user {
+  border: 1px solid #D4D4D4;
+  border-radius: 8px;
+  padding: 34px;
+}
+.profile-content .user-header {
+  gap: 16px;
+  border-bottom: 1px solid #D4D4D4;
+  margin-bottom: 23.5px;
+  padding-bottom: 23.5px;
+}
+.profile-content .user-header .icon {
+  width: 32px;
+  height: 32px;
+  background-color: #D4D4D4;
+  border-radius: 50%;
+}
+.profile-content .user-header .text {
+  line-height: 22px;
+}
+.profile-content .user-item {
+  gap: 8px;
+  height: 72px;
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+.profile-content .user-item.active .icon {
+  stroke: #BE9E44;
+}
+.profile-content .user-item.active .text {
+  color: #BE9E44;
+}
+.profile-content__right {
+  gap: 24px;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -639,8 +686,6 @@ p {
   padding: 16px 20px 16px 54px;
   background-color: #F7F7FD;
   border-radius: 4px;
-  font-size: 16px;
-  font-weight: 400;
 }
 .search-text::-moz-placeholder {
   color: #A1A1A1;
@@ -653,6 +698,20 @@ p {
 }
 .search .button-text {
   font-size: 20px;
+}
+
+.input {
+  width: 386px;
+  height: 56px;
+  background-color: #F7F7FD;
+  color: #C5C0DB;
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+.input-text {
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 4px;
 }
 
 .breadcrumbs {
