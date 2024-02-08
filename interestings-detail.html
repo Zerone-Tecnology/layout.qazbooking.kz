@@ -83,158 +83,189 @@
 	</header>
 
 	<main class="interestingsdetail main">
-		<div class="box">
+		<div class="interestingsdetail-wrap box vertical">
 			<div class="breadcrumbs horizontal">
-				<div class="breadcrumbs-item horizontal">
-					<p class="text">•</p>
+				<div class="breadcrumbs-link horizontal">
+					<p class="dot">•</p>
 					<a href="index.html" class="text">Главная</a>
 				</div>
-				<div class="breadcrumbs-item horizontal">
-					<p class="text">•</p>
+				<div class="breadcrumbs-link horizontal">
+					<p class="dot">•</p>
 					<p class="text">Интересное</p>
 				</div>
 			</div>
 
-			<section>
-				<div class="interestingsdetail-header horizontal horizontal-inline">
-					<h1 class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h1>
+			<section class="blogs vertical">
+				<div class="blogs-header horizontal">
+					<h2 class="title">Отдохни сегодня - заплати завтра: туры в кредит под 1%</h2>
 
-					<ul class="action horizontal">
-						<li class="action-icon horizontal horizontal-inline">
+					<ul class="action_list horizontal">
+						<li class="action horizontal horizontal-inline">
 							<img src="assets/icons/calendar.svg" alt="Chat" />
 							<p>12.12.23</p>
 						</li>
 
-						<li class="action-icon horizontal horizontal-inline">
+						<li class="action horizontal horizontal-inline">
 							<img src="assets/icons/view.svg" alt="Share" />
 							<p>123</p>
 						</li>
 
-						<li class="action-icon horizontal horizontal-inline">
+						<li class="action horizontal horizontal-inline">
 							<img src="assets/icons/share.svg" alt="Favourite" />
 							<p>Поделиться</p>
 						</li>
 					</ul>
 				</div>
 
-				<div class="interestingsdetail-content">
-					<img
-						src="assets/images/interesting1.jpeg"
-						alt="Blog 1"
-						class="interestingsdetail-content__image"
-					/>
+				<img
+					src="assets/images/interesting1.jpeg"
+					alt="Blog 1"
+					class="blogs-image"
+				/>
 
-					<div class="interestingsdetail-content__description">
-						<p class="text">Хочется поехать на отдых прямо сейчас? Есть решение: тур в кредит с минимальной переплатой.</p>
-						<p class="text">У вас есть возможность увидеть вживую великие пирамиды Египта, понежиться в теплых лучах солнца в Гоа, отведать экзотических фруктов в Таиланде.</p>
-						<p class="text">Кредит можно оформлять на любое направление. Это намного дешевле чем если бы вы взяли денежный кредит на поездку!</p>
-					</div>
+				<div class="blogs-info">
+					<p class="text">Хочется поехать на отдых прямо сейчас? Есть решение: тур в кредит с минимальной переплатой.</p>
+					<p class="text">У вас есть возможность увидеть вживую великие пирамиды Египта, понежиться в теплых лучах солнца в Гоа, отведать экзотических фруктов в Таиланде.</p>
+					<p class="text">Кредит можно оформлять на любое направление. Это намного дешевле чем если бы вы взяли денежный кредит на поездку!</p>
 				</div>
 			</section>
 
-			<section class="popular">
+			<section class="popular vertical">
 				<h3>Вас может заинтересовать</h3>
-				<div class="popular-content__body horizontal">
+
+				<div class="card_list horizontal scroll">
 					<div class="card">
-						<div class="card-image">
-							<img src="assets/images/hostel1.jpeg" alt="Hostel" />
-						</div>
+						<img
+							src="assets/images/hostel1.jpeg"
+							alt="Hostel"
+							class="card-image"
+						/>
 
 						<div class="card-content">
-							<a href="detail.html" class="card-content__title">Grand hostel</a>
-
-							<div class="card-content__location horizontal horizontal-inline">
-								<img src="assets/icons/location2.svg" alt="location" />
-								<p class="text">Алматинская обл.</p>
+							<div class="card-content__top">
+								<a href="detail.html">
+									<h6 class="title bigtext">Grand hostel</h6>
+								</a>
+								
+								<div class="location">
+									<img src="assets/icons/location2.svg" alt="Location" />
+									<p class="location-text bigtext">Алматинская обл.</p>
+								</div>
 							</div>
 
-							<div class="card-content__price">
-								<p class="text">от</p>
-								<h4>2500</h4>
-								<img src="assets/icons/currency.svg" alt="tenge" />
-							</div>
-
-							<div class="card-content__rating">
-								<p class="text">9.6 </p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							<div class="card-content__bottom horizontal horizontal-inline">
+								<div class="price">
+									<p>от</p>
+									<h5>2500</h5>
+									<img src="assets/icons/currency.svg" alt="Tenge" />
+								</div>
+								
+								<div class="rating">
+									<p class="rating-text">9.6 </p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="card">
-						<div class="card-image">
-							<img src="assets/images/hostel2.jpeg" alt="Hostel" />
-						</div>
+						<img
+							src="assets/images/hostel2.jpeg"
+							alt="Hostel"
+							class="card-image"
+						/>
 
 						<div class="card-content">
-							<a href="detail.html" class="card-content__title">Grand hostel</a>
-
-							<div class="card-content__location horizontal horizontal-inline">
-								<img src="assets/icons/location2.svg" alt="location" />
-								<p class="text">Алматинская обл.</p>
+							<div class="card-content__top">
+								<a href="detail.html">
+									<h6 class="title bigtext">Grand hostel</h6>
+								</a>
+								
+								<div class="location">
+									<img src="assets/icons/location2.svg" alt="Location" />
+									<p class="location-text bigtext">Алматинская обл.</p>
+								</div>
 							</div>
 
-							<div class="card-content__price">
-								<p class="text">от</p>
-								<h4>2500</h4>
-								<img src="assets/icons/currency.svg" alt="tenge" />
-							</div>
-
-							<div class="card-content__rating">
-								<p class="text">9.6 </p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							<div class="card-content__bottom horizontal horizontal-inline">
+								<div class="price">
+									<p>от</p>
+									<h5>2500</h5>
+									<img src="assets/icons/currency.svg" alt="Tenge" />
+								</div>
+								
+								<div class="rating">
+									<p class="rating-text">9.6 </p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
 							</div>
 						</div>
 					</div>
 					
 					<div class="card">
-						<div class="card-image">
-							<img src="assets/images/hostel3.jpeg" alt="Hostel" />
-						</div>
+						<img
+							src="assets/images/hostel3.jpeg"
+							alt="Hostel"
+							class="card-image"
+						/>
 
 						<div class="card-content">
-							<a href="detail.html" class="card-content__title">Grand hostel</a>
-
-							<div class="card-content__location horizontal horizontal-inline">
-								<img src="assets/icons/location2.svg" alt="location" />
-								<p class="text">Алматинская обл.</p>
+							<div class="card-content__top">
+								<a href="detail.html">
+									<h6 class="title bigtext">Grand hostel</h6>
+								</a>
+								
+								<div class="location">
+									<img src="assets/icons/location2.svg" alt="Location" />
+									<p class="location-text bigtext">Алматинская обл.</p>
+								</div>
 							</div>
 
-							<div class="card-content__price">
-								<p class="text">от</p>
-								<h4>2500</h4>
-								<img src="assets/icons/currency.svg" alt="tenge" />
-							</div>
-
-							<div class="card-content__rating">
-								<p class="text">9.6 </p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							<div class="card-content__bottom horizontal horizontal-inline">
+								<div class="price">
+									<p>от</p>
+									<h5>2500</h5>
+									<img src="assets/icons/currency.svg" alt="Tenge" />
+								</div>
+								
+								<div class="rating">
+									<p class="rating-text">9.6 </p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="card">
-						<div class="card-image">
-							<img src="assets/images/hostel4.jpeg" alt="Hostel" />
-						</div>
+						<img
+							src="assets/images/hostel4.jpeg"
+							alt="Hostel"
+							class="card-image"
+						/>
 
 						<div class="card-content">
-							<a href="detail.html" class="card-content__title">Grand hostel</a>
-
-							<div class="card-content__location horizontal horizontal-inline">
-								<img src="assets/icons/location2.svg" alt="location" />
-								<p class="text">Алматинская обл.</p>
+							<div class="card-content__top">
+								<a href="detail.html">
+									<h6 class="title bigtext">Grand hostel</h6>
+								</a>
+								
+								<div class="location">
+									<img src="assets/icons/location2.svg" alt="Location" />
+									<p class="location-text bigtext">Алматинская обл.</p>
+								</div>
 							</div>
 
-							<div class="card-content__price">
-								<p class="text">от</p>
-								<h4>2500</h4>
-								<img src="assets/icons/currency.svg" alt="tenge" />
-							</div>
-
-							<div class="card-content__rating">
-								<p class="text">9.6 </p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							<div class="card-content__bottom horizontal horizontal-inline">
+								<div class="price">
+									<p>от</p>
+									<h5>2500</h5>
+									<img src="assets/icons/currency.svg" alt="Tenge" />
+								</div>
+								
+								<div class="rating">
+									<p class="rating-text">9.6 </p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+								</div>
 							</div>
 						</div>
 					</div>
