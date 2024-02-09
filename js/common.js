@@ -1,5 +1,8 @@
-$(function() {
+const d = document;
+const $q = d.querySelectorAll.bind(d);
+const $g = d.querySelector.bind(d);
 
+$(function() {
 	$('.slider').owlCarousel({
 		items: 4,
 		dots: false,
@@ -10,7 +13,6 @@ $(function() {
 		items: 3,
 		nav: true,
 	});
-
 });
 
 function openModal() {
@@ -24,9 +26,18 @@ function closeModal() {
 	$('body').css("overflow", "auto");
 }
 
-const d = document;
-const $q = d.querySelectorAll.bind(d);
-const $g = d.querySelector.bind(d);
+function profile(index) {
+	const $buttonList = $q('.user-item');
+	const $contentList = $q('.right');
+	$buttonList.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	$contentList.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	$buttonList[index - 1].classList.add("active");
+	$contentList[index - 1].classList.add("active");
+}
 
 function initializeCarousel(carouselId) {
 	const $list = $g(`#${carouselId} .carousel-list`);
@@ -83,14 +94,3 @@ function initializeCarousel(carouselId) {
 	
 	$list.addEventListener( "focusin", chooseSlide );
 }
-
-initializeCarousel('carousel1');
-initializeCarousel('carousel2');
-initializeCarousel('carousel3');
-initializeCarousel('carousel4');
-initializeCarousel('carousel5');
-initializeCarousel('carousel6');
-initializeCarousel('carousel7');
-initializeCarousel('carousel8');
-initializeCarousel('carousel9');
-initializeCarousel('carousel10');

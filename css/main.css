@@ -68,7 +68,8 @@ body {
 
 .vertical,
 .horizontal,
-.center {
+.center,
+.wrap {
   display: flex;
 }
 
@@ -83,6 +84,10 @@ body {
 
 .center {
   justify-content: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
 
 .img-responsive {
@@ -584,9 +589,36 @@ p {
   gap: 40px;
 }
 .interestings .blogs-wrap {
-  flex-wrap: wrap;
   gap: 32px 30px;
   margin-top: 32px;
+}
+
+.interestingsdetail {
+  margin: 60px 0 111px;
+}
+.interestingsdetail-wrap {
+  gap: 40px;
+}
+.interestingsdetail .blogs {
+  gap: 32px;
+}
+.interestingsdetail .blogs-header {
+  gap: 37px;
+}
+.interestingsdetail .blogs-header .title {
+  line-height: 39px;
+}
+.interestingsdetail .blogs-image {
+  width: 100%;
+  height: 411px;
+  border-radius: 16px;
+}
+.interestingsdetail .blogs-info .text {
+  font-size: 24px;
+}
+.interestingsdetail .popular {
+  gap: 24px;
+  margin-top: 65px;
 }
 
 .profile {
@@ -599,6 +631,10 @@ p {
   gap: 30px;
 }
 .profile-content .user {
+  min-width: 386px;
+  max-width: 386px;
+  height: -moz-max-content;
+  height: max-content;
   border: 1px solid #D4D4D4;
   border-radius: 8px;
   padding: 34px;
@@ -630,8 +666,48 @@ p {
 .profile-content .user-item.active .text {
   color: #BE9E44;
 }
-.profile-content__right {
+.profile-content .information,
+.profile-content .reviews,
+.profile-content .favourite {
+  display: none;
+}
+.profile-content .information.active,
+.profile-content .reviews.active,
+.profile-content .favourite.active {
+  display: flex;
+}
+.profile-content .information {
   gap: 24px;
+}
+.profile-content .information-item {
+  gap: 4px;
+}
+.profile-content .information-item .text {
+  font-size: 12px;
+  line-height: 24px;
+}
+.profile-content .information-item:nth-child(5) {
+  gap: 24px;
+  border-top: 1px solid #D4D4D4;
+  margin-top: 23.5px;
+  padding-top: 23.5px;
+}
+.profile-content .information-item:nth-child(5) .text {
+  font-size: 16px;
+  line-height: 20px;
+}
+.profile-content .information-button {
+  color: #03306B;
+  line-height: 20px;
+  margin-top: 40px;
+}
+.profile-content .reviews,
+.profile-content .favourite {
+  gap: 30px;
+}
+.profile-content .favourite .card {
+  min-width: 386px;
+  max-width: 386px;
 }
 
 .button {
@@ -704,14 +780,15 @@ p {
   width: 386px;
   height: 56px;
   background-color: #F7F7FD;
-  color: #C5C0DB;
+  color: #1E1E1E;
   border-radius: 4px;
   padding: 16px 20px;
 }
-.input-text {
-  font-size: 12px;
-  line-height: 24px;
-  margin-bottom: 4px;
+.input::-moz-placeholder {
+  color: #C5C0DB;
+}
+.input::placeholder {
+  color: #C5C0DB;
 }
 
 .breadcrumbs {
@@ -789,6 +866,21 @@ p {
   color: #D4D4D4;
 }
 
+.price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 36px;
+}
+
+.action {
+  gap: 12px;
+  height: 24px;
+}
+.action_list {
+  gap: 24px;
+}
+
 .card {
   min-width: 282px;
   max-width: 282px;
@@ -822,12 +914,6 @@ p {
 }
 .card-content__bottom {
   justify-content: space-between;
-}
-.card-content__bottom .price {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  height: 36px;
 }
 .card-content__bottom .rating {
   background-color: transparent;
@@ -1277,6 +1363,26 @@ p {
 .filter {
   margin: 38px 0 94px;
 }
+.filter-wrap {
+  gap: 112px;
+}
+.filter-wrap__top {
+  gap: 33px;
+}
+.filter-wrap .seo {
+  gap: 32px;
+}
+.filter-wrap .seo-title {
+  line-height: 39px;
+}
+.filter-wrap .seo-text {
+  font-size: 20px;
+}
+.filter-wrap .seo-list {
+  list-style: disc;
+  margin-top: -32px;
+  padding-left: 0.75vw;
+}
 .filter .content {
   justify-content: space-between;
   margin-top: 33px;
@@ -1497,64 +1603,6 @@ p {
 }
 .filter .content-right__pagination .pagination-element.active .text {
   color: #FFF;
-}
-.filter .info {
-  display: grid;
-  grid-gap: 32px;
-  margin-top: 112px;
-}
-.filter .info-title {
-  font-size: 39px;
-  color: #1E1E1E;
-}
-.filter .info-text {
-  font-size: 24px;
-}
-.filter .info-list {
-  list-style: disc;
-  margin-top: -32px;
-  padding-left: 0.75vw;
-}
-
-.interestingsdetail {
-  margin: 60px 0 111px;
-}
-.interestingsdetail-wrap {
-  gap: 40px;
-}
-.interestingsdetail .blogs {
-  gap: 32px;
-}
-.interestingsdetail .blogs-header {
-  gap: 37px;
-}
-.interestingsdetail .blogs-header .title {
-  line-height: 39px;
-}
-.interestingsdetail .blogs-image {
-  width: 100%;
-  height: 411px;
-  border-radius: 16px;
-}
-.interestingsdetail .blogs-info .text {
-  font-size: 24px;
-}
-.interestingsdetail .popular {
-  gap: 24px;
-  margin-top: 65px;
-}
-
-.price {
-  gap: 5px;
-  height: 36px;
-}
-
-.action {
-  gap: 12px;
-  height: 24px;
-}
-.action_list {
-  gap: 24px;
 }
 
 /* Medium Devices, Desktops */

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>QazBooking</title>
+	<title>QazBooking | Profile</title>
 	<meta name="description" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,8 +22,6 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css">
-	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -105,7 +103,7 @@
 						<h6 class="text">Аскаров Максат Жандосович</h6>
 					</div>
 
-					<div class="user-item active horizontal horizontal-inline btn">
+					<div class="user-item active horizontal horizontal-inline btn" onclick="profile(1)">
 						<img
 							src="assets/icons/user_square.svg"
 							alt="User square"
@@ -114,7 +112,7 @@
 						<p class="text">Персональные данные</p>
 					</div>
 
-					<div class="user-item horizontal horizontal-inline btn">
+					<div class="user-item horizontal horizontal-inline btn" onclick="profile(2)">
 						<img
 							src="assets/icons/favourite/default.svg"
 							alt="Favourite"
@@ -123,7 +121,7 @@
 						<p class="text">Мои отзывы</p>
 					</div>
 
-					<div class="user-item horizontal horizontal-inline btn">
+					<div class="user-item horizontal horizontal-inline btn" onclick="profile(3)">
 						<img
 							src="assets/icons/location.svg"
 							alt="Location"
@@ -133,50 +131,347 @@
 					</div>
 				</div>
 
-				<div class="profile-content__right vertical">
-					<div>
-						<p class="input-text">Фамилия, Имя, Отчество</p>
-						<input
-							type="text"
-							placeholder="Максат Аскар"
-							class="input"
-						/>
+				<div>
+					<div class="information right active vertical">
+						<div class="information-item vertical">
+							<p class="text">Фамилия, Имя, Отчество</p>
+							<input
+								type="text"
+								placeholder="Максат Аскар"
+								class="input"
+							/>
+						</div>
+	
+						<div class="information-item vertical">
+							<p class="text">Номер телефона</p>
+							<input
+								type="text"
+								placeholder="+7 777 777 77 77"
+								class="input"
+							/>
+						</div>
+	
+						<div class="information-item vertical">
+							<p class="text">Email</p>
+							<input
+								type="text"
+								placeholder="example@example.kz"
+								class="input"
+							/>
+						</div>
+	
+						<div class="information-item vertical">
+							<p class="text">Город, адрес</p>
+							<input
+								type="text"
+								placeholder="Алматы"
+								class="input"
+							/>
+						</div>
+	
+						<div class="information-item vertical">
+							<p class="text">Пароль</p>
+							<input
+								type="text"
+								placeholder="**********"
+								class="input"
+							/>
+						</div>
+						<p class="information-button btn">Изменить данные</p>
 					</div>
 
-					<div>
-						<p class="input-text">Номер телефона</p>
-						<input
-							type="text"
-							placeholder="+7 777 777 77 77"
-							class="input"
-						/>
+					<div class="reviews right wrap">
+						<div class="review">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal()"
+							/>
+							<h5 class="review-title bigtext">Хостел Арлеон</h5>
+					
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+					
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+					
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Емиль Газизов</p>
+								</div>
+								
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="review">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal()"
+							/>
+							<h5 class="review-title bigtext">Хостел Арлеон</h5>
+					
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+					
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+					
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Емиль Газизов</p>
+								</div>
+								
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="review">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal()"
+							/>
+							<h5 class="review-title bigtext">Хостел Арлеон</h5>
+					
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+					
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+					
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Емиль Газизов</p>
+								</div>
+								
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="review">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal()"
+							/>
+							<h5 class="review-title bigtext">Хостел Арлеон</h5>
+					
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+							</div>
+					
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+					
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Емиль Газизов</p>
+								</div>
+								
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
+							</div>
+						</div>
 					</div>
 
-					<div>
-						<p class="input-text">Email</p>
-						<input
-							type="text"
-							placeholder="example@example.kz"
-							class="input"
-						/>
-					</div>
+					<div class="favourite right wrap">
+						<div class="card">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel"
+								class="card-image"
+							/>
 
-					<div>
-						<p class="input-text">Город, адрес</p>
-						<input
-							type="text"
-							placeholder="Алматы"
-							class="input"
-						/>
-					</div>
+							<div class="card-content">
+								<div class="card-content__top">
+									<a href="detail.html">
+										<h6 class="title bigtext">Grand hostel</h6>
+									</a>
 
-					<div>
-						<p class="input-text">Пароль</p>
-						<input
-							type="text"
-							placeholder="**********"
-							class="input"
-						/>
+									<div class="location">
+										<img src="assets/icons/location2.svg" alt="Location" />
+										<p class="location-text bigtext">Алматинская обл.</p>
+									</div>
+								</div>
+
+								<div class="card-content__bottom horizontal horizontal-inline">
+									<div class="price">
+										<p>от</p>
+										<h5>2500</h5>
+										<img src="assets/icons/currency.svg" alt="Tenge" />
+									</div>
+									
+									<div class="rating">
+										<p class="rating-text">9.6 </p>
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel"
+								class="card-image"
+							/>
+
+							<div class="card-content">
+								<div class="card-content__top">
+									<a href="detail.html">
+										<h6 class="title bigtext">Grand hostel</h6>
+									</a>
+
+									<div class="location">
+										<img src="assets/icons/location2.svg" alt="Location" />
+										<p class="location-text bigtext">Алматинская обл.</p>
+									</div>
+								</div>
+
+								<div class="card-content__bottom horizontal horizontal-inline">
+									<div class="price">
+										<p>от</p>
+										<h5>2500</h5>
+										<img src="assets/icons/currency.svg" alt="Tenge" />
+									</div>
+									
+									<div class="rating">
+										<p class="rating-text">9.6 </p>
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel"
+								class="card-image"
+							/>
+
+							<div class="card-content">
+								<div class="card-content__top">
+									<a href="detail.html">
+										<h6 class="title bigtext">Grand hostel</h6>
+									</a>
+
+									<div class="location">
+										<img src="assets/icons/location2.svg" alt="Location" />
+										<p class="location-text bigtext">Алматинская обл.</p>
+									</div>
+								</div>
+
+								<div class="card-content__bottom horizontal horizontal-inline">
+									<div class="price">
+										<p>от</p>
+										<h5>2500</h5>
+										<img src="assets/icons/currency.svg" alt="Tenge" />
+									</div>
+									
+									<div class="rating">
+										<p class="rating-text">9.6 </p>
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel"
+								class="card-image"
+							/>
+
+							<div class="card-content">
+								<div class="card-content__top">
+									<a href="detail.html">
+										<h6 class="title bigtext">Grand hostel</h6>
+									</a>
+
+									<div class="location">
+										<img src="assets/icons/location2.svg" alt="Location" />
+										<p class="location-text bigtext">Алматинская обл.</p>
+									</div>
+								</div>
+
+								<div class="card-content__bottom horizontal horizontal-inline">
+									<div class="price">
+										<p>от</p>
+										<h5>2500</h5>
+										<img src="assets/icons/currency.svg" alt="Tenge" />
+									</div>
+									
+									<div class="rating">
+										<p class="rating-text">9.6 </p>
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<img
+								src="assets/images/hostel1.jpeg"
+								alt="Hostel"
+								class="card-image"
+							/>
+
+							<div class="card-content">
+								<div class="card-content__top">
+									<a href="detail.html">
+										<h6 class="title bigtext">Grand hostel</h6>
+									</a>
+
+									<div class="location">
+										<img src="assets/icons/location2.svg" alt="Location" />
+										<p class="location-text bigtext">Алматинская обл.</p>
+									</div>
+								</div>
+
+								<div class="card-content__bottom horizontal horizontal-inline">
+									<div class="price">
+										<p>от</p>
+										<h5>2500</h5>
+										<img src="assets/icons/currency.svg" alt="Tenge" />
+									</div>
+									
+									<div class="rating">
+										<p class="rating-text">9.6 </p>
+										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -205,14 +500,8 @@
 				</nav>
 
 				<nav class="footer-menu vertical">
-					<a href="#" class="text">О нас</a>
 					<a href="interestings.html" class="text">Интересное</a>
-					<a href="#" class="text">Контакты</a>
 					<a href="#" class="text">FAQ</a>
-					<a href="#" class="text">Наши партнеры</a>
-					<a href="#" class="text">Служба поддержки</a>
-					<a href="#" class="text">Договор оферты</a>
-					<a href="#" class="text">Политика конфиденциальности</a>
 				</nav>
 
 				<div class="footer-links">
@@ -241,5 +530,7 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="js/common.js"></script>
 </body>
 </html>
