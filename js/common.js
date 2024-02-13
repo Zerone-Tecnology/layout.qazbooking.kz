@@ -1,17 +1,6 @@
-$(function() {
-
-	$('.slider').owlCarousel({
-		items: 4,
-		dots: false,
-		nav: true,
-	});
-
-	$('.reviews-slider').owlCarousel({
-		items: 3,
-		nav: true,
-	});
-
-});
+const d = document;
+const $q = d.querySelectorAll.bind(d);
+const $g = d.querySelector.bind(d);
 
 function openModal() {
   var modal = document.getElementById("modal");
@@ -24,12 +13,21 @@ function closeModal() {
 	$('body').css("overflow", "auto");
 }
 
-const d = document;
-const $q = d.querySelectorAll.bind(d);
-const $g = d.querySelector.bind(d);
+function profile(index) {
+	const $buttonList = $q('.user-item');
+	const $contentList = $q('.right');
+	$buttonList.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	$contentList.forEach(function(element) {
+		element.classList.remove('active');
+	});
+	$buttonList[index - 1].classList.add("active");
+	$contentList[index - 1].classList.add("active");
+}
 
 function initializeCarousel(carouselId) {
-	const $list = $g(`#${carouselId} .carousel-list`);
+	const $list = $g(`#${carouselId} .card-galery__mini-inner`);
 	let active = 1;
 
 	const getSlideIndex = ($slide) => {
@@ -38,7 +36,7 @@ function initializeCarousel(carouselId) {
 
 	const prevSlide = () => {
 		const max = $q(`#${carouselId} .carousel-item`).length - 1;
-		const main = $q(`#${carouselId} .main_image .image`)
+		const main = $q(`#${carouselId} .card-galery__main .image`)
 		let newPosition;
 		main[active].style.opacity = '0';
 		if (1 < active) {
@@ -55,7 +53,7 @@ function initializeCarousel(carouselId) {
 
 	const nextSlide = () => {
 		const max = $q(`#${carouselId} .carousel-item`).length - 1;
-		const main = $q(`#${carouselId} .main_image .image`)
+		const main = $q(`#${carouselId} .card-galery__main .image`)
 		let newPosition;
 		main[active].style.opacity = '0';
 		if (max - 1 > active) {
@@ -83,14 +81,3 @@ function initializeCarousel(carouselId) {
 	
 	$list.addEventListener( "focusin", chooseSlide );
 }
-
-initializeCarousel('carousel1');
-initializeCarousel('carousel2');
-initializeCarousel('carousel3');
-initializeCarousel('carousel4');
-initializeCarousel('carousel5');
-initializeCarousel('carousel6');
-initializeCarousel('carousel7');
-initializeCarousel('carousel8');
-initializeCarousel('carousel9');
-initializeCarousel('carousel10');

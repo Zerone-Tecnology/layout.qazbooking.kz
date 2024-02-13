@@ -1,24 +1,47 @@
-<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+	width="22"
+	height="20"
+	viewBox="0 0 22 20"
+	fill="none"
+	xmlns="http://www.w3.org/2000/svg"
+>
 	<g id="elements">
 		<path
 			id="Vector 6467"
-			d="M1 15C1 16.9497 1.02815 19 3.4 19H14.6C16.9718 19 17 16.9497 17 15C17 10.5817 13.4183 7 9 7C4.58172 7 1 10.5817 1 15Z" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"
+			d="M1 15C1 16.9497 1.02815 19 3.4 19H14.6C16.9718 19 17 16.9497 17 15C17 10.5817 13.4183 7 9 7C4.58172 7 1 10.5817 1 15Z"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linejoin="round"
 		/>
 		<path
 			id="Vector 6469"
-			d="M7 7V6C7 4.89543 7.89543 4 9 4C10.1046 4 11 4.89543 11 6V7" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"
+			d="M7 7V6C7 4.89543 7.89543 4 9 4C10.1046 4 11 4.89543 11 6V7"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linejoin="round"
 		/>
 		<path
 			id="Vector 6468"
-			d="M17 15C18.1046 15 19 14.1046 19 13V11C19 9.89543 19.8954 9 21 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+			d="M17 15C18.1046 15 19 14.1046 19 13V11C19 9.89543 19.8954 9 21 9"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 		<path
 			id="Vector 6470"
-			d="M15 9.5V7C15 3.68629 12.3137 1 9 1C5.68629 1 3 3.68629 3 7V9.5" stroke="#141B34" stroke-width="1.5" stroke-linejoin="round"
+			d="M15 9.5V7C15 3.68629 12.3137 1 9 1C5.68629 1 3 3.68629 3 7V9.5"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linejoin="round"
 		/>
 		<path
 			id="Vector 6471"
-			d="M1 15H11" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+			d="M1 15H11"
+			stroke="#141B34"
+			stroke-width="1.5"
+			stroke-linecap="round"
+			stroke-linejoin="round"
 		/>
 	</g>
 </svg>

@@ -51,7 +51,8 @@ body
 	margin: auto
 .vertical,
 .horizontal,
-.center
+.center,
+.wrap
 	display: flex
 .vertical
 	flex-direction: column
@@ -60,6 +61,8 @@ body
 	align-items: center
 .center
 	justify-content: center
+.wrap
+	flex-wrap: wrap
 
 .img-responsive
 	display: block
@@ -81,6 +84,8 @@ button
 	border: none
 	outline: none
 input
+	font-size: 16px
+	font-weight: 400
 	color: $dark
 ul
 	list-style-type: none
@@ -95,9 +100,11 @@ h1, h2, h3, h4, h5, h6, p
 h1
 	font-size: 48px
 	font-weight: 600
+	line-height: 58px
 h2
 	font-size: 32px
 	font-weight: 600
+	line-height: 39px
 h3
 	font-size: 32px
 	font-weight: 400
@@ -105,6 +112,7 @@ h3
 h4
 	font-size: 24px
 	font-weight: 600
+	line-height: 29px
 h5
 	font-size: 20px
 	font-weight: 700
@@ -112,10 +120,14 @@ h5
 h6
 	font-size: 18px
 	font-weight: 500
+	line-height: 22px
 p
 	font-size: 16px
 	font-weight: 400
+	line-height: 19px
 
+.mobile
+	display: none
 .btn	
 	cursor: pointer
 .scroll
@@ -185,7 +197,6 @@ p
 		.text
 			display: block
 			font-weight: 500
-			line-height: 24px
 			white-space: nowrap
 			padding: 10px 8px
 
@@ -204,9 +215,7 @@ p
 		gap: 8px
 		width: 259px
 		.text
-			font-size: 20px
 			font-weight: 400
-			line-height: 24px
 	&-links
 		.social
 			.text
@@ -220,6 +229,8 @@ p
 
 .main
 	padding-top: 183px
+	.breadcrumbs
+		margin-bottom: 40px
 
 .modal
 	display: none
@@ -300,13 +311,10 @@ p
 						color: $white
 						-webkit-line-clamp: 2
 					.title
-						line-height: 58px
 						margin-bottom: 30px
 					.text
 						font-size: 24px
 						line-height: 29px
-				.search-text
-					width: calc(100% - 229px)
 		.category,
 		.popular,
 		.blogs
@@ -317,7 +325,7 @@ p
 				gap: 39px
 			&-block
 				min-width: 140px
-				&__icon
+				.icon
 					width: 100%
 					height: 140px
 					border-radius: 20px
@@ -335,7 +343,7 @@ p
 						background-color: #FFECEC
 					&.purple
 						background-color: #B6C1FF
-				&__text
+				.text
 					text-align: center
 					font-size: 20px
 					line-height: 24px
@@ -375,20 +383,16 @@ p
 				margin-top: 50px
 			&-wrap
 				display: flex
-				flex-wrap: wrap
-				gap: 28px
+				gap: 27px
 			&-box
-				width: calc(50% - 14px)
-				min-height: 234px
+				width: calc(25% - 20.25px)
 				padding: 24px 32px 17px 30px
 				border-radius: 16px
 				.title
-					width: 66.667%
+					// width: 66.667%
 					text-align: center
 					line-height: 34px
 					margin: 0 auto 15px
-				.text
-					line-height: 19px
 				&.red
 					background-color: #FFE2E2
 					.title
@@ -421,11 +425,11 @@ p
 				padding: 55px
 			&-info
 				gap: 35px
-				&__title
+				.title
 					font-weight: 700
 					line-height: 38px
 					margin-bottom: 1px
-				&__text
+				.text
 					width: 76%
 					line-height: 22px
 					&:last-child
@@ -434,19 +438,373 @@ p
 				width: 383px
 				border-radius: 16px
 
+.interestings
+	margin: 60px 0 188px
+	.blogs-wrap
+		gap: 32px 30px
+		margin-top: 32px
+
+.interestingsdetail
+	margin: 60px 0 111px
+	&-wrap
+		gap: 105px
+	.blogs
+		gap: 32px
+		&-header
+			gap: 37px
+		&-image
+			width: 100%
+			height: 411px
+			border-radius: 16px
+		&-info .text
+			font-size: 24px
+			line-height: 34px
+
+.filter
+	margin: 38px 0 94px
+	&-wrap
+		gap: 112px
+	.content
+		gap: 33px 30px
+		.search
+			width: 100%
+		&-filter
+			width: 282px
+			border: 1px solid $grey-secondary
+			border-radius: 16px
+			padding: 15px
+			&__title
+				font-weight: 600
+				line-height: 36px
+				margin-bottom: -8px
+			&__block
+				margin-top: 23.5px
+				padding-top: 23.5px
+				border-top: 1px solid $grey
+				&.non
+					border-top: none
+					margin-top: 32px
+					padding-top: 0
+				.subtitle
+					color: $grey
+					margin-top: 8px
+				.price
+					position: relative
+					display: block
+					width: 100%
+					height: max-content
+					&-range
+						padding: 46px 0 30px
+					&-field
+						gap: .52083vw
+			.button
+				margin-top: 32px
+		&-result
+			width: 906px
+			&__header
+				justify-content: space-between
+				margin-bottom: 32px
+				.search_result
+					gap: 5px
+					.text
+						font-weight: 400
+				.sorting
+					gap: 8px
+					height: 44px
+					border: 1px solid $grey-secondary
+					border-radius: 8px
+					padding: 4px 10px
+			&__body
+				gap: 18px
+			&__pagination
+				gap: 16px
+				height: 24px
+				margin-top: 46px
+				.icon,
+				.pagination
+					height: 100%
+				.icon,
+				.pagination-element
+					width: 24px
+				.pagination-element
+					display: flex
+					align-items: center
+					justify-content: center
+					height: 100%
+					border-radius: 4px
+					&.active
+						background-color: $accent
+						.text
+							color: $white		
+	.seo
+		gap: 32px
+		&-text
+			font-size: 20px
+			line-height: 24px
+		&-list
+			list-style: disc
+			margin-top: -32px
+			padding-left: .75vw	
+
+.detail
+	margin: 60px 0 150px
+	&-wrap
+		gap: 80px
+	.place
+		gap: 32px
+		&-preview
+			gap: 24px
+			&__top
+				gap: 55px
+			&__bottom
+				justify-content: space-between
+				.review2
+					.title,
+					.text
+						text-align: right
+		.type
+			font-weight: 600
+			color: $accent
+			margin-bottom: 4px
+		&-galery
+			gap: 30px
+			height: 426px
+			.image
+				border-radius: 16px
+			&__main,
+			&__secondary
+				width: calc(50% - 15px)
+				height: 100%
+			&__secondary
+				gap: 30px
+				.image
+					width: calc(50% - 15px)
+					height: calc(50% - 15px)
+		&-info
+			justify-content: space-between
+			margin-top: 33px
+			&__left
+				gap: 80px
+				width: 906px
+				.description,
+				.variant
+					.title
+						margin-bottom: 24px
+				.description .text
+					font-size: 20px
+					line-height: 24px
+				.useful
+					.title
+						margin-bottom: 40px
+					&-content
+						justify-content: space-between
+						.desc
+							&-list
+								gap: 20px
+								width: calc(50% + 1px)
+								border-radius: 16px
+								background-color: #EEE
+								padding: 24px
+								&:last-child
+									width: calc(50% - 31px)
+							&-item
+								gap: 18px
+								.text
+									font-size: 18px
+									line-height: 22px
+				.variant-content
+					gap: 24px
+			&__right
+				gap: 48px
+				width: 282px
+				.advantages,
+				.contacts
+					background-color: #F0F0F0
+					border-radius: 16px
+				.advantages
+					gap: 8px
+					padding: 20px 20px 19px
+					&-text
+						font-weight: 500
+					.big
+						gap: 2px
+						margin-top: 8px
+					.small
+						gap: 8px
+					.button
+						margin-top: 12px
+				.locations
+					position: relative
+					gap: 17px
+					border-radius: 16px
+					.locations-title,
+					.location-text
+						font-weight: 700
+					.location-text
+						color: $dark
+					&-map
+						width: 100%
+						height: 387px
+					&-popup
+						position: absolute
+						top: 288px
+						left: 25px
+						width: 152px
+						height: 74px
+						background-color: $white
+						border-radius: 10px
+						box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
+						padding: 8px
+						.name
+							font-weight: 600
+							margin-bottom: 11px
+						.review2
+							gap: 8px
+							.title
+								font-size: 14px
+								font-weight: 700
+							.rating
+								width: 34px
+								height: 28px
+				.contacts
+					gap: 16px
+					padding: 20px 20px 27px
+					&-title
+						font-weight: 500
+					&-text span
+						font-weight: 700
+	.popular-title
+		font-weight: 600
+
+.hostels
+	margin: 60px 0 176px
+	.place
+		.image
+			border-radius: 16px
+		&-main_image
+			position: relative
+			width: 100%
+			height: 426px
+			margin-top: 46px
+			.image
+				position: absolute
+				top: 0
+				width: inherit
+				height: inherit
+				opacity: 0
+				&.active
+					opacity: 1
+		&-galery
+			gap: 16px
+			margin: 32px 0 40px
+			.image
+				width: 88px
+				height: 72px
+		&-content
+			justify-content: space-between
+			&__left
+				width: 1010px
+				border-top: 1px solid $grey-secondary
+				padding-top: 39px
+				.desc
+					&-item .title
+						font-weight: 400
+						margin-left: 6px
+					&-list
+						margin: 24px 0 40px
+				.text
+					font-size: 18px
+					line-height: 22px
+				.special
+					list-style-type: disc
+					margin-left: 16px
+			&__right
+				width: 175px
+				.button
+					margin-top: 26px
+
+.profile
+	margin: 40px 0 233px
+	&-wrap
+		gap: 60px
+	&-content
+		gap: 30px
+		.user
+			min-width: 386px
+			max-width: 386px
+			height: max-content
+			border: 1px solid $grey-secondary
+			border-radius: 8px
+			padding: 34px
+			&-header
+				gap: 16px
+				border-bottom: 1px solid $grey-secondary
+				margin-bottom: 23.5px
+				padding-bottom: 23.5px
+				.icon
+					width: 32px
+					height: 32px
+					background-color: $grey-secondary
+					border-radius: 50%
+				.text
+					line-height: 22px
+			&-item
+				gap: 8px
+				height: 72px
+				padding: 24px 0
+				margin-bottom: 24px
+				&.active
+					.icon
+						stroke: #BE9E44
+					.text
+						color: #BE9E44
+		.information,
+		.reviews,
+		.favourite
+			display: none
+			&.active
+				display: flex
+		.information
+			gap: 24px
+			&-item
+				gap: 4px
+				.text
+					font-size: 12px
+					line-height: 24px
+				&:nth-child(5)
+					gap: 24px
+					border-top: 1px solid $grey-secondary
+					margin-top: 23.5px
+					padding-top: 23.5px
+					.text
+						font-size: 16px
+						line-height: 20px
+			&-button
+				color: $accent
+				line-height: 20px
+				margin-top: 40px
+		.reviews,
+		.favourite
+			gap: 30px
+		.favourite
+			.card
+				min-width: 386px
+				max-width: 386px
+
 // COMPONENTS
 .button
 	display: flex
 	align-items: center
 	justify-content: center
 	gap: 8px
-	width: auto
+	width: 100%
 	height: 48px
 	border-radius: 4px
 	background-color: $accent
 	cursor: pointer
 	&-text
 		font-family: $secondary-font
+		line-height: 20px
 		color: $white
 	&:hover
 		background-color: #012657
@@ -473,19 +831,108 @@ p
 		position: absolute
 		left: 28px
 	&-text
-		width: -webkit-fill-available
+		width: calc(100% - 229px)
 		height: 100%
 		padding: 16px 20px 16px 54px
-		background-color: #F7F7FD
+		background-color: $input
 		border-radius: 4px
-		font-size: 16px
-		font-weight: 400
 		&::placeholder
 			color: $grey
 	.button
 		width: 221px
 		&-text
 			font-size: 20px
+			line-height: 24px
+
+.input
+	width: 386px
+	height: 56px
+	background-color: $input
+	color: $dark
+	border-radius: 4px
+	padding: 16px 20px
+	&::placeholder
+		color: #C5C0DB
+
+.range
+	position: absolute
+	width: 100%
+	height: 2px
+	border: 1px solid #EDEDED
+	outline: 0
+	box-sizing: border-box
+	border-radius: 5px
+	-webkit-appearance: none
+	&::-webkit-slider-thumb
+		position: relative
+		width: 16px
+		height: 16px
+		-webkit-appearance: none
+		border-radius: 50%
+		background-color: $accent
+		cursor: pointer
+		z-index: 3
+
+.field
+	position: relative
+	width: 120px
+	&-input,
+	&-text
+		font-size: 18px
+	&-input
+		width: 120px
+		border: 1px solid $grey
+		border-radius: 8px
+		color: $dark
+		padding: 8px 16px 8px 36px
+	&-text
+		position: absolute
+		top: 50%
+		left: 10px
+		transform: translate(0%, -50%)
+		color: #BFBEBC
+
+.checkbox,
+.radio
+	display: flex
+	align-items: center
+	gap: 12px
+	&_list
+		display: flex
+		flex-direction: column
+		gap: 12px
+		margin-top: 20px
+		&_line
+			display: flex
+			justify-content: space-between
+	&-input
+		width: 24px
+		height: 24px
+		accent-color: $accent
+	&-text
+		font-size: 15px
+		font-weight: 500
+
+.breadcrumbs
+	display: flex
+	flex-wrap: wrap
+	gap: 4px
+	&-link
+		display: flex
+		gap: 4px
+		.dot
+			padding: 0 6px
+		.dot,
+		.text
+			font-family: $secondary-font
+			font-size: 14px
+			font-weight: 400
+			line-height: 17px
+			color: $breadcrumbs
+		&:last-child
+			.dot,
+			.text
+				color: $accent
 
 .location
 	display: flex
@@ -499,10 +946,10 @@ p
 .rating
 	display: flex
 	align-items: center
+	justify-content: center
 	gap: 6px
-	width: max-content
+	width: 62px
 	height: 32px
-	padding: 4px
 	border-radius: 8px
 	background-color: $grey-bg
 	&-text
@@ -514,7 +961,6 @@ p
 	align-items: center
 	gap: 8px
 	&-text
-		line-height: 19px
 		-webkit-line-clamp: 1
 		color: $grey
 
@@ -522,61 +968,241 @@ p
 	display: flex
 	align-items: center
 	gap: 8px
-	&-text,
-	&-dot
-		line-height: 19px
 	&-text
 		color: $grey
 	&-dot
 		font-weight: 300
 		color: $grey-secondary
 
-.card
-	min-width: 282px
-	height: 286px
-	border: 1px solid $grey-secondary
-	border-radius: 16px
+.price
+	display: flex
+	align-items: center
+	justify-content: end
+	gap: 5px
+	height: 29px
+	&-text
+		font-weight: 700
+	&-description
+		text-align: right
+		color: $grey
+
+.desc
+	height: 24px
+	&-list
+		display: flex
+		gap: 10px 22px
+	&-item
+		display: flex
+		align-items: center
+		gap: 8px
+	
+.action
+	gap: 12px
+	height: 24px
+	&_list
+		gap: 24px
+	&-text
+		font-size: 18px
+		line-height: 22px
+
+.card1
+	&-wrap
+		margin-top: 24px
 	&_list
 		gap: 30px
-	&-image
-		width: 100%
-		height: 158px
+	.card
+		min-width: 282px
+		max-width: 282px
+		height: 286px
+		border: 1px solid $grey-secondary
 		border-radius: 16px
-		overflow: hidden
-	&-content
-		display: flex
-		flex-direction: column
-		justify-content: space-between
-		height: 126px
-		padding: 17px 11px 2px 7px
-		&__top
-			display: grid
-			grid-gap: 9px
-			.title
-				line-height: 22px
-				-webkit-line-clamp: 1
-		&__bottom
+		&-image
+			width: 100%
+			height: 158px
+			border-radius: 16px
+			overflow: hidden
+		&-content
+			display: flex
+			flex-direction: column
 			justify-content: space-between
-			.price
-				display: flex
-				align-items: center
-				gap: 5px
-				height: 36px
-			.rating
-				background-color: transparent
+			height: 126px
+			padding: 17px 11px 2px 7px
+			&__top
+				display: grid
+				grid-gap: 9px
+				.title
+					-webkit-line-clamp: 1
+			&__bottom
+				justify-content: space-between
+				.rating
+					background-color: transparent
+
+.card2
+	.card
+		position: relative
+		min-width: 386px
+		max-width: 386px
+		&-image
+			width: 100%
+			height: 197px
+			border-radius: 16px 16px 0px 0px
+		&-info
+			height: 143px
+			border-right: 1px solid $grey-secondary
+			border-bottom: 1px solid $grey-secondary
+			border-left: 1px solid $grey-secondary
+			border-radius: 0px 0px 16px 16px
+			padding: 20px 15px 19px
+			.date
+				color: $grey
+				font-weight: 500
+				margin-bottom: 12px
+			.title
+				font-weight: 600
+				-webkit-line-clamp: 3
+		&-button
+			position: absolute
+			top: 40.93618%
+			right: 5.4423%
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 35px
+			height: 35px
+			border-radius: 50%
+			background-color: $white
+
+.card3
+	.card
+		gap: 30px
+		border: 1px solid $grey-bg
+		border-radius: 16px
+		padding: 15px
+		&-galery
+			gap: 16px
+			width: 32.266%
+			// width: 282px
+			.image
+				border-radius: 16px
+			&__main,
+			&__mini
+				width: 100%
+			&__main
+				position: relative
+				height: 198px
+				.image
+					position: absolute
+					top: 0
+					width: inherit
+					height: inherit
+					opacity: 0
+					&.active
+						opacity: 1
+			&__mini
+				overflow: hidden
+				&-inner
+					gap: 9px
+					transition: all .3s
+				.image
+					width: 88px
+					height: 72px
+					cursor: pointer
+		&-content
+			min-width: 44.28%
+			// min-width: 387px
+			&__title
+				margin-bottom: 32px
+			&__fotter
+				justify-content: space-between
+				border-top: 1px solid $grey-secondary
+				margin-top: 39.5px
+				padding-top: 39.5px
+				.left
+					gap: 8px
+					&-title
+						font-size: 18px
+						font-weight: 600
+					&-button
+						gap: 4px
+						width: max-content
+						height: 32px
+						border-bottom: 2px solid $accent
+						&__text
+							color: $accent
+				.right .button
+					width: 141px
+					margin-top: 26px
+					margin-left: auto
+
+.card4
+	.card
+		display: flex
+		gap: 8px
+		border-radius: 16px
+		background: $white
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .15)
+		&-image
+			width: 225px
+			height: 225px
+			border-radius: 16px
+		&-info
+			display: flex
+			justify-content: space-between
+			width: -webkit-fill-available
+			padding: 12.5px 16px
+			&__left
+				gap: 16px
+				width: 442.5px
+				border-right: 1px solid #E3E3E3
+				margin-right: 23.5px
+				padding-right: 23.5px
+				.top
+					justify-content: space-between
+					&-title
+						-webkit-line-clamp: 1
+				.locations
+					gap: 16px
+					&-button
+						color: $grey
+						text-decoration: underline
+				.reviews
+					gap: 8px
+					.rating
+						width: 64px
+					&-text
+						font-weight: 600
+				.features
+					gap: 4px 8px
+					&-text
+						color: $grey
+			&__right
+				flex-direction: row
+				border-top: 1px solid #E3E3E3
+				margin-top: 15.5px
+				padding-top: 15.5px
+				.price
+					height: 36px
+					justify-content: start
+					&_box
+						width: fit-content
+					&-description
+						text-align: left
 
 .review
 	position: relative
 	display: grid
 	grid-gap: 23px
 	min-width: 386px
+	max-width: 386px
 	border: 1px solid $grey
 	border-radius: 8px
 	padding: 15px
 	&-button
 		position: absolute
-		top: 15px
-		right: 15px
+		top: 17px
+		right: 24px
+		.rating
+			width: 54px
 	&-title
 		line-height: 36px
 		font-weight: 500
@@ -590,50 +1216,30 @@ p
 		align-items: center
 		justify-content: space-between
 
-.blog
-	position: relative
-	min-width: 386px
-	&-image
-		width: 100%
-		height: 197px
-		border-radius: 16px 16px 0px 0px
-		overflow: hidden
-		img
-			width: 100%
-			height: 100%
-	&-info
-		height: 143px
-		border-right: 1px solid $grey-secondary
-		border-bottom: 1px solid $grey-secondary
-		border-left: 1px solid $grey-secondary
-		border-radius: 0px 0px 16px 16px
-		padding: 20px 15px 19px
-		&__date
-			color: $grey
-			font-weight: 500
-			line-height: 19px
-			margin-bottom: 12px
-		&__title
-			font-weight: 600
-			line-height: 24px
-			-webkit-line-clamp: 3
-	&-button
-		position: absolute
-		top: 40.93618%
-		right: 5.4423%
-		display: flex
-		align-items: center
-		justify-content: center
-		width: 35px
-		height: 35px
-		border-radius: 50%
-		background-color: $white
+.review2
+	display: flex
+	align-items: center
+	gap: 12px
+	.title,
+	.text
+		-webkit-line-clamp: 1
+	.title
+		font-weight: 600
+	.text
+		font-size: 14px
+	.rating
+		width: 36px
+		background-color: $accent
+		&-text
+			color: $white
 
 .reviews
 	&-header
 		display: flex
 		align-items: center
 		justify-content: space-between
+		.review2
+			margin-right: 667px
 		&__buttons
 			display: flex
 			gap: 8px
@@ -651,509 +1257,5 @@ p
 		display: flex
 		gap: 30px
 		margin-top: 40px
-
-
-
-.main
-	&.hostels
-		margin: 60px 0 176px
-		.image
-			width: 100%
-			height: 426px
-			border-radius: 16px
-			margin: 46px 0 32px
-		.galery
-			gap: 16px
-			margin-bottom: 40px
-			&-image
-				width: 88px
-				height: 72px
-				border-radius: 16px
-		.content
-			gap: 33px
-			.left
-				border-top: 1px solid $grey-secondary
-				padding-top: 39px
-				.title
-					gap: 15px
-				.includes
-					gap: 22px
-					margin: 24px 0 40px
-					&-item
-						gap: 8px
-				.text
-					font-size: 18px
-				.special
-					list-style-type: disc
-					margin-left: 16px
-			.right
-				min-width: 175px
-				.price-description
-					text-align: right
-				.button
-					margin-top: 26px
-					margin-left: auto
-	&.filter
-		margin: 38px 0 94px
-		.content
-			justify-content: space-between
-			margin-top: 33px
-			&-left
-				width: 14.6875vw
-				.filter
-					border: 1px solid $grey-secondary
-					border-radius: 16px
-					padding: 16px .83333vw
-					&-title
-						font-weight: 600
-						line-height: 36px
-					&-content
-						margin-top: 23.5px
-						padding-top: 23.5px
-						border-top: 1px solid $grey
-						.title
-							font-size: 18px
-							line-height: 22px
-						.subtitle
-							line-height: 19.2px
-							color: $grey
-							margin-top: 8px
-						&.non
-							border-top: none
-							margin-top: 32px
-							padding-top: 0
-						.price
-							position: relative
-							box-sizing: border-box
-							width: 100%
-							&-field
-								padding: 46px 0 30px
-							&-range
-								gap: .52083vw
-								&__input
-									position: relative
-									width: 6.25vw
-									input,
-									p
-										font-size: 18px
-									input
-										width: 100%
-										border-radius: 8px
-										border: 1px solid $grey
-										padding: 8px .52083vw 8px 1.875vw
-									p
-										position: absolute
-										top: 50%
-										left: .52083vw
-										transform: translate(0%, -50%)
-										color: #BFBEBC
-							input[type=range]
-								position: absolute
-								width: 100%
-								height: 2px
-								border: 1px solid #EDEDED
-								outline: 0
-								box-sizing: border-box
-								border-radius: 5px
-								-webkit-appearance: none
-								&::-webkit-slider-thumb
-									position: relative
-									width: 16px
-									height: 16px
-									-webkit-appearance: none
-									border-radius: 50%
-									background-color: $accent
-									cursor: pointer
-									z-index: 3
-						.filter_ch
-							display: grid
-							grid-gap: 12px
-							margin-top: 20px
-							&-item
-								justify-content: space-between
-								&__field
-									gap: 0.625vw
-									.input
-										width: 24px
-										height: 24px
-										accent-color: $accent
-									.text
-										font-size: 15px
-										font-weight: 500
-					.button
-						margin-top: 32px
-			&-right
-				width: 47.1875vw
-				&__header
-					justify-content: space-between
-					margin-bottom: 32px
-					.search_result
-						gap: 0.26042vw
-					.sorting
-						gap: .4166667vw
-						height: 44px
-						border-radius: 8px
-						border: 1px solid $grey-secondary
-						padding: 4px .52083vw
-				&__body
-					display: flex
-					flex-direction: column
-					gap: 18px
-					.cardd
-						gap: 1.25vw
-						height: 225px
-						border-radius: 16px
-						background: $white
-						box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, .15)
-						&-image
-							width: 11.71875vw
-							border-radius: 16px
-						&-info,
-						&-action
-							margin: 12.5px 0
-						&-info
-							display: flex
-							flex-direction: column
-							gap: 16px
-							width: 21.7709vw
-							&__header
-								justify-content: space-between
-								.name
-									overflow: hidden
-									white-space: nowrap
-									text-overflow: ellipsis
-									font-weight: 600
-							&__locations
-								gap: .83333vw
-								.text
-									color: $grey
-								.btn
-									text-decoration: underline
-							&__reviews
-								gap: .4166667vw
-								.text
-									font-size: 18px
-								.text2
-									font-weight: 600
-							&__features
-								flex-wrap: wrap
-								gap: 4px .4166667vw
-								.text
-									color: $grey
-						&-action
-							display: flex
-							flex-direction: column
-							justify-content: space-between
-							width: 10.3646vw
-							padding-left: 3.38542vw
-							margin-right: .83333vw
-							border-left: 1px solid #E3E3E3
-				&__pagination
-					gap: 0.8333vw
-					margin-top: 46px
-					height: 24px
-					.icon,
-					.pagination
-						height: 100%
-					.icon,
-					.pagination-element
-						width: 24px
-					.pagination-element
-						display: flex
-						align-items: center
-						justify-content: center
-						height: 100%
-						border-radius: 4px
-						&.active
-							background-color: $accent
-							.text
-								color: $white					
-		.info
-			display: grid
-			grid-gap: 32px
-			margin-top: 112px
-			&-title
-				font-size: 39px
-				color: $dark
-			&-text
-				font-size: 24px
-			&-list
-				list-style: disc
-				margin-top: -32px
-				padding-left: .75vw
-	&.detail
-		margin: 60px 0 150px
-		.head
-			display: grid
-			grid-gap: 24px
-			margin: 32px 0
-			&-top
-				gap: 55px
-				.title
-					line-height: 39px
-				.block
-					gap: 35px
-					height: 24px
-					&-icon
-						gap: 12px
-			&-bottom
-				justify-content: space-between
-				.type-name
-					font-size: 20px
-					font-weight: 600
-					color: $accent
-					margin-bottom: 4px
-				.reviews
-					&-title
-						font-weight: 600
-					&-text
-						font-size: 14px
-					&-rating
-						display: flex
-						align-items: center
-						justify-content: center
-						width: 36px
-						height: 32px
-						border-radius: 8px
-						background-color: $accent
-						margin-left: .625vw
-						&__text
-							color: $white
-		.galery
-			gap: 1.5625vw
-			&-main,
-			&-secondary
-				width: 30.9375vw
-			&-main
-				height: 426px
-			&-secondary
-				display: flex
-				flex-wrap: wrap
-				grid-gap: 30px 1.5625vw
-				.frame
-					width: 14.6875vw
-					height: 198px
-			&-main,
-			.frame
-				border-radius: 16px
-				overflow: hidden
-				img
-					width: 100%
-					height: 100%
-		.info
-			justify-content: space-between
-			margin-top: 65px
-			&-left
-				display: grid
-				grid-gap: 80px
-				width: 47.1875vw
-				.description,
-				.variant
-					&-title
-						margin-bottom: 24px
-				.useful
-					&-title
-						margin-bottom: 40px
-					&-content
-						justify-content: space-between
-						.block
-							display: grid
-							grid-gap: 20px
-							width: 23.64584vw
-							border-radius: 16px
-							background: #EEE
-							padding: 24px 1.25vw
-							&:last-child
-								width: 21.97917vw
-				.variant-content
-					display: grid
-					grid-gap: 24px
-					.cardd
-						gap: 1.5625vw
-						height: 318px
-						border: 1px solid $grey-bg
-						border-radius: 16px
-						padding: 16px .83333vw
-						&-carousel
-							display: flex
-							flex-direction: column
-							justify-content: space-between
-							width: 14.6875vw
-							.image
-								border-radius: 16px
-							.main_image,
-							.mini_images
-								width: 100%
-							.main_image
-								position: relative
-								height: 198px
-								.image
-									position: absolute
-									top: 0
-									width: inherit
-									height: inherit
-									opacity: 0
-									&.active
-										opacity: 1
-							.mini_images
-								overflow: hidden
-								.carousel-list
-									gap: 9px
-									transition: all .3s
-								.image
-									width: 88px
-									height: 72px
-						&-content
-							width: 29.27083vw
-							.title
-								font-weight: 600
-								margin-bottom: 20px
-							.list
-								gap: 1.14583vw
-							.bottom
-								justify-content: space-between
-								border-top: 1px solid $grey-secondary
-								margin-top: 39.5px
-								padding-top: 39.5px
-								&-left
-									display: flex
-									flex-direction: column
-									gap: 8px
-									.text
-										font-size: 18px
-										font-weight: 600
-									.btn
-										color: $accent
-										text-decoration: underline
-								&-right .button
-									margin-top: 26px
-			&-right
-				display: flex
-				flex-direction: column
-				gap: 48px
-				width: 14.6875vw
-				.title
-					line-height: 24px
-				.text
-					line-height: 19px
-				.advantages,
-				.contacts
-					background-color: #F0F0F0
-					border-radius: 16px
-				.advantages
-					padding: 20px 1.04167vw 19px
-					.col
-						display: grid
-						grid-gap: 8px
-						.big
-							gap: .104167vw
-							margin-top: 16px
-						.small
-							gap: .4166667vw
-					.button
-						margin-top: 20px
-				.locations
-					position: relative
-					display: grid
-					grid-gap: 17px
-					&-map
-						width: 100%
-						height: 387px
-					&-popup
-						position: absolute
-						bottom: 20%
-						left: 10.33%
-						width: 7.70833vw
-						height: 74px
-						background-color: $white
-						border-radius: 10px
-						box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
-						padding: 8px .52083vw
-						.name
-							font-weight: 600
-							margin-bottom: 11px
-						.horizontal
-							justify-content: space-between
-							.rating
-								width: 1.71875vw
-								height: 28px
-								background-color: $accent
-								padding: 2px .3125vw
-								&-text
-									color: $white
-							.revieww
-								font-size: 14px
-								gap: 0.104167vw
-								span
-									font-weight: 600
-				.contacts
-					display: grid
-					grid-gap: 16px
-					padding: 20px 1.04167vw 46px
-					.title
-						font-weight: 500
-					.text span
-						font-weight: 700
-			.reviews,
-			.popular
-				margin-top: 80px
-		.popular-content__body
-			margin-top: 24px
-
-.breadcrumbs
-	gap: .52083vw
-	margin-bottom: 32px
-	&-item
-		gap: 10px
-		.text
-			font-family: $secondary-font
-			font-size: 14px
-			font-weight: 400
-			color: $breadcrumbs
-		&:last-child .text
-			color: $accent
-
-.price
-	gap: 5px
-	justify-content: end
-	&-text
-		font-weight: 700
-		line-height: 29px
-	&-description
-		color: $grey
-		line-height: 19px
-
-.interestings
-	margin: 60px 0 188px
-	.content
-		margin-top: 40px
-		display: flex
-		flex-wrap: wrap
-		gap: 32px 1.5625vw
-
-.interestingsdetail
-	margin: 60px 0 150px
-	&-header
-		gap: 2.760417vw
-	&-content
-		&__image
-			width: 100%
-			height: 411px
-			border-radius: 16px
-			margin: 32px 0
-		&__description
-			.text
-				font-size: 24px
-	.popular
-		display: flex
-		flex-direction: column
-		gap: 80px
-		margin-top: 40px
-
-.action
-	gap: 35px
-	height: 24px
-	&-icon
-		gap: 12px
 
 @import media

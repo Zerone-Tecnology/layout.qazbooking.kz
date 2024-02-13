@@ -22,8 +22,6 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -71,665 +69,751 @@
 			</div>
 
 			<div class="header-menu horizontal scroll">
-				<a href="filter.html" class="text">Хостелы</a>
-				<a href="filter.html" class="text">Базы отдыха</a>
-				<a href="filter.html" class="text">Активный отдых</a>
-				<a href="filter.html" class="text">Туры</a>
-				<a href="filter.html" class="text">Оздоровительный отдых</a>
-				<a href="filter.html" class="text">Детские лагеря</a>
-				<a href="filter.html" class="text">Транспорт</a>
+				<a href="filter.html">
+					<h5 class="text">Хостелы</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Базы отдыха</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Активный отдых</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Туры</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Оздоровительный отдых</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Детские лагеря</h5>
+				</a>
+				<a href="filter.html">
+					<h5 class="text">Транспорт</h5>
+				</a>
 			</div>
 		</div>
 	</header>
 
+	<!-- MAIN -->
 	<main class="filter main">
-		<div class="box">
-			<div class="search horizontal horizontal-inline">
-				<img src="assets/icons/search.svg" alt="search" class="search-icon" />
-				<input
-					type="text"
-					placeholder="Ключевое слово"
-					class="search-text"
-				/>
-				<button class="button" type="submit">
-					<p class="button-text">Поиск</p>
-				</button>
-			</div>
+		<div class="filter-wrap box vertical">
+			<section class="content wrap">
+				<div class="search">
+					<img
+						src="assets/icons/search.svg"
+						alt="Search"
+						class="search-icon"
+					/>
+					<input
+						type="text"
+						placeholder="Ключевое слово"
+						class="search-text"
+					/>
+					<button class="button" type="submit">
+						<p class="button-text">Поиск</p>
+					</button>
+				</div>
 
-			<div class="content horizontal">
-				<div class="content-left">
-					<div class="filter">
-						<h4 class="filter-title">Все фильтры</h4>
+				<div class="content-filter">
+					<h5 class="content-filter__title">Все фильтры</h5>
 
-						<div class="filter-content">
-							<h6 class="info-text" class="title">Диапазон цен</h6>
-							<p class="subtitle">Цена за 10 ночей</p>
-							<div class="price">
-								<div class="price-field">
+					<div class="content-filter__block">
+						<h6>Диапазон цен</h6>
+						<p class="subtitle">Цена за 10 ночей</p>
+						<div class="price">
+							<div class="price-range">
+								<input
+									type="range"
+									min="0"
+									max="160000"
+									value="10000"
+									id="lower"
+									class="range"
+								/>
+								<input
+									type="range"
+									min="0"
+									max="160000"
+									value="130000"
+									id="upper"
+									class="range"
+								/>
+							</div>
+
+							<div class="price-field horizontal">
+								<div class="field">
 									<input
-										type="range"
+										type="text"
 										min="0"
-										max="160000"
+										max="130000"
 										value="10000"
-										id="lower"
+										class="field-input"
 									/>
+									<p class="field-text">от</p>
+								</div>
+
+								<div class="field">
 									<input
-										type="range"
+										type="text"
 										min="0"
-										max="160000"
+										max="130000"
 										value="130000"
-										id="upper"
+										class="field-input"
 									/>
-								</div>
-
-								<div class="price-range horizontal">
-									<div class="price-range__input">
-										<input
-											type="text"
-											min="0"
-											max="130000"
-											value="10000"
-										/>
-										<p>от</p>
-									</div>
-
-									<div class="price-range__input">
-										<input
-											type="text"
-											min="0"
-											max="130000"
-											value="130000"
-										/>
-										<p>до</p>
-									</div>
+									<p class="field-text">до</p>
 								</div>
 							</div>
 						</div>
-
-						<div class="filter-content non">
-							<h6 class="info-text" class="title">Популярные фильтры</h6>
-							<div class="filter_ch">
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Хостелы</p>
-									</div>
-									<p>234</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Зона отдыха</p>
-									</div>
-									<p>54</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Гостевые дома</p>
-									</div>
-									<p>12</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">5 звёзд</p>
-									</div>
-									<p>5</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Завтрак включён</p>
-									</div>
-									<p>123</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-content">
-							<h6 class="title">Тип размещения</h6>
-							<div class="filter_ch">
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Хостел</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Санаторий</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Тур база</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Зона отдыха</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Кемпинг</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Авторские туры</p>
-									</div>
-									<p>123</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-content">
-							<h6 class="title">Питание</h6>
-							<div class="filter_ch">
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">Завтрак включён</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="checkbox" class="input" />
-										<p class="text">С собственной кухней</p>
-									</div>
-									<p>123</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-content">
-							<h6 class="title">Рейтинг</h6>
-							<div class="filter_ch">
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="radio" class="input" />
-										<p class="text">4.5 и выше</p>
-									</div>
-									<p>109</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="radio" class="input" />
-										<p class="text">4 и выше</p>
-									</div>
-									<p>34</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="radio" class="input" />
-										<p class="text">3 и выше</p>
-									</div>
-									<p>12</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="filter-content">
-							<h6 class="title">Политика отмены</h6>
-							<div class="filter_ch">
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="radio" class="input" />
-										<p class="text">Бесплатная отмена</p>
-									</div>
-									<p>123</p>
-								</div>
-
-								<div class="filter_ch-item horizontal horizontal-inline">
-									<div class="filter_ch-item__field horizontal horizontal-inline">
-										<input type="radio" class="input" />
-										<p class="text">Без предоплаты</p>
-									</div>
-									<p>123</p>
-								</div>
-							</div>
-						</div>
-
-						<button class="button disabled" type="submit">
-							<p class="button-text">Сбросить фильтры</p>
-						</button>
 					</div>
+
+					<div class="content-filter__block non">
+						<h6>Популярные фильтры</h6>
+						<div class="checkbox_list">
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Хостелы</p>
+								</div>
+								<p>234</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Зона отдыха</p>
+								</div>
+								<p>54</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Гостевые дома</p>
+								</div>
+								<p>12</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">5 звёзд</p>
+								</div>
+								<p>5</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Завтрак включён</p>
+								</div>
+								<p>123</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-filter__block">
+						<h6>Тип размещения</h6>
+						<div class="checkbox_list">
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Хостел</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Санаторий</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Тур база</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Зона отдыха</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Кемпинг</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Авторские туры</p>
+								</div>
+								<p>123</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-filter__block">
+						<h6>Питание</h6>
+						<div class="checkbox_list">
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Завтрак включён</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">С собственной кухней</p>
+								</div>
+								<p>123</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-filter__block">
+						<h6>Рейтинг</h6>
+						<div class="checkbox_list">
+							<div class="radio_list_line">
+								<div class="radio">
+									<input type="radio" class="radio-input" />
+									<p class="radio-text">4.5 и выше</p>
+								</div>
+								<p>109</p>
+							</div>
+
+							<div class="radio_list_line">
+								<div class="radio">
+									<input type="radio" class="radio-input" />
+									<p class="radio-text">4 и выше</p>
+								</div>
+								<p>34</p>
+							</div>
+
+							<div class="radio_list_line">
+								<div class="radio">
+									<input type="radio" class="radio-input" />
+									<p class="radio-text">3 и выше</p>
+								</div>
+								<p>12</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-filter__block">
+						<h6>Политика отмены</h6>
+						<div class="checkbox_list">
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Бесплатная отмена</p>
+								</div>
+								<p>123</p>
+							</div>
+
+							<div class="checkbox_list_line">
+								<div class="checkbox">
+									<input type="checkbox" class="checkbox-input" />
+									<p class="checkbox-text">Без предоплаты</p>
+								</div>
+								<p>123</p>
+							</div>
+						</div>
+					</div>
+
+					<button class="button disabled" type="submit">
+						<p class="button-text">Сбросить фильтры</p>
+					</button>
 				</div>
 				
-				<div class="content-right">
-					<div class="content-right__header horizontal horizontal-inline">
+				<div class="content-result">
+					<div class="content-result__header horizontal horizontal-inline wrap">
 						<div class="search_result horizontal">
-							<h6>Алматы: найдено совпадений</h6>
-							<h4>234</h6>
+							<h5 class="text">Алматы: найдено совпадений</h5>
+							<h5>234</h6>
 						</div>
 						
 						<div class="sorting horizontal horizontal-inline btn">
-							<img src="assets/icons/arrow_up_down.svg" alt="sorting" />
+							<img src="assets/icons/arrow_up_down.svg" alt="Sorting" />
 							<p>Сортировать:</p>
-							<p>Наши рекомендации</p>
+							<p class="desktop">Наши рекомендации</p>
+						</div>
+
+						<div class="sorting horizontal horizontal-inline btn mobile">
+							<img src="assets/icons/filter.svg" alt="Filter" />
+							<p>Все фильтры</p>
 						</div>
 					</div>
 
-					<div class="content-right__body">
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel1.jpeg"
-								alt="Hostel 1"
-								class="cardd-image"
-							/>
+					<div class="content-result__body vertical">
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
 
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">Grand hostel</h5>
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
 
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
 
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
-									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
 
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
 
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
-									</div>
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
 
-									<p class="text2">1233 отзывов</p>
-								</div>
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
 
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
-								</div>
-							</div>
-
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
-									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
-								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
-							</div>
-						</div>
-
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel2.jpeg"
-								alt="Hostel 2"
-								class="cardd-image"
-							/>
-
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">HiLoft Hostel</h5>
-
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
-
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
-									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
-
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
-
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
 									</div>
 
-									<p class="text2">453 отзывов</p>
-								</div>
-
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
-								</div>
-							</div>
-
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
 									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
 								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
 							</div>
 						</div>
 
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel3.jpeg"
-								alt="Hostel 3"
-								class="cardd-image"
-							/>
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
 
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">Тунде</h5>
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
 
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
 
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
-									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
 
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
 
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
-									</div>
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
 
-									<p class="text2">3214 отзывов</p>
-								</div>
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
 
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
-								</div>
-							</div>
-
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
-									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
-								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
-							</div>
-						</div>
-
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel4.jpeg"
-								alt="Hostel 4"
-								class="cardd-image"
-							/>
-
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">Барыс хостел</h5>
-
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
-
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
-									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
-
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
-
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">9.5</p>
-										<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
 									</div>
 
-									<p class="text2">65 отзывов</p>
-								</div>
-
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
-								</div>
-							</div>
-
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
 									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
 								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
 							</div>
 						</div>
 
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel1.jpeg"
-								alt="Hostel 1"
-								class="cardd-image"
-							/>
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
 
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">Grand hostel</h5>
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
 
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
 
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
+
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
+
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
+
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
+
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
 									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
 
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
-
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
 									</div>
-
-									<p class="text2">1233 отзывов</p>
 								</div>
-
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
-								</div>
-							</div>
-
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
-									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
-								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
 							</div>
 						</div>
 
-						<div class="cardd horizontal">
-							<img
-								src="assets/images/hostel2.jpeg"
-								alt="Hostel 2"
-								class="cardd-image"
-							/>
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
 
-							<div class="cardd-info">
-								<div class="cardd-info__header horizontal horizontal-inline">
-									<h5 class="name">HiLoft Hostel</h5>
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
 
-									<img
-										src="assets/icons/favourite/default.svg"
-										alt="Favourite"
-										class="btn"
-									/>
-								</div>
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
 
-								<div class="cardd-info__locations horizontal horizontal-inline">
-									<div class="location horizontal horizontal-inline">
-										<img src="assets/icons/location2.svg" alt="location" />
-										<p class="location-text">Алматинская обл.</p>
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
+
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
+
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
+
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
+
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
 									</div>
-									<p class="btn text">Показать на карте</p>
-								</div>
 
-								<div class="cardd-info__reviews horizontal horizontal-inline">
-									<h5 class="text">Хостел</h5>
-
-									<div class="rating horizontal horizontal-inline">
-										<p class="rating-text">7.3</p>
-										<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
 									</div>
-
-									<p class="text2">453 отзывов</p>
-								</div>
-
-								<div class="cardd-info__features horizontal">
-									<p class="text">Wi-Fi</p>
-									<p class="text">•</p>
-									<p class="text">Бассейн</p>
-									<p class="text">•</p>
-									<p class="text">Парковка</p>
-									<p class="text">•</p>
-									<p class="text">Кондиционер в номере</p>
 								</div>
 							</div>
+						</div>
 
-							<div class="cardd-action">
-								<div>
-									<div class="price horizontal horizontal-inline">
-										<h5 class="price-text">143 500</h5>
-										<img src="assets/icons/currency.svg" alt="currency" />
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
+
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
+
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
+
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
+
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
+
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
+
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
+
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
 									</div>
-									<p class="price-description">цена за 10 ночей</p>
-									<p class="price-description">за 1 кровать</p>
+
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
+									</div>
 								</div>
-								<a href="detail.html">
-									<button class="button" type="submit">
-										<p class="button-text">Выбрать</p>
-									</button>
-								</a>
+							</div>
+						</div>
+
+						<div class="card4">
+							<div class="card">
+								<img
+									src="assets/images/hostel1.jpeg"
+									alt="Hostel 1"
+									class="card-image"
+								/>
+
+								<div class="card-info">
+									<div class="card-info__left vertical">
+										<div class="top horizontal horizontal-inline">
+											<h4 class="top-title bigtext">Grand hostel</h4>
+											<h4></h4>
+
+											<img
+												src="assets/icons/favourite/default.svg"
+												alt="Favourite"
+												class="top-button btn desktop"
+											/>
+											<img
+												src="assets/icons/favourite/default-white.svg"
+												alt="Favourite"
+												class="top-button btn mobile"
+											/>
+										</div>
+
+										<div class="locations horizontal horizontal-inline">
+											<div class="location">
+												<img src="assets/icons/location2.svg" alt="Location" />
+												<p class="location-text bigtext">Алматинская обл.</p>
+											</div>
+											<p class="locations-button btn">Показать на карте</p>
+										</div>
+
+										<div class="reviews horizontal horizontal-inline">
+											<h6 class="reviews-title">Хостел</h6>
+
+											<div class="rating">
+												<p class="rating-text">7.3</p>
+												<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+											</div>
+
+											<p class="reviews-text">1233 отзывов</p>
+										</div>
+
+										<div class="features horizontal wrap">
+											<p class="features-text">Wi-Fi</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Бассейн</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Парковка</p>
+											<p class="features-text">•</p>
+											<p class="features-text">Кондиционер в номере</p>
+										</div>
+									</div>
+
+									<div class="card-info__right vertical">
+										<div class="price_box">
+											<div class="price">
+												<h5 class="price-text">143 500</h5>
+												<img src="assets/icons/currency.svg" alt="Tenge" />
+											</div>
+											<p class="price-description">цена за 10 ночей</p>
+											<p class="price-description">за 1 кровать</p>
+										</div>
+										<a href="detail.html">
+											<button class="button" type="submit">
+												<p class="button-text">Выбрать</p>
+											</button>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="content-right__pagination horizontal horizontal-inline">
-						<a href="#" class="prev icon">
-							<img src="assets/icons/left.svg" alt="prev" />
+					<div class="content-result__pagination horizontal horizontal-inline">
+						<a href="filter.html" class="icon">
+							<img src="assets/icons/left.svg" alt="Prev" />
 						</a>
 
 						<ul class="pagination horizontal">
@@ -756,29 +840,29 @@
 							</li>
 						</ul>
 
-						<a href="#" class="next icon">
-							<img src="assets/icons/right.svg" alt="next" />
+						<a href="filter.html" class="icon">
+							<img src="assets/icons/right.svg" alt="Next" />
 						</a>
 					</div>
 				</div>
-			</div>
+			</section>
 
-			<section class="info">
-				<h1 class="info-title">Тур по Казахстану: Откройте Новые Грани Путешествий</h1>
-				<h6 class="info-text">Погрузитесь в удивительный мир путешествий с турами по Казахстану от QazBooking! Наша компания предлагает вам уникальную возможность открыть для себя неизведанные уголки этой невероятной страны. Отдых в Казахстане с нами - это не только возможность отдохнуть, но и увидеть самые захватывающие места, окунуться в богатую культуру и насладиться гостеприимством этой удивительной страны.</h6>
-				<h1 class="info-title">Внутренние туры по Казахстану: Великолепие Земли</h1>
-				<h6 class="info-text">Наши внутренние туры по Казахстану предоставляют широкий выбор направлений, от городской суеты до уединенных горных троп и древних памятников культуры. Вас ждут неповторимые пейзажи Алматы, культурные сокровища Астаны, удивительные озера, живописные пустыни и горные хребты, которые оставят незабываемые впечатления.</h6>
-				<h6 class="info-text">Когда вы выбираете внутренний тур по Казахстану с QazBooking, вы открываете для себя уникальные маршруты, ведущие к самым захватывающим достопримечательностям этой страны. Мы предлагаем разнообразие маршрутов, которые позволят:</h6>
-				<ul class="info-list">
-					<li><h6 class="info-text">Погружение в Культуру: Наши туры позволят вам не только насладиться красотами природы Казахстана, но и погрузиться в его богатую культуру. Вы посетите древние мечети, исторические музеи, познакомитесь с традиционными обычаями и национальной кухней. Мы создаем уникальные маршруты, чтобы вы могли испытать аутентичную атмосферу и насладиться культурным наследием этой удивительной страны.</h6></li>
-					<li><h6 class="info-text">Путешествие По Разнообразным Местам: Внутренние туры предлагают разнообразие маршрутов по всей территории Казахстана. От посещения уютных городов и познавательных экскурсий до путешествий по горным хребтам и живописным озерам – каждый найдет что-то по своему вкусу. Мы стремимся создать незабываемый опыт для всех наших клиентов, подбирая маршруты, соответствующие их интересам и предпочтениям.</h6></li>
-					<li><h6 class="info-text">Экспертные Гиды и Поддержка: Мы работаем с опытными гидами и экспертами, которые обеспечат вас глубокими знаниями о местной культуре, истории и традициях. Наши гиды говорят на различных языках, что позволяет обеспечить комфортное взаимодействие с нашими иностранными клиентами и сделать ваше путешествие еще более увлекательным.</h6></li>
-					<li><h6 class="info-text">Приключения на Ваш Вкус: Внутренние туры от QazBooking предлагают нечто большее, чем просто посещение туристических точек. Вы можете выбрать себе маршрут, который соответствует вашим предпочтениям: от тихих прогулок по городам до увлекательных приключений в природных парках и национальных заповедниках. Наша цель - сделать ваше путешествие уникальным и интересным, чтобы вы полностью наслаждались каждым моментом своего отдыха</h6></li>
+			<section class="seo vertical">
+				<h2>Тур по Казахстану: Откройте Новые Грани Путешествий</h2>
+				<p class="seo-text">Погрузитесь в удивительный мир путешествий с турами по Казахстану от QazBooking! Наша компания предлагает вам уникальную возможность открыть для себя неизведанные уголки этой невероятной страны. Отдых в Казахстане с нами - это не только возможность отдохнуть, но и увидеть самые захватывающие места, окунуться в богатую культуру и насладиться гостеприимством этой удивительной страны.</p>
+				<h2>Внутренние туры по Казахстану: Великолепие Земли</h2>
+				<p class="seo-text">Наши внутренние туры по Казахстану предоставляют широкий выбор направлений, от городской суеты до уединенных горных троп и древних памятников культуры. Вас ждут неповторимые пейзажи Алматы, культурные сокровища Астаны, удивительные озера, живописные пустыни и горные хребты, которые оставят незабываемые впечатления.</p>
+				<p class="seo-text">Когда вы выбираете внутренний тур по Казахстану с QazBooking, вы открываете для себя уникальные маршруты, ведущие к самым захватывающим достопримечательностям этой страны. Мы предлагаем разнообразие маршрутов, которые позволят:</p>
+				<ul class="seo-list">
+					<li><p class="seo-text">Погружение в Культуру: Наши туры позволят вам не только насладиться красотами природы Казахстана, но и погрузиться в его богатую культуру. Вы посетите древние мечети, исторические музеи, познакомитесь с традиционными обычаями и национальной кухней. Мы создаем уникальные маршруты, чтобы вы могли испытать аутентичную атмосферу и насладиться культурным наследием этой удивительной страны.</p></li>
+					<li><p class="seo-text">Путешествие По Разнообразным Местам: Внутренние туры предлагают разнообразие маршрутов по всей территории Казахстана. От посещения уютных городов и познавательных экскурсий до путешествий по горным хребтам и живописным озерам – каждый найдет что-то по своему вкусу. Мы стремимся создать незабываемый опыт для всех наших клиентов, подбирая маршруты, соответствующие их интересам и предпочтениям.</p></li>
+					<li><p class="seo-text">Экспертные Гиды и Поддержка: Мы работаем с опытными гидами и экспертами, которые обеспечат вас глубокими знаниями о местной культуре, истории и традициях. Наши гиды говорят на различных языках, что позволяет обеспечить комфортное взаимодействие с нашими иностранными клиентами и сделать ваше путешествие еще более увлекательным.</p></li>
+					<li><p class="seo-text">Приключения на Ваш Вкус: Внутренние туры от QazBooking предлагают нечто большее, чем просто посещение туристических точек. Вы можете выбрать себе маршрут, который соответствует вашим предпочтениям: от тихих прогулок по городам до увлекательных приключений в природных парках и национальных заповедниках. Наша цель - сделать ваше путешествие уникальным и интересным, чтобы вы полностью наслаждались каждым моментом своего отдыха</p></li>
 				</ul>
-				<h1 class="info-title">Путевки по Казахстану: Уникальные Авторские Туры</h1>
-				<h6 class="info-text">Наши путевки по Казахстану – это необычные маршруты, разработанные нашими экспертами для тех, кто стремится к новым впечатлениям. Авторские туры в Казахстане предлагают уникальную возможность познакомиться с аутентичными местами, погрузиться в местные традиции и окунуться в уникальную атмосферу этой удивительной страны.</h6>
-				<h6 class="info-text">Приглашаем вас отправиться в увлекательный тур по Казахстану с QazBooking! Откройте для себя новые грани путешествий и оставьте свои следы в сердце этой удивительной страны. Не упустите возможность погрузиться в многовековую историю, насладиться разнообразием природных красот и окунуться в гостеприимство местных жителей.</h6>
-				<h6 class="info-text">Не откладывайте свое незабываемое путешествие в Казахстан - свяжитесь с нами прямо сейчас и запланируйте свой уникальный отдых!</h6>
+				<h2>Путевки по Казахстану: Уникальные Авторские Туры</h2>
+				<p class="seo-text">Наши путевки по Казахстану – это необычные маршруты, разработанные нашими экспертами для тех, кто стремится к новым впечатлениям. Авторские туры в Казахстане предлагают уникальную возможность познакомиться с аутентичными местами, погрузиться в местные традиции и окунуться в уникальную атмосферу этой удивительной страны.</p>
+				<p class="seo-text">Приглашаем вас отправиться в увлекательный тур по Казахстану с QazBooking! Откройте для себя новые грани путешествий и оставьте свои следы в сердце этой удивительной страны. Не упустите возможность погрузиться в многовековую историю, насладиться разнообразием природных красот и окунуться в гостеприимство местных жителей.</p>
+				<p class="seo-text">Не откладывайте свое незабываемое путешествие в Казахстан - свяжитесь с нами прямо сейчас и запланируйте свой уникальный отдых!</p>
 			</section>
 		</div>
 	</main>
@@ -795,24 +879,36 @@
 
 			<div class="footer-wrap__line horizontal">
 				<nav class="footer-menu vertical">
-					<a href="filter.html" class="text">Хостелы</a>
-					<a href="filter.html" class="text">Базы отдыха</a>
-					<a href="filter.html" class="text">Активный отдых</a>
-					<a href="filter.html" class="text">Туры</a>
-					<a href="filter.html" class="text">Оздоровительный отдых</a>
-					<a href="filter.html" class="text">Детские лагеря</a>
-					<a href="filter.html" class="text">Транспорт</a>
+					<a href="filter.html">
+						<h5 class="text">Хостелы</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Базы отдыха</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Активный отдых</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Туры</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Оздоровительный отдых</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Детские лагеря</h5>
+					</a>
+					<a href="filter.html">
+						<h5 class="text">Транспорт</h5>
+					</a>
 				</nav>
 
 				<nav class="footer-menu vertical">
-					<a href="#" class="text">О нас</a>
-					<a href="interestings.html" class="text">Интересное</a>
-					<a href="#" class="text">Контакты</a>
-					<a href="#" class="text">FAQ</a>
-					<a href="#" class="text">Наши партнеры</a>
-					<a href="#" class="text">Служба поддержки</a>
-					<a href="#" class="text">Договор оферты</a>
-					<a href="#" class="text">Политика конфиденциальности</a>
+					<a href="interestings.html">
+						<h5 class="text">Интересное</h5>
+					</a>
+					<a href="#">
+						<h5 class="text">FAQ</h5>
+					</a>
 				</nav>
 
 				<div class="footer-links">
@@ -842,8 +938,6 @@
 		</div>
 	</footer>
 
-	<script src="js/scripts.min.js"></script>
-	<script src="libs/owlcarousel/owl.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
