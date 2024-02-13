@@ -1,0 +1,85 @@
+.filter
+	padding: 38px 0 94px
+	&-wrap
+		gap: 112px
+	.content
+		gap: 33px 30px
+		.search
+			width: 100%
+		&-filter
+			width: 282px
+			height: fit-content
+			border: 1px solid $grey-secondary
+			border-radius: 16px
+			padding: 15px
+			.title
+				font-weight: 600
+				line-height: 36px
+				margin-bottom: -8px
+			&__block
+				margin-top: 23.5px
+				padding-top: 23.5px
+				border-top: 1px solid $grey
+				&.non
+					border-top: none
+					margin-top: 32px
+					padding-top: 0
+				.subtitle
+					color: $grey
+					margin-top: 8px
+				.price
+					position: relative
+					display: block
+					height: max-content
+					&-range
+						padding: 46px 0 30px
+					&-field
+						gap: 10px
+			.button
+				margin-top: 32px
+		&-result
+			width: 906px
+			&__header
+				justify-content: space-between
+				margin-bottom: 32px
+				.search_result
+					gap: 5px
+					.text
+						font-weight: 400
+				.sorting
+					gap: 8px
+					height: 44px
+					border: 1px solid $grey-secondary
+					border-radius: 8px
+					padding: 4px 10px
+			&__body
+				gap: 18px
+			&__pagination
+				gap: 16px
+				height: 24px
+				margin-top: 46px
+				.icon,
+				.pagination
+					height: 100%
+				.icon,
+				.pagination-element
+					width: 24px
+				.pagination-element
+					display: flex
+					align-items: center
+					justify-content: center
+					height: 100%
+					border-radius: 4px
+					&.active
+						background-color: $accent
+						.text
+							color: $white		
+	.seo
+		gap: 32px
+		&-text
+			font-size: 20px
+			line-height: 24px
+		&-list
+			list-style: disc
+			margin-top: -32px
+			padding-left: 24px

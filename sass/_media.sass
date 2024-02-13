@@ -270,10 +270,8 @@
 	h1
 		font-size: 32px
 	h2
-		line-height: 29px
-	h2,
-	h3
 		font-size: 24px
+		line-height: 29px
 
 	.box
 		width: 91.467vw
@@ -329,6 +327,7 @@
 		&-wrap
 			gap: 90px
 			.hero
+				margin: 0 -4.26667vw
 				&-content
 					padding-right: 4.26667vw
 					padding-left: 4.26667vw
@@ -341,11 +340,6 @@
 							-webkit-line-clamp: 3
 					.search-text
 						width: 100%
-			.category,
-			.popular,
-			.reviews,
-			.blogs
-				margin-left: 4.26667vw
 			.category
 				&-wrap
 					gap: 16px
@@ -353,13 +347,14 @@
 					min-width: 156px
 					&__icon
 						height: 156px
+			.popular,
 			.reviews,
 			.blogs
-				&-header
-					margin-right: 4.26667vw
-			.seo,
-			.about
-				margin: 0 4.26667vw
+				margin-right: -4.26667vw
+			.card1_list
+				gap: 30px
+			.reviews-wrap
+				gap: 16px
 			.seo
 				&-subtitle
 					font-size: 18px
@@ -376,28 +371,28 @@
 					gap: 27px
 				&-box
 					width: 100%
-					padding: 20px 14px
+					padding: 37px 14px
 					.title
-						width: 100%
-						line-height: 24px
-						margin: 0 auto 20px
-			.blogs
-				.btn-text
-					display: none
+						margin: 0
+			.blogs-header
+				margin-right: 4.26667vw
 			.about
 				&-wrap
 					padding: 24px 16px 19px
+				.title
+					font-size: 32px
+				.text,
+				.text:last-child,
 				&-image
 					width: 100%
 
 	.interestings
-		&-wrap
-			padding-right: 4.26667vw
-			padding-left: 4.26667vw
+		margin: 32px 0 218px
 		.blogs-wrap
 			gap: 16px
 
 	.interestingsdetail
+		margin: 32px 0 198px
 
 	.filter
 		margin: 32px 0 101px
@@ -443,34 +438,10 @@
 					justify-content: initial
 					margin-bottom: 24px
 				&__pagination
-					gap: 16px
-					height: 24px
-					margin-top: 46px
-					.icon,
-					.pagination
-						height: 100%
-					.icon,
-					.pagination-element
-						width: 24px
-					.pagination-element
-						display: flex
-						align-items: center
-						justify-content: center
-						height: 100%
-						border-radius: 4px
-						&.active
-							background-color: $accent
-							.text
-								color: $white		
-		.seo
-			gap: 32px
-			&-text
-				font-size: 20px
-				line-height: 24px
-			&-list
-				list-style: disc
-				margin-top: -32px
-				padding-left: .75vw	
+					margin-top: 27px
+		.seo-text
+			font-size: 16px
+			line-height: 19px
 
 	.detail
 		margin: 32px 0 95px
@@ -536,9 +507,23 @@
 		.reviews,
 		.popular
 			margin-right: -4.26667vw
-		.review
-			min-width: 343px
-			max-width: 343px
+			&-title
+				font-size: 24px
+		.reviews
+			&-header
+				flex-direction: column
+				align-items: initial
+				gap: 24px
+				&-title
+					line-height: 36px
+				&__buttons .btn
+					width: 51px
+					height: 35px
+			.review
+				min-width: 343px
+				max-width: 343px
+		.popular-title
+			line-height: 29px
 
 	.hostels
 
@@ -581,6 +566,11 @@
 	.card1
 		&_list
 			gap: 8px
+
+	.card2
+		.card
+			min-width: 318px
+			max-width: 318px
 
 	.card3
 		.card
@@ -660,10 +650,16 @@
 					.features-text
 						line-height: 17px
 				&__right
-					justify-content: space-between
+					flex-direction: row
+					width: 100%
+					border-top: 1px solid #E3E3E3
+					margin-top: 15.5px
+					padding-top: 15.5px
 					.price-description
 						font-size: 14px
 						line-height: 17px
+					.button
+						width: 130px
 
 	.review
 		min-width: 300px
@@ -673,22 +669,9 @@
 
 	.reviews
 		&-header
-			flex-direction: column
-			align-items: initial
-			gap: 24px
 			margin-right: 4.26667vw
 			.review2
 				margin-right: auto
-			&__buttons .btn
-				width: 51px
-				height: 35px
 		&-wrap
 			gap: 8px
 			margin-top: 24px
-
-	.blog
-		min-width: 100%
-		max-width: 100%
-		&-button
-			top: 140px
-			right: 35px
