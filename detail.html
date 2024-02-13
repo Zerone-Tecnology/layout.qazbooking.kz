@@ -23,6 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/common.js"></script>
 </head>
 
 <body>
@@ -97,20 +98,20 @@
 	<!-- MAIN -->
 	<main class="detail main">
 		<div class="box">
-			<div class="breadcrumbs horizontal">
-				<div class="breadcrumbs-link horizontal">
+			<div class="breadcrumbs">
+				<div class="breadcrumbs-link">
 					<p class="dot">•</p>
 					<a href="index.html" class="text">Главная</a>
 				</div>
-				<div class="breadcrumbs-link horizontal">
+				<div class="breadcrumbs-link">
 					<p class="dot">•</p>
 					<a href="filter.html" class="text">Категории</a>
 				</div>
-				<div class="breadcrumbs-link horizontal">
+				<div class="breadcrumbs-link">
 					<p class="dot">•</p>
 					<a href="filter.html" class="text">Туры</a>
 				</div>
-				<div class="breadcrumbs-link horizontal">
+				<div class="breadcrumbs-link">
 					<p class="dot">•</p>
 					<p class="text">Кольсайские озёра и озеро Каинды за 1 день и 1 ночь</p>
 				</div>
@@ -122,7 +123,7 @@
 						<div class="place-preview__top horizontal">
 							<h2>Кольсайские озёра и озеро Каинды за 1 день и 1 ночь</h2>
 
-							<ul class="action_list horizontal">
+							<ul class="action_list horizontal desktop">
 								<li class="action horizontal horizontal-inline">
 									<img src="assets/icons/bubble_chat.svg" alt="Chat" />
 									<p>Написать</p>
@@ -141,8 +142,10 @@
 						</div>
 
 						<div class="place-preview__bottom horizontal horizontal-inline">
-							<div>
-								<a href="filter.html" class="type">Туры</a>
+							<div class="desktop">
+								<a href="filter.html">
+									<h5 class="type">Туры</h5>
+								</a>
 
 								<div class="location">
 									<img src="assets/icons/location2.svg" alt="Location" />
@@ -150,7 +153,7 @@
 								</div>
 							</div>
 
-							<div class="reviews2">
+							<div class="review2">
 								<div>
 									<p class="title bigtext">453 отзывов</з>
 									<p class="text bigtext">Написать отзыв</з>
@@ -160,6 +163,23 @@
 									<p class="rating-text">9.6</p>
 								</div>
 							</div>
+
+							<ul class="action_list horizontal mobile">
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/bubble_chat.svg" alt="Chat" />
+									<p class="action-text">Написать</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/share.svg" alt="Share" />
+									<p class="action-text">Поделиться</p>
+								</li>
+
+								<li class="action horizontal horizontal-inline">
+									<img src="assets/icons/favourite/default.svg" alt="Favourite" />
+									<p class="action-text">Сохранить</p>
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -167,10 +187,15 @@
 						<img
 							src="assets/images/tour1.jpeg"
 							alt="Tour 1"
-							class="place-galery__main image"
+							class="place-galery__main image desktop"
 						/>
 		
 						<div class="place-galery__secondary wrap scroll">
+							<img
+								src="assets/images/tour1.jpeg"
+								alt="Tour 1"
+								class="image mobile"
+							/>
 							<img
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
@@ -191,6 +216,17 @@
 								alt="Tour 4"
 								class="image"
 							/>
+						</div>
+					</div>
+
+					<div class="vertical mobile">
+						<a href="filter.html">
+							<h5 class="type">Туры</h5>
+						</a>
+
+						<div class="location">
+							<img src="assets/icons/location2.svg" alt="Location" />
+							<p class="location-text bigtext">Алматинская область</p>
 						</div>
 					</div>
 
@@ -365,8 +401,8 @@
 												<div class="card-content__fotter horizontal">
 													<div class="left vertical">
 														<h6 class="left-title">Условия:</h6>
-														<p>Перекус</p>
-														<p>Оплата не возвращается</p>
+														<p class="left-text">Перекус</p>
+														<p class="left-text">Оплата не возвращается</p>
 														<a href="hostels.html" class="left-button horizontal horizontal-inline btn">
 															<p class="left-button__text">Подробнее</p>
 															<img src="assets/icons/chevron-blue.svg" alt="Right arrow" />
@@ -374,12 +410,14 @@
 													</div>
 
 													<div class="right">
-														<div class="price">
-															<h4 class="price-text">12 500</h4>
-															<img src="assets/icons/currency.svg" alt="Tenge" />
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<p class="right-description">цена за 1 человека</p>
 														<button class="button" type="submit">
 															<p class="button-text">Связаться</p>
 														</button>
@@ -388,6 +426,7 @@
 											</div>
 										</div>
 									</div>
+									<script>initializeCarousel("carousel1");</script>
 
 									<div id="carousel2" class="card3">
 										<div class="card horizontal">
@@ -500,12 +539,14 @@
 													</div>
 
 													<div class="right">
-														<div class="price">
-															<h4 class="price-text">12 500</h4>
-															<img src="assets/icons/currency.svg" alt="Tenge" />
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<p class="right-description">цена за 1 человека</p>
 														<button class="button" type="submit">
 															<p class="button-text">Связаться</p>
 														</button>
@@ -514,6 +555,7 @@
 											</div>
 										</div>
 									</div>
+									<script>initializeCarousel("carousel2");</script>
 
 									<div id="carousel3" class="card3">
 										<div class="card horizontal">
@@ -626,12 +668,14 @@
 													</div>
 
 													<div class="right">
-														<div class="price">
-															<h4 class="price-text">12 500</h4>
-															<img src="assets/icons/currency.svg" alt="Tenge" />
+														<div class="price_box">
+															<div class="price">
+																<h4 class="price-text">12 500</h4>
+																<img src="assets/icons/currency.svg" alt="Tenge" />
+															</div>
+															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<p class="right-description">цена за 1 человека</p>
 														<button class="button" type="submit">
 															<p class="button-text">Связаться</p>
 														</button>
@@ -640,6 +684,7 @@
 											</div>
 										</div>
 									</div>
+									<script>initializeCarousel("carousel3");</script>
 								</div>
 							</div>
 						</div>
@@ -682,10 +727,10 @@
 							</div>
 
 							<div class="locations vertical">
-								<h4>Локация на карте</h4>
+								<h4 class="locations-title">Локация на карте</h4>
 								<div class="location">
 									<img src="assets/icons/location4.svg" alt="Location" />
-									<p class="location-text">г. Алматы, ул. Шаляпина, 15</p>
+									<p class="location-text bigtext">г. Алматы, ул. Шаляпина, 15</p>
 								</div>
 
 								<img
@@ -697,7 +742,7 @@
 								<div class="locations-popup">
 									<p class="name text">Grand Tour</p>
 				
-									<div class="reviews2">
+									<div class="review2">
 										<div class="rating">
 											<p class="rating-text">9.6</p>
 										</div>
@@ -736,10 +781,10 @@
 
 				<section class="reviews">
 					<div class="reviews-header">
+						<h3>Отзывы гостей</h3>
+						
 						<div class="horizontal horizontal-inline">
-							<h3>Отзывы гостей</h3>
-							
-							<div class="reviews2">
+							<div class="review2">
 								<div class="rating">
 									<p class="rating-text">9.6</p>
 								</div>
@@ -747,16 +792,16 @@
 								<div>
 									<p class="title bigtext">453 отзывов</з>
 									<p class="text bigtext">Написать отзыв</з>
-									</div>
+								</div>
 							</div>
-						</div>
-
-						<div class="reviews-header__buttons">
-							<div class="btn">
-								<img src="assets/icons/chevron.svg" alt="Back" />
-							</div>
-							<div class="btn">
-								<img src="assets/icons/chevron.svg" alt="Next" />
+							
+							<div class="reviews-header__buttons">
+								<div class="btn">
+									<img src="assets/icons/chevron.svg" alt="Back" />
+								</div>
+								<div class="btn">
+									<img src="assets/icons/chevron.svg" alt="Next" />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -769,7 +814,6 @@
 								class="review-button btn"
 								onclick="openModal()"
 							/>
-							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 	
 							<div class="rating">
 								<p class="rating-text">9.8</p>
@@ -799,7 +843,6 @@
 								class="review-button btn"
 								onclick="openModal()"
 							/>
-							<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
 	
 							<div class="rating">
 								<p class="rating-text">8.1</p>
@@ -829,7 +872,6 @@
 								class="review-button btn"
 								onclick="openModal()"
 							/>
-							<h5 class="review-title bigtext">Хостел Арион</h5>
 	
 							<div class="rating">
 								<p class="rating-text">9.8</p>
@@ -859,7 +901,6 @@
 								class="review-button btn"
 								onclick="openModal()"
 							/>
-							<h5 class="review-title bigtext">Хостел Арион</h5>
 	
 							<div class="rating">
 								<p class="rating-text">9.8</p>
@@ -885,7 +926,7 @@
 				</section>
 
 				<section class="popular">
-					<h3>Вас может заинтересовать</h3>
+					<h3 class="popular-title">Вас может заинтересовать</h3>
 					<div class="card1-wrap card1_list horizontal scroll">
 						<div class="card1">
 							<div class="card">
@@ -1166,7 +1207,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="js/common.js"></script>
 </body>
 </html>
