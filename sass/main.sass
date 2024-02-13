@@ -3,6 +3,13 @@
 
 @import fonts
 @import vars
+@import pages/home
+@import pages/interestings
+@import pages/interestingsdetail
+@import pages/filter
+@import pages/detail
+@import pages/hostels
+@import pages/profile
 	
 *
 	-webkit-box-sizing: border-box
@@ -228,7 +235,7 @@ p
 			margin-top: 80px
 
 .main
-	padding-top: 183px
+	margin-top: 183px
 	.breadcrumbs
 		margin-bottom: 40px
 
@@ -283,7 +290,7 @@ p
 
 // PAGES
 .home
-	margin: 81px 0 143px
+	padding: 81px 0 143px
 	&-wrap
 		gap: 100px
 		.hero,
@@ -439,13 +446,13 @@ p
 				border-radius: 16px
 
 .interestings
-	margin: 60px 0 188px
+	padding: 60px 0 188px
 	.blogs-wrap
 		gap: 32px 30px
 		margin-top: 32px
 
 .interestingsdetail
-	margin: 60px 0 111px
+	padding: 60px 0 111px
 	&-wrap
 		gap: 105px
 	.blogs
@@ -460,94 +467,8 @@ p
 			font-size: 24px
 			line-height: 34px
 
-.filter
-	margin: 38px 0 94px
-	&-wrap
-		gap: 112px
-	.content
-		gap: 33px 30px
-		.search
-			width: 100%
-		&-filter
-			width: 282px
-			border: 1px solid $grey-secondary
-			border-radius: 16px
-			padding: 15px
-			&__title
-				font-weight: 600
-				line-height: 36px
-				margin-bottom: -8px
-			&__block
-				margin-top: 23.5px
-				padding-top: 23.5px
-				border-top: 1px solid $grey
-				&.non
-					border-top: none
-					margin-top: 32px
-					padding-top: 0
-				.subtitle
-					color: $grey
-					margin-top: 8px
-				.price
-					position: relative
-					display: block
-					width: 100%
-					height: max-content
-					&-range
-						padding: 46px 0 30px
-					&-field
-						gap: .52083vw
-			.button
-				margin-top: 32px
-		&-result
-			width: 906px
-			&__header
-				justify-content: space-between
-				margin-bottom: 32px
-				.search_result
-					gap: 5px
-					.text
-						font-weight: 400
-				.sorting
-					gap: 8px
-					height: 44px
-					border: 1px solid $grey-secondary
-					border-radius: 8px
-					padding: 4px 10px
-			&__body
-				gap: 18px
-			&__pagination
-				gap: 16px
-				height: 24px
-				margin-top: 46px
-				.icon,
-				.pagination
-					height: 100%
-				.icon,
-				.pagination-element
-					width: 24px
-				.pagination-element
-					display: flex
-					align-items: center
-					justify-content: center
-					height: 100%
-					border-radius: 4px
-					&.active
-						background-color: $accent
-						.text
-							color: $white		
-	.seo
-		gap: 32px
-		&-text
-			font-size: 20px
-			line-height: 24px
-		&-list
-			list-style: disc
-			margin-top: -32px
-			padding-left: .75vw	
-
 .detail
-	margin: 60px 0 150px
+	padding: 60px 0 150px
 	&-wrap
 		gap: 80px
 	.place
@@ -677,7 +598,7 @@ p
 		font-weight: 600
 
 .hostels
-	margin: 60px 0 176px
+	padding: 60px 0 176px
 	.place
 		.image
 			border-radius: 16px
@@ -724,7 +645,7 @@ p
 					margin-top: 26px
 
 .profile
-	margin: 40px 0 233px
+	padding: 40px 0 233px
 	&-wrap
 		gap: 60px
 	&-content
@@ -1062,8 +983,8 @@ p
 				-webkit-line-clamp: 3
 		&-button
 			position: absolute
-			top: 40.93618%
-			right: 5.4423%
+			top: 140px
+			right: 21px
 			display: flex
 			align-items: center
 			justify-content: center
@@ -1176,15 +1097,11 @@ p
 					&-text
 						color: $grey
 			&__right
-				flex-direction: row
-				border-top: 1px solid #E3E3E3
-				margin-top: 15.5px
-				padding-top: 15.5px
+				justify-content: space-between
+				width: 130px
 				.price
-					height: 36px
 					justify-content: start
-					&_box
-						width: fit-content
+					height: 36px
 					&-description
 						text-align: left
 
