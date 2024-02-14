@@ -559,25 +559,25 @@ p {
   height: 140px;
   border-radius: 20px;
 }
-.home-wrap .category-block .icon.blue {
+.home-wrap .category-block .icon.color-1 {
   background-color: #E0EDFF;
 }
-.home-wrap .category-block .icon.green {
+.home-wrap .category-block .icon.color-2 {
   background-color: #E6FFD0;
 }
-.home-wrap .category-block .icon.orange {
+.home-wrap .category-block .icon.color-3 {
   background-color: #FFE9C8;
 }
-.home-wrap .category-block .icon.ping {
+.home-wrap .category-block .icon.color-4 {
   background-color: #FED7FF;
 }
-.home-wrap .category-block .icon.yellow {
+.home-wrap .category-block .icon.color-5 {
   background-color: #FFF7DC;
 }
-.home-wrap .category-block .icon.red {
+.home-wrap .category-block .icon.color-6 {
   background-color: #FFECEC;
 }
-.home-wrap .category-block .icon.purple {
+.home-wrap .category-block .icon.color-7 {
   background-color: #B6C1FF;
 }
 .home-wrap .category-block .text {
