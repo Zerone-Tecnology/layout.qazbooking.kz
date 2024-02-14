@@ -384,9 +384,11 @@ p {
 .header-links__social .icon {
   height: 32px;
 }
-.header-user {
+.header .button, .header-user {
+  margin-left: auto;
+}
+.header .button {
   width: 134px;
-  margin-left: 25px;
 }
 .header-menu {
   justify-content: space-between;
@@ -1566,10 +1568,11 @@ p {
   top: 17px;
   right: 24px;
 }
-.review-button .rating {
+.review .rating {
   width: 54px;
 }
 .review-title {
+  width: 95%;
   line-height: 36px;
   font-weight: 500;
   -webkit-line-clamp: 1;

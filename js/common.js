@@ -1,13 +1,14 @@
-const d = document;
-const $q = d.querySelectorAll.bind(d);
-const $g = d.querySelector.bind(d);
-
+let prevScrollPosition = window.pageYOffset;
 function moveHeader () {
+  const currentScrollPos = window.pageYOffset;
+	
 	var header = document.querySelector("header");
-	if (window.scrollY >= 96)
+	if (prevScrollPosition < currentScrollPos)
 		header.classList.add("active");
 	else
 		header.classList.remove("active");
+
+	prevScrollPosition = currentScrollPos;
 }
 window.addEventListener('scroll', moveHeader);
 
@@ -23,8 +24,8 @@ function closeModal(id) {
 }
 
 function profile(index) {
-	const $buttonList = $q('.user-item');
-	const $contentList = $q('.right');
+	const $buttonList = document.querySelectorAll.bind(document)('.user-item');
+	const $contentList = document.querySelectorAll.bind(document)('.right');
 	$buttonList.forEach(function(element) {
 		element.classList.remove('active');
 	});
@@ -66,16 +67,16 @@ function slider(id) {
 }
 
 function initializeCarousel(carouselId) {
-	const $list = $g(`#${carouselId} .card-galery__mini-inner`);
+	const $list = document.querySelector.bind(document)(`#${carouselId} .card-galery__mini-inner`);
 	let active = 1;
 
 	const getSlideIndex = ($slide) => {
-		return [...$q(`#${carouselId} .carousel-item`)].indexOf( $slide );
+		return [...document.querySelectorAll.bind(document)(`#${carouselId} .carousel-item`)].indexOf( $slide );
 	}
 
 	const prevSlide = () => {
-		const max = $q(`#${carouselId} .carousel-item`).length - 1;
-		const main = $q(`#${carouselId} .card-galery__main .image`)
+		const max = document.querySelectorAll.bind(document)(`#${carouselId} .carousel-item`).length - 1;
+		const main = document.querySelectorAll.bind(document)(`#${carouselId} .card-galery__main .image`)
 		let newPosition;
 		main[active].style.opacity = '0';
 		if (1 < active) {
@@ -91,8 +92,8 @@ function initializeCarousel(carouselId) {
 	}
 
 	const nextSlide = () => {
-		const max = $q(`#${carouselId} .carousel-item`).length - 1;
-		const main = $q(`#${carouselId} .card-galery__main .image`)
+		const max = document.querySelectorAll.bind(document)(`#${carouselId} .carousel-item`).length - 1;
+		const main = document.querySelectorAll.bind(document)(`#${carouselId} .card-galery__main .image`)
 		let newPosition;
 		main[active].style.opacity = '0';
 		if (max - 1 > active) {
