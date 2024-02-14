@@ -331,6 +331,9 @@ p {
   left: 50%;
   transform: translateX(-50%);
 }
+.header.active {
+  top: -94px;
+}
 .header-wrap {
   padding: 13px 33px 21px;
   background-color: #FFF;
@@ -386,7 +389,7 @@ p {
   margin-left: 25px;
 }
 .header-menu {
-  gap: 16px;
+  justify-content: space-between;
   border-top: 1px solid #D4D4D4;
   margin-top: 19.5px;
   padding-top: 11.5px;
@@ -1625,9 +1628,16 @@ p {
   transform: rotate(180deg);
 }
 .reviews-wrap {
+  margin-top: 40px;
+}
+
+.carousel {
+  overflow: hidden;
+}
+.carousel-inner {
   display: flex;
   gap: 30px;
-  margin-top: 40px;
+  transition: all 0.3s;
 }
 
 /* Large Devices, Wide Screens */

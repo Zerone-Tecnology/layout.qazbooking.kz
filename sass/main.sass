@@ -155,6 +155,8 @@ p
 	top: 12px
 	left: 50%
 	transform: translateX(-50%)
+	&.active
+		top: -94px
 	&-wrap
 		padding: 13px 33px 21px
 		background-color: $white
@@ -197,7 +199,7 @@ p
 		width: 134px
 		margin-left: 25px
 	&-menu
-		gap: 16px
+		justify-content: space-between
 		border-top: 1px solid $grey-secondary
 		margin-top: 19.5px
 		padding-top: 11.5px
@@ -1173,8 +1175,13 @@ p
 				&:first-child
 					transform: rotate(180deg)
 	&-wrap
+		margin-top: 40px
+
+.carousel
+	overflow: hidden
+	&-inner
 		display: flex
 		gap: 30px
-		margin-top: 40px
+		transition: all .3s
 
 @import media

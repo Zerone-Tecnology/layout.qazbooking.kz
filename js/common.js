@@ -2,13 +2,22 @@ const d = document;
 const $q = d.querySelectorAll.bind(d);
 const $g = d.querySelector.bind(d);
 
-function openModal() {
-  var modal = document.getElementById("modal");
+function moveHeader () {
+	var header = document.querySelector("header");
+	if (window.scrollY >= 96)
+		header.classList.add("active");
+	else
+		header.classList.remove("active");
+}
+window.addEventListener('scroll', moveHeader);
+
+function openModal(id) {
+  var modal = document.getElementById(id);
   modal.classList.add("show");
 	$('body').css("overflow", "hidden");
 }
-function closeModal() {
-  var modal = document.getElementById("modal");
+function closeModal(id) {
+  var modal = document.getElementById(id);
   modal.classList.remove("show");
 	$('body').css("overflow", "auto");
 }
@@ -24,6 +33,36 @@ function profile(index) {
 	});
 	$buttonList[index - 1].classList.add("active");
 	$contentList[index - 1].classList.add("active");
+}
+
+function slider(id) {
+	var active = 0;
+	const container = document.getElementById(id);
+	const list = container.getElementsByClassName('carousel-item');
+	const width = list[0].offsetWidth;
+	const length = list.length;
+	const maxIndex = length - 1;
+
+	function prevSlide() {
+		console.log(active);
+		if (active > 0) {
+			active--;
+			console.log(active);
+			const newPosition = active * (width + 30);
+			container.style.transform = `translateX(-${newPosition}px)`;
+		}
+	}
+	function nextSlide() {
+		console.log(active);
+		if (active < maxIndex) {
+			active++;
+			console.log(active);
+			const newPosition = active * (width + 30);
+			container.style.transform = `translateX(-${newPosition}px)`;
+		}
+	}
+
+	return { prevSlide, nextSlide };
 }
 
 function initializeCarousel(carouselId) {
