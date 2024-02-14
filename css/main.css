@@ -384,7 +384,7 @@ p {
 .header-links__social .icon {
   height: 32px;
 }
-.header .button {
+.header-user {
   width: 134px;
   margin-left: 25px;
 }
@@ -821,8 +821,12 @@ p {
   gap: 24px;
 }
 .detail .place-info__right {
+  position: sticky;
+  top: 77px;
   gap: 48px;
   width: 282px;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .detail .place-info__right .advantages,
 .detail .place-info__right .contacts {
@@ -1489,7 +1493,8 @@ p {
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
 }
 .card4 .card-image {
-  width: 225px;
+  min-width: 225px;
+  max-width: 225px;
   height: 225px;
   border-radius: 16px;
 }
