@@ -3,13 +3,13 @@
 
 @import fonts
 @import vars
-@import pages/home
-@import pages/interestings
-@import pages/interestingsdetail
-@import pages/filter
-@import pages/detail
-@import pages/hostels
-@import pages/profile
+@import _pages/home
+@import _pages/interestings
+@import _pages/interestingsdetail
+@import _pages/filter
+@import _pages/detail
+@import _pages/hostels
+@import _pages/profile
 	
 *
 	-webkit-box-sizing: border-box
@@ -751,9 +751,11 @@ p
 	&-icon
 		position: absolute
 		left: 28px
+	&-text,
+	.button
+		height: 100%
 	&-text
 		width: calc(100% - 229px)
-		height: 100%
 		padding: 16px 20px 16px 54px
 		background-color: $input
 		border-radius: 4px

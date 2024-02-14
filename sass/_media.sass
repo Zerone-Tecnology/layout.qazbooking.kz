@@ -1,6 +1,13 @@
 @import vars
+@import _medias/home
+@import _medias/interestings
+@import _medias/interestingsdetail
+@import _medias/filter
+@import _medias/detail
+@import _medias/hostels
+@import _medias/profile
 
-/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1440px)
 	.box
 		width: 914px
@@ -70,21 +77,59 @@
 		.blogs-wrap
 			gap: 27px 25px
 
-	.interestingsdetail
-
-	.filter
-
-	.detail
-
-	.hostels
-
-	.profile
-
-
 	// COMPONENTS
 	.search
+		&-text
+			width: calc(100% - 174px)
 		.button
 			width: 166px
+
+	.card4
+		.card
+			gap: 8px
+			&-image
+				width: 169px
+				height: 169px
+			&-info
+				display: flex
+				justify-content: space-between
+				width: -webkit-fill-available
+				padding: 12.5px 16px
+				&__left
+					gap: 16px
+					width: 442.5px
+					border-right: 1px solid #E3E3E3
+					margin-right: 23.5px
+					padding-right: 23.5px
+					.top
+						justify-content: space-between
+						&-title
+							-webkit-line-clamp: 1
+					.locations
+						gap: 16px
+						&-button
+							color: $grey
+							text-decoration: underline
+					.reviews
+						gap: 8px
+						.rating
+							width: 64px
+						&-text
+							font-weight: 600
+					.features
+						gap: 4px 8px
+						&-text
+							color: $grey
+				&__right
+					justify-content: space-between
+					width: 130px
+					.price
+						justify-content: start
+						height: 36px
+						&-description
+							text-align: left
+
+
 
 	.card
 		&_list
@@ -98,7 +143,7 @@
 		min-width: 288px
 		max-width: 288px
 
-/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.box
 		width: 630px
@@ -205,8 +250,10 @@
 
 	// COMPONENTS
 	.search
+		&-text
+			width: calc(100% - 122px)
 		.button
-			width: 122px
+			width: 114px
 
 	.card
 		&_list
@@ -220,7 +267,7 @@
 		min-width: 307px
 		max-width: 307px
 
-/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
 	.box
 		width: 85.4167vw
@@ -254,6 +301,12 @@
 				width: 75%
 
 	// PAGES
+	.search
+		&-text
+			width: calc(100% - 96px)
+		.button
+			width: 88px
+
 	.interestings
 		margin: 32px 0 218px
 		&-wrap
@@ -266,6 +319,7 @@
 		min-width: 41.667vw
 		max-width: 41.667vw
 
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	h1
 		font-size: 32px
@@ -317,7 +371,7 @@
 				width: 75%
 
 	.main
-		padding-top: 152px
+		margin-top: 152px
 		.breadcrumbs
 			margin-bottom: 20px
 
@@ -393,55 +447,6 @@
 
 	.interestingsdetail
 		margin: 32px 0 198px
-
-	.filter
-		margin: 32px 0 101px
-		&-wrap
-			gap: 57px
-		.content
-			gap: 16px
-			&-filter
-				display: none
-				width: 282px
-				border: 1px solid $grey-secondary
-				border-radius: 16px
-				padding: 15px
-				&__title
-					font-weight: 600
-					line-height: 36px
-					margin-bottom: -8px
-				&__block
-					margin-top: 23.5px
-					padding-top: 23.5px
-					border-top: 1px solid $grey
-					&.non
-						border-top: none
-						margin-top: 32px
-						padding-top: 0
-					.subtitle
-						color: $grey
-						margin-top: 8px
-					.price
-						position: relative
-						display: block
-						width: 100%
-						height: max-content
-						&-range
-							padding: 46px 0 30px
-						&-field
-							gap: .52083vw
-				.button
-					margin-top: 32px
-			&-result
-				&__header
-					gap: 16px
-					justify-content: initial
-					margin-bottom: 24px
-				&__pagination
-					margin-top: 27px
-		.seo-text
-			font-size: 16px
-			line-height: 19px
 
 	.detail
 		margin: 32px 0 95px
@@ -524,10 +529,6 @@
 				max-width: 343px
 		.popular-title
 			line-height: 29px
-
-	.hostels
-
-	.profile
 
 	// COMPONENTS
 	.search
