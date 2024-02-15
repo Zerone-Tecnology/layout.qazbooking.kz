@@ -23,6 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/common.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit">
+				<button class="button" type="submit" onclick="openModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -133,49 +134,49 @@
 
 				<div class="category-wrap horizontal scroll">
 					<div class="category-block">
-						<a href="filter.html" class="icon center blue">
+						<a href="filter.html" class="icon center color-1">
 							<img src="assets/icons/categories/hotel.svg" alt="Hostels" />
 						</a>
 						<p class="text">Хостелы</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center green">
+						<a href="filter.html" class="icon center color-2">
 							<img src="assets/icons/categories/house.svg" alt="Базы отдыха" />
 						</a>
 						<p class="text">Базы отдыха</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center orange">
+						<a href="filter.html" class="icon center color-3">
 							<img src="assets/icons/categories/motorbike.svg" alt="Активный отдых" />
 						</a>
 						<p class="text">Активный отдых</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center red">
+						<a href="filter.html" class="icon center color-4">
 							<img src="assets/icons/categories/child.svg" alt="Детские лагеря" />
 						</a>
 						<p class="text">Детские лагеря</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center yellow">
+						<a href="filter.html" class="icon center color-5">
 							<img src="assets/icons/categories/beach.svg" alt="Tours" />
 						</a>
 						<p class="text">Туры</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center ping">
+						<a href="filter.html" class="icon center color-6">
 							<img src="assets/icons/categories/activity-heart.svg" alt="Оздоровительный отдых" />
 						</a>
 						<p class="text">Отдых и здоровье</p>
 					</div>
 
 					<div class="category-block">
-						<a href="filter.html" class="icon center purple">
+						<a href="filter.html" class="icon center color-7">
 							<img src="assets/icons/categories/airplane.svg" alt="Transport" />
 						</a>
 						<p class="text">Транспорт</p>
@@ -813,132 +814,134 @@
 				<div class="reviews-header">
 					<h3>Отзывы гостей</h3>
 					<div class="reviews-header__buttons">
-						<div class="btn">
+						<div class="btn" onclick="slider('reviews').prevSlide()">
 							<img src="assets/icons/chevron.svg" alt="Back" />
 						</div>
-						<div class="btn">
+						<div class="btn" onclick="slider('reviews').nextSlide()">
 							<img src="assets/icons/chevron.svg" alt="Next" />
 						</div>
 					</div>
 				</div>
 
-				<div class="reviews-wrap scroll">
-					<div class="review">
-						<img
-							src="assets/icons/hdots.svg"
-							alt="More"
-							class="review-button btn"
-							onclick="openModal()"
-						/>
-						<h5 class="review-title bigtext">Хостел Арлеон</h5>
+				<div class="reviews-wrap carousel">
+					<div class="carousel-inner" id="reviews">
+						<div class="review carousel-item">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal('review')"
+							/>
+							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
-						<div class="rating">
-							<p class="rating-text">9.8</p>
-							<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-						</div>
-
-						<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-
-						<div class="review-footer">
-							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" />
-								<p class="author-text bigtext">Емиль Газизов</p>
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 							</div>
 
-							<div class="date">
-								<p class="date-text">14:56</p>
-								<p class="date-dot">●</p>
-								<p class="date-text">10.11.2023</p>
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Емиль Газизов</p>
+								</div>
+
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="review">
-						<img
-							src="assets/icons/hdots.svg"
-							alt="More"
-							class="review-button btn"
-							onclick="openModal()"
-						/>
-						<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
+						<div class="review carousel-item">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal('review')"
+							/>
+							<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
 
-						<div class="rating">
-							<p class="rating-text">8.1</p>
-							<img src="assets/icons/rating/fourth.svg" alt="Rating" />
-						</div>
-
-						<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-
-						<div class="review-footer">
-							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" />
-								<p class="author-text bigtext">Матвей Радужнев</p>
+							<div class="rating">
+								<p class="rating-text">8.1</p>
+								<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 							</div>
 
-							<div class="date">
-								<p class="date-text">14:56</p>
-								<p class="date-dot">●</p>
-								<p class="date-text">10.11.2023</p>
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Матвей Радужнев</p>
+								</div>
+
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="review">
-						<img
-							src="assets/icons/hdots.svg"
-							alt="More"
-							class="review-button btn"
-							onclick="openModal()"
-						/>
-						<h5 class="review-title bigtext">Хостел Арион</h5>
+						<div class="review carousel-item">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal('review')"
+							/>
+							<h5 class="review-title bigtext">Хостел Арион</h5>
 
-						<div class="rating">
-							<p class="rating-text">9.8</p>
-							<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-						</div>
-
-						<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-
-						<div class="review-footer">
-							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" />
-								<p class="author-text bigtext">Амир Ванев</p>
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 							</div>
 
-							<div class="date">
-								<p class="date-text">14:56</p>
-								<p class="date-dot">●</p>
-								<p class="date-text">10.11.2023</p>
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Амир Ванев</p>
+								</div>
+
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="review">
-						<img
-							src="assets/icons/hdots.svg"
-							alt="More"
-							class="review-button btn"
-							onclick="openModal()"
-						/>
-						<h5 class="review-title bigtext">Хостел Арион</h5>
+						<div class="review carousel-item">
+							<img
+								src="assets/icons/hdots.svg"
+								alt="More"
+								class="review-button btn"
+								onclick="openModal('review')"
+							/>
+							<h5 class="review-title bigtext">Хостел Арион</h5>
 
-						<div class="rating">
-							<p class="rating-text">9.8</p>
-							<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-						</div>
-
-						<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-
-						<div class="review-footer">
-							<div class="author">
-								<img src="assets/icons/user.svg" alt="user" />
-								<p class="author-text bigtext">Амир Ванев</p>
+							<div class="rating">
+								<p class="rating-text">9.8</p>
+								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 							</div>
 
-							<div class="date">
-								<p class="date-text">14:56</p>
-								<p class="date-dot">●</p>
-								<p class="date-text">10.11.2023</p>
+							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+
+							<div class="review-footer">
+								<div class="author">
+									<img src="assets/icons/user.svg" alt="user" />
+									<p class="author-text bigtext">Амир Ванев</p>
+								</div>
+
+								<div class="date">
+									<p class="date-text">14:56</p>
+									<p class="date-dot">●</p>
+									<p class="date-text">10.11.2023</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1192,15 +1195,47 @@
 	</footer>
 
 	<!-- MODAL -->
-	<div id="modal" class="modal">
-		<div class="modal-background" onclick="closeModal()"></div>
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="closeModal('auth')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review" class="modal">
+		<div class="modal-background" onclick="closeModal('review')"></div>
 
 		<div class="modal-wrap vertical">
 			<img
-				src="assets/icons/close.svg"
-				alt="close"
+				src="assets/icons/close-grey.svg"
+				alt="Close"
 				class="btn"
-				onclick="closeModal()"
+				onclick="closeModal('review')"
 			/>
 
 			<h4 class="modal-name">Хостел Арлеон</h4>
@@ -1250,7 +1285,5 @@
 			</div>
 		</div>
 	</div>
-
-	<script src="js/common.js"></script>
 </body>
 </html>

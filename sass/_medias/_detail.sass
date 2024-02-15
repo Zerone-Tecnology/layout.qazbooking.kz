@@ -1,0 +1,92 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1440px)
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px)
+	.detail
+		margin: 32px 0 95px
+		&-wrap
+			gap: 50px
+		.place
+			&-preview
+				gap: 19px
+				.review2
+					flex-direction: row-reverse
+			.type
+				margin-top: -8px
+			&-galery
+				gap: 8px
+				height: 208px
+				margin-right: -4.26667vw
+				.image
+					border-radius: 8px
+				&__secondary
+					flex-wrap: nowrap
+					gap: 8px
+					width: 100%
+					overflow: scroll
+					.image
+						min-width: 318px
+						height: 100%
+			&-info
+				flex-direction: column
+				gap: 60px
+				margin-top: 0
+				&__left,
+				&__right
+					width: 100%
+				&__left
+					gap: 50px
+					.description .text
+						font-size: 16px
+						line-height: 19px
+					.useful-content
+						flex-direction: column
+						gap: 16px
+						.desc
+							&-list
+								gap: 12px
+								width: 100%
+								padding: 16px
+								&:last-child
+									width: 100%
+							&-item .text
+								font-size: 16px
+								line-height: 24px
+					.variant
+						.title
+							margin-bottom: 32px
+						&-content
+							gap: 60px
+							margin-right: -4.26667vw
+				&__right
+					gap: 24px
+					.advantages,
+					.contacts
+						padding: 20px
+		.reviews,
+		.popular
+			margin-right: -4.26667vw
+			&-title
+				font-size: 24px
+		.reviews
+			&-header
+				flex-direction: column
+				align-items: initial
+				gap: 24px
+				&-title
+					line-height: 36px
+				&__buttons .btn
+					width: 51px
+					height: 35px
+			.review
+				min-width: 343px
+				max-width: 343px
+		.popular-title
+			line-height: 29px

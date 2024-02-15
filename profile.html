@@ -23,6 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/common.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit">
+				<button class="button" type="submit" onclick="openModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -200,7 +201,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal()"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -230,7 +231,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal()"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -260,7 +261,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal()"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -290,7 +291,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal()"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -573,6 +574,96 @@
 		</div>
 	</footer>
 
-	<script src="js/common.js"></script>
+	<!-- MODAL -->
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="closeModal('auth')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review" class="modal">
+		<div class="modal-background" onclick="closeModal('review')"></div>
+
+		<div class="modal-wrap vertical">
+			<img
+				src="assets/icons/close-grey.svg"
+				alt="Close"
+				class="btn"
+				onclick="closeModal('review')"
+			/>
+
+			<h4 class="modal-name">Хостел Арлеон</h4>
+
+			<div class="modal-galery horizontal">
+				<img
+					src="assets/images/arleon2.png"
+					alt="Hostel 2"
+					class="modal-galery__image"
+				/>
+				<img
+					src="assets/images/arleon3.png"
+					alt="Hostel 3"
+					class="modal-galery__image"
+				/>
+				<img
+					src="assets/images/arleon4.png"
+					alt="Hostel 4"
+					class="modal-galery__image"
+				/>
+			</div>
+
+			<a href="hostels.html" class="modal-button horizontal horizontal-inline">
+				<h6 class="modal-button__text">Посмотреть место</h6>
+				<img src="assets/icons/chevron.svg" alt="chevron" />
+			</a>
+
+			<div class="modal-info vertical">
+				<div class="rating">
+					<p class="rating-text">9.6</p>
+					<img src="assets/icons/rating/fifth.svg" alt="rating" />
+				</div>
+
+				<p class="modal-info__text">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал за последнее время, персонал очень отзывчивый. По запросу предоставили дополнительный комплект полотенец и тапочек</p>
+
+				<div class="modal-info__bottom horizontal">
+					<div class="author">
+						<img src="assets/icons/user.svg" alt="User" />
+						<p class="author-text bigtext">Емиль Газизов</p>
+					</div>
+					<div class="date">
+						<p class="date-text">14:56</p>
+						<p class="date-dot text">•</p>
+						<p class="date-text">10.11.2023</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

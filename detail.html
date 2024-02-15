@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit">
+				<button class="button" type="submit" onclick="openModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -734,7 +734,7 @@
 								</div>
 
 								<img
-									src="https://s3-alpha-sig.figma.com/img/eea4/228f/9004c4ffd82a9412e7c4fc1438d01890?Expires=1707696000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=jFoApLgL04QtjuI8MSM4RymoMFCEkN6cHLB-Q5GabFYSCnnJNC3Bi6vql2oj03Mo3rfKOcgzu4HtMRWoqoe4FrdM0QgLOrpttVNagex0YjNNI2WDpds6D2p9sFbCfWrUelKxaT5rhFGAJjnYpFhfm5pvqz9FaO5Ar49S9ki-biLluw3D-8f~KS6Ec-oFD~qRDoOIZUB~5w9WCkxMw3M66G7pQg2fpXIUgp-REPdYFSkbZvLyhnsbMNV9P4kEeA6AH0GUf6n4f877SSLr9ziVmYR8V49tlxsF57toG-oHZYF2fQwS4xRuNH4mLOZWRKZe4XcW6l-isuxdXi6yI~pRwQ__"
+									src="assets/images/map.png"
 									alt="Map"
 									class="locations-map"
 								/>
@@ -796,129 +796,135 @@
 							</div>
 							
 							<div class="reviews-header__buttons">
-								<div class="btn">
+								<div class="btn" onclick="slider('reviews').prevSlide()">
 									<img src="assets/icons/chevron.svg" alt="Back" />
 								</div>
-								<div class="btn">
+								<div class="btn" onclick="slider('reviews').nextSlide()">
 									<img src="assets/icons/chevron.svg" alt="Next" />
 								</div>
 							</div>
 						</div>
 					</div>
 	
-					<div class="reviews-wrap scroll">
-						<div class="review">
-							<img
-								src="assets/icons/hdots.svg"
-								alt="More"
-								class="review-button btn"
-								onclick="openModal()"
-							/>
+					<div class="reviews-wrap carousel">
+						<div class="carousel-inner" id="reviews">
+							<div class="review">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="openModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арлеон</h5>
 	
-							<div class="rating">
-								<p class="rating-text">9.8</p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-							</div>
-	
-							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-	
-							<div class="review-footer">
-								<div class="author">
-									<img src="assets/icons/user.svg" alt="user" />
-									<p class="author-text bigtext">Емиль Газизов</p>
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 								</div>
 	
-								<div class="date">
-									<p class="date-text">14:56</p>
-									<p class="date-dot">●</p>
-									<p class="date-text">10.11.2023</p>
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Емиль Газизов</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
 								</div>
 							</div>
-						</div>
 	
-						<div class="review">
-							<img
-								src="assets/icons/hdots.svg"
-								alt="More"
-								class="review-button btn"
-								onclick="openModal()"
-							/>
+							<div class="review">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="openModal('review')"
+								/>
+								<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
 	
-							<div class="rating">
-								<p class="rating-text">8.1</p>
-								<img src="assets/icons/rating/fourth.svg" alt="Rating" />
-							</div>
-	
-							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-	
-							<div class="review-footer">
-								<div class="author">
-									<img src="assets/icons/user.svg" alt="user" />
-									<p class="author-text bigtext">Матвей Радужнев</p>
+								<div class="rating">
+									<p class="rating-text">8.1</p>
+									<img src="assets/icons/rating/fourth.svg" alt="Rating" />
 								</div>
 	
-								<div class="date">
-									<p class="date-text">14:56</p>
-									<p class="date-dot">●</p>
-									<p class="date-text">10.11.2023</p>
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Матвей Радужнев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
 								</div>
 							</div>
-						</div>
 	
-						<div class="review">
-							<img
-								src="assets/icons/hdots.svg"
-								alt="More"
-								class="review-button btn"
-								onclick="openModal()"
-							/>
+							<div class="review">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="openModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арион</h5>
 	
-							<div class="rating">
-								<p class="rating-text">9.8</p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-							</div>
-	
-							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-	
-							<div class="review-footer">
-								<div class="author">
-									<img src="assets/icons/user.svg" alt="user" />
-									<p class="author-text bigtext">Амир Ванев</p>
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 								</div>
 	
-								<div class="date">
-									<p class="date-text">14:56</p>
-									<p class="date-dot">●</p>
-									<p class="date-text">10.11.2023</p>
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Амир Ванев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
 								</div>
 							</div>
-						</div>
 	
-						<div class="review">
-							<img
-								src="assets/icons/hdots.svg"
-								alt="More"
-								class="review-button btn"
-								onclick="openModal()"
-							/>
+							<div class="review">
+								<img
+									src="assets/icons/hdots.svg"
+									alt="More"
+									class="review-button btn"
+									onclick="openModal('review')"
+								/>
+								<h5 class="review-title bigtext">Хостел Арион</h5>
 	
-							<div class="rating">
-								<p class="rating-text">9.8</p>
-								<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-							</div>
-	
-							<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
-	
-							<div class="review-footer">
-								<div class="author">
-									<img src="assets/icons/user.svg" alt="user" />
-									<p class="author-text bigtext">Амир Ванев</p>
+								<div class="rating">
+									<p class="rating-text">9.8</p>
+									<img src="assets/icons/rating/fifth.svg" alt="Rating" />
 								</div>
 	
-								<div class="date">
-									<p class="date-text">14:56</p>
-									<p class="date-dot">●</p>
-									<p class="date-text">10.11.2023</p>
+								<p class="review-text bigtext">Нет слов, чтобы описать. Одно из лучших мест, в котором я когда-либо останавливался... и лучшие хозяева, которых я когда-либо встречал...</p>
+	
+								<div class="review-footer">
+									<div class="author">
+										<img src="assets/icons/user.svg" alt="user" />
+										<p class="author-text bigtext">Амир Ванев</p>
+									</div>
+	
+									<div class="date">
+										<p class="date-text">14:56</p>
+										<p class="date-dot">●</p>
+										<p class="date-text">10.11.2023</p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -1149,15 +1155,79 @@
 	</footer>
 
 	<!-- MODAL -->
-	<div id="modal" class="modal">
-		<div class="modal-background" onclick="closeModal()"></div>
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="closeModal('auth')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="galery" class="modal">
+		<div class="modal-background" onclick="closeModal('galery')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('galery')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review" class="modal">
+		<div class="modal-background" onclick="closeModal('review')"></div>
 
 		<div class="modal-wrap vertical">
 			<img
-				src="assets/icons/close.svg"
-				alt="close"
+				src="assets/icons/close-grey.svg"
+				alt="Close"
 				class="btn"
-				onclick="closeModal()"
+				onclick="closeModal('review')"
 			/>
 
 			<h4 class="modal-name">Хостел Арлеон</h4>

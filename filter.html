@@ -23,6 +23,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/common.js"></script>
 </head>
 
 <body>
@@ -62,7 +63,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit">
+				<button class="button" type="submit" onclick="openModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -140,7 +141,7 @@
 								/>
 							</div>
 
-							<div class="price-field horizontal">
+							<div class="price-field horizontal wrap">
 								<div class="field">
 									<input
 										type="text"
@@ -347,10 +348,30 @@
 							<h5>234</h6>
 						</div>
 						
-						<div class="sorting horizontal horizontal-inline btn">
+						<div class="sorting horizontal horizontal-inline btn" onclick="handleSortMenu()">
 							<img src="assets/icons/arrow_up_down.svg" alt="Sorting" />
 							<p>Сортировать:</p>
 							<p class="desktop">Наши рекомендации</p>
+						</div>
+
+						<div id="sorting_menu" class="sorting_menu">
+							<ul class="sorting_menu-wrap vertical">
+								<li class="sorting_menu-wrap__item btn">
+									<p class="text">Сначала дома и апартаменты</p>
+								</li>
+								<li class="sorting_menu-wrap__item btn">
+									<p class="text">Оценка объекта (по убыванию)</p>
+								</li>
+								<li class="sorting_menu-wrap__item btn">
+									<p class="text">Оценка объекта (по возрастанию)</p>
+								</li>
+								<li class="sorting_menu-wrap__item btn">
+									<p class="text">Расстояние от центра</p>
+								</li>
+								<li class="sorting_menu-wrap__item btn">
+									<p class="text">Оценка + кол-во отзывов</p>
+								</li>
+							</ul>
 						</div>
 
 						<div class="sorting horizontal horizontal-inline btn mobile">
@@ -386,15 +407,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -461,15 +482,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -536,15 +557,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -611,15 +632,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -686,15 +707,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -761,15 +782,15 @@
 											/>
 										</div>
 
-										<div class="locations horizontal horizontal-inline">
+										<div class="locations horizontal horizontal-inline wrap">
 											<div class="location">
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn">Показать на карте</p>
+											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
 										</div>
 
-										<div class="reviews horizontal horizontal-inline">
+										<div class="reviews horizontal horizontal-inline wrap">
 											<h6 class="reviews-title">Хостел</h6>
 
 											<div class="rating">
@@ -938,6 +959,70 @@
 		</div>
 	</footer>
 
-	<script src="js/common.js"></script>
+	<!-- MODAL -->
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="closeModal('auth')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="location" class="modal">
+		<div class="modal-background" onclick="closeModal('location')"></div>
+
+		<div class="modal-wrap vertical">
+			<img
+				src="assets/images/map.png"
+				alt="Map"
+				class="image"
+			/>
+
+			<div class="location">
+				<img src="assets/icons/location4.svg" alt="Location" />
+				<p class="location-text bigtext">г. Алматы, ул. Тимирязева, 15</p>
+			</div>
+
+			<div class="close btn" onclick="closeModal('location')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<div class="locations-popup">
+				<p class="name text">Grand Tour</p>
+
+				<div class="review2">
+					<div class="rating">
+						<p class="rating-text">9.6</p>
+					</div>
+
+					<p class="title bigtext">453 отзывов</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
