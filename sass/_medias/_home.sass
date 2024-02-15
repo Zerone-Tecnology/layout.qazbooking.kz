@@ -1,11 +1,136 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1440px)
+	.home
+		&-wrap
+			.hero-content
+				padding-left: 56px
+				padding-right: 56px
+				.search-text
+					width: calc(100% - 174px)
+			.category-wrap
+				gap: 29px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					flex-wrap: wrap
+					gap: 21px
+				&-box
+					width: calc(50% - 10.5px)
+					padding-right: 24px
+					padding-left: 22px
+			.blogs-wrap
+				gap: 22px
+			.about
+				&-wrap
+					padding: 41px
+				&-info
+					gap: 26px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+	.home
+		&-wrap
+			.hero-content
+				padding-right: 24px
+				padding-left: 24px
+				&__description
+					width: 100%
+				.search-text
+					width: calc(100% - 130px)
+			.category-wrap
+				gap: 20px
+			.popular-wrap
+				gap: 37px
+			.seo
+				&-wrap
+					gap: 14px
+				&-box
+					width: calc(50% - 7px)
+			.blogs-wrap
+				gap: 16px
+			.about
+				height: max-content
+				&-wrap
+					flex-direction: column
+					gap: 40px
+					padding: 28px
+				&-info
+					gap: 20px
+					&__title
+						line-height: 39px
+					&__text
+						width: 100%
+						&:last-child
+							width: 100%
+				&-image
+					margin: auto
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
+	.home
+		margin: 19px 0 83px
+		&-wrap
+			gap: 90px
+			.hero
+				margin: 0 -4.26667vw
+				&-content
+					padding-right: 4.26667vw
+					padding-left: 4.26667vw
+					&__description
+						margin-bottom: 86px
+						.title
+							line-height: 39px
+							margin-bottom: 16px
+						.text
+							-webkit-line-clamp: 3
+					.search-text
+						width: 100%
+			.category
+				&-wrap
+					gap: 16px
+				&-block
+					min-width: 156px
+					&__icon
+						height: 156px
+			.popular,
+			.reviews,
+			.blogs
+				margin-right: -4.26667vw
+			.card1_list
+				gap: 30px
+			.reviews-wrap
+				gap: 16px
+			.seo
+				&-subtitle
+					font-size: 18px
+					line-height: 25px
+				&-title
+					line-height: 39px
+				&-text
+					font-size: 16px
+					line-height: 19px
+				&-text,
+				&-wrap
+					margin-top: 40px
+				&-wrap
+					gap: 27px
+				&-box
+					width: 100%
+					padding: 37px 14px
+					.title
+						margin: 0
+			.blogs-header
+				margin-right: 4.26667vw
+			.about
+				&-wrap
+					padding: 24px 16px 19px
+				.title
+					font-size: 32px
+				.text,
+				.text:last-child,
+				&-image
+					width: 100%

@@ -1,0 +1,68 @@
+.profile
+	padding: 40px 0 233px
+	&-wrap
+		gap: 60px
+	&-content
+		gap: 30px
+		.user
+			min-width: 386px
+			max-width: 386px
+			height: max-content
+			border: 1px solid $grey-secondary
+			border-radius: 8px
+			padding: 34px
+			&-header
+				gap: 16px
+				border-bottom: 1px solid $grey-secondary
+				margin-bottom: 23.5px
+				padding-bottom: 23.5px
+				.icon
+					width: 32px
+					height: 32px
+					background-color: $grey-secondary
+					border-radius: 50%
+				.text
+					line-height: 22px
+			&-item
+				gap: 8px
+				height: 72px
+				padding: 24px 0
+				margin-bottom: 24px
+				&.active
+					.icon
+						stroke: #BE9E44
+					.text
+						color: #BE9E44
+		.information,
+		.reviews,
+		.favourite
+			display: none
+			&.active
+				display: flex
+		.information
+			width: 386px
+			gap: 24px
+			&-item
+				gap: 4px
+				.text
+					font-size: 12px
+					line-height: 24px
+				&:nth-child(5)
+					gap: 24px
+					border-top: 1px solid $grey-secondary
+					margin-top: 23.5px
+					padding-top: 23.5px
+					.text
+						font-size: 16px
+						line-height: 20px
+			&-button
+				color: $accent
+				line-height: 20px
+				margin-top: 40px
+		.reviews,
+		.favourite
+			gap: 30px
+		.favourite
+			.card
+				min-width: 386px
+				max-width: 386px

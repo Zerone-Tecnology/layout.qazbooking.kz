@@ -15,12 +15,38 @@ window.addEventListener('scroll', moveHeader);
 function openModal(id) {
   var modal = document.getElementById(id);
   modal.classList.add("show");
-	$('body').css("overflow", "hidden");
+	document.body.style.overflow = "hidden";
 }
 function closeModal(id) {
   var modal = document.getElementById(id);
   modal.classList.remove("show");
-	$('body').css("overflow", "auto");
+	document.body.style.overflow = "auto";
+}
+
+let activeAuth = 0;
+function changeAuth() {
+	const container = document.getElementById('auth');
+	const title = container.querySelector('.title');
+	const buttons = container.querySelectorAll('.button-text');
+	if (activeAuth === 0) {
+		title.innerText = "Вход";
+		buttons[0].innerText = "Войти";
+		buttons[1].innerText = "Регистрация";
+		activeAuth++;
+	} else {
+		title.innerText = "Регистрация";
+		buttons[0].innerText = "Регистрация";
+		buttons[1].innerText = "Войти";
+		activeAuth--;
+	}
+}
+
+function handleSortMenu() {
+	var menu = document.getElementById('sorting_menu');
+	if (menu.classList.length > 1)
+		menu.classList.remove("show");
+	else
+		menu.classList.add("show");
 }
 
 function profile(index) {

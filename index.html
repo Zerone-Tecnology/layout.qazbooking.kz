@@ -63,7 +63,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit">
+				<button class="button" type="submit" onclick="openModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -830,7 +830,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('modal1')"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -860,7 +860,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('modal1')"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
 
@@ -890,7 +890,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('modal1')"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арион</h5>
 
@@ -920,7 +920,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('modal1')"
+								onclick="openModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арион</h5>
 
@@ -1195,15 +1195,47 @@
 	</footer>
 
 	<!-- MODAL -->
-	<div id="modal1" class="modal">
-		<div class="modal-background" onclick="closeModal('modal1')"></div>
+	<div id="auth" class="modal">
+		<div class="modal-background" onclick="closeModal('auth')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('auth')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Регистрация</h4>
+
+			<div class="modal-wrap__line vertical">
+				<div class="input-box">
+					<label for="email" class="label">Email</label>
+					<input type="text" id="email" class="input" />
+				</div>
+				<div class="input-box">
+					<label for="password" class="label">Пароль</label>
+					<input type="text" id="password" class="input" />
+				</div>
+			</div>
+
+			<div class="modal-wrap__line vertical">
+				<div class="button">
+					<p class="button-text">Регистрация</p>
+				</div>
+				<div class="button secondary" onclick="changeAuth()">
+					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review" class="modal">
+		<div class="modal-background" onclick="closeModal('review')"></div>
 
 		<div class="modal-wrap vertical">
 			<img
-				src="assets/icons/close.svg"
-				alt="close"
+				src="assets/icons/close-grey.svg"
+				alt="Close"
 				class="btn"
-				onclick="closeModal('modal1')"
+				onclick="closeModal('review')"
 			/>
 
 			<h4 class="modal-name">Хостел Арлеон</h4>
