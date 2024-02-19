@@ -1,11 +1,60 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1440px)
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px)
+	.profile
+		&-content
+			gap: 22.5px
+			.user
+				min-width: 289.5px
+				max-width: 289.5px
+				padding: 25.5px
+			.information
+				width: 289.5px
+			.reviews,
+			.favourite
+				gap: 22.5px
+			.review,
+			.favourite .card
+				min-width: 289.5px
+				max-width: 289.5px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px)
+	.profile
+		padding: 42px 0 152px
+		&-wrap
+			gap: 6px
+		&-content
+			flex-direction: column
+			gap: 40px
+			.user
+				min-width: 343px
+				max-width: 343px
+				padding: 16px 8px
+				&-header
+					margin-bottom: 15.5px
+					padding-bottom: 15.5px
+				&-list
+					display: flex
+					gap: 8px
+					&__item
+						flex-direction: column
+						gap: 4px
+						width: 28vw
+						height: 76px
+						padding: 8px 0
+						margin-bottom: 0
+						.text
+							text-align: center
+							font-size: 13px
+							line-height: 16px
+			.information
+				width: 343px
+				&-button
+					margin-top: 8px
+			.reviews,
+			.favourite
+				gap: 16px
+			.review,
+			.favourite .card
+				min-width: 343px
+				maz-width: 343px

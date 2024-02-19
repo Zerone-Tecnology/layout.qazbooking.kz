@@ -44,11 +44,31 @@
 					/>
 				</div>
 
-				<div class="header-location horizontal horizontal-inline">
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
 					<div class="icon">
 						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
 					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="header-links horizontal horizontal-inline">
@@ -111,7 +131,7 @@
 						<p class="text bigtext">Поиск предложений на отели, дома и многое другое…</h>
 					</div>
 
-					<div class="search">
+					<form class="search">
 						<img
 							src="assets/icons/search.svg"
 							alt="Search"
@@ -120,12 +140,25 @@
 						<input
 							type="text"
 							placeholder="Ключевое слово"
+							autocomplete="off"
 							class="search-text"
+						/>
+						<input
+							type="text"
+							id="from"
+							placeholder="Дата заезда"
+							class="search-date"
+						/>
+						<input
+							type="text"
+							id="to"
+							placeholder="Дата выезда"
+							class="search-date"
 						/>
 						<button class="button" type="submit">
 							<div class="button-text">Поиск</div>
 						</button>
-					</div>
+					</form>
 				</div>
 			</section>
 
@@ -1282,6 +1315,59 @@
 						<p class="date-text">10.11.2023</p>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_write" class="modal">
+		<div class="modal-background" onclick="closeModal('review_write')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('review_write')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Написать отзыв</h4>
+
+			<div class="modal-wrap__box vertical">
+				<div class="vertical">
+					<p class="text">Оценить сервис</p>
+					
+					<div class="stars horizontal">
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+					</div>
+				</div>
+
+				<div class="input-box vertical">
+					<textarea placeholder="Напишите отзыв" class="input"></textarea>
+					<p class="label">0/200</p>
+				</div>
+
+				<div class="button" onclick="closeModal('review_write'), openModal('review_send')">
+					<p class="button-text">Отправить</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_send" class="modal">
+		<div class="modal-background" onclick="closeModal('review_send')"></div>
+
+		<div class="modal-wrap vertical center">
+			<div class="close btn" onclick="closeModal('review_send')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<img src="assets/icons/star-square.svg" alt="Star" />
+			<h4 class="title">Ваш отзыв отправлен</h4>
+			<p class="text">Отзыв скоро появится на странице. Спасибо за обратную связь.</p>
+
+			<div class="button" onclick="closeModal('review_send')">
+				<p class="button-text">Закрыть</p>
 			</div>
 		</div>
 	</div>

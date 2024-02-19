@@ -44,11 +44,31 @@
 					/>
 				</a>
 
-				<div class="header-location horizontal horizontal-inline">
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
 					<div class="icon">
 						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
 					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="header-links horizontal horizontal-inline">
@@ -142,22 +162,24 @@
 					/>
 				</div>
 
-				<div class="place-galery horizontal">
-					<img
-						src="assets/images/hostels1.png"
-						alt="Hostel 1"
-						class="image"
-					/>
-					<img
-						src="assets/images/hostels2.png"
-						alt="Hostel 2"
-						class="image"
-					/>
-					<img
-						src="assets/images/hostels3.png"
-						alt="Hostel 3"
-						class="image"
-					/>
+				<div class="place-galery carousel horizontal">
+					<div class="carousel-inner">
+						<img
+							src="assets/images/hostels1.png"
+							alt="Hostel 1"
+							class="image"
+						/>
+						<img
+							src="assets/images/hostels2.png"
+							alt="Hostel 2"
+							class="image"
+						/>
+						<img
+							src="assets/images/hostels3.png"
+							alt="Hostel 3"
+							class="image"
+						/>
+					</div>
 				</div>
 
 				<div class="place-content horizontal">
@@ -167,7 +189,7 @@
 							<h5 class="title">1 большая кровать</h5>
 						</div>
 
-						<ul class="desc-list horizontal">
+						<ul class="desc-list horizontal wrap">
 							<li class="desc-item horizontal horizontal-inline">
 								<img src="assets/icons/hair_dryer.svg" alt="Hair dryer" />
 								<p>Фен</p>
@@ -205,13 +227,15 @@
 					</div>
 
 					<div class="place-content__right">
-						<div class="price horizontal horizontal-inline">
-							<h5 class="price-text">143 500</h5>
-							<img src="assets/icons/currency.svg" alt="Tenge" />
-						</div>
+						<div class="price_box">
+							<div class="price horizontal horizontal-inline">
+								<h5 class="price-text">143 500</h5>
+								<img src="assets/icons/currency.svg" alt="Tenge" />
+							</div>
 
-						<p class="price-description">цена за 10 ночей</p>
-						<p class="price-description">за 1 кровать</p>
+							<p class="price-description">цена за 10 ночей</p>
+							<p class="price-description">за 1 кровать</p>
+						</div>
 						<button class="button" type="submit">
 							<div class="button-text">Связаться</div>
 						</button>

@@ -53,26 +53,23 @@
 					border: 1px solid $grey-secondary
 					border-radius: 8px
 					padding: 4px 10px
-					&_menu
-						position: absolute
-						top: 48px
-						right: 0
+					&:last-child
 						display: none
-						&-wrap
-							gap: 8px
-							width: 316px
-							padding: 16px
-							background-color: $white
+				#sorting_menu.menu
+					top: 48px
+					right: 0
+					z-index: 3
+					.menu-wrap
+						gap: 8px
+						width: 316px
+						&__item
+							padding: 10px
 							border-radius: 8px
-							box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
-							&__item
-								padding: 10px
-								border-radius: 8px
-								&:hover
-									background-color: #03306B20
-								.text
-									font-size: 18px
-									line-height: 22px
+							&:hover
+								background-color: #03306B20
+							.text
+								font-size: 18px
+								line-height: 22px
 			&__body
 				gap: 18px
 			&__pagination
