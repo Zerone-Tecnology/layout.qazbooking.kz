@@ -44,11 +44,31 @@
 					/>
 				</a>
 
-				<div class="header-location horizontal horizontal-inline">
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
 					<div class="icon">
 						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
 					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="header-links horizontal horizontal-inline">
@@ -99,7 +119,7 @@
 	<main class="filter main">
 		<div class="filter-wrap box vertical">
 			<section class="content wrap">
-				<div class="search">
+				<form class="search">
 					<img
 						src="assets/icons/search.svg"
 						alt="Search"
@@ -108,14 +128,27 @@
 					<input
 						type="text"
 						placeholder="Ключевое слово"
+						autocomplete="off"
 						class="search-text"
 					/>
+					<input
+						type="text"
+						id="from"
+						placeholder="Дата заезда"
+						class="search-date"
+					/>
+					<input
+						type="text"
+						id="to"
+						placeholder="Дата выезда"
+						class="search-date"
+					/>
 					<button class="button" type="submit">
-						<p class="button-text">Поиск</p>
+						<div class="button-text">Поиск</div>
 					</button>
-				</div>
+				</form>
 
-				<div class="content-filter">
+				<div class="content-filter" id="filter">
 					<h5 class="title">Все фильтры</h5>
 
 					<div class="content-filter__block">
@@ -348,34 +381,34 @@
 							<h5>234</h6>
 						</div>
 						
-						<div class="sorting horizontal horizontal-inline btn" onclick="handleSortMenu()">
-							<img src="assets/icons/arrow_up_down.svg" alt="Sorting" />
+						<div class="sorting horizontal horizontal-inline btn" onclick="handleMenu('sorting_menu')">
+							<img src="assets/icons/arrow-up-down.svg" alt="Sorting" />
 							<p>Сортировать:</p>
 							<p class="desktop">Наши рекомендации</p>
 						</div>
 
-						<div id="sorting_menu" class="sorting_menu">
-							<ul class="sorting_menu-wrap vertical">
-								<li class="sorting_menu-wrap__item btn">
+						<div id="sorting_menu" class="menu">
+							<ul class="menu-wrap menu-wrap vertical">
+								<li class="menu-wrap__item btn">
 									<p class="text">Сначала дома и апартаменты</p>
 								</li>
-								<li class="sorting_menu-wrap__item btn">
+								<li class="menu-wrap__item btn">
 									<p class="text">Оценка объекта (по убыванию)</p>
 								</li>
-								<li class="sorting_menu-wrap__item btn">
+								<li class="menu-wrap__item btn">
 									<p class="text">Оценка объекта (по возрастанию)</p>
 								</li>
-								<li class="sorting_menu-wrap__item btn">
+								<li class="menu-wrap__item btn">
 									<p class="text">Расстояние от центра</p>
 								</li>
-								<li class="sorting_menu-wrap__item btn">
+								<li class="menu-wrap__item btn">
 									<p class="text">Оценка + кол-во отзывов</p>
 								</li>
 							</ul>
 						</div>
 
-						<div class="sorting horizontal horizontal-inline btn mobile">
-							<img src="assets/icons/filter.svg" alt="Filter" />
+						<div class="sorting horizontal horizontal-inline btn" onclick="handleMenu('filter')">
+							<img src="assets/icons/filter.svg" alt="Filter"/>
 							<p>Все фильтры</p>
 						</div>
 					</div>
@@ -1008,7 +1041,7 @@
 			</div>
 
 			<div class="close btn" onclick="closeModal('location')">
-				<img src="assets/icons/close.svg" alt="Close" />
+				<img src="assets/icons/close-big.svg" alt="Close" />
 			</div>
 
 			<div class="locations-popup">

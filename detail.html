@@ -44,11 +44,31 @@
 					/>
 				</a>
 
-				<div class="header-location horizontal horizontal-inline">
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
 					<div class="icon">
 						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
 					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="header-links horizontal horizontal-inline">
@@ -188,6 +208,7 @@
 							src="assets/images/tour1.jpeg"
 							alt="Tour 1"
 							class="place-galery__main image desktop"
+							onclick="openModal('galery')"
 						/>
 		
 						<div class="place-galery__secondary wrap scroll">
@@ -195,26 +216,31 @@
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
 								class="image mobile"
+								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
 								class="image"
+								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour2.jpeg"
 								alt="Tour 2"
 								class="image"
+								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour3.jpeg"
 								alt="Tour 3"
 								class="image"
+								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour4.jpeg"
 								alt="Tour 4"
 								class="image"
+								onclick="openModal('galery')"
 							/>
 						</div>
 					</div>
@@ -808,7 +834,7 @@
 	
 					<div class="reviews-wrap carousel">
 						<div class="carousel-inner" id="reviews">
-							<div class="review">
+							<div class="review carousel-item">
 								<img
 									src="assets/icons/hdots.svg"
 									alt="More"
@@ -838,7 +864,7 @@
 								</div>
 							</div>
 	
-							<div class="review">
+							<div class="review carousel-item">
 								<img
 									src="assets/icons/hdots.svg"
 									alt="More"
@@ -868,7 +894,7 @@
 								</div>
 							</div>
 	
-							<div class="review">
+							<div class="review carousel-item">
 								<img
 									src="assets/icons/hdots.svg"
 									alt="More"
@@ -898,7 +924,7 @@
 								</div>
 							</div>
 	
-							<div class="review">
+							<div class="review carousel-item">
 								<img
 									src="assets/icons/hdots.svg"
 									alt="More"
@@ -1192,28 +1218,82 @@
 
 		<div class="modal-wrap vertical">
 			<div class="close btn" onclick="closeModal('galery')">
-				<img src="assets/icons/close.svg" alt="Close" />
+				<img src="assets/icons/close-white.svg" alt="Close" />
 			</div>
 
-			<h4 class="title">Регистрация</h4>
+			<h5 class="title">Двухместный номер Делюкс с 1 кроватью</h5>
 
-			<div class="modal-wrap__line vertical">
-				<div class="input-box">
-					<label for="email" class="label">Email</label>
-					<input type="text" id="email" class="input" />
-				</div>
-				<div class="input-box">
-					<label for="password" class="label">Пароль</label>
-					<input type="text" id="password" class="input" />
-				</div>
+			<div class="main_image">
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image active"
+				/>
+				<img
+					src="assets/images/arleon2.png"
+					alt="Arleon 2"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon3.png"
+					alt="Arleon 3"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image"
+				/>
 			</div>
 
-			<div class="modal-wrap__line vertical">
-				<div class="button">
-					<p class="button-text">Регистрация</p>
-				</div>
-				<div class="button secondary" onclick="changeAuth()">
-					<p class="button-text">Войти</p>
+			<div class="carousel">
+				<div class="carousel-inner" id="modal">
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon2.png"
+						alt="Arleon 2"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Arleon 3"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
 				</div>
 			</div>
 		</div>

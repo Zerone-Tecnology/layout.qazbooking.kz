@@ -44,11 +44,31 @@
 					/>
 				</a>
 
-				<div class="header-location horizontal horizontal-inline">
+				<div class="header-location horizontal horizontal-inline btn" onclick="handleMenu('location_menu')">
 					<div class="icon">
 						<img src="assets/icons/location.svg" alt="Location" />
 					</div>
 					<p class="text">Алматы</p>
+
+					<div id="location_menu" class="menu">
+						<ul class="menu-wrap vertical">
+							<li class="menu-wrap__item btn">
+								<p class="text">Алматы</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Астана</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Алаколь</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Боровое</p>
+							</li>
+							<li class="menu-wrap__item btn">
+								<p class="text">Сарыагаш</p>
+							</li>
+						</ul>
+					</div>
 				</div>
 
 				<div class="header-links horizontal horizontal-inline">
@@ -63,10 +83,10 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="openModal('auth')">
-					<img src="assets/icons/auth.svg" alt="Auth" />
-					<p class="button-text">Войти</p>
-				</button>
+				<div class="header-user horizontal horizontal-inline">
+					<img src="assets/icons/user-circle.svg" alt="User" />
+					<p class="text">Личный кабинет</p>
+				</div>
 			</div>
 
 			<div class="header-menu horizontal scroll">
@@ -118,33 +138,35 @@
 						<h6 class="text">Аскаров Максат Жандосович</h6>
 					</div>
 
-					<div class="user-item active horizontal horizontal-inline btn" onclick="profile(1)">
-						<img
-							src="assets/icons/user_square.svg"
-							alt="User square"
-							class="icon"
-						/>
-						<p class="text">Персональные данные</p>
-					</div>
+					<ul class="user_list">
+						<li class="user-item active horizontal horizontal-inline btn" onclick="profile(1)">
+							<img
+								src="assets/icons/user-square.svg"
+								alt="User square"
+								class="icon"
+							/>
+							<p class="text">Персональные данные</p>
+						</li>
 
-					<div class="user-item horizontal horizontal-inline btn" onclick="profile(2)">
-						<img
-							src="assets/icons/favourite/default.svg"
-							alt="Favourite"
-							class="icon"
-						/>
-						<p class="text">Мои отзывы</p>
-					</div>
+						<li class="user-item horizontal horizontal-inline btn" onclick="profile(2)">
+							<img
+								src="assets/icons/favourite/default.svg"
+								alt="Favourite"
+								class="icon"
+							/>
+							<p class="text">Мои отзывы</p>
+						</li>
 
-					<div class="user-item horizontal horizontal-inline btn" onclick="profile(3)">
-						<img
-							src="assets/icons/location.svg"
-							alt="Location"
-							class="icon"
-						/>
-						<p class="text">Мои избранные места</p>
+						<li class="user-item horizontal horizontal-inline btn" onclick="profile(3)">
+							<img
+								src="assets/icons/location.svg"
+								alt="Location"
+								class="icon"
+							/>
+							<p class="text">Мои избранные места</p>
+						</li>
 					</div>
-				</div>
+				</ul>
 
 				<div>
 					<div class="information right active vertical">

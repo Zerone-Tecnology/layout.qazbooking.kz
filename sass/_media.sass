@@ -65,16 +65,14 @@
 						gap: 4px 8px
 						&-text
 							color: $grey
-				&__right
-					width: 97.5px
-
-
 
 	.card
 		&_list
 			gap: 22px
 
 	.reviews
+		&-header .review2
+			margin-right: 363px
 		&-wrap
 			gap: 22px
 
@@ -128,7 +126,6 @@
 
 	.footer
 		&-wrap
-			width: 46%
 			padding-right: 55px
 			padding-left: 54px
 			&__line
@@ -149,11 +146,18 @@
 		.button
 			width: 114px
 
+	.action
+		&_list
+			flex-direction: column
+			gap: 16px
+
 	.card
 		&_list
 			gap: 22px
 
 	.reviews
+		&-header .review2
+			margin-right: 79px
 		&-wrap
 			gap: 16px
 	
@@ -194,6 +198,11 @@
 			.zerone
 				width: 75%
 
+	.main
+		margin-top: 152px
+		.breadcrumbs
+			margin-bottom: 20px
+
 	// COMPONENTS
 	.search
 		&-text
@@ -204,6 +213,52 @@
 	.blog
 		min-width: 41.667vw
 		max-width: 41.667vw
+
+	.card4
+		.card
+			position: relative
+			flex-direction: column
+			gap: 0
+			&-image
+				min-width: 100%
+				max-width: 100%
+				height: 170px
+			&-info
+				flex-direction: column
+				padding: 24px 16px 20px
+				&__left
+					gap: 8px
+					width: 100%
+					border-right: 0
+					margin-right: 0
+					padding-right: 0
+					.top
+						margin-bottom: 8px
+						&-title
+							font-size: 20px
+							line-height: 24px
+						&-button
+							position: absolute
+							top: 16px
+							right: 17px
+					.location-text,
+					.locations-button,
+					.reviews-title,
+					.reviews-text
+						font-size: 13px
+					.features-text
+						line-height: 17px
+				&__right
+					flex-direction: row
+					width: 100%
+					border-top: 1px solid #E3E3E3
+					margin-top: 15.5px
+					padding-top: 15.5px
+					.price-description
+						font-size: 14px
+						line-height: 17px
+					.button
+						width: 130px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -256,11 +311,6 @@
 			.zerone
 				width: 75%
 
-	.main
-		margin-top: 152px
-		.breadcrumbs
-			margin-bottom: 20px
-
 	// COMPONENTS
 	.search
 		&-text
@@ -287,7 +337,7 @@
 
 	.action
 		&_list
-			gap: 16px
+			flex-direction: row
 		&-text
 			display: none
 
@@ -347,51 +397,6 @@
 						justify-content: space-between
 						.button
 							margin: 0
-
-	.card4
-		.card
-			position: relative
-			flex-direction: column
-			gap: 0
-			&-image
-				width: 100%
-				height: 170px
-			&-info
-				flex-direction: column
-				padding: 24px 16px 20px
-				&__left
-					gap: 8px
-					width: 100%
-					border-right: 0
-					margin-right: 0
-					padding-right: 0
-					.top
-						margin-bottom: 8px
-						&-title
-							font-size: 20px
-							line-height: 24px
-						&-button
-							position: absolute
-							top: 16px
-							right: 17px
-					.location-text,
-					.locations-button,
-					.reviews-title,
-					.reviews-text
-						font-size: 13px
-					.features-text
-						line-height: 17px
-				&__right
-					flex-direction: row
-					width: 100%
-					border-top: 1px solid #E3E3E3
-					margin-top: 15.5px
-					padding-top: 15.5px
-					.price-description
-						font-size: 14px
-						line-height: 17px
-					.button
-						width: 130px
 
 	.review
 		min-width: 300px

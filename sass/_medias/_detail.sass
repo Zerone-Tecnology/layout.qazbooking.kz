@@ -1,11 +1,135 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1440px)
+	.detail
+		.place
+			&-preview__top
+				gap: 41.25px
+			&-galery
+				gap: 22.5px
+				&__main,
+				&__secondary
+					width: calc(50% - 11.25px)
+				&__secondary
+					gap: 22.5px
+					.image
+						width: calc(50% - 11.25px)
+						height: calc(50% - 11.25px)
+			&-info
+				&__left
+					width: 670px
+				&__right
+					width: 221px
+					.advantages,
+					.contacts
+						background-color: #F0F0F0
+						border-radius: 16px
+					.advantages
+						gap: 8px
+						padding: 20px 20px 19px
+						&-text
+							font-weight: 500
+						.big
+							gap: 2px
+							margin-top: 8px
+						.small
+							gap: 8px
+						.button
+							margin-top: 12px
+					.locations
+						position: relative
+						gap: 17px
+						border-radius: 16px
+						.locations-title,
+						.location-text
+							font-weight: 700
+						.location-text
+							color: $dark
+						&-map
+							width: 100%
+							height: 387px
+						.locations-popup
+							top: 288px
+							left: 25px
+					.contacts
+						gap: 16px
+						padding: 20px 20px 27px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px)
+	.detail
+		&-wrap
+			gap: 60px
+		.place
+			gap: 24px
+			&-preview
+				gap: 18px
+				&__top
+					gap: 28px
+			&-galery
+				gap: 15.5px
+				height: 320px
+				&__main,
+				&__secondary
+					width: calc(50% - 7.75px)
+				&__secondary
+					gap: 15.5px
+					.image
+						width: calc(50% - 7.75px)
+						height: calc(50% - 7.75px)
+			&-info
+				flex-direction: column
+				gap: 60px
+				margin-top: 0
+				&__left,
+				&__right
+					width: 100%
+				&__left
+					gap: 50px
+					.description .text
+						font-size: 16px
+						line-height: 19px
+					.useful-content
+						flex-direction: column
+						gap: 16px
+						.desc
+							&_list
+								gap: 12px
+								width: 100%
+								padding: 16px
+								&:last-child
+									width: 100%
+							&-item .text
+								font-size: 16px
+								line-height: 24px
+					.variant
+						.title
+							margin-bottom: 32px
+						&-content
+							gap: 60px
+							margin-right: -4.26667vw
+				&__right
+					gap: 24px
+					.advantages,
+					.contacts
+						padding: 20px
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
+	.detail
+		.place
+			&-preview__top
+				gap: 22px
+			&-galery
+				gap: 12px
+				&__main,
+				&__secondary
+					width: calc(50% - 6px)
+				&__secondary
+					gap: 12px
+					.image
+						width: calc(50% - 6px)
+						height: calc(50% - 6px)
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
@@ -34,42 +158,6 @@
 					.image
 						min-width: 318px
 						height: 100%
-			&-info
-				flex-direction: column
-				gap: 60px
-				margin-top: 0
-				&__left,
-				&__right
-					width: 100%
-				&__left
-					gap: 50px
-					.description .text
-						font-size: 16px
-						line-height: 19px
-					.useful-content
-						flex-direction: column
-						gap: 16px
-						.desc
-							&-list
-								gap: 12px
-								width: 100%
-								padding: 16px
-								&:last-child
-									width: 100%
-							&-item .text
-								font-size: 16px
-								line-height: 24px
-					.variant
-						.title
-							margin-bottom: 32px
-						&-content
-							gap: 60px
-							margin-right: -4.26667vw
-				&__right
-					gap: 24px
-					.advantages,
-					.contacts
-						padding: 20px
 		.reviews,
 		.popular
 			margin-right: -4.26667vw

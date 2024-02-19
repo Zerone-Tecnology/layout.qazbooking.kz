@@ -41,12 +41,38 @@ function changeAuth() {
 	}
 }
 
-function handleSortMenu() {
-	var menu = document.getElementById('sorting_menu');
+function handleMenu(id) {
+	var menu = document.getElementById(id);
 	if (menu.classList.length > 1)
 		menu.classList.remove("show");
 	else
 		menu.classList.add("show");
+}
+
+let activeSlider = 0;
+function slider(id) {
+	const container = document.getElementById(id);
+	const list = container.getElementsByClassName('carousel-item');
+	const width = list[0].offsetWidth;
+	const length = list.length;
+	const maxIndex = length - 1;
+
+	function updateTransform() {
+		const newPosition = activeSlider * (width + 30);
+		container.style.transform = `translateX(-${newPosition}px)`;
+	}
+	function prevSlide() {
+		if (activeSlider > 0)
+			activeSlider--;
+		updateTransform();
+	}
+	function nextSlide() {
+		if (activeSlider < maxIndex - 2)
+			activeSlider++;
+		updateTransform();
+	}
+
+	return { prevSlide, nextSlide }
 }
 
 function profile(index) {
@@ -60,36 +86,6 @@ function profile(index) {
 	});
 	$buttonList[index - 1].classList.add("active");
 	$contentList[index - 1].classList.add("active");
-}
-
-function slider(id) {
-	var active = 0;
-	const container = document.getElementById(id);
-	const list = container.getElementsByClassName('carousel-item');
-	const width = list[0].offsetWidth;
-	const length = list.length;
-	const maxIndex = length - 1;
-
-	function prevSlide() {
-		console.log(active);
-		if (active > 0) {
-			active--;
-			console.log(active);
-			const newPosition = active * (width + 30);
-			container.style.transform = `translateX(-${newPosition}px)`;
-		}
-	}
-	function nextSlide() {
-		console.log(active);
-		if (active < maxIndex) {
-			active++;
-			console.log(active);
-			const newPosition = active * (width + 30);
-			container.style.transform = `translateX(-${newPosition}px)`;
-		}
-	}
-
-	return { prevSlide, nextSlide };
 }
 
 function initializeCarousel(carouselId) {

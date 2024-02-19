@@ -15,9 +15,33 @@
 	.filter
 		&-wrap
 			gap: 58px
+		.content
+			position: relative
+			gap: 16px
+			&-filter
+				position: absolute
+				top: 178px
+				display: none
+				width: 100%
+				background-color: $white
+				z-index: 2
+			&-result
+				&__header
+					gap: 16px
+					justify-content: initial
+					margin-bottom: 24px
+					.sorting:last-child
+						display: flex
+					#sorting_menu.menu
+						top: 90px
+						left: 0
+				&__pagination
+					margin-top: 27px
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px)
+@media only screen and (max-width: 578px)
+	.filter .content-filter
+		top: 238px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px)
@@ -25,47 +49,6 @@
 		margin: 32px 0 101px
 		&-wrap
 			gap: 57px
-		.content
-			gap: 16px
-			&-filter
-				display: none
-				width: 282px
-				border: 1px solid $grey-secondary
-				border-radius: 16px
-				padding: 15px
-				&__title
-					font-weight: 600
-					line-height: 36px
-					margin-bottom: -8px
-				&__block
-					margin-top: 23.5px
-					padding-top: 23.5px
-					border-top: 1px solid $grey
-					&.non
-						border-top: none
-						margin-top: 32px
-						padding-top: 0
-					.subtitle
-						color: $grey
-						margin-top: 8px
-					.price
-						position: relative
-						display: block
-						width: 100%
-						height: max-content
-						&-range
-							padding: 46px 0 30px
-						&-field
-							gap: .52083vw
-				.button
-					margin-top: 32px
-			&-result
-				&__header
-					gap: 16px
-					justify-content: initial
-					margin-bottom: 24px
-				&__pagination
-					margin-top: 27px
 		.seo-text
 			font-size: 16px
 			line-height: 19px
