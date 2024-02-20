@@ -73,12 +73,14 @@
 	.reviews
 		&-header .review2
 			margin-right: 363px
-		&-wrap
-			gap: 22px
 
 	.blog
 		min-width: 288px
 		max-width: 288px
+	
+	.carousel
+		&-inner
+			gap: 22px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -158,12 +160,14 @@
 	.reviews
 		&-header .review2
 			margin-right: 79px
-		&-wrap
-			gap: 16px
 	
 	.blog
 		min-width: 307px
 		max-width: 307px
+
+	.carousel
+		&-inner
+			gap: 16px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
@@ -345,10 +349,6 @@
 		&_list
 			gap: 30px
 
-	.card1
-		&_list
-			gap: 8px
-
 	.card2
 		.card
 			min-width: 318px
@@ -410,5 +410,8 @@
 			.review2
 				margin-right: auto
 		&-wrap
-			gap: 8px
 			margin-top: 24px
+
+	.carousel
+		&-inner
+			gap: 8px

@@ -1339,6 +1339,7 @@ p {
 .search-text, .search-date {
   background-color: #F7F7FD;
   border-radius: 4px;
+  transition: all 0.3s ease-in-out;
 }
 .search-text::-moz-placeholder, .search-date::-moz-placeholder {
   color: #A1A1A1;
@@ -1353,6 +1354,11 @@ p {
 .search-date {
   width: calc((100% - 708px - 24px) / 2);
   padding: 16px 20px;
+}
+.search-date:hover, .search-date:focus, .search-date:active {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  border: 1px solid #03306B;
 }
 .search .button {
   width: 221px;
@@ -1480,10 +1486,61 @@ p {
   display: none;
 }
 .menu-wrap {
-  padding: 16px;
   background-color: #FFF;
   border-radius: 8px;
   box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.25);
+  padding: 16px;
+}
+
+.calendar {
+  display: none;
+  position: absolute;
+  z-index: 4;
+  width: 360px;
+  background-color: #FFF;
+  border-radius: 16px;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.25);
+  padding: 12px;
+  overflow: hidden;
+}
+.calendar-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.calendar-buttons .button {
+  width: 32px;
+  color: #FFF;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+.calendar-body {
+  border-collapse: collapse;
+  width: 100%;
+}
+.calendar-title, .calendar-item {
+  padding: 5px;
+  border: 1px solid #D4D4D4;
+  text-align: center;
+  vertical-align: top;
+}
+.calendar-item:nth-child(1) {
+  color: red;
+}
+.calendar-footer {
+  border-top: 1px solid #A1A1A1;
+  margin-top: 24px;
+  padding-top: 24px;
+}
+.calendar-footer select {
+  cursor: pointer;
+  display: inline-block;
+  zoom: 1;
+  background-color: #FFF;
+  color: #585858;
+  border: 1px solid #BFC5C5;
+  border-radius: 3px;
+  padding: 5px 1em;
 }
 
 .location {
@@ -1563,7 +1620,7 @@ p {
 .price {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 5px;
   height: 29px;
 }
@@ -1602,9 +1659,6 @@ p {
 
 .card1-wrap {
   margin-top: 24px;
-}
-.card1_list {
-  gap: 30px;
 }
 .card1 .card {
   min-width: 282px;
@@ -1917,6 +1971,14 @@ p {
   display: flex;
   gap: 30px;
   transition: all 0.3s;
+}
+.carousel-item {
+  cursor: grabbing;
+}
+.carousel-item.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: -webkit-grabbing;
+  transform: scale(1.02);
 }
 
 /* Large Devices, Wide Screens */
@@ -2654,12 +2716,12 @@ p {
   .reviews-header .review2 {
     margin-right: 363px;
   }
-  .reviews-wrap {
-    gap: 22px;
-  }
   .blog {
     min-width: 288px;
     max-width: 288px;
+  }
+  .carousel-inner {
+    gap: 22px;
   }
 }
 /* Medium Devices, Desktops */
@@ -2753,12 +2815,12 @@ p {
   .reviews-header .review2 {
     margin-right: 79px;
   }
-  .reviews-wrap {
-    gap: 16px;
-  }
   .blog {
     min-width: 307px;
     max-width: 307px;
+  }
+  .carousel-inner {
+    gap: 16px;
   }
 }
 /* Small Devices, Tablets */
@@ -2958,9 +3020,6 @@ p {
   .card_list {
     gap: 30px;
   }
-  .card1_list {
-    gap: 8px;
-  }
   .card2 .card {
     min-width: 318px;
     max-width: 318px;
@@ -3034,7 +3093,9 @@ p {
     margin-right: auto;
   }
   .reviews-wrap {
-    gap: 8px;
     margin-top: 24px;
+  }
+  .carousel-inner {
+    gap: 8px;
   }
 }/*# sourceMappingURL=main.css.map */

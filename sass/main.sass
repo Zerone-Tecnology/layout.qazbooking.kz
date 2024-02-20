@@ -515,6 +515,7 @@ p
 	&-date
 		background-color: $input
 		border-radius: 4px
+		transition: all 0.3s ease-in-out
 		&::placeholder
 			color: $grey
 	&-text
@@ -523,6 +524,12 @@ p
 	&-date
 		width: calc(calc(100% - calc(487px + 221px) - 24px) / 2)
 		padding: 16px 20px
+		&:hover, 
+		&:focus,
+		&:active
+			transform: scale(1.05)
+			-webkit-transform: scale(1.05)
+			border: 1px solid $accent
 	.button
 		width: 221px
 		&-text
@@ -623,10 +630,54 @@ p
 	position: absolute
 	display: none
 	&-wrap
-		padding: 16px
 		background-color: $white
 		border-radius: 8px
 		box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
+		padding: 16px
+
+.calendar
+	display: none
+	position: absolute
+	z-index: 4
+	width: 360px
+	background-color: $white
+	border-radius: 16px
+	box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .25)
+	padding: 12px
+	overflow: hidden
+	&-buttons
+		display: flex
+		justify-content: space-between
+		margin: 8px 0
+		.button
+			width: 32px
+			color: $white
+			border-radius: 4px
+			padding: 5px 10px
+	&-body
+		border-collapse: collapse
+		width: 100%
+	&-title,
+	&-item
+		padding: 5px
+		border: 1px solid $grey-secondary
+		text-align: center
+		vertical-align: top
+	&-item:nth-child(1)
+		color: red
+	&-footer
+		border-top: 1px solid $grey
+		margin-top: 24px
+		padding-top: 24px
+		select
+			cursor: pointer
+			display: inline-block
+			zoom: 1
+			background-color: $white
+			color: #585858
+			border: 1px solid #BFC5C5
+			border-radius: 3px
+			padding: 5px 1em
 
 .location
 	display: flex
@@ -691,7 +742,7 @@ p
 .price
 	display: flex
 	align-items: center
-	justify-content: end
+	justify-content: flex-end
 	gap: 5px
 	height: 29px
 	&-text
@@ -722,8 +773,6 @@ p
 .card1
 	&-wrap
 		margin-top: 24px
-	&_list
-		gap: 30px
 	.card
 		min-width: 282px
 		max-width: 282px
@@ -974,5 +1023,11 @@ p
 		display: flex
 		gap: 30px
 		transition: all .3s
+	&-item
+		cursor: grabbing
+		&.active
+			background-color: rgba(255, 255, 255, .3)
+			cursor: -webkit-grabbing
+			transform: scale(1.02)
 
 @import media
