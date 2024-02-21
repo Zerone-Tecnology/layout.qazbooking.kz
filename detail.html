@@ -176,7 +176,7 @@
 							<div class="review2">
 								<div>
 									<p class="title bigtext">453 отзывов</з>
-									<p class="text bigtext">Написать отзыв</з>
+									<p class="text bigtext btn" onclick="openModal('review_write')">Написать отзыв</з>
 								</div>
 
 								<div class="rating">
@@ -207,7 +207,7 @@
 						<img
 							src="assets/images/tour1.jpeg"
 							alt="Tour 1"
-							class="place-galery__main image desktop"
+							class="place-galery__main image btn desktop"
 							onclick="openModal('galery')"
 						/>
 		
@@ -215,31 +215,31 @@
 							<img
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
-								class="image mobile"
+								class="image btn mobile"
 								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
-								class="image"
+								class="image btn"
 								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour2.jpeg"
 								alt="Tour 2"
-								class="image"
+								class="image btn"
 								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour3.jpeg"
 								alt="Tour 3"
-								class="image"
+								class="image btn"
 								onclick="openModal('galery')"
 							/>
 							<img
 								src="assets/images/tour4.jpeg"
 								alt="Tour 4"
-								class="image"
+								class="image btn"
 								onclick="openModal('galery')"
 							/>
 						</div>
@@ -817,7 +817,7 @@
 							
 								<div>
 									<p class="title bigtext">453 отзывов</з>
-									<p class="text bigtext">Написать отзыв</з>
+									<p class="text bigtext btn" onclick="openModal('review_write')">Написать отзыв</з>
 								</div>
 							</div>
 							
@@ -1297,6 +1297,59 @@
 						tabindex="0"
 					/>
 				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_write" class="modal">
+		<div class="modal-background" onclick="closeModal('review_write')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('review_write')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<h4 class="title">Написать отзыв</h4>
+
+			<div class="modal-wrap__box vertical">
+				<div class="vertical">
+					<p class="text">Оценить сервис</p>
+					
+					<div class="stars horizontal">
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+						<img src="assets/icons/star.svg" alt="Star" />
+					</div>
+				</div>
+
+				<div class="input-box vertical">
+					<textarea placeholder="Напишите отзыв" class="input"></textarea>
+					<p class="label">0/200</p>
+				</div>
+
+				<div class="button" onclick="closeModal('review_write'), openModal('review_send')">
+					<p class="button-text">Отправить</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="review_send" class="modal">
+		<div class="modal-background" onclick="closeModal('review_send')"></div>
+
+		<div class="modal-wrap vertical center">
+			<div class="close btn" onclick="closeModal('review_send')">
+				<img src="assets/icons/close.svg" alt="Close" />
+			</div>
+
+			<img src="assets/icons/star-square.svg" alt="Star" />
+			<h4 class="title">Ваш отзыв отправлен</h4>
+			<p class="text">Отзыв скоро появится на странице. Спасибо за обратную связь.</p>
+
+			<div class="button" onclick="closeModal('review_send')">
+				<p class="button-text">Закрыть</p>
 			</div>
 		</div>
 	</div>

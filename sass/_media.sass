@@ -44,10 +44,13 @@
 
 	// COMPONENTS
 	.search
-		&-text
-			width: calc(100% - 174px)
+		&-date
+			min-width: 136px
+			max-width: 136px
+			padding: 16px 8px
 		.button
-			width: 166px
+			min-width: 124px
+			max-width: 124px
 
 	.card4
 		.card
@@ -148,10 +151,22 @@
 
 	// COMPONENTS
 	.search
+		display: grid
+		grid-gap: 10px
+		grid-template-areas: "text text" "date1 date2"
+		height: 148px
 		&-text
-			width: calc(100% - 122px)
+			grid-area: text
+		&-date
+			min-width: -webkit-fill-available
+			max-width: -webkit-fill-available
+			padding: 16px 20px
+			&#from
+				grid-area: date1
+			&#to
+				grid-area: date2
 		.button
-			width: 114px
+			display: none
 
 	.action
 		&_list
@@ -213,12 +228,6 @@
 			margin-bottom: 20px
 
 	// COMPONENTS
-	.search
-		&-text
-			width: calc(100% - 96px)
-		.button
-			width: 88px
-
 	.blog
 		min-width: 41.667vw
 		max-width: 41.667vw

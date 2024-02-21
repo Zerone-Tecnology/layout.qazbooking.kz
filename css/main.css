@@ -1335,7 +1335,6 @@ p {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 8px;
   height: 72px;
   background-color: #FFF;
@@ -1345,6 +1344,7 @@ p {
 }
 .search-icon {
   position: absolute;
+  top: 26px;
   left: 28px;
 }
 .search-text, .search-date,
@@ -1362,15 +1362,17 @@ p {
   color: #A1A1A1;
 }
 .search-text {
-  width: calc(100% - 541px - 24px);
+  width: -webkit-fill-available;
   padding: 16px 20px 16px 54px;
 }
 .search-date {
-  width: calc((100% - 708px - 24px) / 2);
+  min-width: 160px;
+  max-width: 160px;
   padding: 16px 20px;
 }
 .search .button {
-  width: 221px;
+  min-width: 221px;
+  max-width: 221px;
 }
 .search .button-text {
   font-size: 20px;
@@ -1985,9 +1987,6 @@ p {
     padding-left: 56px;
     padding-right: 56px;
   }
-  .home-wrap .hero-content .search-text {
-    width: calc(100% - 174px);
-  }
   .home-wrap .category-wrap {
     gap: 29px;
   }
@@ -2021,9 +2020,6 @@ p {
   }
   .home-wrap .hero-content__description {
     width: 100%;
-  }
-  .home-wrap .hero-content .search-text {
-    width: calc(100% - 130px);
   }
   .home-wrap .category-wrap {
     gap: 20px;
@@ -2090,9 +2086,6 @@ p {
   }
   .home-wrap .hero-content__description .text {
     -webkit-line-clamp: 3;
-  }
-  .home-wrap .hero-content .search-text {
-    width: 100%;
   }
   .home-wrap .category-wrap {
     gap: 16px;
@@ -2677,11 +2670,14 @@ p {
   .footer-links {
     width: 294px;
   }
-  .search-text {
-    width: calc(100% - 174px);
+  .search-date {
+    min-width: 136px;
+    max-width: 136px;
+    padding: 16px 8px;
   }
   .search .button {
-    width: 166px;
+    min-width: 124px;
+    max-width: 124px;
   }
   .card4 .card-image {
     min-width: 169px;
@@ -2798,11 +2794,28 @@ p {
   .footer-links .zerone {
     margin-top: 48px;
   }
+  .search {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: "text text" "date1 date2";
+    height: 148px;
+  }
   .search-text {
-    width: calc(100% - 122px);
+    grid-area: text;
+  }
+  .search-date {
+    min-width: -webkit-fill-available;
+    max-width: -webkit-fill-available;
+    padding: 16px 20px;
+  }
+  .search-date#from {
+    grid-area: date1;
+  }
+  .search-date#to {
+    grid-area: date2;
   }
   .search .button {
-    width: 114px;
+    display: none;
   }
   .action_list {
     flex-direction: column;
@@ -2863,12 +2876,6 @@ p {
   }
   .main .breadcrumbs {
     margin-bottom: 20px;
-  }
-  .search-text {
-    width: calc(100% - 96px);
-  }
-  .search .button {
-    width: 88px;
   }
   .blog {
     min-width: 41.667vw;

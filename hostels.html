@@ -148,17 +148,20 @@
 					<img
 						src="assets/images/hostels1.png"
 						alt="Hostel 1"
-						class="image active"
+						class="image active btn"
+						onclick="openModal('galery')"
 					/>
 					<img
 						src="assets/images/hostels2.png"
 						alt="Hostel 2"
-						class="image"
+						class="image btn"
+						onclick="openModal('galery')"
 					/>
 					<img
 						src="assets/images/hostels3.png"
 						alt="Hostel 3"
-						class="image"
+						class="image btn"
+						onclick="openModal('galery')"
 					/>
 				</div>
 
@@ -167,17 +170,20 @@
 						<img
 							src="assets/images/hostels1.png"
 							alt="Hostel 1"
-							class="image"
+							class="image btn"
+							onclick="openModal('galery')"
 						/>
 						<img
 							src="assets/images/hostels2.png"
 							alt="Hostel 2"
-							class="image"
+							class="image btn"
+							onclick="openModal('galery')"
 						/>
 						<img
 							src="assets/images/hostels3.png"
 							alt="Hostel 3"
-							class="image"
+							class="image btn"
+							onclick="openModal('galery')"
 						/>
 					</div>
 				</div>
@@ -344,6 +350,92 @@
 				</div>
 				<div class="button secondary" onclick="changeAuth()">
 					<p class="button-text">Войти</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="galery" class="modal">
+		<div class="modal-background" onclick="closeModal('galery')"></div>
+
+		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="closeModal('galery')">
+				<img src="assets/icons/close-white.svg" alt="Close" />
+			</div>
+
+			<h5 class="title">Двухместный номер Делюкс с 1 кроватью</h5>
+
+			<div class="main_image">
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image active"
+				/>
+				<img
+					src="assets/images/arleon2.png"
+					alt="Arleon 2"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon3.png"
+					alt="Arleon 3"
+					class="image"
+				/>
+				<img
+					src="assets/images/arleon4.png"
+					alt="Arleon 4"
+					class="image"
+				/>
+				<img
+					src="assets/images/hostel1.jpeg"
+					alt="Arleon 1"
+					class="image"
+				/>
+			</div>
+
+			<div class="carousel">
+				<div class="carousel-inner" id="modal">
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon2.png"
+						alt="Arleon 2"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Arleon 3"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Arleon 4"
+						class="image carousel-item"
+						tabindex="0"
+					/>
+					<img
+						src="assets/images/hostel1.jpeg"
+						alt="Arleon 1"
+						class="image carousel-item"
+						tabindex="0"
+					/>
 				</div>
 			</div>
 		</div>
