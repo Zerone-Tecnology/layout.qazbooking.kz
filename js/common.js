@@ -232,7 +232,7 @@ function profile(index) {
 }
 
 function initializeCarousel(carouselId) {
-	const $list = document.querySelector.bind(document)(`#${carouselId} .card-galery__mini-inner`);
+	const $list = document.querySelector.bind(document)(`#${carouselId} .carousel-inner`);
 	let active = 1;
 
 	const getSlideIndex = ($slide) => {

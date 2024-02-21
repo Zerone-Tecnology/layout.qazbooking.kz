@@ -1774,14 +1774,10 @@ p {
 .card3 .card-galery__main .image.active {
   opacity: 1;
 }
-.card3 .card-galery__mini {
-  overflow: hidden;
-}
-.card3 .card-galery__mini-inner {
+.card3 .card-galery .carousel-inner {
   gap: 9px;
-  transition: all 0.3s;
 }
-.card3 .card-galery__mini .image {
+.card3 .card-galery .carousel .image {
   width: 88px;
   height: 72px;
   cursor: pointer;
