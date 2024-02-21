@@ -231,10 +231,10 @@ p
 			font-weight: 500
 			white-space: nowrap
 			padding: 10px 8px
-			&::after
-				background-color: $white
-			&:hover::after
-				background-color: #464646
+			// &::after
+			// 	background-color: $white
+			// &:hover::after
+			// 	background-color: #464646
 
 .footer
 	&-wrap
@@ -252,10 +252,10 @@ p
 		width: 259px
 		.text
 			font-weight: 400
-			&::after
-				background-color: #464646
-			&:hover::after
-				background-color: $white
+			// &::after
+			// 	background-color: #464646
+			// &:hover::after
+			// 	background-color: $white
 	&-links
 		.social
 			.text
@@ -267,20 +267,20 @@ p
 			gap: 25px
 			margin-top: 80px
 
-.header,
-.footer
-	&-menu .text
-		position: relative
-		width: fit-content
-		&::after
-			position: absolute
-			left: 0
-			bottom: 0
-			content: ""
-			width: 100%
-			height: 2px
-		&:hover::after
-			transition: all .2s ease
+// .header,
+// .footer
+// 	&-menu .text
+// 		position: relative
+// 		width: fit-content
+// 		&::after
+// 			position: absolute
+// 			left: 0
+// 			bottom: 0
+// 			content: ""
+// 			width: 100%
+// 			height: 2px
+// 		&:hover::after
+// 			transition: all .2s ease
 
 .main
 	margin-top: 183px
@@ -545,21 +545,21 @@ p
 		border-radius: 4px
 		&::placeholder
 			color: $grey
-		&:hover,
-		&:focus,
-		&:active
-			border: 1px solid $accent
+		// &:hover,
+		// &:focus,
+		// &:active
+		// 	border: 1px solid $accent
 	&-text
 		width: calc(100% - calc(320px + 221px) - 24px)
 		padding: 16px 20px 16px 54px
 	&-date
 		width: calc(calc(100% - calc(487px + 221px) - 24px) / 2)
 		padding: 16px 20px
-		&:hover, 
-		&:focus,
-		&:active
-			transform: scale(1.05)
-			-webkit-transform: scale(1.05)
+		// &:hover, 
+		// &:focus,
+		// &:active
+		// 	transform: scale(1.05)
+		// 	-webkit-transform: scale(1.05)
 	.button
 		width: 221px
 		&-text
@@ -1050,12 +1050,6 @@ p
 
 .carousel
 	overflow: hidden
-	cursor: pointer
-	&.active
-		background-color: rgba(255, 255, 255, .3)
-		cursor: grabbing
-		cursor: -webkit-grabbing
-		transform: scale(1.02)
 	&-inner
 		display: flex
 		gap: 30px

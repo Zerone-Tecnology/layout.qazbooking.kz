@@ -67,10 +67,6 @@
 .home-wrap .category-block {
   min-width: 140px;
 }
-.home-wrap .category-block:hover .icon {
-  margin-bottom: -12px;
-  transform: scale(1.05);
-}
 .home-wrap .category-block .icon {
   width: 100%;
   height: 140px;
@@ -408,6 +404,7 @@
   gap: 24px;
 }
 .detail .place-preview__top {
+  justify-content: space-between;
   gap: 55px;
 }
 .detail .place-preview__bottom {
@@ -1007,12 +1004,6 @@ p {
   white-space: nowrap;
   padding: 10px 8px;
 }
-.header-menu .text::after {
-  background-color: #FFF;
-}
-.header-menu .text:hover::after {
-  background-color: #464646;
-}
 
 .footer-wrap {
   display: grid;
@@ -1034,12 +1025,6 @@ p {
 .footer-menu .text {
   font-weight: 400;
 }
-.footer-menu .text::after {
-  background-color: #464646;
-}
-.footer-menu .text:hover::after {
-  background-color: #FFF;
-}
 .footer-links .social .text {
   font-weight: 500;
 }
@@ -1050,26 +1035,6 @@ p {
 .footer-links .zerone {
   gap: 25px;
   margin-top: 80px;
-}
-
-.header-menu .text,
-.footer-menu .text {
-  position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.header-menu .text::after,
-.footer-menu .text::after {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 2px;
-}
-.header-menu .text:hover::after,
-.footer-menu .text:hover::after {
-  transition: all 0.2s ease;
 }
 
 .main {
@@ -1396,9 +1361,6 @@ p {
 .search-text::placeholder, .search-date::placeholder {
   color: #A1A1A1;
 }
-.search-text:hover, .search-text:focus, .search-text:active, .search-date:hover, .search-date:focus, .search-date:active {
-  border: 1px solid #03306B;
-}
 .search-text {
   width: calc(100% - 541px - 24px);
   padding: 16px 20px 16px 54px;
@@ -1406,10 +1368,6 @@ p {
 .search-date {
   width: calc((100% - 708px - 24px) / 2);
   padding: 16px 20px;
-}
-.search-date:hover, .search-date:focus, .search-date:active {
-  transform: scale(1.05);
-  -webkit-transform: scale(1.05);
 }
 .search .button {
   width: 221px;
@@ -2018,13 +1976,6 @@ p {
 
 .carousel {
   overflow: hidden;
-  cursor: pointer;
-}
-.carousel.active {
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: grabbing;
-  cursor: -webkit-grabbing;
-  transform: scale(1.02);
 }
 .carousel-inner {
   display: flex;
@@ -2305,12 +2256,6 @@ p {
   }
   .filter .content-result__pagination {
     margin-top: 27px;
-  }
-}
-/* Small Devices, Tablets */
-@media only screen and (max-width: 578px) {
-  .filter .content-filter {
-    top: 238px;
   }
 }
 /* Extra Small Devices, Phones */
@@ -2770,6 +2715,13 @@ p {
   .blog {
     min-width: 288px;
     max-width: 288px;
+  }
+  .carousel {
+    cursor: grab;
+  }
+  .carousel.active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
   }
   .carousel-inner {
     gap: 22px;
