@@ -1,7 +1,7 @@
 // Variables
-const d = document
-const $q = d.querySelectorAll.bind(d)
-const $g = d.querySelector.bind(d)
+const d = document;
+const $q = d.querySelectorAll.bind(d);
+const $g = d.querySelector.bind(d);
 
 // Header
 let prevScrollPosition = window.pageYOffset;
@@ -69,7 +69,7 @@ function showCalendar(month, year) {
 	selectYear.value = year;
 	selectMonth.value = month;
 
-	table = $q('#calendar_body');
+	table = $g('#calendar_body');
 	table.innerHTML = '';
 
 	// creating all cells
@@ -83,7 +83,7 @@ function showCalendar(month, year) {
 				cellText = d.createTextNode('');
 				cell.appendChild(cellText);
 				row.appendChild(cell);
-			} else if (date > daysInMonth(month, year)) {
+			} else if (date >	 daysInMonth(month, year)) {
 				break;
 			} else {
 				cell = d.createElement('td');

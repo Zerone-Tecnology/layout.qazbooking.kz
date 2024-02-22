@@ -49,7 +49,7 @@
 			min-width: 136px
 			max-width: 136px
 			padding: 16px 8px
-		.button
+		.button#search_button
 			min-width: 124px
 			max-width: 124px
 
@@ -153,9 +153,10 @@
 	// COMPONENTS
 	.search
 		display: grid
-		grid-gap: 10px
+		grid-gap: 8px
 		grid-template-areas: "text text" "date1 date2"
-		height: 148px
+		height: fit-content
+		max-height: 136px
 		&-text
 			grid-area: text
 		&-date
@@ -334,8 +335,6 @@
 	.search
 		&-text
 			width: 100%
-		.button
-			display: none
 
 	.author,
 	.date
