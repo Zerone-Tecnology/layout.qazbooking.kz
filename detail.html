@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="handleModal('auth')">
+				<button type="submit" class="button" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -444,7 +444,7 @@
 															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<button class="button" type="submit">
+														<button type="submit" class="button">
 															<p class="button-text">Связаться</p>
 														</button>
 													</div>
@@ -573,7 +573,7 @@
 															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<button class="button" type="submit">
+														<button type="submit" class="button">
 															<p class="button-text">Связаться</p>
 														</button>
 													</div>
@@ -702,7 +702,7 @@
 															<p class="price-description">цена за 1 человека</p>
 														</div>
 
-														<button class="button" type="submit">
+														<button type="submit" class="button">
 															<p class="button-text">Связаться</p>
 														</button>
 													</div>
@@ -747,7 +747,7 @@
 									<p class="advantages-text">Парк рядом</p>
 								</div>
 
-								<button class="button" type="submit">
+								<button type="submit" class="button">
 									<p class="button-text">Позвонить</p>
 								</button>
 							</div>
@@ -1187,7 +1187,7 @@
 		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="handleModal('auth')">
+			<div class="close center btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1219,7 +1219,7 @@
 		<div class="modal-background" onclick="handleModal('galery')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="handleModal('galery')">
+			<div class="close center btn" onclick="handleModal('galery')">
 				<img src="assets/icons/close-white.svg" alt="Close" />
 			</div>
 
@@ -1300,11 +1300,11 @@
 				</div>
 			</div>
 
-			<div class="modal-buttons">
-				<div class="btn">
+			<div class="modal-buttons horizontal">
+				<div class="btn center">
 					<img src="assets/icons/chevron-white.svg" alt="Back" />
 				</div>
-				<div class="btn">
+				<div class="btn center">
 					<img src="assets/icons/chevron-white.svg" alt="Next" />
 				</div>
 			</div>
@@ -1315,7 +1315,7 @@
 		<div class="modal-background" onclick="handleModal('review_write')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="handleModal('review_write')">
+			<div class="close center btn" onclick="handleModal('review_write')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1350,7 +1350,7 @@
 		<div class="modal-background" onclick="handleModal('review_send')"></div>
 
 		<div class="modal-wrap vertical center">
-			<div class="close btn" onclick="handleModal('review_send')">
+			<div class="close center btn" onclick="handleModal('review_send')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1368,12 +1368,9 @@
 		<div class="modal-background" onclick="handleModal('review')"></div>
 
 		<div class="modal-wrap vertical">
-			<img
-				src="assets/icons/close-grey.svg"
-				alt="Close"
-				class="close btn"
-				onclick="handleModal('review')"
-			/>
+			<div class="close center btn" onclick="handleModal('review')">
+				<img src="assets/icons/close-grey.svg" alt="Close" />
+			</div>
 
 			<h4 class="modal-title">Хостел Арлеон</h4>
 

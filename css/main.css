@@ -723,9 +723,6 @@
   position: absolute;
 }
 .modal-wrap .close {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #FFF;
   border-radius: 4px;
 }
@@ -742,9 +739,6 @@
 }
 .modal-title {
   line-height: 36px;
-}
-.modal-buttons {
-  display: flex;
 }
 
 #auth .modal-wrap {
@@ -923,9 +917,6 @@
 }
 #galery .modal-buttons .btn {
   top: 39.5178vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -2122,6 +2113,7 @@ p {
   .home-wrap .category-block__icon {
     height: 156px;
   }
+  .home-wrap .category,
   .home-wrap .popular,
   .home-wrap .reviews,
   .home-wrap .blogs {

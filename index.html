@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="handleModal('auth')">
+				<button type="submit" class="button" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -200,7 +200,7 @@
 						</div>
 						<script>generateCalendar()</script>
 
-						<button class="button" type="submit">
+						<button type="submit" class="button">
 							<div class="button-text">Поиск</div>
 						</button>
 					</form>
@@ -1238,10 +1238,7 @@
 	<footer class="footer">
 		<div class="footer-wrap box">
 			<div class="footer-wrap__line">
-				<img
-					src="assets/icons/logo-white.svg"
-					alt="QazBooking"
-				/>
+				<img src="assets/icons/logo-white.svg" alt="QazBooking" />
 			</div>
 
 			<div class="footer-wrap__line horizontal">
@@ -1316,7 +1313,7 @@
 		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="handleModal('auth')">
+			<div class="close center btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1334,9 +1331,9 @@
 			</div>
 
 			<div class="modal-wrap__line vertical">
-				<div class="button">
+				<button type="submit" class="button">
 					<p class="button-text">Регистрация</p>
-				</div>
+				</button>
 				<div class="button secondary" onclick="changeAuth()">
 					<p class="button-text">Войти</p>
 				</div>
@@ -1348,12 +1345,9 @@
 		<div class="modal-background" onclick="handleModal('review')"></div>
 
 		<div class="modal-wrap vertical">
-			<img
-				src="assets/icons/close-grey.svg"
-				alt="Close"
-				class="close btn"
-				onclick="handleModal('review')"
-			/>
+			<div class="close center btn" onclick="handleModal('review')">
+				<img src="assets/icons/close-grey.svg" alt="Close" />
+			</div>
 
 			<h4 class="modal-title">Хостел Арлеон</h4>
 
