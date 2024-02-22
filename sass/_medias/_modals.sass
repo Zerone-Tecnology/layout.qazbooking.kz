@@ -1,0 +1,92 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+	#location .modal-wrap
+		width: 848px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	#location .modal-wrap
+		width: 584px
+
+/* Small Devices, Tablets, Phones */
+@media (max-width: 768px) and (orientation: portrait)
+	#auth,
+	#review_write,
+	#review_send,
+	#review,
+	#location
+		.modal-wrap
+			width: 375px
+
+	#review_write,
+	#review_send
+		.modal-wrap
+			height: 100vh
+			max-height: 718px
+
+	#review_write
+		.modal
+			&-wrap
+				gap: 21px
+				padding: 65px 16px 0
+				&__box
+					gap: 32px
+			&-title
+				font-size: 20px
+
+	#review_send
+		.modal
+			&-wrap
+				padding: 148px 12px 0
+				.button
+					width: 129px
+			&-title,
+			&-text
+				text-align: center
+			&-title
+				font-weight: 400
+				line-height: 36px
+				margin-top: 28px
+			&-text
+				color: $grey
+				margin: 7px 0 45px
+
+	#review
+		.modal
+			&-wrap
+				padding: 24px 16px 26.51px
+				.carousel-item
+					width: 109px
+
+	#galery
+		.modal-wrap
+			padding: 53px 16px
+			.close
+				top: 20px
+				right: 20px
+				width: 16px
+				height: 16px
+			.counter
+				display: block
+			.title
+				margin: 55px 0 25px
+			.main_image
+				display: none
+			.carousel-item
+				min-width: 359px
+				width: 359px
+				height: 200px
+			.buttons
+				gap: 49px
+				margin: 50px auto 0
+				.btn
+					position: static
+
+@media (max-width: 375px)
+	#auth,
+	#review_write,
+	#review_send,
+	#review,
+	#location
+		.modal-wrap
+			width: 100%

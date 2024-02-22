@@ -223,7 +223,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('review')"
+								onclick="handleModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -253,7 +253,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('review')"
+								onclick="handleModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -283,7 +283,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('review')"
+								onclick="handleModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -313,7 +313,7 @@
 								src="assets/icons/hdots.svg"
 								alt="More"
 								class="review-button btn"
-								onclick="openModal('review')"
+								onclick="handleModal('review')"
 							/>
 							<h5 class="review-title bigtext">Хостел Арлеон</h5>
 
@@ -598,34 +598,36 @@
 
 	<!-- MODAL -->
 	<div id="review" class="modal">
-		<div class="modal-background" onclick="closeModal('review')"></div>
+		<div class="modal-background" onclick="handleModal('review')"></div>
 
 		<div class="modal-wrap vertical">
 			<img
 				src="assets/icons/close-grey.svg"
 				alt="Close"
-				class="btn"
-				onclick="closeModal('review')"
+				class="close btn"
+				onclick="handleModal('review')"
 			/>
 
-			<h4 class="modal-name">Хостел Арлеон</h4>
+			<h4 class="modal-title">Хостел Арлеон</h4>
 
-			<div class="modal-galery horizontal">
-				<img
-					src="assets/images/arleon2.png"
-					alt="Hostel 2"
-					class="modal-galery__image"
-				/>
-				<img
-					src="assets/images/arleon3.png"
-					alt="Hostel 3"
-					class="modal-galery__image"
-				/>
-				<img
-					src="assets/images/arleon4.png"
-					alt="Hostel 4"
-					class="modal-galery__image"
-				/>
+			<div class="carousel">
+				<div class="carousel-inner">
+					<img
+						src="assets/images/arleon2.png"
+						alt="Hostel 2"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Hostel 3"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Hostel 4"
+						class="carousel-item"
+					/>
+				</div>
 			</div>
 
 			<a href="hostels.html" class="modal-button horizontal horizontal-inline">

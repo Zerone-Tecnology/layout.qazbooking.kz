@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="openModal('auth')">
+				<button class="button" type="submit" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -423,7 +423,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -443,7 +445,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -498,7 +500,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -518,7 +522,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -573,7 +577,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -593,7 +599,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -648,7 +654,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -668,7 +676,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -723,7 +731,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -743,7 +753,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -798,7 +808,9 @@
 								<div class="card-info">
 									<div class="card-info__left vertical">
 										<div class="top horizontal horizontal-inline">
-											<h4 class="top-title bigtext">Grand hostel</h4>
+											<a href="detail.html">
+												<h4 class="top-title bigtext">Grand hostel</h4>
+											</a>
 											<h4></h4>
 
 											<img
@@ -818,7 +830,7 @@
 												<img src="assets/icons/location2.svg" alt="Location" />
 												<p class="location-text bigtext">Алматинская обл.</p>
 											</div>
-											<p class="locations-button btn" onclick="openModal('location')">Показать на карте</p>
+											<p class="locations-button btn" onclick="handleModal('location')">Показать на карте</p>
 										</div>
 
 										<div class="reviews horizontal horizontal-inline wrap">
@@ -992,10 +1004,10 @@
 
 	<!-- MODAL -->
 	<div id="auth" class="modal">
-		<div class="modal-background" onclick="closeModal('auth')"></div>
+		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('auth')">
+			<div class="close btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1024,22 +1036,22 @@
 	</div>
 
 	<div id="location" class="modal">
-		<div class="modal-background" onclick="closeModal('location')"></div>
+		<div class="modal-background" onclick="handleModal('location')"></div>
 
 		<div class="modal-wrap vertical">
+			<div class="close btn" onclick="handleModal('location')">
+				<img src="assets/icons/close-big.svg" alt="Close" />
+			</div>
+
 			<img
 				src="assets/images/map.png"
 				alt="Map"
-				class="image"
+				class="modal-map"
 			/>
 
 			<div class="location">
 				<img src="assets/icons/location4.svg" alt="Location" />
 				<p class="location-text bigtext">г. Алматы, ул. Тимирязева, 15</p>
-			</div>
-
-			<div class="close btn" onclick="closeModal('location')">
-				<img src="assets/icons/close-big.svg" alt="Close" />
 			</div>
 
 			<div class="locations-popup">

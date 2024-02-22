@@ -1,0 +1,231 @@
+.modal
+	display: none
+	&-background,
+	&-wrap
+		position: fixed
+	&-background 
+		z-index: 7
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #1A1A1C80
+	&-wrap
+		z-index: 7
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		border-radius: 16px
+		background-color: $white
+		overflow: hidden
+		.btn,
+		.close,
+		.location,
+		.locations-popup
+			position: absolute
+		.close
+			display: flex
+			align-items: center
+			justify-content: center
+			background-color: $white
+			border-radius: 4px
+		.location
+			width: 282px
+			height: 35px
+			gap: 7px
+			background-color: $white
+			padding: 8px
+			&-text
+				font-weight: 700
+				color: $dark
+	&-title
+		line-height: 36px
+	&-buttons
+		display: flex
+
+#auth
+	.modal-wrap
+		align-items: center
+		gap: 52px
+		width: 388px
+		padding: 24px
+		.close
+			top: 12px
+			right: 12px
+			width: 24px
+			height: 24px
+		&__line
+			gap: 16px
+			width: 100%
+			.input
+				width: 100%
+				padding: 24px 20px 8px
+				&-box
+					position: relative
+					.label
+						position: absolute
+						top: 8px
+						left: 20px
+						font-size: 12px
+						font-weight: 400
+						line-height: 16px
+						color: #9D99AC
+			.button
+				height: 40px
+				&-text
+					font-size: 14px
+					line-height: 16px
+
+#review_write,
+#review_send,
+#location
+	.modal-wrap .close
+		top: 20px
+		right: 20px
+
+#review_write,
+#review_send
+	.modal
+		&-wrap
+			width: 652px
+			.close
+				width: 24px
+				height: 24px
+		&-title
+			font-weight: 400
+
+#review_write
+	.modal
+		&-wrap
+			gap: 39px
+			padding: 31px 42px 53px
+		&-box
+			gap: 24px
+			.stars
+				gap: 5px
+			.input
+				width: 100%
+				height: 138px
+				padding: 8px 20px
+				&-box
+					gap: 8px
+					.label
+						font-size: 12px
+						line-height: 16px
+						text-align: right
+						color: #AAA
+			.button
+				width: 145px
+		&-text
+			line-height: 22px
+			margin-bottom: 5px
+
+#review_send
+	.modal
+		&-wrap
+			padding: 69px 150px 74px
+			.button
+				width: 129px
+		&-title,
+		&-text
+			text-align: center
+		&-title
+			margin-top: 28px
+		&-text
+			color: $grey
+			margin: 7px 0 45px
+
+#review
+	.modal
+		&-wrap
+			gap: 29px
+			width: 754px
+			padding: 35px 40px 35.51px
+			.close
+				top: 10.5px
+				right: 9.5px
+			.carousel-item
+				width: 212px
+				height: 125.49px
+				border-radius: 10.141px
+		&-title
+			font-weight: 500
+		&-button
+			gap: 8px
+			&__text
+				line-height: 24px
+		&-info
+			gap: 23px
+			&__text
+				font-size: 18px
+				line-height: 22px
+			&__bottom
+				justify-content: space-between
+
+#galery
+	.modal
+		&-wrap
+			width: 100vw
+			height: 100vh
+			background-color: #1A1A1C
+			padding: 14px 12px 12px
+			border-radius: 0
+			.close
+				top: 40px
+				right: 40px
+				width: 20px
+				height: 21px
+				background-color: transparent
+			.main_image
+				position: relative
+				width: 66.398%
+				height: 68.7631vh
+				margin: 2.201257vh auto 6.18449vh
+				.image
+					position: absolute
+					width: 100%
+					height: 100%
+			.carousel-item
+				width: 247px
+				height: 17.2956vh
+				border-radius: 12px
+		&-buttons .btn
+			top: 39.5178vh
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 32px
+			height: 32px
+			border-radius: 50%
+			background-color: #2A2A2A
+			&:first-child
+				left: 7.14286vw
+				transform: rotate(180deg)
+			&:last-child
+				right: 7.14286vw
+		&-counter,
+		&-modal-title
+			color: $white
+			font-weight: 600
+		&-counter
+			display: none
+
+#location
+	.modal
+		&-wrap
+			width: 1130px
+			height: 100vh
+			max-height: 718px
+			.close
+				width: 32px
+				height: 32px
+			.location
+				top: 20px
+				left: 20px
+			.locations-popup
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+		&-map
+			width: 100%
+			height: 100%

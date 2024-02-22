@@ -8,7 +8,7 @@ let prevScrollPosition = window.pageYOffset;
 function moveHeader () {
   const currentScrollPos = window.pageYOffset;
 	
-	let header = d.querySelector('header');
+	let header = $g('header');
 	if (prevScrollPosition < currentScrollPos)
 		header.classList.add('active');
 	else
@@ -19,7 +19,7 @@ function moveHeader () {
 window.addEventListener('scroll', moveHeader);
 
 // Calendar
-const dateInputs = d.querySelectorAll('.search-date');
+const dateInputs = $q('.search-date');
 dateInputs.forEach(dateInput => {
   if (dateInput) {
     dateInput.addEventListener('click', function(event) {
@@ -34,12 +34,12 @@ function generateCalendar() {
 	today = new Date();
 	currentMonth = today.getMonth();
 	currentYear = today.getFullYear();
-	selectYear = d.getElementById('calendar_year');
-	selectMonth = d.getElementById('calendar_month');
+	selectYear = $g('#calendar_year');
+	selectMonth = $g('#calendar_month');
 
-	title = d.getElementById('calendar-title');
-	d.getElementById('calendar_days').innerHTML = generateTableHeader(days);
-	d.getElementById('calendar_year').innerHTML = generateYear(2023, 2030);
+	title = $g('#calendar-title');
+	$g('#calendar_days').innerHTML = generateTableHeader(days);
+	$g('#calendar_year').innerHTML = generateYear(2023, 2030);
 
 	showCalendar(currentMonth, currentYear);
 }
@@ -69,7 +69,7 @@ function showCalendar(month, year) {
 	selectYear.value = year;
 	selectMonth.value = month;
 
-	table = d.getElementById('calendar_body');
+	table = $q('#calendar_body');
 	table.innerHTML = '';
 
 	// creating all cells
@@ -127,22 +127,21 @@ function daysInMonth(iMonth, iYear) {
 }
 
 // Modal
-function openModal(id) {
-  let modal = d.getElementById(id);
-  modal.classList.add('show');
-	d.body.style.overflow = 'hidden';
-}
-
-function closeModal(id) {
-  let modal = d.getElementById(id);
-  modal.classList.remove('show');
-	d.body.style.overflow = 'auto';
+function handleModal(id) {
+	let modal = $g(`#${id}`);
+	if (modal.classList.length > 1) {
+		modal.classList.remove('show');
+		d.body.style.overflow = 'auto';
+	} else {
+		modal.classList.add('show');
+		d.body.style.overflow = 'hidden';
+	}
 }
 
 // Authentification
 let activeAuth = 0;
 function changeAuth() {
-	const container = d.getElementById('auth');
+	const container = $g('#auth');
 	const title = container.querySelector('.title');
 	const buttons = container.querySelectorAll('.button-text');
 	if (activeAuth === 0) {
@@ -160,7 +159,7 @@ function changeAuth() {
 
 // Menus
 function handleMenu(id) {
-	let menu = d.getElementById(id);
+	let menu = $g(`#${id}`);
 	if (menu.classList.length > 1)
 		menu.classList.remove('show');
 	else
@@ -202,7 +201,7 @@ d.addEventListener('DOMContentLoaded', function() {
 // Carousel / Slider
 let activeSlider = 0;
 function slider(id) {
-	const container = d.getElementById(id);
+	const container = $g(`#${id}`);
 	const inner = container.querySelector('.carousel-inner');
 	const list = container.getElementsByClassName('carousel-item');
 	const width = list[0].offsetWidth;
@@ -211,7 +210,6 @@ function slider(id) {
 
 	function updateTransform() {
 		const newPosition = activeSlider * (width + 30);
-		console.log(inner);
 		inner.style.transform = `translateX(-${newPosition}px)`;
 	}
 	function prevSlide() {
@@ -229,7 +227,7 @@ function slider(id) {
 }
 
 function dragSlider(id) {
-	const container = d.getElementById(id);
+	const container = $g(`#${id}`);
 	let isDown = false;
 	let startX;
 	let scrollLeft;

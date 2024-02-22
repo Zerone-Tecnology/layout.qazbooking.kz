@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="openModal('auth')">
+				<button class="button" type="submit" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -324,10 +324,10 @@
 
 	<!-- MODAL -->
 	<div id="auth" class="modal">
-		<div class="modal-background" onclick="closeModal('auth')"></div>
+		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('auth')">
+			<div class="close btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 

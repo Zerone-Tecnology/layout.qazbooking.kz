@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="openModal('auth')">
+				<button class="button" type="submit" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -149,19 +149,19 @@
 						src="assets/images/hostels1.png"
 						alt="Hostel 1"
 						class="image active btn"
-						onclick="openModal('galery')"
+						onclick="handleModal('galery')"
 					/>
 					<img
 						src="assets/images/hostels2.png"
 						alt="Hostel 2"
 						class="image btn"
-						onclick="openModal('galery')"
+						onclick="handleModal('galery')"
 					/>
 					<img
 						src="assets/images/hostels3.png"
 						alt="Hostel 3"
 						class="image btn"
-						onclick="openModal('galery')"
+						onclick="handleModal('galery')"
 					/>
 				</div>
 
@@ -171,19 +171,19 @@
 							src="assets/images/hostels1.png"
 							alt="Hostel 1"
 							class="image btn"
-							onclick="openModal('galery')"
+							onclick="handleModal('galery')"
 						/>
 						<img
 							src="assets/images/hostels2.png"
 							alt="Hostel 2"
 							class="image btn"
-							onclick="openModal('galery')"
+							onclick="handleModal('galery')"
 						/>
 						<img
 							src="assets/images/hostels3.png"
 							alt="Hostel 3"
 							class="image btn"
-							onclick="openModal('galery')"
+							onclick="handleModal('galery')"
 						/>
 					</div>
 				</div>
@@ -324,10 +324,10 @@
 
 	<!-- MODAL -->
 	<div id="auth" class="modal">
-		<div class="modal-background" onclick="closeModal('auth')"></div>
+		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('auth')">
+			<div class="close btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -356,14 +356,15 @@
 	</div>
 
 	<div id="galery" class="modal">
-		<div class="modal-background" onclick="closeModal('galery')"></div>
+		<div class="modal-background" onclick="handleModal('galery')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('galery')">
+			<div class="close btn" onclick="handleModal('galery')">
 				<img src="assets/icons/close-white.svg" alt="Close" />
 			</div>
 
-			<h5 class="title">Двухместный номер Делюкс с 1 кроватью</h5>
+			<p class="modal-counter">1/10</p>
+			<h5 class="modal-title">Двухместный номер Делюкс с 1 кроватью</h5>
 
 			<div class="main_image">
 				<img
@@ -399,7 +400,7 @@
 			</div>
 
 			<div class="carousel">
-				<div class="carousel-inner" id="modal">
+				<div class="carousel-inner">
 					<img
 						src="assets/images/arleon4.png"
 						alt="Arleon 4"
@@ -436,6 +437,15 @@
 						class="image carousel-item"
 						tabindex="0"
 					/>
+				</div>
+			</div>
+
+			<div class="modal-buttons">
+				<div class="btn">
+					<img src="assets/icons/chevron-white.svg" alt="Back" />
+				</div>
+				<div class="btn">
+					<img src="assets/icons/chevron-white.svg" alt="Next" />
 				</div>
 			</div>
 		</div>

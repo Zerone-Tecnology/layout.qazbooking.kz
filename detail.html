@@ -83,7 +83,7 @@
 					</div>
 				</div>
 
-				<button class="button" type="submit" onclick="openModal('auth')">
+				<button class="button" type="submit" onclick="handleModal('auth')">
 					<img src="assets/icons/auth.svg" alt="Auth" />
 					<p class="button-text">Войти</p>
 				</button>
@@ -176,7 +176,7 @@
 							<div class="review2">
 								<div>
 									<p class="title bigtext">453 отзывов</з>
-									<p class="text bigtext btn" onclick="openModal('review_write')">Написать отзыв</з>
+									<p class="text bigtext btn" onclick="handleModal('review_write')">Написать отзыв</з>
 								</div>
 
 								<div class="rating">
@@ -208,7 +208,7 @@
 							src="assets/images/tour1.jpeg"
 							alt="Tour 1"
 							class="place-galery__main image btn desktop"
-							onclick="openModal('galery')"
+							onclick="handleModal('galery')"
 						/>
 		
 						<div class="place-galery__secondary wrap scroll">
@@ -216,31 +216,31 @@
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
 								class="image btn mobile"
-								onclick="openModal('galery')"
+								onclick="handleModal('galery')"
 							/>
 							<img
 								src="assets/images/tour1.jpeg"
 								alt="Tour 1"
 								class="image btn"
-								onclick="openModal('galery')"
+								onclick="handleModal('galery')"
 							/>
 							<img
 								src="assets/images/tour2.jpeg"
 								alt="Tour 2"
 								class="image btn"
-								onclick="openModal('galery')"
+								onclick="handleModal('galery')"
 							/>
 							<img
 								src="assets/images/tour3.jpeg"
 								alt="Tour 3"
 								class="image btn"
-								onclick="openModal('galery')"
+								onclick="handleModal('galery')"
 							/>
 							<img
 								src="assets/images/tour4.jpeg"
 								alt="Tour 4"
 								class="image btn"
-								onclick="openModal('galery')"
+								onclick="handleModal('galery')"
 							/>
 						</div>
 					</div>
@@ -817,7 +817,7 @@
 							
 								<div>
 									<p class="title bigtext">453 отзывов</з>
-									<p class="text bigtext btn" onclick="openModal('review_write')">Написать отзыв</з>
+									<p class="text bigtext btn" onclick="handleModal('review_write')">Написать отзыв</з>
 								</div>
 							</div>
 							
@@ -839,7 +839,7 @@
 									src="assets/icons/hdots.svg"
 									alt="More"
 									class="review-button btn"
-									onclick="openModal('review')"
+									onclick="handleModal('review')"
 								/>
 								<h5 class="review-title bigtext">Хостел Арлеон</h5>
 	
@@ -869,7 +869,7 @@
 									src="assets/icons/hdots.svg"
 									alt="More"
 									class="review-button btn"
-									onclick="openModal('review')"
+									onclick="handleModal('review')"
 								/>
 								<h5 class="review-title bigtext">Зона отдыха Оазис</h5>
 	
@@ -899,7 +899,7 @@
 									src="assets/icons/hdots.svg"
 									alt="More"
 									class="review-button btn"
-									onclick="openModal('review')"
+									onclick="handleModal('review')"
 								/>
 								<h5 class="review-title bigtext">Хостел Арион</h5>
 	
@@ -929,7 +929,7 @@
 									src="assets/icons/hdots.svg"
 									alt="More"
 									class="review-button btn"
-									onclick="openModal('review')"
+									onclick="handleModal('review')"
 								/>
 								<h5 class="review-title bigtext">Хостел Арион</h5>
 	
@@ -1184,10 +1184,10 @@
 
 	<!-- MODAL -->
 	<div id="auth" class="modal">
-		<div class="modal-background" onclick="closeModal('auth')"></div>
+		<div class="modal-background" onclick="handleModal('auth')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('auth')">
+			<div class="close btn" onclick="handleModal('auth')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
@@ -1216,14 +1216,15 @@
 	</div>
 
 	<div id="galery" class="modal">
-		<div class="modal-background" onclick="closeModal('galery')"></div>
+		<div class="modal-background" onclick="handleModal('galery')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('galery')">
+			<div class="close btn" onclick="handleModal('galery')">
 				<img src="assets/icons/close-white.svg" alt="Close" />
 			</div>
 
-			<h5 class="title">Двухместный номер Делюкс с 1 кроватью</h5>
+			<p class="modal-counter">1/10</p>
+			<h5 class="modal-title">Двухместный номер Делюкс с 1 кроватью</h5>
 
 			<div class="main_image">
 				<img
@@ -1259,7 +1260,7 @@
 			</div>
 
 			<div class="carousel">
-				<div class="carousel-inner" id="modal">
+				<div class="carousel-inner">
 					<img
 						src="assets/images/arleon4.png"
 						alt="Arleon 4"
@@ -1298,22 +1299,31 @@
 					/>
 				</div>
 			</div>
+
+			<div class="modal-buttons">
+				<div class="btn">
+					<img src="assets/icons/chevron-white.svg" alt="Back" />
+				</div>
+				<div class="btn">
+					<img src="assets/icons/chevron-white.svg" alt="Next" />
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<div id="review_write" class="modal">
-		<div class="modal-background" onclick="closeModal('review_write')"></div>
+		<div class="modal-background" onclick="handleModal('review_write')"></div>
 
 		<div class="modal-wrap vertical">
-			<div class="close btn" onclick="closeModal('review_write')">
+			<div class="close btn" onclick="handleModal('review_write')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
-			<h4 class="title">Написать отзыв</h4>
+			<h4 class="modal-title">Написать отзыв</h4>
 
-			<div class="modal-wrap__box vertical">
+			<div class="modal-box vertical">
 				<div class="vertical">
-					<p class="text">Оценить сервис</p>
+					<p class="modal-text">Оценить сервис</p>
 					
 					<div class="stars horizontal">
 						<img src="assets/icons/star.svg" alt="Star" />
@@ -1329,7 +1339,7 @@
 					<p class="label">0/200</p>
 				</div>
 
-				<div class="button" onclick="closeModal('review_write'), openModal('review_send')">
+				<div class="button" onclick="handleModal('review_write'), handleModal('review_send')">
 					<p class="button-text">Отправить</p>
 				</div>
 			</div>
@@ -1337,52 +1347,54 @@
 	</div>
 
 	<div id="review_send" class="modal">
-		<div class="modal-background" onclick="closeModal('review_send')"></div>
+		<div class="modal-background" onclick="handleModal('review_send')"></div>
 
 		<div class="modal-wrap vertical center">
-			<div class="close btn" onclick="closeModal('review_send')">
+			<div class="close btn" onclick="handleModal('review_send')">
 				<img src="assets/icons/close.svg" alt="Close" />
 			</div>
 
 			<img src="assets/icons/star-square.svg" alt="Star" />
-			<h4 class="title">Ваш отзыв отправлен</h4>
-			<p class="text">Отзыв скоро появится на странице. Спасибо за обратную связь.</p>
+			<h4 class="modal-title">Ваш отзыв отправлен</h4>
+			<p class="modal-text">Отзыв скоро появится на странице. Спасибо за обратную связь.</p>
 
-			<div class="button" onclick="closeModal('review_send')">
+			<div class="button" onclick="handleModal('review_send')">
 				<p class="button-text">Закрыть</p>
 			</div>
 		</div>
 	</div>
 
 	<div id="review" class="modal">
-		<div class="modal-background" onclick="closeModal('review')"></div>
+		<div class="modal-background" onclick="handleModal('review')"></div>
 
 		<div class="modal-wrap vertical">
 			<img
 				src="assets/icons/close-grey.svg"
 				alt="Close"
-				class="btn"
-				onclick="closeModal('review')"
+				class="close btn"
+				onclick="handleModal('review')"
 			/>
 
-			<h4 class="modal-name">Хостел Арлеон</h4>
+			<h4 class="modal-title">Хостел Арлеон</h4>
 
-			<div class="modal-galery horizontal">
-				<img
-					src="assets/images/arleon2.png"
-					alt="Hostel 2"
-					class="modal-galery__image"
-				/>
-				<img
-					src="assets/images/arleon3.png"
-					alt="Hostel 3"
-					class="modal-galery__image"
-				/>
-				<img
-					src="assets/images/arleon4.png"
-					alt="Hostel 4"
-					class="modal-galery__image"
-				/>
+			<div class="carousel">
+				<div class="carousel-inner">
+					<img
+						src="assets/images/arleon2.png"
+						alt="Hostel 2"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon3.png"
+						alt="Hostel 3"
+						class="carousel-item"
+					/>
+					<img
+						src="assets/images/arleon4.png"
+						alt="Hostel 4"
+						class="carousel-item"
+					/>
+				</div>
 			</div>
 
 			<a href="hostels.html" class="modal-button horizontal horizontal-inline">
