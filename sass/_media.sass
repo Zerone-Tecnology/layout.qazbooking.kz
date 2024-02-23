@@ -158,10 +158,11 @@
 		height: fit-content
 		max-height: 136px
 		&-text
+			width: 100%
 			grid-area: text
 		&-date
-			min-width: -webkit-fill-available
-			max-width: -webkit-fill-available
+			min-width: 100%
+			max-width: 100%
 			padding: 16px 20px
 			&#from
 				grid-area: date1
@@ -334,7 +335,9 @@
 	// COMPONENTS
 	.search
 		&-text
-			width: 100%
+			width: 87.2vw
+		&-date
+			width: calc(calc(87.2vw - 4px) / 2)
 
 	.author,
 	.date

@@ -119,30 +119,54 @@
 	<main class="filter main">
 		<div class="filter-wrap box vertical">
 			<section class="content wrap">
-				<form class="search">
-					<img
-						src="assets/icons/search.svg"
-						alt="Search"
-						class="search-icon"
-					/>
-					<input
-						type="text"
-						placeholder="Ключевое слово"
-						autocomplete="off"
-						class="search-text"
-					/>
-					<input
-						type="text"
-						id="from"
-						placeholder="Дата заезда"
-						class="search-date"
-					/>
-					<input
-						type="text"
-						id="to"
-						placeholder="Дата выезда"
-						class="search-date"
-					/>
+				<form action="#" class="search">
+					<img src="assets/icons/search.svg" alt="Search" class="search-icon" />
+					<input id="text" type="text" placeholder="Ключевое слово" autocomplete="off" class="search-text" />
+					<input id="from" type="date" placeholder="Дата заезда" class="search-date" />
+					<input id="to" type="date" placeholder="Дата выезда" disabled="disabled" class="search-date" />
+
+					<div class="calendar">
+						<h3 id="calendar-title"></h3>
+						
+						<div class="calendar-buttons">
+							<div
+								id="previous"
+								class="button"
+								onclick="previousMonth()"
+							>&#8249;</div>
+							<div
+								id="next"
+								class="button"
+								onclick="nextMonth()"
+							>&#8250;</div>
+						</div>
+						
+						<table id="calendar" class="calendar-body">
+							<thead id="calendar_days"></thead>
+							<tbody id="calendar_body"></tbody>
+						</table>
+						
+						<div class="calendar-footer">
+							<label for="month">Jump To: </label>
+							<select id="calendar_month" onchange="jumpToDate()">
+								<option value=0>Jan</option>
+								<option value=1>Feb</option>
+								<option value=2>Mar</option>
+								<option value=3>Apr</option>
+								<option value=4>May</option>
+								<option value=5>Jun</option>
+								<option value=6>Jul</option>
+								<option value=7>Aug</option>
+								<option value=8>Sep</option>
+								<option value=9>Oct</option>
+								<option value=10>Nov</option>
+								<option value=11>Dec</option>
+							</select>
+							<select id="calendar_year" onchange="jumpToDate()"></select>       
+						</div>
+					</div>
+					<script>generateCalendar()</script>
+
 					<button id="search_button" type="submit" class="button">
 						<div class="button-text">Поиск</div>
 					</button>
@@ -151,225 +175,244 @@
 				<div id="filter" class="content-filter">
 					<h5 class="title">Все фильтры</h5>
 
-					<div class="content-filter__block">
-						<h6>Диапазон цен</h6>
-						<p class="subtitle">Цена за 10 ночей</p>
-						<div class="price">
-							<div class="price-range">
-								<input
-									type="range"
-									min="0"
-									max="160000"
-									value="10000"
-									id="lower"
-									class="range"
-								/>
-								<input
-									type="range"
-									min="0"
-									max="160000"
-									value="130000"
-									id="upper"
-									class="range"
-								/>
-							</div>
-
-							<div class="price-field horizontal wrap">
-								<div class="field">
+					<form name="filter" action="" method="get">
+						<div class="content-filter__block">
+							<h6>Диапазон цен</h6>
+							<p class="subtitle">Цена за 10 ночей</p>
+							<div class="price">
+								<div class="price-range">
 									<input
-										type="number"
+										type="range"
 										min="0"
-										max="16x0000"
-										class="field-input"
+										max="160000"
+										value="10000"
+										id="lower"
+										class="range"
 									/>
-									<p class="field-text">от</p>
-								</div>
-
-								<div class="field">
 									<input
-										type="number"
+										type="range"
 										min="0"
-										max="16x0000"
-										class="field-input"
+										max="160000"
+										value="130000"
+										id="upper"
+										class="range"
 									/>
-									<p class="field-text">до</p>
+								</div>
+
+								<div class="price-field horizontal wrap">
+									<div class="field">
+										<input
+											type="number"
+											min="0"
+											max="16x0000"
+											class="field-input"
+										/>
+										<p class="field-text">от</p>
+									</div>
+
+									<div class="field">
+										<input
+											type="number"
+											min="0"
+											max="16x0000"
+											class="field-input"
+										/>
+										<p class="field-text">до</p>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
 
-					<div class="content-filter__block non">
-						<h6>Популярные фильтры</h6>
-						<div class="checkbox_list">
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Хостелы</p>
+						<div class="content-filter__block non">
+							<h6>Популярные фильтры</h6>
+							<div class="checkbox_list">
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Хостелы</p>
+									</div>
+									<p>234</p>
 								</div>
-								<p>234</p>
-							</div>
 
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Зона отдыха</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Зона отдыха</p>
+									</div>
+									<p>54</p>
 								</div>
-								<p>54</p>
-							</div>
 
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Гостевые дома</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Гостевые дома</p>
+									</div>
+									<p>12</p>
 								</div>
-								<p>12</p>
-							</div>
 
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">5 звёзд</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">5 звёзд</p>
+									</div>
+									<p>5</p>
 								</div>
-								<p>5</p>
-							</div>
 
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Завтрак включён</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Завтрак включён</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>123</p>
-							</div>
-						</div>
-					</div>
-
-					<div class="content-filter__block">
-						<h6>Тип размещения</h6>
-						<div class="checkbox_list">
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Хостел</p>
-								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Санаторий</p>
-								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Тур база</p>
-								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Зона отдыха</p>
-								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Кемпинг</p>
-								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Авторские туры</p>
-								</div>
-								<p>123</p>
 							</div>
 						</div>
-					</div>
 
-					<div class="content-filter__block">
-						<h6>Питание</h6>
-						<div class="checkbox_list">
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Завтрак включён</p>
+						<div class="content-filter__block">
+							<h6>Тип размещения</h6>
+							<div class="checkbox_list">
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Хостел</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>123</p>
-							</div>
 
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">С собственной кухней</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Санаторий</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>123</p>
-							</div>
-						</div>
-					</div>
 
-					<div class="content-filter__block">
-						<h6>Рейтинг</h6>
-						<div class="checkbox_list">
-							<div class="radio_list_line">
-								<div class="radio">
-									<input type="radio" class="radio-input" />
-									<p class="radio-text">4.5 и выше</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Тур база</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>109</p>
-							</div>
 
-							<div class="radio_list_line">
-								<div class="radio">
-									<input type="radio" class="radio-input" />
-									<p class="radio-text">4 и выше</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Зона отдыха</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>34</p>
-							</div>
 
-							<div class="radio_list_line">
-								<div class="radio">
-									<input type="radio" class="radio-input" />
-									<p class="radio-text">3 и выше</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Кемпинг</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>12</p>
-							</div>
-						</div>
-					</div>
 
-					<div class="content-filter__block">
-						<h6>Политика отмены</h6>
-						<div class="checkbox_list">
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Бесплатная отмена</p>
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Авторские туры</p>
+									</div>
+									<p>123</p>
 								</div>
-								<p>123</p>
-							</div>
-
-							<div class="checkbox_list_line">
-								<div class="checkbox">
-									<input type="checkbox" class="checkbox-input" />
-									<p class="checkbox-text">Без предоплаты</p>
-								</div>
-								<p>123</p>
 							</div>
 						</div>
-					</div>
 
-					<button id="button_filter" type="submit" class="button disabled">
-						<p class="button-text">Сбросить фильтры</p>
-					</button>
+						<div class="content-filter__block">
+							<h6>Питание</h6>
+							<div class="checkbox_list">
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Завтрак включён</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">С собственной кухней</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-filter__block">
+							<h6>Рейтинг</h6>
+							<div class="checkbox_list">
+								<div class="radio_list_line">
+									<div class="radio">
+										<input type="radio" class="radio-input" />
+										<p class="radio-text">4.5 и выше</p>
+									</div>
+									<p>109</p>
+								</div>
+
+								<div class="radio_list_line">
+									<div class="radio">
+										<input type="radio" class="radio-input" />
+										<p class="radio-text">4 и выше</p>
+									</div>
+									<p>34</p>
+								</div>
+
+								<div class="radio_list_line">
+									<div class="radio">
+										<input type="radio" class="radio-input" />
+										<p class="radio-text">3 и выше</p>
+									</div>
+									<p>12</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="content-filter__block">
+							<h6>Политика отмены</h6>
+							<div class="checkbox_list">
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Бесплатная отмена</p>
+									</div>
+									<p>123</p>
+								</div>
+
+								<div class="checkbox_list_line">
+									<div class="checkbox">
+										<input type="checkbox" class="checkbox-input" />
+										<p class="checkbox-text">Без предоплаты</p>
+									</div>
+									<p>123</p>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="button">
+								<input
+									id="button_show"
+									type="submit"
+									name="filter_set"
+									value="Показать"
+									class="button-text"
+								/>
+							</div>
+							<div class="button disabled">
+								<input
+									id="button_reset"
+									type="submit"
+									name="filter_del"
+									value="Сбросить фильтры"
+									class="button-text"
+								/>
+							</div>
+						</div>
+					</form>
 				</div>
 
 				<div class="content-result">

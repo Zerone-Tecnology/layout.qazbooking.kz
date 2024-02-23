@@ -119,11 +119,7 @@
 	<main class="home main">
 		<div class="home-wrap box vertical">
 			<section class="hero">
-				<img
-					src="assets/images/hero.jpg"
-					alt="Hero image"
-					class="hero-image"
-				/>
+				<img src="assets/images/hero.jpg" alt="Hero image" class="hero-image" />
 
 				<div class="hero-content">
 					<div class="hero-content__description">
@@ -131,32 +127,11 @@
 						<p class="text bigtext">Поиск предложений на отели, дома и многое другое…</h>
 					</div>
 
-					<form class="search">
-						<img
-							src="assets/icons/search.svg"
-							alt="Search"
-							class="search-icon"
-						/>
-						<input
-							type="text"
-							placeholder="Ключевое слово"
-							autocomplete="off"
-							class="search-text"
-						/>
-						<input
-							type="date"
-							id="from"
-							placeholder="Дата заезда"
-							name="date-from"
-							class="search-date"
-						/>
-						<input
-							type="date"
-							id="to"
-							placeholder="Дата выезда"
-							name="date-to"
-							class="search-date"
-						/>
+					<form action="#" class="search">
+						<img src="assets/icons/search.svg" alt="Search" class="search-icon" />
+						<input id="text" type="text" placeholder="Ключевое слово" autocomplete="off" class="search-text" />
+						<input id="from" type="date" placeholder="Дата заезда" class="search-date" />
+						<input id="to" type="date" placeholder="Дата выезда" disabled="disabled" class="search-date" />
 
 						<div class="calendar">
 							<h3 id="calendar-title"></h3>
@@ -210,56 +185,54 @@
 			<section class="category">
 				<h3>Категории</h3>
 
-				<div id="categories" class="category-wrap carousel">
-					<div class="carousel-inner">
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-1">
-								<img src="assets/icons/categories/hotel.svg" alt="Hostels" />
-							</a>
-							<p class="text">Хостелы</p>
-						</div>
+				<div id="categories" class="category-wrap carousel carousel-inner">
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-2">
+							<img src="assets/icons/categories/house.svg" alt="Базы отдыха" />
+						</a>
+						<p class="text">Базы отдыха</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-2">
-								<img src="assets/icons/categories/house.svg" alt="Базы отдыха" />
-							</a>
-							<p class="text">Базы отдыха</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-6">
+							<img src="assets/icons/categories/activity-heart.svg" alt="Оздоровительный отдых" />
+						</a>
+						<p class="text">Оздоровительный отдых</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-3">
-								<img src="assets/icons/categories/motorbike.svg" alt="Активный отдых" />
-							</a>
-							<p class="text">Активный отдых</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-3">
+							<img src="assets/icons/categories/motorbike.svg" alt="Активный отдых" />
+						</a>
+						<p class="text">Активный отдых</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-4">
-								<img src="assets/icons/categories/child.svg" alt="Детские лагеря" />
-							</a>
-							<p class="text">Детские лагеря</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-1">
+							<img src="assets/icons/categories/hotel.svg" alt="Хостелы" />
+						</a>
+						<p class="text">Хостелы</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-5">
-								<img src="assets/icons/categories/beach.svg" alt="Tours" />
-							</a>
-							<p class="text">Туры</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-5">
+							<img src="assets/icons/categories/beach.svg" alt="Туры" />
+						</a>
+						<p class="text">Туры</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-6">
-								<img src="assets/icons/categories/activity-heart.svg" alt="Оздоровительный отдых" />
-							</a>
-							<p class="text">Отдых и здоровье</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-4">
+							<img src="assets/icons/categories/child.svg" alt="Детские лагеря" />
+						</a>
+						<p class="text">Детские лагеря</p>
+					</div>
 
-						<div class="category-block carousel-item">
-							<a href="filter.html" class="icon center color-7">
-								<img src="assets/icons/categories/airplane.svg" alt="Transport" />
-							</a>
-							<p class="text">Транспорт</p>
-						</div>
+					<div class="category-block carousel-item">
+						<a href="filter.html" class="icon center color-7">
+							<img src="assets/icons/categories/airplane.svg" alt="Транспорт" />
+						</a>
+						<p class="text">Транспорт</p>
 					</div>
 				</div>
 				<script>dragSlider("categories")</script>
@@ -269,338 +242,7 @@
 				<h3>Популярные места</h3>
 
 				<div class="popular-wrap vertical">
-					<div class="popular-wrap__line">
-						<div class="popular-header horizontal horizontal-inline">
-							<h5>Хостелы</h5>
-							<a href="filter.html" class="icon">
-								<img src="assets/icons/chevron.svg" alt="Right arrow" />
-							</a>
-						</div>
-
-						<div id="popular_hostels" class="carousel">
-							<div class="carousel-inner">
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/hostel1.jpeg"
-												alt="Hostel"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.6 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/hostel2.jpeg"
-												alt="Hostel"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">6 </p>
-													<img src="assets/icons/rating/third.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/hostel3.jpeg"
-												alt="Hostel"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.9 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/hostel4.jpeg"
-												alt="Hostel"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.4 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<script>dragSlider("popular_hostels")</script>
-					</div>
-
-					<div class="popular-wrap__line">
-						<div class="popular-header horizontal horizontal-inline">
-							<h5>Туры</h5>
-							<a href="filter.html" class="icon">
-								<img src="assets/icons/chevron.svg" alt="Right arrow" />
-							</a>
-						</div>
-
-						<div id="popular_tours" class="carousel">
-							<div class="carousel-inner">
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/tour1.jpeg"
-												alt="Tour"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>21 000</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.4 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/tour2.jpeg"
-												alt="Tour"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>5600</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">8 </p>
-													<img src="assets/icons/rating/fourth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/tour3.jpeg"
-												alt="Tour"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.0 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<div class="card1 carousel-item">
-									<div class="card">
-										<a href="detail.html">
-											<img
-												src="assets/images/tour4.jpeg"
-												alt="Tour"
-												class="card-image"
-											/>
-										</a>
-
-										<div class="card-content">
-											<div class="card-content__top">
-												<a href="detail.html">
-													<h6 class="title bigtext">Grand hostel</h6>
-												</a>
-
-												<div class="location">
-													<img src="assets/icons/location2.svg" alt="Location" />
-													<p class="location-text bigtext">Алматинская обл.</p>
-												</div>
-											</div>
-
-											<div class="card-content__bottom horizontal horizontal-inline">
-												<div class="price">
-													<p>от</p>
-													<h5>2500</h5>
-													<img src="assets/icons/currency.svg" alt="Tenge" />
-												</div>
-
-												<div class="rating">
-													<p class="rating-text">9.1 </p>
-													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<script>dragSlider("popular_tours")</script>
-					</div>
-
+					<!-- Базы отдыха -->
 					<div class="popular-wrap__line">
 						<div class="popular-header horizontal horizontal-inline">
 							<h5>Базы отдыха</h5>
@@ -767,15 +409,183 @@
 						<script>dragSlider("popular_recreation_centers")</script>
 					</div>
 
+					<!-- Туры -->
 					<div class="popular-wrap__line">
 						<div class="popular-header horizontal horizontal-inline">
-							<h5>Досуг/Развлечения</h5>
+							<h5>Туры</h5>
 							<a href="filter.html" class="icon">
 								<img src="assets/icons/chevron.svg" alt="Right arrow" />
 							</a>
 						</div>
 
-						<div id="popular_leisure_entertainment" class="carousel">
+						<div id="popular_tours" class="carousel">
+							<div class="carousel-inner">
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/tour1.jpeg"
+												alt="Tour"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>21 000</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.4 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/tour2.jpeg"
+												alt="Tour"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>5600</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">8 </p>
+													<img src="assets/icons/rating/fourth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/tour3.jpeg"
+												alt="Tour"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.0 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/tour4.jpeg"
+												alt="Tour"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.1 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>dragSlider("popular_tours")</script>
+					</div>
+
+					<!-- Детские лагеря -->
+					<div class="popular-wrap__line">
+						<div class="popular-header horizontal horizontal-inline">
+							<h5>Детские лагеря</h5>
+							<a href="filter.html" class="icon">
+								<img src="assets/icons/chevron.svg" alt="Right arrow" />
+							</a>
+						</div>
+
+						<div id="popular_childrens_camps" class="carousel">
 							<div class="carousel-inner">
 								<div class="card1 carousel-item">
 									<div class="card">
@@ -930,7 +740,508 @@
 								</div>
 							</div>
 						</div>
-						<script>dragSlider("popular_leisure_entertainment")</script>
+						<script>dragSlider("popular_childrens_camps")</script>
+					</div>
+
+					<!-- Оздоровительный отдых -->
+					<div class="popular-wrap__line">
+						<div class="popular-header horizontal horizontal-inline">
+							<h5>Оздоровительный отдых</h5>
+							<a href="filter.html" class="icon">
+								<img src="assets/icons/chevron.svg" alt="Right arrow" />
+							</a>
+						</div>
+
+						<div id="popular_wellness_holiday" class="carousel">
+							<div class="carousel-inner">
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel1.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.6 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel2.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">6 </p>
+													<img src="assets/icons/rating/third.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel3.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.9 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel4.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.4 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>dragSlider("popular_wellness_holiday")</script>
+					</div>
+
+					<!-- Активный отдых -->
+					<div class="popular-wrap__line">
+						<div class="popular-header horizontal horizontal-inline">
+							<h5>Активный отдых</h5>
+							<a href="filter.html" class="icon">
+								<img src="assets/icons/chevron.svg" alt="Right arrow" />
+							</a>
+						</div>
+
+						<div id="popular_leisure" class="carousel">
+							<div class="carousel-inner">
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/leisure_entertainment1.png"
+												alt="Leisure entertainment"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.4 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/leisure_entertainment2.jpeg"
+												alt="Leisure entertainment"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.6 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+		
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/leisure_entertainment3.jpeg"
+												alt="Leisure entertainment"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.0 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/leisure_entertainment4.jpeg"
+												alt="Leisure entertainment"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.1 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>dragSlider("popular_leisure")</script>
+					</div>
+
+					<!-- Хостелы и гостиницы -->
+					<div class="popular-wrap__line">
+						<div class="popular-header horizontal horizontal-inline">
+							<h5>Хостелы</h5>
+							<a href="filter.html" class="icon">
+								<img src="assets/icons/chevron.svg" alt="Right arrow" />
+							</a>
+						</div>
+
+						<div id="popular_hostels" class="carousel">
+							<div class="carousel-inner">
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel1.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.6 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel2.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">6 </p>
+													<img src="assets/icons/rating/third.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel3.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.9 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="card1 carousel-item">
+									<div class="card">
+										<a href="detail.html">
+											<img
+												src="assets/images/hostel4.jpeg"
+												alt="Hostel"
+												class="card-image"
+											/>
+										</a>
+
+										<div class="card-content">
+											<div class="card-content__top">
+												<a href="detail.html">
+													<h6 class="title bigtext">Grand hostel</h6>
+												</a>
+
+												<div class="location">
+													<img src="assets/icons/location2.svg" alt="Location" />
+													<p class="location-text bigtext">Алматинская обл.</p>
+												</div>
+											</div>
+
+											<div class="card-content__bottom horizontal horizontal-inline">
+												<div class="price">
+													<p>от</p>
+													<h5>2500</h5>
+													<img src="assets/icons/currency.svg" alt="Tenge" />
+												</div>
+
+												<div class="rating">
+													<p class="rating-text">9.4 </p>
+													<img src="assets/icons/rating/fifth.svg" alt="Rating" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<script>dragSlider("popular_hostels")</script>
 					</div>
 				</div>
 			</section>
@@ -1081,19 +1392,19 @@
 
 				<div class="seo-wrap scroll">
 					<div class="seo-box red">
-						<h4 class="title">Гибкая оплата</h4>
+						<h4 class="title">Удобная навигация, яркий дизайн и информативный контент</h4>
 					</div>
 
 					<div class="seo-box yellow">
-						<h4 class="title">Доступ к отзывам и рейтингам</h4>
+						<h4 class="title">Онлайн поддержка</h4>
 					</div>
 
 					<div class="seo-box blue">
-						<h4 class="title">Персонализация</h4>
+						<h4 class="title">Отзывы и рейтинги</h4>
 					</div>
 
 					<div class="seo-box green">
-						<h4 class="title">Быстрый доступ к информации</h4>
+						<h4 class="title">Широкий выбор</h4>
 					</div>
 				</div>
 			</section>

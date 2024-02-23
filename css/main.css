@@ -679,9 +679,7 @@
   font-size: 16px;
   line-height: 20px;
 }
-.profile-content .information-button {
-  color: #03306B;
-  line-height: 20px;
+.profile-content .information .button {
   margin-top: 40px;
 }
 .profile-content .reviews,
@@ -1326,6 +1324,7 @@ p {
 .button-text {
   font-family: "Nunito Sans", sans-serif;
   line-height: 20px;
+  background-color: unset;
   color: #FFF;
 }
 .button:hover {
@@ -2955,11 +2954,12 @@ p {
     max-height: 136px;
   }
   .search-text {
+    width: 100%;
     grid-area: text;
   }
   .search-date {
-    min-width: -webkit-fill-available;
-    max-width: -webkit-fill-available;
+    min-width: 100%;
+    max-width: 100%;
     padding: 16px 20px;
   }
   .search-date#from {
@@ -3148,7 +3148,10 @@ p {
     width: 75%;
   }
   .search-text {
-    width: 100%;
+    width: 87.2vw;
+  }
+  .search-date {
+    width: calc((87.2vw - 4px) / 2);
   }
   .author-text,
   .date-text {

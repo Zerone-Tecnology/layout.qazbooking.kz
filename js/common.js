@@ -9,10 +9,12 @@ function moveHeader () {
   const currentScrollPos = window.pageYOffset;
 	
 	let header = $g('header');
-	if (prevScrollPosition < currentScrollPos)
-		header.classList.add('active');
-	else
+	if (!(prevScrollPosition < currentScrollPos) || currentScrollPos < 82) {
 		header.classList.remove('active');
+		console.log(currentScrollPos);
+	}
+	else
+		header.classList.add('active');
 
 	prevScrollPosition = currentScrollPos;
 }
@@ -315,11 +317,10 @@ function initializeCarousel(carouselId) {
 		const $slide = e.target.closest(`.carousel-item`);
 		const index = getSlideIndex($slide);
 		console.log($slide);
-		if (index < active) {
+		if (index < active)
 			prevSlide();
-		} else if (index > active) {
+		else if (index > active)
 			nextSlide();
-		}
 	}
 	
 	$list.addEventListener( 'focusin', chooseSlide );
