@@ -2948,7 +2948,7 @@ p {
   .search {
     display: grid;
     grid-gap: 8px;
-    grid-template-areas: "text text" "date1 date2";
+    grid-template-areas: "text text text" "date1 date2 btn";
     height: -moz-fit-content;
     height: fit-content;
     max-height: 136px;
@@ -2958,8 +2958,8 @@ p {
     grid-area: text;
   }
   .search-date {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 213px;
+    max-width: 213px;
     padding: 16px 20px;
   }
   .search-date#from {
@@ -2969,7 +2969,7 @@ p {
     grid-area: date2;
   }
   .search .button {
-    display: none;
+    grid-area: btn;
   }
   .action_list {
     flex-direction: column;
@@ -3030,6 +3030,15 @@ p {
   }
   .main .breadcrumbs {
     margin-bottom: 20px;
+  }
+  .search-date {
+    min-width: calc(32.29167vw - 8px);
+    max-width: calc(32.29167vw - 8px);
+    padding: 0 8px;
+  }
+  .search .button#search_button {
+    min-width: 12.5vw;
+    max-width: 12.5vw;
   }
   .blog {
     min-width: 41.667vw;
@@ -3151,7 +3160,12 @@ p {
     width: 87.2vw;
   }
   .search-date {
-    width: calc((87.2vw - 4px) / 2);
+    min-width: calc(36.8vw - 8px);
+    max-width: calc(36.8vw - 8px);
+  }
+  .search .button#search_button {
+    min-width: 13.6vw;
+    max-width: 13.6vw;
   }
   .author-text,
   .date-text {

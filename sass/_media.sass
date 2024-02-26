@@ -154,22 +154,22 @@
 	.search
 		display: grid
 		grid-gap: 8px
-		grid-template-areas: "text text" "date1 date2"
+		grid-template-areas: "text text text" "date1 date2 btn"
 		height: fit-content
 		max-height: 136px
 		&-text
 			width: 100%
 			grid-area: text
 		&-date
-			min-width: 100%
-			max-width: 100%
+			min-width: 213px
+			max-width: 213px
 			padding: 16px 20px
 			&#from
 				grid-area: date1
 			&#to
 				grid-area: date2
 		.button
-			display: none
+			grid-area: btn
 
 	.action
 		&_list
@@ -231,6 +231,15 @@
 			margin-bottom: 20px
 
 	// COMPONENTS
+	.search
+		&-date
+			min-width: calc(64.58334vw / 2 - 8px)
+			max-width: calc(64.58334vw / 2 - 8px)
+			padding: 0 8px
+		.button#search_button
+			min-width: 12.5vw
+			max-width: 12.5vw
+
 	.blog
 		min-width: 41.667vw
 		max-width: 41.667vw
@@ -337,7 +346,11 @@
 		&-text
 			width: 87.2vw
 		&-date
-			width: calc(calc(87.2vw - 4px) / 2)
+			min-width: calc(73.6vw / 2 - 8px)
+			max-width: calc(73.6vw / 2 - 8px)
+		.button#search_button
+			min-width: 13.6vw
+			max-width: 13.6vw
 
 	.author,
 	.date

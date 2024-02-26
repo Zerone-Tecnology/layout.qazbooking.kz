@@ -9,10 +9,8 @@ function moveHeader () {
   const currentScrollPos = window.pageYOffset;
 	
 	let header = $g('header');
-	if (!(prevScrollPosition < currentScrollPos) || currentScrollPos < 82) {
+	if (!(prevScrollPosition < currentScrollPos) || currentScrollPos < 82)
 		header.classList.remove('active');
-		console.log(currentScrollPos);
-	}
 	else
 		header.classList.add('active');
 
