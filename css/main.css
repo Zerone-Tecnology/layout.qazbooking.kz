@@ -1897,6 +1897,7 @@ p {
   text-align: left;
 }
 .card4 .card-info__right .button {
+  margin-left: auto;
   width: 130px;
 }
 
