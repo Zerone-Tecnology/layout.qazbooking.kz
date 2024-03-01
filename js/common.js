@@ -200,14 +200,24 @@ d.addEventListener('DOMContentLoaded', function() {
 
 // Carousel / Slider
 let activeSlider = 0;
-function slider(id) {
+function slider(id, full = false) {
 	const container = $g(`#${id}`);
 	const inner = container.querySelector('.carousel-inner');
 	const list = container.getElementsByClassName('carousel-item');
+	const mainImages = $q('.main_image .image');
 	const width = list[0].offsetWidth;
 	const length = list.length;
 	const maxIndex = length - 1;
 
+	function changeImage() {
+		hideImages();
+		mainImages[activeSlider].classList.add('active');
+	}
+	function hideImages() {
+		for (let i = 0; i < length; i++) {
+			mainImages[i].classList.remove('active');
+		}
+	}
 	function updateTransform() {
 		const newPosition = activeSlider * (width + 30);
 		inner.style.transform = `translateX(-${newPosition}px)`;
@@ -216,11 +226,13 @@ function slider(id) {
 		if (activeSlider > 0)
 			activeSlider--;
 		updateTransform();
+		changeImage();
 	}
 	function nextSlide() {
-		if (activeSlider < maxIndex - 2)
+		if ((!full && activeSlider < maxIndex - 2) || (full && activeSlider < length - 1))
 			activeSlider++;
 		updateTransform();
+		changeImage();
 	}
 
 	return { prevSlide, nextSlide };

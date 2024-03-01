@@ -904,9 +904,13 @@
   margin: 2.201257vh auto 6.18449vh;
 }
 #galery .modal-wrap .main_image .image {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
+}
+#galery .modal-wrap .main_image .image.active {
+  display: block;
 }
 #galery .modal-wrap .carousel-item {
   width: 247px;
