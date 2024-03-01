@@ -1648,6 +1648,9 @@ p {
   gap: 5px;
   height: 29px;
 }
+.price_box {
+  max-width: 175px;
+}
 .price-text {
   font-weight: 700;
 }
